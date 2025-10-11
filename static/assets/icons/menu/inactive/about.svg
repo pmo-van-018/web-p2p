@@ -1,0 +1,21 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Property 1=About, Property 2=No">
+<g id="Group 1000001984">
+<path id="Vector" d="M15.644 2.81258C8.5083 2.78861 2.83252 8.37652 2.81255 15.4483C2.79258 22.4222 8.45038 28.1079 15.4283 28.1199C22.3842 28.1339 28.0959 22.4881 28.1179 15.5741C28.1399 8.59221 22.516 2.83654 15.644 2.81258Z" fill="#E4E4E7"/>
+</g>
+<g id="Group 1000002311">
+<rect id="Rectangle 6356" x="14" y="7" width="3" height="12" rx="1.5" fill="url(#paint0_linear_7949_860184)"/>
+<rect id="Rectangle 6357" x="14" y="20" width="3" height="3" rx="1.5" fill="url(#paint1_linear_7949_860184)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_7949_860184" x1="16.9757" y1="11.833" x2="13.903" y2="11.833" gradientUnits="userSpaceOnUse">
+<stop stop-color="#9396AE"/>
+<stop offset="1" stop-color="#C7CBD2"/>
+</linearGradient>
+<linearGradient id="paint1_linear_7949_860184" x1="16.9757" y1="21.2083" x2="13.903" y2="21.2083" gradientUnits="userSpaceOnUse">
+<stop stop-color="#9396AE"/>
+<stop offset="1" stop-color="#C7CBD2"/>
+</linearGradient>
+</defs>
+</svg>

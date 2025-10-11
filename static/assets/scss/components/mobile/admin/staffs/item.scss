@@ -1,0 +1,85 @@
+.card-item {
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:not(:last-child) {
+      padding-bottom: 8px;
+    }
+  }
+  &__container {
+    padding: 24px 0;
+    &:not(&--last) {
+      border-bottom: 1px solid $grey-100;
+    }
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 13px;
+  }
+  &__address {
+    @include font-t14m;
+    color: $grey-600;
+  }
+  &__wallet {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .copy-button,
+  .wallet-address-qrcode-button {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  :deep(.copy-button__icon),
+  :deep(.wallet-address-qrcode-button__icon) {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  &__icon {
+    font-size: 24px;
+  }
+  &__text {
+    @include font-t10m;
+    color: $grey-400;
+  }
+  &__value {
+    @include font-t14m;
+    color: $grey-600;
+    max-width: 100%;
+    @include ellipsis-multiline;
+    width: calc(clamp(250px, 60vw, 400px));
+    text-align: right;
+    &.underline {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  &__status {
+    padding: 3px 4px;
+    border-radius: 4px;
+    min-width: 94px;
+    max-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $grey-100;
+    &.active {
+      background: $green-50;
+      .card-item {
+        &__status {
+          background: $green-50;
+        }
+        &__status-inner {
+          color: $green-500;
+        }
+      }
+    }
+  }
+  &__status-inner {
+    @include font-t12m;
+    color: $grey-400;
+  }
+}

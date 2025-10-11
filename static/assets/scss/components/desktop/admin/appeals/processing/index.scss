@@ -1,0 +1,18 @@
+.processing {
+  &__title {
+    color: var(--mode-light-dark-500);
+    @include font-t12r;
+  }
+  &__sub-title {
+    color: var(--mode-light-dark-1500);
+    @include font-t10r;
+    p {
+      margin-bottom: 4px;
+    }
+  }
+  @media (min-width: 1200px) {
+    &__title, &__sub-title {
+      @include font-t14r;
+    }
+  }
+}

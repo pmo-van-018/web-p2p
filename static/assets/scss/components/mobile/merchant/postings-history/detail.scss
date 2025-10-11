@@ -1,0 +1,45 @@
+.postings {
+  background-color: #fff;
+  &__top {
+    padding: 10px 24px;
+    border-bottom: solid 1px $grey-100
+  }
+}
+.postings-table {
+  padding: 0 16px;
+}
+
+.postings-detail {
+  padding: 16px;
+  border-bottom: solid 1px $grey-100;
+  margin-bottom: 24px;
+  .icon-clone-post {
+    font-size: 24px;
+  }
+  .info {
+    border-bottom: solid 1px $grey-100;
+    gap: 12px;
+    padding-bottom: 12px;
+    &__row {
+      &:first-child {
+        min-width: 44px;
+      }
+      &:nth-child(2) {
+        min-width: 115px;
+      }
+    }
+  }
+  .postings-detail-item {
+    &.center {
+      padding-top: 12px;
+    }
+    &.top {
+      gap: 12px;
+    }
+    &.bottom {
+      display: flex;
+      justify-content: space-between;
+      border-top: solid 1px $grey-100;
+    }
+  }
+}

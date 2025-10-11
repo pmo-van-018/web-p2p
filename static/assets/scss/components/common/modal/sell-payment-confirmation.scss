@@ -1,0 +1,118 @@
+$sell-payment-confirmation: "sell-payment-confirmation";
+
+.#{$sell-payment-confirmation} {
+    text-align: center;
+    &__countdown {
+        margin-left: 1rem;
+    }
+
+    &__icon {
+        width: 120px;
+        height: 120px;
+    }
+
+    &__title {
+        margin-top: 24px;
+        color: $bearish-red;
+        margin-bottom: 8px;
+        @include font-t16b;
+        span {
+            color: var(--mode-light-dark-700);
+            @include font-t16m;
+        }
+    }
+
+    &__desc {
+        color: var(--mode-light-dark-700);
+        @include font-t14r;
+        :deep(span) {
+            color: var(--mode-light-dark-1500);
+            @include font-t14b;
+        }
+        :deep(.copy-button) {
+            display: inline-block;
+        }
+    }
+
+    &__content-info {
+        padding: 16px 24px;
+        background: #F4F4F5;
+        border-radius: 8px;
+        margin-top: 24px;
+    }
+
+    &__note {
+        align-items: center;
+        display: flex;
+        margin-top: 24px;
+        padding: 16px;
+        border-radius: 8px;
+        background: $yellow-100;
+    }
+
+    &__note-icon {
+        font-size: 20px;
+        margin-right: 14px;
+        &::before {
+            color: $yellow-900;
+        }
+    }
+
+    &__note-desc {
+        color: $grey-900;
+        text-align: justify;
+        @include font-t14r
+    }
+
+    &__checkbox {
+        margin-top: 24px;
+        padding-left: 2.25rem;
+        :deep(.custom-control-input:checked~.custom-control-label:before) {
+            background-color: $yellow-900;
+            border-color: $yellow-900;
+            color: var(--mode-light-dark-1500);
+        }
+        :deep(.custom-control-label) {
+            color: var(--mode-light-dark-1500);
+            @include font-t14m;
+            display: inline-block;
+            line-height: 22px;
+            &::before {
+                background-color: var(--mode-light-dark-200);
+                border: 1px solid var(--mode-light-dark-500);
+            }
+            &::before, &::after {
+                top: 0;
+                left: -2rem;
+                width: 1.25rem;
+                height: 1.25rem;
+                box-shadow: none;
+                border-radius: 6px;
+            }
+        }
+    }
+
+    &__action {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+    }
+
+    &__action-btn {
+        min-width: unset;
+        padding: 10px;
+        width: 100%;
+        &:nth-child(2) {
+            flex-grow: 1;
+            margin-left: 16px;
+        }
+    }
+
+    &.mobile {
+        .#{$sell-payment-confirmation} {
+            &__desc {
+                margin-top: 16px;
+            }
+        }
+    }
+}

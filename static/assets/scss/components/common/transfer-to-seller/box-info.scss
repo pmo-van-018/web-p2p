@@ -1,0 +1,15 @@
+$box-info: "box-info";
+
+.#{$box-info} {
+    background: var(--mode-light-dark-100);
+    border-radius: 8px;
+    padding: 16px 24px;
+    @include font-t14r;
+    color: var(--mode-light-dark-1000);
+    border: 2px solid var(--mode-light-dark-200);
+
+    @media (max-width: 768px) {
+        padding: 16px;
+        border: none;
+    }
+}

@@ -1,0 +1,46 @@
+$copy-button: "copy-button";
+
+.#{$copy-button} {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &--disabled {
+    pointer-events: none;
+    margin-top: -4px;
+  }
+
+  &__tooltip {
+    color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+  }
+
+  &__icon {
+    font-size: 16px;
+    margin-left: 4px;
+    @media (min-width: 1024px) {
+      font-size: 16px;
+    }
+
+    &::before {
+      color: var(--mode-light-dark-500);
+    }
+
+    &--active::before {
+      color: $green-500;
+      font-size: 16px;
+    }
+  }
+
+  &.send-crypto-result-custom {
+    .#{$copy-button} {
+      &__icon {
+        font-size: 24px;
+      }
+    }
+  }
+}

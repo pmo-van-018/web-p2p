@@ -1,0 +1,82 @@
+.head-navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  &__header {
+    @include font-t24b;
+    color: $grey-800;
+    margin: 0;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 1rem;
+    color: inherit;
+  }
+}
+
+.user-info {
+  padding: 26px 0;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__name {
+    @include font-t20b;
+    color: $grey-900;
+  }
+  :deep(.wallet-address-qrcode-button) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.user-address {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  &__title {
+    @include font-t12m;
+    color: $grey-400;
+  }
+  &__value {
+    @include font-t12r;
+    color: $grey-900;
+  }
+  &__action {
+    display: flex;
+    align-items: center;
+  }
+  :deep(.copy-button__icon) {
+    font-size: 20px;
+  }
+}
+
+.user-status {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  &__title {
+    @include font-t12m;
+    color: $grey-400;
+  }
+  &__content {
+    padding: 3px 7px;
+    border-radius: 4px;
+    @include font-t12m;
+    &.inactive {
+      background: $grey-100;
+      color: $grey-500;
+    }
+    &.active {
+      color: $green-500;
+      background: $green-50;
+    }
+    &.deleted {
+      color: $red-400;
+      background: $red-50;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+
+.posting-item {
+  padding: 12px 0;
+  border-bottom: solid 1px $grey-100;
+  &__status {
+    padding: 3px 7px;
+    background-color: $grey-100;
+    border-radius: 4px;
+    min-width: 79px;
+    text-align: center;
+  }
+}
+

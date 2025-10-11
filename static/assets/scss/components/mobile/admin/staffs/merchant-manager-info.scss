@@ -1,0 +1,52 @@
+.merchant-manager-info {
+  line-height: 16px;
+  margin-left: 28px;
+
+  &__label {
+    margin-right: 5px;
+    @include font-t10m;
+    color: $grey-400;
+  }
+
+  &__value {
+    @include font-t10m;
+    color: $grey-900;
+  }
+
+  .wallet-address {
+    .copy-button {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    [class^="icon-"],
+    :deep(.copy-button__icon),
+    :deep(.wallet-address-qrcode-button__icon) {
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+
+  .status-box {
+    display: inline-block;
+
+    &__text {
+      padding: 3px 7px;
+      background-color: $grey-100;
+      border-radius: 4px;
+      min-width: 79px;
+      text-align: center;
+      @include font-t12m;
+      &.active-status {
+        background-color: $green-50;
+        color: $green-400;
+      }
+    }
+
+    .switch-toggle {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

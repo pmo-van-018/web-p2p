@@ -1,0 +1,48 @@
+.main {
+  background-color: var(--mode-light-dark-0);
+  &.no-footer {
+    padding-bottom: 4rem;
+  }
+}
+.management-container {
+  width: 100%;
+  display: flex;
+  padding-left: 256px;
+  flex: 1;
+  background-color: #fff;
+
+  @media (max-width: $size-semi-container) {
+    padding-left: 0px;
+  }
+
+  &__chat-supporter {
+    position: fixed;
+    bottom: 55px;
+    right: 12px;
+  }
+  &__chat-supporter-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+.main {
+  &__maintenance {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+    z-index: 1001;
+  }
+  &__header-top {
+    top: 24px;
+    @media (min-width: 768px) {
+      top: 32px;
+    }
+  }
+  &__nav-bar {
+    top: 112px;
+  }
+}
+

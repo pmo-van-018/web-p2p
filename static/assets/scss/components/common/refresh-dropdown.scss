@@ -1,0 +1,135 @@
+$dropdown: "refresh-dropdown";
+
+.#{$dropdown} {
+  &__container {
+    border: 1px solid $orange-600;
+    border-radius: 8px;
+    width: auto;
+    background-color: var(--branding-orange-50);
+    display: flex;
+
+    &:hover {
+      background-color: $orange-700;
+      border-color: var(--branding-orange-500);
+      .#{$dropdown}__placeholder {
+        color: #fff;
+      }
+    }
+  }
+
+  &__placeholder {
+    color: $grey-900;
+    @include font-t16m;
+
+    @include dark-mode {
+      color: var(--mode-light-dark-1000);
+    }
+  }
+
+  &__value {
+    color: $grey-500;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &.disabled {
+    pointer-events: none;
+    touch-action: none;
+    cursor: unset;
+  }
+
+  .icon-loading {
+    font-size: 25px;
+    margin-right: 8px;
+
+    .path1::before {
+      color: $orange-600;
+    }
+  }
+}
+
+.refresh-button {
+  border: 1px solid var(--branding-action-600);
+  border-radius: 8px;
+  color: var(--branding-action-600);
+  width: 154px;
+  background-color: var(--branding-orange-50);
+  display: flex;
+  height: 40px;
+  line-height: 20px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+    border-color: var(--branding-action-700);
+    background-color: var(--branding-action-700);
+  }
+}
+
+:deep(.dropdown-item) {
+  @include font-t14r;
+  color: $grey-900;
+  padding: 6px 12px;
+
+  &:hover {
+    background-color: $orange-50;
+    color: $main-650;
+  }
+
+  font-size: 14px;
+}
+
+:deep(.dropdown-menu) {
+  padding: 0;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 8px 3px 22px 10px rgba(150, 150, 150, 0.11);
+  min-width: 154px;
+}
+
+:deep(.dropdown-toggle) {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  background: none !important;
+  box-shadow: none;
+  min-width: 154px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  overflow: hidden;
+
+  &:hover {
+    filter: brightness(1);
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.refresh-dropdown-icon {
+  font-size: 16px;
+}
+
+.loading {
+  //Css to revolve icon-reload animation
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}

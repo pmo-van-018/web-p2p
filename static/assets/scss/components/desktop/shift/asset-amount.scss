@@ -1,0 +1,32 @@
+.asset-amount {
+  &__item {
+    @include font-t12m;
+    color: #191D23;
+    span {
+      color: #73788B;
+    }
+    @media (min-width: 1500px) {
+      @include font-t16m;
+    }
+  }
+}
+.view-balance {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+  &__text {
+    @include font-t12r;
+    color: #191D23;
+    @media (min-width: 1500px) {
+      @include font-t14r;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

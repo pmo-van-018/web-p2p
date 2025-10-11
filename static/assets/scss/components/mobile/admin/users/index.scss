@@ -1,0 +1,30 @@
+.management-user {
+  &__filter {
+    padding: 18px 0;
+  }
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  &__title {
+    color: $grey-500;
+    @include font-t14m;
+    font-weight: 700;
+    margin: 0;
+  }
+  &__reload {
+    width: 48px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid $main-50;
+    background: #FFFBF5;
+    .icon-reload {
+      font-size: 16px;
+    }
+  }
+}

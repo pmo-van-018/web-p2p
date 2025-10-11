@@ -1,0 +1,147 @@
+// Primary Color Palette
+$yellow-50 : #FFFEE8;
+$yellow-100 : #FFFAC6;
+$yellow-200 : #FEF69F;
+$yellow-300 : #FDF197;
+$yellow-400 : #FBEC5A;
+$yellow-500 : #F9E73C;
+$yellow-600 : #FFDC3F;
+$yellow-700 : #FDC436;
+$yellow-800 : #FAAC2E;
+$yellow-900 : #EB7100;
+
+//Main Color Palette
+$main-50: #FFDEAC;
+$main-600: #FA5F07;
+$main-650: #FF7A00;
+$main-700: #EB7100;
+$main-750: #fb5520;
+
+//neutrals
+$neutrals-10: #F5F6F8;
+$neutrals-200: #E4E4E7;
+$neutrals-300: #BDBDC1;
+$neutrals-400: #A0A0AB;
+$neutrals-500: #51525C;
+$neutrals-600: #0E0E0F;
+
+// light blue palette
+$light-blue-100: #13C7C7;
+
+//neutrals
+$neutrals-600: #0E0E0F;
+
+//Base Color Palette
+$white : #FFFFFF;
+$grey-30 : #F5F7FB;
+$grey-50 : #FAFAFA;
+$grey-100 : #F4F4F5;
+$grey-200 : #E4E4E7;
+$grey-300 : #D1D1D6;
+$grey-400 : #A0A0AB;
+$grey-500 : #70707B;
+$grey-600 : #51525C;
+$grey-700 : #3F3F46;
+$grey-800 : #26272B;
+$grey-900 : #18181B;
+
+// Black
+$black-900: #060606;
+
+//Functional Color Palette
+$green-50 : #E6F8EC;
+$green-100 : #B0EAC3;
+$green-200 : #8AE0A5;
+$green-300 : #54D27C;
+$green-400 : #33C963;
+$green-500 : #00BC3C;
+$green-800 : #05A7A7;
+$orange-50 : #FFF3E9;
+$orange-100 : #FFD8B9;
+$orange-200 : #FFC698;
+$orange-300 : #FFAB68;
+$orange-350: #FFC4A3;
+$orange-400 : #FF9B4B;
+$orange-500 : #FF821E;
+$red-50 : #FDEAE7;
+$red-100 : #F8BDB4;
+$red-200 : #F59D90;
+$red-300 : #F1705E;
+$red-400 : #EE543E;
+$red-500 : #EA290E;
+$blue-50 : #EFF8FF;
+$blue-100 : #D1E9FF;
+$blue-200 : #B2DDFF;
+$blue-300 : #84CAFF;
+$blue-400 : #53B1FD;
+$blue-500 : #1570EF;
+
+//Support Color Palette
+$bullish-green : #45B957;
+$persian-green : #05A7A7;
+$bearish-red : #FF2E2E;
+$bg-policy-color: #ECEEF8;
+
+$n-200: #E2E2E2;
+$n-400: #AFAFAF;
+$n-600: #545454;
+$n-700: #A5A5A5;
+$n-900: #141414;
+
+// Metal
+$metal-50: #F8F9FA;
+$metal-100: #F3F4F7;
+$metal-200: #E8E9EF;
+$metal-300: #E2E4EB;
+$metal-400: #A2A6B4;
+$metal-500: #838899;
+$metal-600: #73788B;
+$metal-700: #49526A;
+$metal-800: #303646;
+$metal-900: #191D23;
+
+//Persian Green
+$persian-green-50: #F3FFFF;
+$persian-green-900: #052C2C;
+
+// Orange color
+$orange-50: #FFFBF5;
+$orange-100: #FEDFCD;
+$orange-200: #FECFB5;
+$orange-300: #FDBF9C;
+$orange-400: #FC9F6A;
+$orange-500: #FB7F39;
+$orange-600: #FA5F07;
+$orange-700: #DC570D;
+$orange-800: #963904;
+$orange-900: #391703;
+
+// Font style
+$font-family: 'Roboto Condensed', sans-serif;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+// Shadow
+$box-shadow-xs: 0px 1px 2px rgba(16, 24, 40, 0.05);
+$box-shadow-sm: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+$box-shadow-md: 0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06);
+$box-shadow-lg: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+$box-shadow-xl: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+$box-shadow-2xl: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
+$box-shadow-3xl: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
+
+//Screen size
+$size-medium: 768px;
+$size-semi-container: 1024px;
+$size-extra-large-container: 1600px;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    'orange-350': $orange-350
+  ),
+  $theme-colors
+);
+

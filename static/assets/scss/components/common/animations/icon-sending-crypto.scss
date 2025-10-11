@@ -1,0 +1,42 @@
+.sending-crypto {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &__dots {
+    position: absolute;
+    right: auto;
+    left: auto;
+    margin: 0 auto;
+    bottom: 10%;
+  }
+  &__loader {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    background: #FFF;
+    box-shadow: -20px 0 #FFF, 20px 0 #FFF;
+    box-sizing: border-box;
+    animation: shadowPulse 1.35s linear infinite;
+  }
+}
+
+@keyframes shadowPulse {
+  33% {
+    background: #FFF;
+    box-shadow: -20px 0 #FF8D07, 20px 0 #FFF;
+  }
+  66% {
+    background: #FF8D07;
+    box-shadow: -20px 0 #FFF, 20px 0 #FFF;
+  }
+  100% {
+    background: #FFF;
+    box-shadow: -20px 0 #FFF, 20px 0 #FF8D07;
+  }
+}

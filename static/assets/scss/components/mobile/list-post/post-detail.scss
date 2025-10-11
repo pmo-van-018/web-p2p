@@ -1,0 +1,345 @@
+:deep(.modal) {
+  background-color: var(--mode-light-dark-popup-dropdown-0);
+
+  .modal-dialog {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .modal-content {
+    border: 0;
+    border-radius: 0;
+    width: 100vw;
+    height: 100%;
+    padding: 0;
+  }
+
+  .modal-body {
+    padding: 0;
+    height: 100%;
+    max-width: 100%;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--mode-light-dark-300);
+  position: relative;
+
+  .title {
+    @include font-t16m;
+
+    &.sell {
+      color: $bearish-red;
+    }
+
+    &.buy {
+      color: $bullish-green;
+    }
+
+    &.network {
+      color: var(--mode-light-dark-700);
+    }
+  }
+
+  .title.crypto {
+    margin: 0 5px;
+    color: var(--mode-light-dark-1000);
+  }
+
+  .icon-cancel {
+    position: absolute;
+    font-size: 16px;
+    right: 16px;
+
+    &::before {
+      color: var(--mode-light-dark-1500);
+    }
+  }
+}
+
+.content-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 16px;
+}
+
+.content-seller {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+
+  .content-person {
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+    align-items: center;
+
+    .content-avatar {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 2px;
+      position: relative;
+
+      @media (min-width: $size-medium) {
+        width: 24px;
+        height: 24px;
+      }
+
+      .text-avatar {
+        @include font-t12b;
+        line-height: unset;
+        margin-bottom: 0px;
+        color: $white;
+        text-transform: uppercase;
+      }
+
+      .avatar {
+        width: 100%;
+      }
+      .avatar-img {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        @media (min-width: $size-medium) {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .status {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        right: -3px;
+        bottom: -1px;
+        border-radius: 100px;
+        padding: 1px;
+        border: 1px solid $white;
+
+        &.offline {
+          background-color: #BDBDC1;
+        }
+
+        &.online {
+          background-color: $green-500;
+        }
+      }
+
+      &.content-avatar--bg-yellow-900 {
+        background-color: $yellow-900;
+      }
+
+      &.content-avatar--bg-yellow-600 {
+        background-color: $yellow-600;
+      }
+
+      &.content-avatar--bg-green-200 {
+        background-color: $green-200;
+      }
+
+      &.content-avatar--bg-green-500 {
+        background-color: $green-500;
+      }
+
+      &.content-avatar--bg-orange-200 {
+        background-color: $orange-200;
+      }
+
+      &.content-avatar--bg-orange-500 {
+        background-color: $orange-500;
+      }
+    }
+
+    .text-seller {
+      @include font-t12r;
+      margin-bottom: 0;
+      color: var(--mode-light-dark-1500);
+      @include ellipsis-multiline;
+      max-width: 100%;
+      width: calc(clamp(200px, 40vw, 300px));
+    }
+  }
+
+  .text-status {
+    @include font-t12r;
+    margin-bottom: 0px;
+    color: var(--mode-light-dark-600);
+  }
+}
+
+.text-price {
+  @include font-t12r;
+  margin-bottom: 0px;
+  color: $grey-400;
+  margin-top: 8px;
+}
+
+.content-price {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+  color: $bullish-green;
+
+  &.sell-price {
+    color: $bearish-red;
+  }
+
+  .price {
+    @include font-t20b;
+    margin-bottom: 0px;
+  }
+
+  .unit {
+    margin-left: 8px;
+    @include font-t16b;
+    margin-bottom: 0px;
+  }
+}
+
+.content-buy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 22px;
+
+  .content-amount {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .content-limit {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .text-limit {
+        display: flex;
+        flex: 1;
+        color: var(--mode-light-dark-600);
+        @include font-t12r;
+        margin-bottom: 0px;
+      }
+
+      .text-money {
+        display: flex;
+        flex: 4.5;
+        color: var(--mode-light-dark-1000);
+        @include font-t12r;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.input-crypto {
+  margin-bottom: 18px;
+
+  &:deep(.error) {
+    position: absolute;
+  }
+}
+
+.sell-btn {
+  &:not(:disabled) {
+    background-color: $bearish-red;
+  }
+}
+
+.balance {
+  position: absolute;
+  @include font-t12r;
+  color: var(--mode-light-dark-600);
+  top: 74px;
+  right: 0;
+}
+
+.bank-select {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  margin-bottom: 34px;
+
+  .label {
+    @include font-t14m;
+    color: var(--mode-light-dark-1000);
+  }
+
+  .btn-add-bank {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    isolation: isolate;
+    border: 1px dashed $yellow-800;
+    border-radius: 8px;
+    @include font-t14m;
+    color: $yellow-900;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+}
+
+.timeout {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--mode-light-dark-300);
+
+  .timeout-title {
+    @include font-t14r;
+    color: $grey-400;
+  }
+
+  .timeout-value {
+    @include font-t14m;
+    color: var(--mode-light-dark-700);
+  }
+}
+
+.text-title-note {
+  @include font-t14m;
+  margin-bottom: 12px;
+  color: var(--mode-light-dark-800);
+  &__detail {
+    color: var(--mode-light-dark-700);
+  }
+}
+
+.rule {
+  width: 100%;
+  max-height: 140px;
+  overflow-y: auto;
+
+  .text-note,
+  .text-rule {
+    @include font-t14r;
+    color: $grey-600;
+  }
+
+  .text-note {
+    padding-left: 18px;
+  }
+
+  .text-rule {
+    margin-bottom: 0;
+  }
+}

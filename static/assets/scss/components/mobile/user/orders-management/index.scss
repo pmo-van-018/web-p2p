@@ -1,0 +1,13 @@
+.management-orders {
+  &__item {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--mode-light-dark-300);
+  }
+  &__note {
+    padding: 8px;
+    border-radius: 8px;
+    background: $yellow-100;
+    @include font-t14r;
+    color: $grey-900;
+  }
+}

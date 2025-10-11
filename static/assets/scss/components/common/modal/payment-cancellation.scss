@@ -1,0 +1,88 @@
+$payment-cancellation: "payment-cancellation";
+
+.#{$payment-cancellation} {
+    &__img {
+        width: 120px;
+        height: 120px;
+        margin: 24px auto 0;
+        @media (max-width: 768px) {
+            margin-top: 16px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+    &__desc {
+        margin-top: 24px;
+        color: var(--mode-light-dark-900);
+        text-align: center;
+        @include font-t16r;
+        @media (max-width: 768px) {
+            margin-top: 16px;
+        }
+        :deep(span) {
+            color: var(--mode-light-dark-1500);
+            @include font-t16m;
+        }
+    }
+
+    &__note-group {
+        @include font-t14r;
+        font-weight: 500;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__note {
+        align-items: center;
+        display: flex;
+        margin-top: 12px;
+        padding: 12px;
+        border-left: 3px solid #13C7C7;
+        background: var(--mode-light-dark-badget-pastel-green);
+    }
+
+    &__note-icon {
+        font-size: 20px;
+        margin-right: 14px;
+        &::before {
+            color: $light-blue-100;
+        }
+    }
+
+    &__note-desc {
+        color: var(--mode-light-dark-1500);
+        text-align: justify;
+        @include font-t14r
+    }
+
+    &__action {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+        gap: 1rem;
+    }
+
+    &__action-btn {
+        min-width: unset;
+        padding: 10px;
+        width: calc(50% - 8px);
+    }
+    &__verify {
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &.mobile {
+        .#{$payment-cancellation}__action-btn {
+            width: calc(50% - 4px);
+        }
+
+        .#{$payment-cancellation}__note {
+            display: block;
+        }
+    }
+}

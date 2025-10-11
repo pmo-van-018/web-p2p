@@ -1,0 +1,14 @@
+.layout-info {
+  border-radius: 8px;
+  background: var(--mode-light-dark-100);
+  &__head {
+    @include font-t12b;
+    color: var(--mode-light-dark-1000);
+    margin-bottom: 8px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+  }
+}

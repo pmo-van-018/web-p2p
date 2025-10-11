@@ -1,0 +1,32 @@
+.blacklist-table {
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .blacklist-item {
+    @include font-t14r;
+    color: #191D23;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    vertical-align: middle;
+    &__text {
+      margin-left: 4px;
+    }
+    &__icon {
+      font-size: 24px;
+      &.icon-external {
+        &:before {
+          color: #2FB8B8;
+        }
+      }
+      &.icon-logo {
+        &:before {
+          color: #FF8D07;
+        }
+      }
+    }
+  }
+}

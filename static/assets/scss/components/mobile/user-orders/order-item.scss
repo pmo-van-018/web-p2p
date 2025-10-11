@@ -1,0 +1,84 @@
+$order-item: "order-item";
+
+.#{$order-item} {
+    padding: 14px 0 18px;
+    border-bottom: solid 1px $grey-100;
+    :deep(.copy-button ) {
+        .icon-copy{
+            margin-left: 4px;
+        }
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px
+    }
+    &__type {
+        @include font-t14m;
+        color: $bullish-green;
+        span {
+            color: $grey-600;
+        }
+    }
+    &__status {
+        display: flex;
+        align-items: center;
+        @include font-t12m;
+        color: $grey-400;
+        span {
+            font-size: 12px;
+            font-weight: 900;
+            &::before {
+                color: $grey-600;
+            }
+        }
+    }
+    &__field {
+        display: flex;
+        column-gap: 4px;
+        margin-top: 4px;
+        color: $grey-400;
+        @include font-t10m;
+        span {
+            color: $grey-600;
+            @include font-t12m;
+        }
+    }
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8px;
+    }
+    &__end-time {
+        color: $grey-400;
+        @include font-t10m;
+    }
+    &__price {
+        display: flex;
+        color: $bullish-green;
+        @include font-t16b;
+        &--bold {
+            margin-right: 2px;
+            text-decoration: underline;
+            @include font-t16b;
+        }
+    }
+    &__substatus {
+        color: $grey-600;
+        max-width: 185px;
+        @include font-t10m;
+    }
+    // SELL STYLE
+    &.sell {
+        .#{$order-item} {
+            &__type {
+                color: $bearish-red;
+            }
+            &__price {
+                color: $bearish-red;
+            }
+        }
+    }
+}

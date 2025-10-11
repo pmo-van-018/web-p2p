@@ -1,0 +1,75 @@
+$sell-confirmed-payment-received: "sell-confirmed-payment-received";
+
+.#{$sell-confirmed-payment-received} {
+
+    &__desc {
+        color: $grey-500;
+        margin-top: 24px;
+        text-align: justify;
+        @include font-t14r
+    }
+
+    &__info {
+        background: $grey-100;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-top: 24px;
+        padding: 16px 24px;
+        row-gap: 16px;
+    }
+
+    &__info-row {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4px;
+    }
+    
+    &__info-title {
+        color: $grey-400;
+        @include font-t14r;
+    }
+
+    &__info-value {
+        color: $grey-900;
+        @include font-t14m;
+    }
+
+    &__checkbox {
+        margin-top: 24px;
+        padding-left: 2.25rem;
+        :deep(.custom-control-input:checked~.custom-control-label:before) {
+            background-color: $yellow-900;
+            border-color: $yellow-900;
+            color: $white;
+        }
+        :deep(.custom-control-label) {
+            color: $grey-600;
+            @include font-t14m;
+            &::before, &::after {
+                top: 0;
+                left: -2.25rem;
+                width: 1.25rem;
+                height: 1.25rem;
+                box-shadow: none;
+                border-radius: 6px;
+            }
+        }
+    }
+
+    &__action {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+    }
+
+    &__action-btn {
+        min-width: unset;
+        padding: 10px 64px;
+        &:nth-child(2) {
+            flex-grow: 1;
+            margin-left: 16px;
+        }
+    }
+}

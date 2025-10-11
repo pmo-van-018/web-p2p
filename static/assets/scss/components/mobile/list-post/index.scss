@@ -1,0 +1,30 @@
+.posting-list {
+  min-height: inherit;
+  &__wrapper {
+    &.disable {
+      opacity: 0.3;
+    }
+  }
+  &__table {
+    min-height: inherit;
+  }
+  :deep(.common-list__empty) {
+    min-height: auto;
+  }
+  :deep(.common-list__loading) {
+    min-height: auto;
+  }
+  &__item {
+    background-color: var(--mode-light-dark-0);
+    border-radius: 8px;
+    &--even {
+      background-color: var(--mode-light-dark-100);
+    }
+    :deep(.base-button__success[disabled]) {
+      background-color: rgba(69, 185, 87, 1);
+    }
+    :deep(.base-button__danger[disabled]) {
+      background-color: rgba(255, 46, 46, 1);
+    }
+  }
+}

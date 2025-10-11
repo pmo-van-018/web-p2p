@@ -1,0 +1,43 @@
+.tx-guide {
+  &__steps {
+    margin: 12px 0;
+    border-radius: 4px;
+    background: var(--mode-light-dark-200);
+    max-height: 368px;
+    overflow-y: scroll;
+    padding: 8px;
+    .step {
+      &__title {
+        color: $light-blue-100;
+        @include font-t14b;
+        line-height: 150%
+      }
+      &__desc {
+        color: var(--mode-light-dark-1500);
+        @include font-t14r;
+        line-height: 150%;
+        :deep(span) {
+          font-weight: 700;
+        }
+      }
+      &__image {
+        text-align: center;
+        margin: 16px 0;
+        img {
+          max-width: 140px;
+        }
+      }
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  height: 77px;
+  border-radius: 11px;
+  background: #D9D9D9;
+}

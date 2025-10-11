@@ -1,0 +1,40 @@
+.page-404 {
+    padding: 30px 16px 130px;
+    gap: 32px;
+    background-color: var(--mode-light-dark-0);
+    @media (max-width: 768px) {
+        gap: 16px;
+        height: calc(100vh - 56px);
+    }
+    &__img {
+        img {
+            max-width: 610px;
+            height: auto;
+            width: 100%;
+        }
+    }
+    &__txt {
+        @include font-t24b;
+        text-align: center;
+        color: var(--mode-light-dark-1500);
+        @media (max-width: 768px) {
+            @include font-t16b;
+        }
+    }
+    &__btn-group {
+        max-width: 560px;
+    }
+    &__btn {
+        text-align: center;
+        padding: 10px;
+
+        &.back {
+            color: $main-600;
+            border-radius: 8px;
+            margin-right: 24px;
+            @media (max-width: 768px) {
+                margin-right: 12px;
+            }
+        }
+    }
+}

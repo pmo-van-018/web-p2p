@@ -1,0 +1,31 @@
+.status-change {
+  background-color: #F4F4F5;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 3px 4px;
+  &__inner {
+    @include font-t12m;
+    color: #70707B;
+    position: relative;
+    padding-left: 16px;
+    &:after {
+      content: "";
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 3px;
+      bottom: 0;
+      width: 7px;
+      height: 7px;
+      border-radius: 100px;
+      background-color: #70707B;
+    }
+  }
+  &__online {
+    color: #00BC3C;
+    background-color: #E6F6EE;
+    &:after {
+      background-color: #00BC3C;
+    }
+  }
+}

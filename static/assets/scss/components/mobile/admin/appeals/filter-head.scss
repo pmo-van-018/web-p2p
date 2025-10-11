@@ -1,0 +1,36 @@
+.appeal-filter {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+    flex: 0 0 80%;
+  }
+  &__form {
+    width: 70%;
+  }
+  &__icon {
+    &:before {
+      color: $grey-500;
+    }
+    &.active {
+      &:before {
+        color: $yellow-800;
+      }
+    }
+  }
+  :deep(.bv-no-focus-ring) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  :deep(.custom-control) {
+    padding: 0;
+  }
+  button.outline:disabled {
+    background: none;
+    color: $grey-700;
+    border: 1px solid $grey-300
+  }
+}

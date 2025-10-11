@@ -1,0 +1,32 @@
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  .icon-user-tick,
+  .icon-user-minus {
+    margin: 24px auto;
+    font-size: 120px;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-direction: column;
+  }
+  .content {
+    @include font-t16m;
+    color: var(--mode-light-dark-900);
+  }
+  .description {
+    @include font-t14r;
+    text-align: center;
+    color: var(--mode-light-dark-700);
+  }
+
+  .button-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+  }
+}

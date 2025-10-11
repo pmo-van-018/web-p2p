@@ -1,0 +1,49 @@
+.payments {
+    flex: 1;
+    .icon-add-primary {
+        font-size: 24px;
+        &:before {
+            color: $main-600;
+        }
+    }
+    &__label {
+        color: var(--mode-light-dark-1500);
+    }
+    &__btn {
+        padding: 10px 24px 10px 16px;
+        background-color: var(--mode-light-dark-100);
+        .base-button {
+            min-width: auto;
+            padding: 0;
+            .icon-add {
+                color: $main-600;
+                font-size: 24px;
+            }
+        }
+    }
+    &__note {
+        margin-bottom: 16px;
+        text-align: justify;
+        color: var(--mode-light-dark-800);
+    }
+    &__title {
+        padding: 12px 36px;
+        position: relative;
+        background-color: var(--mode-light-dark-100);
+        color: var(--mode-light-dark-1500);
+        border-radius: 8px 8px 0 0;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            background-color: $orange-600;
+            left: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__content {
+        padding: 16px 16px 34px
+    }
+}

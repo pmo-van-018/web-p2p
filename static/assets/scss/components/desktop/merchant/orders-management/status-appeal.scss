@@ -1,0 +1,28 @@
+.appeal-status {
+  border-radius: 6px;
+  border: 1.5px solid #13C7C7;
+  background: rgba(5, 167, 167, 0.05);
+  padding: 4px 12px;
+  display: inline-block;
+  &.appeal {
+    border: 1.5px solid rgba(255, 141, 7, 0.20);
+    background: rgba(255, 141, 7, 0.05);
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: center;
+  }
+  &__icon {
+    width: 16px;
+    height: 16px;
+  }
+  &__text {
+    @include font-t12m;
+    color: #05A7A7;
+    &.appeal {
+      color: $main-600;
+    }
+  }
+}

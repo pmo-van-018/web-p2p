@@ -1,0 +1,85 @@
+.head-navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  &__header {
+    @include font-t20b;
+    color: $grey-700;
+    margin: 0;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 5px;
+    color: inherit;
+    margin-bottom: 10px;
+  }
+}
+
+.user-info {
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+  }
+  &__item {
+    flex: 0 0 42%;
+  }
+  &__name {
+    @include font-t20b;
+    color: $grey-900;
+    margin-bottom: 10px;
+  }
+  &__content {
+    &.limit-width {
+      max-width: 1254px;
+    }
+  }
+}
+
+.user-address {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  @include font-t12m;
+  color: $grey-600;
+  &__title {
+    font-weight: 400;
+  }
+  &__value {
+    font-weight: 600;
+  }
+}
+
+.user-status {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  &__content {
+    padding: 3px 7px;
+    border-radius: 4px;
+    @include font-t12m;
+    &.inactive {
+      background: $grey-100;
+      color: $grey-500;
+      .status-dot {
+        fill: $grey-100;
+      }
+    }
+    &.active {
+      color: $green-500;
+      background: $green-50;
+      .status-dot {
+        fill: $green-500;
+      }
+
+    }
+    &.deleted {
+      color: $red-400;
+      background: $red-50;
+      .status-dot {
+        fill: $red-400;
+      }
+    }
+  }
+}

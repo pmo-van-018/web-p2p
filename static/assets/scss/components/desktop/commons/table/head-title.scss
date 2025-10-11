@@ -1,0 +1,39 @@
+.head-title {
+  &--cursor {
+    cursor: pointer;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    &.center {
+      justify-content: center;
+      text-align: center;
+    }
+    &.right {
+      justify-content: flex-end;
+    }
+  }
+  &__arrow {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    &.desc {
+      .icon-sort-increase {
+        &:before {
+          color: var(--mode-light-dark-400);
+        }
+      }
+    }
+    &.asc {
+      .icon-sort-decrease {
+        &:before {
+          color: var(--mode-light-dark-400);
+        }
+      }
+    }
+  }
+  &__icon {
+    font-size: 5px;
+  }
+}

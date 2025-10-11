@@ -1,0 +1,88 @@
+button {
+    background: $bullish-green;
+    border: none;
+    border-radius: 8px;
+    color: $grey-50;
+    outline: none;
+    min-width: 240px;
+    padding: 10px 16px;
+    @include font-t14m;
+
+    &:disabled {
+        background: $grey-300;
+        cursor: not-allowed;
+        pointer-events: none;
+        touch-action: none;
+    }
+
+    &.primary {
+        background: $main-600;
+        color: $white;
+        transition: 0.3s;
+
+        &:hover {
+            background: $main-600;
+            color: $white;
+            filter: brightness(1);
+        }
+
+        &:disabled {
+            background: $grey-300;
+            color: $grey-100;
+        }
+    }
+
+    &.secondary {
+        background: $grey-200;
+        color: $grey-900;
+
+        &:hover {
+            background: $grey-400;
+            filter: brightness(1);
+        }
+
+        &:disabled {
+            background: $grey-300;
+            color: $grey-100;
+        }
+    }
+
+    &.outline {
+        background: none;
+        border: 1px solid $grey-300;
+        color: $grey-700;
+
+        &:hover {
+            background: $grey-100;
+            filter: brightness(1);
+        }
+
+        &:disabled {
+            background: $grey-50;
+            border: 1px solid $grey-100;
+            color: $grey-300;
+        }
+    }
+
+    &.link {
+        background: none;
+        color: $main-600;
+        min-width: 0;
+        padding: 0;
+
+        &:hover {
+            color: $main-600;
+            filter: brightness(1);
+        }
+
+        &:disabled {
+            color: $grey-300;
+        }
+    }
+
+    &.plain {
+        background: none;
+        border: 1px solid $yellow-800;
+        color: $grey-900;
+    }
+}

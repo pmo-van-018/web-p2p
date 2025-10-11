@@ -1,0 +1,24 @@
+:deep(.filter-head-table__selected) {
+  display: flex;
+  flex-wrap: wrap;
+}
+:deep(.filter-head-table__left) {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  padding-right: 12px;
+}
+:deep(.vue-daterange-picker) {
+  min-width: 212px;
+  width: 16vw;
+  max-width: 260px;
+}
+:deep(.dropdown-toggle) {
+  width: 10vw;
+  max-width: 180px;
+}
+:deep(.search-group) {
+  width: 20vw;
+  min-width: 250px;
+  max-width: 364px;
+}

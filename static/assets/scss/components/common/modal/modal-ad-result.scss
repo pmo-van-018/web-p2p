@@ -1,0 +1,72 @@
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: white;
+  .icon-finish-circle {
+    font-size: 120px;
+  }
+  .description {
+    @include font-t14r;
+    text-align: center;
+  }
+  .divider {
+    height: 1px;
+    background: $grey-100;
+  }
+  .ad-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    padding: 16px 24px;
+    background: $grey-50;
+    border-radius: 8px;
+    .row-info {
+      @include font-t14m;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      .label {
+        color: $grey-400;
+        font-weight: 400;
+      }
+      .value {
+        display: flex;
+        color: $grey-900;
+        align-items: center;
+        gap: 8px;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+        &--info {
+          gap: 4px;
+          .icon-info {
+            font-size: 14px;
+            &::before {
+              color: var(--mode-light-dark-500);
+            }
+          }
+        }
+      }
+    }
+    .offline,
+    .online {
+      border-radius: 4px;
+      padding: 5px;
+      line-height: 16px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .offline {
+      background: $grey-100;
+      color: $grey-400;
+    }
+    .online {
+      background: $green-50;
+      color: $green-400;
+    }
+  }
+}

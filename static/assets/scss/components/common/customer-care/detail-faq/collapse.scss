@@ -1,0 +1,38 @@
+.question-collapse {
+  border-radius: 8px;
+  background: var(--mode-light-dark-100);
+  padding: 1rem;
+  cursor: pointer;
+  &__title {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--mode-light-dark-1500);
+    font-weight: 600;
+    position: relative;
+    margin: 0;
+  }
+  &__inner-header {
+    display: flex;
+    gap: 5px;
+  }
+  &__icon {
+    font-size: 24px;
+    transform: rotate(90deg);
+    &:before {
+      color: var(--mode-light-dark-1500);
+    }
+  }
+  &.visible-collapse {
+    .question-collapse {
+      &__title {
+        color: #05A7A7;
+      }
+      &__icon {
+        transform: rotate(270deg);
+        &:before {
+          color: #05A7A7;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+$bank-qr: "bank-qr";
+
+.#{$bank-qr} {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  .qrcode, .note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .qrcode {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    .qrcode-img {
+      width: 120%;
+      margin-top: -15px;
+    }
+  }
+  .note {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--mode-light-dark-1500);
+    text-align: center;
+  }
+}

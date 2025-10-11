@@ -1,0 +1,119 @@
+.public-view {
+  background-color: var(--mode-light-dark-0);
+  &__tabs {
+    width: 100%;
+    display: flex;
+  }
+  &__header {
+    background-color: var(--mode-light-dark-100);
+    .merchant-name {
+      padding: 16px 0;
+      .avatar-img {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+      }
+      .avatar-character {
+        @include font-t48b;
+        color: #fff;
+      }
+      .name {
+        @include font-t16m;
+        @include ellipsis-multiline;
+        color: var(--mode-light-dark-900);
+        overflow: hidden;
+        width: 300px;
+        display: inline;
+      }
+    }
+    .merchant-data {
+      padding-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        gap: 30px;
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    padding-top: 15px;
+  }
+  ::v-deep {
+    .overview-item__ttl {
+      max-width: 50%;
+    }
+    .overview-item__content {
+      @include font-t12m;
+    }
+    .overview__buy-sell {
+      text-transform: lowercase;
+    }
+    .overview__number {
+      @include font-t16m;
+      color: #05A7A7;
+      sup {
+        @include font-t10r;
+      }
+    }
+  }
+}
+.buy-table {
+  .merchant-table__pagination .base-pagination {
+    justify-content: flex-end;
+  }
+  .avatar-container {
+    display: flex;
+    align-items: center;
+    .avatar-item__right {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      justify-content: space-around;
+      @include font-t14r;
+      margin-bottom: 0px;
+      color: $grey-900;
+      .text-top {
+        font-weight: 500;
+      }
+    }
+  }
+  .price {
+    color: $grey-900;
+    @include font-t20r;
+    margin-bottom: 0px;
+  }
+  .content-amount {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .content-limit {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .text-limit {
+        display: flex;
+        flex: 1;
+        color: var(--mode-light-dark-600);
+        max-width: 88px;
+        @include font-t14r;
+        margin-bottom: 0px;
+      }
+
+      .text-money {
+        display: flex;
+        flex: 2.5;
+        color: var(--mode-light-dark-1000);
+        @include font-t14r;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

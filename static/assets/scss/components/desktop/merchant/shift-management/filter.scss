@@ -1,0 +1,38 @@
+.management-filter {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &__text {
+    @include font-t20m;
+    color: #000;
+  }
+
+  :deep(.dropdown-filter) {
+    height: 40px;
+
+    @media (max-width: 1200px) {
+      .dropdown-toggle {
+        max-width: 100%;
+      }
+    }
+  }
+
+  ::v-deep {
+    .date-picker-multiple-group__range {
+      flex: 1;
+    }
+
+    .date-picker-multiple-group__container {
+      min-width: 310px;
+    }
+  }
+}

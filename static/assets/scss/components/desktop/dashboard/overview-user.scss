@@ -1,0 +1,14 @@
+.grid-overview {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+  &__large-card {
+    padding: 43px;
+  }
+  &__item {
+    &--spanning-column-item {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+}

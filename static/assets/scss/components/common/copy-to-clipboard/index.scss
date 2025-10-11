@@ -1,0 +1,21 @@
+.copy-content {
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    @include font-t16b;
+    margin: 0;
+    color: $grey-600;
+    &--success {
+      color: $bullish-green;
+    }
+    &--danger {
+      color: $bearish-red;
+    }
+  }
+  .copy-button__icon {
+    font-size: 11px;
+    margin-left: 4px;
+  }
+}

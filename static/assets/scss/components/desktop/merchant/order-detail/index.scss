@@ -1,0 +1,40 @@
+.order-detail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 24px;
+
+    .page-title {
+        @include font-t24b;
+        color: $grey-900;
+        margin: 24px 0;
+    }
+
+    &__content {
+        display: flex;
+        width: 100%;
+        column-gap: 24px;
+        margin: 32px 0;
+    }
+
+    @media (max-width: $size-semi-container) {
+        padding: 0px;
+
+        .page-title {
+            @include font-t20b;
+            margin: 0;
+            padding: 16px;
+            padding-bottom: 12px;
+            background-color: #fff;
+            border-bottom: 1px solid $grey-200;
+            margin-bottom: 12px;
+        }
+
+        &__content {
+            flex-direction: column;
+            row-gap: 12px;
+            margin: 12px 0;
+            padding: 0 16px;
+        }
+    }
+}

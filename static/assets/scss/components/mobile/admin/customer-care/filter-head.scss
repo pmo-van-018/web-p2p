@@ -1,0 +1,25 @@
+.filter-header {
+  background-color: $white;
+  padding: 6px 0;
+  &__text {
+    @include font-t14b;
+    color: #51525C;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    svg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

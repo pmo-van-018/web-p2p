@@ -1,0 +1,34 @@
+.refresh-button {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include font-t16m;
+  color: var(--branding-action-600);
+  background-color: var(--branding-orange-50);
+  border: 1px solid var(--branding-action-600);
+  border-radius: 8px;
+  transition: 0.3s;
+  min-width: 100%;
+  font-weight: 600;
+  &:hover {
+    color: #fff;
+    border-color: var(--branding-action-700);
+    background-color: var(--branding-action-700);
+    .icon-reload  {
+      .path1::before {
+        color: var(--branding-action-200);
+      }
+      .path2::before {
+        color: #fff;
+      }
+    }
+  }
+  .icon-reload  {
+    font-size: 20px;
+    margin-right: 8px;
+    .path1::before {
+      color: $main-600;
+    }
+  }
+}

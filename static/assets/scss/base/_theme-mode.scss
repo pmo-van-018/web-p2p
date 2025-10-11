@@ -1,0 +1,108 @@
+/* Default colors - same colors for light mode so we only need to change for dark mode */
+:root {
+  // update variable to mode light dark
+  --mode-light-dark-0: #fff;
+  --mode-light-dark-100: #{$metal-50};
+  --mode-light-dark-200: #{$metal-100};
+  --mode-light-dark-300: #{$metal-200};
+  --mode-light-dark-400: #{$metal-300};
+  --mode-light-dark-500: #{$metal-400};
+  --mode-light-dark-600: #{$metal-500};
+  --mode-light-dark-700: #{$metal-600};
+  --mode-light-dark-800: #{$metal-700};
+  --mode-light-dark-900: #{$metal-800};
+  --mode-light-dark-1000: #{$metal-900};
+  --mode-light-dark-1500: #000;
+  --mode-light-dark-badget-pastel-green: #{$persian-green-50};
+  --mode-light-dark-popup-dropdown-0: #fff;
+  --mode-light-dark-badget-orange: #{$orange-50};
+  --function-loading-link-600: #009EF6;
+  --branding-primary-600: #2FB8B8;
+  --branding-blue-50: #F8FCFF;
+  --branding-blue-100: #CCECFD;
+  --branding-orange-50: #FFFBF5;
+  --branding-orange-100: #{$orange-100};
+  --branding-orange-500: #FB7F39;
+  --branding-action-200: #FECFB5;
+  --branding-action-600: #{$orange-600};
+  --branding-action-700: #{$orange-700};
+  --skeleton-loading-color: rgb(226 232 240);
+  --card-payment-background-color: radial-gradient(241.98% 84.09% at 1.29% 1.61%,
+      rgba(255, 186, 7, 0.20) 0%,
+      rgba(255, 154, 36, 0.00) 95.83%),
+    linear-gradient(140deg, #FFF9F0 7.50%, #FDF6EC 100%);
+  --system-chat-background-color: linear-gradient(90deg, rgba(255, 161, 51, 0.16) 0%, rgba(255, 161, 51, 0.00) 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  .theme-light-dark {
+    // update variable to mode light dark
+    --mode-light-dark-0: #090B0E;
+    --mode-light-dark-100: #{$metal-900};
+    --mode-light-dark-200: #{$metal-800};
+    --mode-light-dark-300: #{$metal-700};
+    --mode-light-dark-400: #{$metal-600};
+    --mode-light-dark-500: #{$metal-500};
+    --mode-light-dark-600: #{$metal-400};
+    --mode-light-dark-700: #{$metal-300};
+    --mode-light-dark-800: #{$metal-200};
+    --mode-light-dark-900: #{$metal-100};
+    --mode-light-dark-1000: #{$metal-50};
+    --mode-light-dark-1500: #fff;
+    --mode-light-dark-badget-pastel-green: #{$persian-green-900};
+    --mode-light-dark-popup-dropdown-0: #{$metal-900};
+    --mode-light-dark-badget-orange: #{$orange-900};
+    --function-loading-link-600: #009EF6;
+    --function-sell-warning-error-600: #FF2E2E;
+    --branding-red-50: #390303;
+    --branding-red-100: #9B1C1C;
+    --branding-blue-50: #091B25;
+    --branding-blue-100: #005F94;
+    --branding-orange-50: #391703;
+    --branding-orange-500: #FC9F6A;
+    --branding-orange-100: #{$orange-800};
+    --branding-action-200: #FECFB5;
+    --branding-action-600: #{$orange-600};
+    --branding-action-700: #{$orange-700};
+    --card-payment-background-color: #{$orange-900};
+    --system-chat-background-color: #{$orange-900};
+
+    .modal-content {
+      background-color: #{$metal-900};
+    }
+
+    --skeleton-loading-color: rgb(51 65 85);
+  }
+
+  .header {
+    .menu {
+      .btn-secondary {
+        color: #fff !important;
+      }
+
+      .dropdown-nav {
+        .dropdown-toggle::after {
+          border-top-color: #fff !important;
+        }
+      }
+
+      .dropdown-notify {
+        .icon::before {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+.close {
+  color: var(--mode-light-dark-1500);
+
+  &:hover {
+    color: var(--mode-light-dark-1500);
+  }
+}
+
+body .home {
+  background-color: var(--mode-light-dark-0);
+}

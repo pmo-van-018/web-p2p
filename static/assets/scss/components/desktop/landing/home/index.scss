@@ -1,0 +1,55 @@
+$currentPage: 'home-page';
+
+.#{$currentPage} {
+  font-family: 'Roboto Condensed', sans-serif;
+  overflow: hidden;
+  overflow-y: auto;
+  min-height: 100vh;
+  background-color: $metal-50;
+
+  &__container {
+    @media (min-width: 1500px) {
+      max-width: 1408px;
+      margin: 0 auto;
+    }
+  }
+
+  .base-button {
+    @include font-t14m;
+    font-weight: 600;
+
+    @media (min-width: 576px) {
+      font-weight: 700;
+      font-size: pxVw(16);
+      line-height: pxVw(24);
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: pxVwMobile(20);
+    line-height: pxVwMobile(30);
+    text-align: center;
+    color: $black-900;
+
+
+    .highlight {
+      position: relative;
+      color: $main-600;
+    }
+
+    @media (min-width: 576px) {
+      font-size: pxVwTablet(32);
+      line-height: pxVwTablet(48);
+    }
+
+    @media (min-width: 992px) {
+      font-size: pxVw(32);
+      line-height: pxVw(48);
+    }
+  }
+
+  .object-fit-contain {
+    object-fit: contain;
+  }
+}

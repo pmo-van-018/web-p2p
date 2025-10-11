@@ -1,0 +1,13 @@
+.filter-head {
+  :deep(.search-group) {
+    min-width: 260px;
+  }
+}
+:deep(.vue-daterange-picker) {
+  min-width: 212px;
+  width: 25vw;
+  max-width: 300px;
+}
+:deep(.filter-head-table__selected) {
+  flex-wrap: wrap;
+}

@@ -1,0 +1,28 @@
+$wallet-address-qrcode-button: 'wallet-address-qrcode-button';
+
+.#{$wallet-address-qrcode-button} {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+
+  &__icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 4px;
+    vertical-align: middle;
+    @media (min-width: 1024px) {
+      font-size: 20px;
+    }
+    &::before {
+      color: $grey-400;
+    }
+  }
+
+  &__tooltip {
+    color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+  }
+}

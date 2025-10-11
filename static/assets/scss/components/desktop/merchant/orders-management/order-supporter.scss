@@ -1,0 +1,39 @@
+.order-supporter {
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    &.horizontal {
+      flex-direction: row;
+      gap: 16px;
+    }
+  }
+  &__nickname {
+    @include font-t10m;
+    color: $grey-900;
+    word-break: break-word;
+    @media (min-width: 1480px) {
+      @include font-t12m;
+    }
+  }
+  &__supporter-status {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    span {
+      @include font-t12m;
+      font-weight: $font-weight-medium;
+      color: $grey-400;
+    }
+    &.resolved {
+      span {
+        color: $green-500;
+      }
+    }
+  }
+}

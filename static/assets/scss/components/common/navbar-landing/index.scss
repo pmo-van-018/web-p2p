@@ -1,0 +1,72 @@
+.nav-top {
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .logo {
+      width: 116px;
+      padding-bottom: 4px;
+    }
+  }
+
+  &__container {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  :deep(.sidebar-menu__icon) {
+    &::before {
+      color: #fff;
+    }
+  }
+
+  :deep(.sidebar-menu__label) {
+    font-size: 8px;
+    line-height: 12px;
+    position: absolute;
+    top: 1px;
+    right: 7px;
+    color: #fff;
+    border-radius: 30px;
+    background: linear-gradient(104deg, #FA5F07 2.59%, #FA0750 107.25%);
+    font-weight: 500;
+    width: 21px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  :deep(.sidebar-menu__p2p) {
+    @include font-t14b;
+    position: relative;
+    display: flex;
+    gap: 8px;
+    padding: 6px 16px;
+    align-items: center;
+  }
+
+  :deep(.sidebar-menu__text) {
+    @include font-t18b;
+    position: relative;
+    color: #FA5F07;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 32px;
+  }
+
+  :deep(.base-button) {
+    padding: 6px 8px;
+    font-size: 14px;
+    border-radius: 6px;
+    height: 32px;
+    @include font-t16m;
+  }
+}

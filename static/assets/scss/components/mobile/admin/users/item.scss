@@ -1,0 +1,64 @@
+.card-item {
+  &__head {
+    margin-bottom: 8px;
+  }
+  &__nickname {
+    @include font-t12m;
+    color: $grey-900;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:not(:last-child) {
+      padding-bottom: 8px;
+    }
+  }
+  &__container {
+    padding: 24px 0;
+    &:not(&--last) {
+      border-bottom: 1px solid $grey-100;
+    }
+  }
+  
+  .copy-button,
+  .wallet-address-qrcode-button {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  :deep(.copy-button__icon),
+  :deep(.wallet-address-qrcode-button__icon) {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  &__icon {
+    font-size: 24px;
+  }
+  &__text {
+    @include font-t10m;
+    color: $grey-400;
+  }
+  &__value {
+    @include font-t12m;
+    color: $grey-800;
+    max-width: 100%;
+    font-weight: 600;
+    @include ellipsis-multiline;
+    text-align: right;
+    &.underline {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    &.order-count {
+      font-weight: 700;
+    }
+
+    &.buy-order {
+      color: $bullish-green;
+    }
+
+    &.sell-order {
+      color: $bearish-red;
+    }
+  }
+}

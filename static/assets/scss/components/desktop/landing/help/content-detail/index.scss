@@ -1,0 +1,16 @@
+.help-content {
+  &__text {
+    color: var(--mode-light-dark-1500);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 8px;
+  }
+  &__image {
+    width: 90%;
+    border-radius: 8px;
+    @media (min-width: 768px) {
+      width: 68%;
+    }
+  }
+}

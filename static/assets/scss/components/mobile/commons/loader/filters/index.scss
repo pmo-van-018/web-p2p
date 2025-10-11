@@ -1,0 +1,21 @@
+.filter-loader {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 80%;
+  }
+  &__right {
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  :deep(.b-skeleton-text) {
+    margin: 0;
+  }
+}

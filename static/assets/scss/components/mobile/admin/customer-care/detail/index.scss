@@ -1,0 +1,18 @@
+.detail-support {
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 1rem;
+  }
+  &__head-left, &__head-right {
+    font-size: 24px;
+    &:before {
+      color: $neutrals-600;
+    }
+  }
+  &__head-center {
+    @include font-t14b;
+    color: #000;
+  }
+}

@@ -1,0 +1,97 @@
+$footer: 'footer';
+.#{$footer} {
+    bottom: 0;
+    background: $white;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid $grey-200;
+    @media (max-width: 767px) {
+        height: auto;
+    }
+    @media (max-width: 767px) {
+        &__inner {
+            padding: 12px 0 16px;
+        }
+    }
+    &__text{
+        @include font-t14m;
+        color: $grey-900;
+    }
+    &__dot:after {
+        content:"\A";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background:  $grey-900;
+        display: inline-block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        @media (prefers-color-scheme: dark) {
+            background: $white;
+        }
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+        height: inherit;
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+    .footer-nav {
+        &__list {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            @media (max-width: 767px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 8px 43px;
+            }
+        }
+        &__item {
+            list-style-type: none;
+            &:not(:last-child) {
+                margin-right: 32px;
+                @media (max-width: 767px) {
+                    margin-right: 0;
+                }
+            }
+        }
+        &__link {
+            color: #000;
+            @include font-t14r;
+            &:hover {
+            color: $yellow-900;
+        }
+       }
+    }
+    &.dark-footer {
+        background: #000;
+        border-top: none;
+        .footer {
+            &__text {
+                color: $white;
+            }
+        }
+        .footer-nav {
+            &__link {
+                color: $white;
+                &:hover {
+                    color: $grey-400;
+                }
+            }
+        }
+    }
+    @media (prefers-color-scheme: dark) {
+        background: var(--mode-light-dark-0);
+    }
+}
+.mobile {
+    height:48px;
+}

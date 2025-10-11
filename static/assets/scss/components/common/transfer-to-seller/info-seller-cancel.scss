@@ -1,0 +1,13 @@
+$info-seller-cancel: "info-seller-cancel";
+
+.#{$info-seller-cancel} {
+  background: $grey-100;
+  border-radius: 8px;
+  padding: 16px 24px;
+  @include font-t14r;
+  &.mobile {
+    color: $grey-900;
+    margin-bottom: 20px;
+    padding: 16px;
+  }
+}

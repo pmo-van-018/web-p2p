@@ -1,0 +1,8 @@
+:deep(.van-dropdown-menu__item) {
+  display: flex;
+  justify-content: flex-start;
+  flex: 0 0 50%;
+}
+:deep(.van-popup) {
+  background-color: var(--mode-light-dark-popup-dropdown-0);
+}

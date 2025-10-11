@@ -1,0 +1,58 @@
+.stepper {
+  position: relative;
+
+  &__title {
+    @include font-t14m;
+    color: $white;
+    margin-bottom: 8px;
+
+    @media (min-width: 992px) {
+      @include font-t24m;
+    }
+  }
+
+  &__item {
+    padding: 8px;
+    border-radius: 6px;
+
+    @media (min-width: 992px) {
+      padding: 1rem;
+    }
+
+    &.second {
+      background: url("/assets/images/components/desktop/landing/stepper/stepper-2.svg") no-repeat;
+      background-size: cover;
+      background-position: top;
+    }
+
+    &.first {
+      background: url("/assets/images/components/desktop/landing/stepper/stepper-1.svg") no-repeat;
+      background-size: cover;
+      background-position: top;
+    }
+
+    &.three {
+      background: url("/assets/images/components/desktop/landing/stepper/stepper-3.svg") no-repeat;
+      background-size: cover;
+      background-position: top;
+    }
+  }
+
+  &__desc {
+    @include font-t12r;
+    color: $white;
+
+    @media (min-width: 992px) {
+      @include font-t16r;
+    }
+
+    p {
+      margin-bottom: 4px;
+    }
+
+    a {
+      color: $main-600;
+      font-weight: $font-weight-semi-bold;
+    }
+  }
+}

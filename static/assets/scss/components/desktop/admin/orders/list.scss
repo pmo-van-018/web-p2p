@@ -1,0 +1,98 @@
+.orders {
+  &__body {
+    :deep(.base-table) {
+      min-height: calc(100vh - 250px);
+    }
+
+  }
+  &__action-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+  }
+  &__action-message {
+    min-width: auto;
+    padding: 6px;
+  }
+  &__message-icon {
+    cursor: pointer;
+  }
+}
+.description-text {
+  cursor: pointer;
+  &--default-cursor {
+    cursor: default;
+  }
+  &__title {
+    @include font-t12r;
+    font-weight: $font-weight-semi-bold;
+    color: $grey-600;
+    &--underline {
+      text-decoration: underline;
+      display: inline-block;
+    }
+  }
+  &__text {
+    @include font-t12r;
+    @media (min-width: 1480px) {
+      @include font-t14r;
+    }
+  }
+  &__ellipsis {
+    @include ellipsis-multiline;
+  }
+}
+.delay-animation {
+  animation: fadeinLoad 1s forwards;
+  opacity: 0;
+}
+.order-actions {
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    align-items: center;
+    @media (min-width: 1600px) {
+      gap: 20px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-end;
+    cursor: pointer;
+    &:hover {
+      .order-actions__text {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__text {
+    @include font-t14m;
+    color: var(--mode-light-dark-700);
+  }
+  &__button-action {
+    min-width: auto;
+    padding: 0;
+    &:disabled {
+      background-color: transparent;
+    }
+  }
+  &__message-icon {
+    width: 24px;
+  }
+  &__confirm-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid $neutrals-200;
+    padding-top: 1rem;
+  }
+}
+.transaction-error {
+  @include font-t16m;
+  color: $metal-800;
+}

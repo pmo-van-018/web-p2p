@@ -1,0 +1,129 @@
+$countdown: "countdown";
+
+.#{$countdown} {
+    display: flex;
+    align-items: center;
+    &__title {
+        margin-right: 13px;
+        color: var(--mode-light-dark-1000);
+        @include font-t16m;
+    }
+    &__container {
+        display: flex;
+        column-gap: 4px;
+        align-items: center;
+        @include font-t12m;
+        @media (min-width: 768px) {
+            @include font-t14m;
+        }
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    &__mark {
+        color: var(--mode-light-dark-1500);
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+        background: $main-600;
+        border-radius: 4px;
+        color: $white;
+    }
+    &.warning {
+        .#{$countdown} {
+            &__item {
+                background: $red-500;
+                color: white;
+            }
+        }
+    }
+    &.countdown-action-mobile {
+        .#{$countdown} {
+            &__title {
+                @include font-t16m;
+            }
+            &__inner {
+                position: absolute;
+                top: 30px;
+                right: 0;
+            }
+        }
+        &.big-title {
+            .#{$countdown} {
+                &__title {
+                    @include font-t20b;
+                    margin-right: 15px;
+                }
+                &__inner {
+                    top: 35px;
+                }
+            }
+        }
+        &.end-time-waiting-custom {
+            .#{$countdown} {
+                &__container {
+                    top: 28px;
+                }
+            }
+        }
+        &.sell-payment-custom {
+            .#{$countdown} {
+                &__container {
+                    top: 28px;
+                }
+            }
+        }
+    }
+    .appeal-limit {
+        @include font-t16m;
+        color: $main-600;
+        margin: 0;
+    }
+    &__loader {
+        width: 2px;
+        height: 12px;
+        display: block;
+        margin: 2px auto;
+        position: relative;
+        background: currentColor;
+        color: #2FB8B8;
+        box-sizing: border-box;
+        animation: animloader 0.3s 0.3s linear infinite alternate;
+        &:after, &:before {
+            content: '';
+            width: 2px;
+            height: 12px;
+            background: currentColor;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 4px;
+            box-sizing: border-box;
+            animation: animloader 0.3s  0.45s  linear infinite alternate;
+        }
+        &:before {
+            left: -4px;
+            animation-delay: 0s;
+        }
+    }
+}
+@keyframes animloader {
+    0%   {
+        height: 15px;
+        color: #2FB8B8;
+    }
+    50% {
+        height: 10px;
+        color: #59CACA;
+    }
+    100% {
+        color: #97E4E4;
+        height: 2px;
+    }
+}

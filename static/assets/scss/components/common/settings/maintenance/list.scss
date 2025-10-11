@@ -1,0 +1,35 @@
+.maintenance-section {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &__inner, &__list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__list {
+    flex-wrap: wrap;
+  }
+  &__item {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding: 2px 7px;
+    border-radius: 200px;
+    background-color: var(--mode-light-dark-200);
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__text {
+    @include font-t14m;
+    color: var(--mode-light-dark-800);
+  }
+}

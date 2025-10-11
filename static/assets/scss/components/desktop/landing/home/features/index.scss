@@ -1,0 +1,162 @@
+.feature {
+  background-image: url("/assets/images/components/mobile/home/join-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  position: relative;
+  padding: 44px 0;
+
+  @media (min-width: 576px) and (max-width: 991px) {
+    padding: pxVwTablet(16) 0;
+
+    .home-page__title {
+      justify-content: start !important;
+      margin-left: -16px;
+      font-size: pxVwTablet(20);
+      text-align: left;
+
+      .ano-trade-logo {
+        max-width: pxVwTablet(100);
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    background-image: url("/assets/images/components/desktop/home/join-banner.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 26px;
+  }
+
+  &__wrapper {
+    @media (min-width: 992px) {
+      flex: 0 0 38%;
+      display: flex;
+    }
+  }
+
+  &__thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    @media (min-width: 576px) and (max-width: 991px) {
+      margin-top: -15%;
+    }
+
+    img {
+      width: pxVwMobile(296);
+      height: pxVwMobile(180);
+      object-fit: contain;
+
+      @media (min-width: 576px) {
+        width: 100%;
+        height: 100%;
+        margin: 0 -5% 0 0;
+      }
+
+      @media (min-width: 992px) {
+        width: auto;
+        height: pxVw(500);
+        margin: 0 -24% 0 0;
+      }
+    }
+  }
+
+  &__inner {
+
+    @media (min-width: 576px) {
+      display: flex;
+      gap: pxVwTablet(8);
+      justify-content: space-between;
+      padding: 0;
+      margin: 0 -15px;
+
+      .feature__stepper-swiper,
+      .feature__wrapper {
+        width: 50%;
+        padding: 0;
+      }
+    }
+
+    @media (min-width: 992px) {
+      flex-direction: row-reverse;
+      margin: unset;
+    }
+
+    @media (min-width: 1500px) {
+      max-width: 1408px;
+      margin: 0 auto;
+      margin-top: 3rem;
+    }
+
+  }
+
+  &__stepper-swiper {
+    display: block;
+    margin-top: 2rem;
+    padding: 1rem;
+
+    @media (min-width: 576px) {
+      margin-top: 0;
+    }
+
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  &__steps {
+    position: relative;
+    z-index: 2;
+    display: none;
+
+    @media (min-width: 992px) {
+      display: block;
+    }
+  }
+
+  :deep(.home-page__title) {
+    margin-bottom: 0;
+    color: #fff;
+
+    .highlight {
+      &::after {
+        width: 220px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      max-width: 1200px;
+      margin: 0 auto 50px;
+      text-align: center;
+
+      .highlight {
+        &::after {
+          width: 310px;
+        }
+      }
+    }
+  }
+
+  .ano-trade-logo {
+    width: 120px;
+  }
+
+
+  @media (min-width: 576px) {
+    .ano-trade-logo {
+      max-width: pxVwTablet(200);
+    }
+  }
+
+  @media (min-width: 992px) {
+    .ano-trade-logo {
+      width: 220px;
+    }
+  }
+}

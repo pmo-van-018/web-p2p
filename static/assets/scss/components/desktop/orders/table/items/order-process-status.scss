@@ -1,0 +1,22 @@
+.order-process {
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
+    font-size: 16px;
+    &.icon-processed {
+      &:before {
+        color: $green-500;
+      }
+    }
+  }
+  &__text {
+    @include font-t12r;
+    font-weight: 500;
+    color: $grey-400;
+    &.processed {
+      color: #00BC3C;
+    }
+  }
+}

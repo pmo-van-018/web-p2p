@@ -1,0 +1,118 @@
+.tx-confirmation {
+  &__icon {
+    text-align: center;
+    margin: 36px 0;
+  }
+
+  &__desc {
+    @include font-t14r;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--mode-light-dark-900);
+    margin: 12px 0 16px;
+  }
+
+  &__form {
+    @include font-t14r;
+
+    .form-title {
+      color: var(--mode-light-dark-1500);
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        color: $grey-600;
+      }
+
+      .icon-info {
+        &::before {
+          color: var(--mode-light-dark-500);
+        }
+      }
+
+      p {
+        cursor: pointer;
+        margin: 0;
+        @include font-t10r;
+        color: var(--function-loading-link-600);
+      }
+    }
+
+    .form-value {
+      textarea {
+        resize: none;
+        padding: 8px 16px;
+        border-radius: 8px;
+        border: 1px solid var(--mode-light-dark-500);
+        background: var(--mode-light-dark-0);
+        color: var(--mode-light-dark-700);
+
+        &.has-value {
+          font-weight: bold;
+        }
+
+        &.error {
+          border: 1px solid $red-500;
+          box-shadow: 0px 0px 0px 3px rgba(255, 0, 0, 0.15);
+
+        }
+      }
+    }
+
+    .form-error {
+      @include font-t14r;
+      font-weight: bold;
+      color: $red-500;
+      padding: 8px 0;
+    }
+
+    .form-consult {
+      @include font-t14r;
+      color: $red-500;
+      padding: 8px 0;
+
+      :deep(span) {
+        color: $red-400;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__action {
+    button {
+      &.disable {
+        cursor: not-allowed;
+      }
+
+      &.loading {
+        background: $main-700;
+      }
+    }
+
+    &-loading {
+      width: 26px;
+      animation: rotation 2s infinite linear;
+
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(359deg);
+        }
+      }
+    }
+  }
+}
+
+:deep(.tooltip-inner) {
+  max-width: 300px;
+  padding: 12px;
+  border-radius: 8px;
+  color: var(--mode-light-dark-0);
+  background: var(--mode-light-dark-1500);
+  backdrop-filter: blur(2px);
+}

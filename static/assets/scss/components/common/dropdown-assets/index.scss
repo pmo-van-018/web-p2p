@@ -1,0 +1,132 @@
+:deep(.dropdown-menu) {
+  padding: 8px;
+  box-shadow: 0 5px 12px 0 #1018280D;
+  border: 1px solid var(--mode-light-dark-300);
+  border-radius: 6px;
+  width: 100%;
+}
+.dropdown-body-asset {
+  .icon-layer {
+    font-size: 20px;
+  }
+  .icon-check {
+    font-size: 20px;
+    &:before {
+      color: #2FB8B8;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  &__text {
+    @include font-t14r;
+    color: var(--mode-light-dark-700);
+    &.active {
+      color: var(--mode-light-dark-900);
+    }
+  }
+  &__item {
+    padding-top: 9.5px;
+    padding-bottom: 9.5px;
+    padding-left: 40px;
+    padding-right: 16px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:hover, &.checked {
+      background: #F3F4F7;
+    }
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+  &__inner {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+.dropdown-assets {
+  .b-dropdown {
+    width: 100%;
+  }
+  :deep(.dropdown-toggle) {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid var(--mode-light-dark-300);
+    border-radius: 8px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+.dropdown-header-asset {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__list {
+    overflow: hidden;
+    width: 530px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+    background-color: var(--mode-light-dark-200);
+    padding: 1.5px 8px;
+  }
+  &__text {
+    @include font-t14m;
+    color: var(--mode-light-dark-800);
+  }
+  &__img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+  &__left-text {
+    @include font-t14r;
+    line-height: 20px;
+    color: var(--mode-light-dark-500);
+  }
+  .icon-layer {
+    font-size: 20px;
+    &:before {
+      color: var(--mode-light-dark-700);
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+  &__arrow {
+    font-size: 13px;
+    &:before {
+      color: #D1D1D6;
+    }
+  }
+}

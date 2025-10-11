@@ -1,0 +1,86 @@
+.notification {
+    background-color: var(--mode-light-dark-0);
+    &__title {
+        padding: 16px 48px;
+        background-color: var(--mode-light-dark-100);
+        color: var(--mode-light-dark-1500);
+        @media (max-width: 1600px) {
+            padding: 16px 24px
+        }
+    }
+    &__content {
+        margin: 12px 48px;
+        @media (max-width: 1600px) {
+            margin: 12px 24px;
+        }
+    }
+    &__icon-group {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        span {
+            color: $grey-500;
+            &::before {
+                color: $grey-500;
+            }
+            &.disabled {
+                pointer-events: none;
+                opacity: 0.5;
+            }
+        }
+    }
+    &__icon-item {
+        font-size: 24px;
+        cursor: pointer;
+    }
+    &__toolbar {
+        padding: 24px 0;
+        span {
+            font-size: 30px;
+        }
+    }
+    &__check-box {
+        padding-left: 2.25rem;
+        :deep(.custom-control-input:checked~.custom-control-label:before) {
+            background-color: $yellow-900;
+            border-color: $yellow-900;
+            color: $white;
+        }
+        :deep(.custom-control-label) {
+            cursor: pointer;
+            color: var(--mode-light-dark-1000);
+            @include font-t14m;
+            line-height: 23px;
+            &::before, &::after {
+                top: 0;
+                left: -2.25rem;
+                width: 1.25rem;
+                height: 1.25rem;
+                box-shadow: none;
+                border-radius: 6px;
+                border-color: var(--mode-light-dark-1000);
+                background: transparent;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+        }
+    }
+    &__read-acticon-group {
+        display: flex;
+        align-items: center;
+    }
+    .mail-box {
+        &.disabled {
+            color: $grey-400;
+        }
+        margin-left: 20px;
+        gap: 10px;
+        font-family: $font-family;
+        display: flex;
+        font-weight: 500;
+        cursor: pointer;
+        color: var(--mode-light-dark-1000);
+        font-size: 14px;
+        align-items: center;
+    }
+}

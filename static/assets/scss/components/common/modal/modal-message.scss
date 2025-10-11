@@ -1,0 +1,35 @@
+$modal-message: 'modal-message';
+
+.#{$modal-message} {
+  text-align: center;
+  &.mt-32 {
+    margin-top: 32px;
+  }
+  &__img {
+    margin-top: 24px;
+    font-size: 80px;
+  }
+  &__title {
+    color: $red-400;
+    margin-top: 24px;
+    @include font-t16m;
+    font-weight: 600;
+  }
+  &__desc {
+    color: var(--mode-light-dark-1000);
+    margin-top: 8px;
+    @include font-t14r;
+  }
+  &__action {
+    margin-top: 16px;
+  }
+  &__thumb {
+    img {
+      width: 170px;
+      height: 170px;
+    }
+  }
+  :deep(.supporter-max-order) {
+    font-weight: bold;
+  }
+}

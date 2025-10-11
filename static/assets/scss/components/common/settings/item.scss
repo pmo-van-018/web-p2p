@@ -1,0 +1,128 @@
+.setting-item {
+  &__title {
+    padding-left: 34px;
+  }
+  &__description {
+    padding-left: 34px;
+    @media (max-width: 750px) {
+      @include font-t12r;
+    }
+  }
+  &__icon {
+    font-size: 24px;
+    float: left;
+    &:before {
+      color: $grey-400
+    }
+  }
+  @media (min-width: 751px) {
+    &__left {
+      width: 28%;
+      padding-right: 30px;
+    }
+    &__right {
+      width: 72%;
+      gap: 10px;
+    }
+  }
+  @media (max-width: 750px) {
+    &__right {
+      padding-left: 16px;
+    }
+    &__text {
+      @include font-t12r;
+      padding-right: 12px;
+    }
+  }
+  &__button {
+    padding: 10px 52px;
+    background: #E4E4E7;
+    border-radius: 8px;
+    color: $grey-900;
+    flex-shrink: 0;
+
+    &:hover {
+      background-color: #faac2e;
+      transition-duration: 0.3s;
+    }
+
+    @media (max-width: 750px) {
+      padding: 6px 28px;
+    }
+  }
+  &__content {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 750px) {
+      display: block;
+      padding: 0;
+      margin-bottom: 32px;
+    }
+  }
+  .icon-success {
+    color: $green-500;
+    font-size: 14px;
+    &:before {
+      color: $green-500;
+    }
+    @media (max-width: 375px) {
+      display: none;
+    }
+  }
+  .icon-close-circle1 {
+    color: $grey-300;
+    font-size: 14px;
+    &:before {
+      color: $grey-300;
+    }
+  }
+}
+
+:deep(.bank-list) {
+  display: flex;
+  flex: none;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  line-height: 2;
+  .bank-item {
+    margin-right: 5px;
+    .bank-img {
+      width: 20px;
+      height: 20px;
+      margin-right: 4px;
+    }
+    &--large {
+      .bank-img {
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+      }
+    }
+    .bank-name {
+      color: $grey-900;
+    }
+  }
+}
+@media (max-width: 767px) {
+  :deep(.bank-list--column)  {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+:deep(.limit-fee-time) {
+  .limit-fee-time__money {
+    white-space: nowrap;
+  }
+  @media (max-width: 750px) {
+    .limit-fee-time__item {
+      display: block;
+      margin-bottom: 8px;
+    }
+    .limit-fee-time__comma {
+      display: none;
+    }
+  }
+}

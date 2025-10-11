@@ -1,0 +1,55 @@
+.role-management-filter {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+    flex: 0 0 60%;
+  }
+  &__form {
+    width: 70%;
+  }
+  &__icon {
+    &:before {
+      color: $grey-500;
+    }
+    &.active {
+      &:before {
+        color: $orange-600;
+      }
+    }
+  }
+
+  .status-radio-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 10px 0 !important;
+
+    :deep(.c-primary-radio) {
+      @include font-t14r;
+      color: $grey-400;
+
+      &.active {
+        font-weight: 500;
+        color: $grey-900;
+      }
+    }
+  }
+
+  ::v-deep .form-content__body {
+    border-top: 1px solid $grey-100;
+  }
+
+  ::v-deep .van-ellipsis {
+    max-width: 130px;
+  }
+
+  ::v-deep .outline {
+    &:focus, &:active {
+      background: none;
+    }
+  }
+}

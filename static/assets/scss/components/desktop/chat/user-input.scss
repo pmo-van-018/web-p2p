@@ -1,0 +1,63 @@
+.user-input {
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  &__action {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    &:hover {
+      color: $persian-green;
+      .user-input__action-icon {
+        font-size: 24px;
+        &:before {
+          color: $persian-green;
+        }
+      }
+    }
+  }
+  &__action-icon {
+    font-size: 24px;
+    &:before {
+      color: var(--mode-light-dark-500);
+    }
+  }
+  &__suggestion {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: visibility 0s, opacity 0.2s ease-in;
+    z-index: 2;
+    &.visible {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0s, opacity 0.2s ease-out;
+      position: absolute;
+      background: var(--mode-light-dark-200);
+      backdrop-filter: blur(29.5px);
+      left: 0;
+      bottom: 64px;
+      max-height: 100%;
+      width: auto;
+      overflow: hidden;
+      height: auto;
+      .suggestion-message {
+        max-height: 500px;
+      }
+    }
+  }
+  &__input {
+    flex: 1;
+    border-radius: 8px;
+    border: none;
+    @include font-t14r;
+    overflow: auto;
+    padding: 10px 12px;
+    resize: none;
+    width: 100%;
+    background-color: var(--mode-light-dark-0);
+    color: var(--mode-light-dark-1500);
+  }
+}

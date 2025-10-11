@@ -1,0 +1,21 @@
+.report-action {
+  min-width: 73px;
+  background: var(--mode-light-dark-400);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.1s ease;
+  border: 1.5px solid transparent;
+  color: var(--mode-light-dark-800);
+  &.active {
+    background: var(--mode-light-dark-badget-orange);
+    border: 1.5px solid $main-600;
+    color: $main-600;
+  }
+  &__content {
+    padding: 8px 16px;
+    @include font-t14m;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

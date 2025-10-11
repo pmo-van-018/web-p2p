@@ -1,0 +1,32 @@
+.tool-bar-loader {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__inner {
+    flex: 0 0 60%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &__type, &__filter {
+    display: flex;
+    align-items: center;
+  }
+  &__type {
+    flex: 0 0 22%;
+    gap: 2px;
+  }
+  &__filter {
+    flex: 0 0 80%;
+    gap: 12px
+  }
+  &__action {
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: flex-end;
+  }
+}

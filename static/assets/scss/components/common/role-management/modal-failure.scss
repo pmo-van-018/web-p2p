@@ -1,0 +1,70 @@
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: $white;
+
+  .icon-close-circle {
+    margin-top: 30px;
+    font-size: 120px;
+  }
+
+  .description {
+    @include font-t14r;
+    text-align: center;
+  }
+
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    padding: 16px 24px;
+    background: $grey-50;
+    border-radius: 8px;
+
+    .row-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .label {
+        @include font-t14r;
+        color: $grey-400;
+      }
+
+      .value {
+        display: flex;
+        @include font-t14m;
+        color: $grey-900;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .wallet-address {
+        gap: 0;
+      }
+
+      [class^="icon-"],
+      :deep(.copy-button__icon) {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      .status {
+        padding: 3px 7px;
+        background-color: $grey-100;
+        border-radius: 4px;
+        min-width: 79px;
+        text-align: center;
+        &.active-status {
+          background-color: $green-50;
+          color: $green-400;
+        }
+      }
+    }
+  }
+}

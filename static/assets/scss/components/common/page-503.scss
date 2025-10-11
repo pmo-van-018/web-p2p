@@ -1,0 +1,37 @@
+.page-503 {
+    padding: 30px 16px 130px;
+    gap: 32px;
+    background-color: #fff;
+    @media (max-width: 768px) {
+        gap: 16px;
+    }
+    &__img {
+        img {
+            max-width: 100%;
+            height: auto;
+            aspect-ratio: auto 622 / 464;
+        }
+    }
+    &__txt {
+        @include font-t24b;
+        margin-bottom: 24px;
+        @media (max-width: 768px) {
+            @include font-t20b;
+            margin-bottom: 16px;
+        }
+    }
+    &__note {
+        @include font-t20r;
+        @media (max-width: 768px) {
+            @include font-t14r;
+        }
+    }
+    &__date {
+        @include font-t32b;
+        color: $yellow-800;
+        @media (max-width: 768px) {
+            @include font-t20b;
+        }
+    }
+   
+}

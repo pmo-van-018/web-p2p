@@ -1,0 +1,11 @@
+$index: "user-order-detail";
+
+.#{$index} {
+  background: var(--mode-light-dark-0);
+  min-height: calc(100vh - 56px);
+  &__chat-action {
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+  }
+}

@@ -1,0 +1,59 @@
+.tab-suggestion {
+  background-color: var(--mode-light-dark-200);
+  padding: 12px 16px;
+  &__nav {
+    border-bottom: 2px solid var(--mode-light-dark-300)
+  }
+  &__active-tab {
+    @include scrollbars(3px, $grey-200, $white);
+    overflow: auto;
+    height: calc(100vh - 150px);
+    @media (min-width: 1024px) {
+      max-height: 344px;
+    }
+  }
+  :deep(.nav-tabs) {
+    .nav-link {
+      @include font-t14m;
+      color: var(--mode-light-dark-600);
+      border-color: transparent transparent var(--mode-light-dark-300);
+      border-width: 2px;
+      padding: 9.5px 0;
+      border-radius: 0;
+      background: transparent;
+      &.active {
+        color: var(--mode-light-dark-1000);
+        border-color: transparent transparent var(--branding-action-600);
+      }
+    }
+    .tab-content {
+      @include scrollbars(3px, $grey-200, $white);
+      overflow: auto;
+    }
+  }
+}
+.card-content {
+  padding: 16px 0;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+    grid-gap: 16px;
+  }
+  &__item {
+    border-radius: 6px;
+    background-color: var(--mode-light-dark-0);
+    padding: 1rem;
+    color: var(--mode-light-dark-900);
+    @include font-t14r;
+    cursor: pointer;
+    border: 2px solid transparent;
+    p {
+      margin: 0;
+    }
+    &:hover {
+      border: 2px solid #C1F5F5;
+      background-color: var(--branding-primary-600);
+      color: var(--mode-light-dark-0);
+    }
+  }
+}

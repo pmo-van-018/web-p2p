@@ -1,0 +1,123 @@
+.ui-settings {
+  @include font-t16r;
+  &__header {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 24px;
+    background-color: $grey-50;
+    @media (min-width: 1600px) {
+      padding: 16px 48px;
+    }
+    @media (max-width: 750px) {
+      background-color: #fff;
+      padding: 10px 16px
+    }
+    &--title {
+      @include font-t20b;
+      color: #51525C;
+    }
+    &--desc {
+      color: #49526A;
+      margin-top: 10px;
+    }
+  }
+  &__content {
+    padding: 24px 48px;
+  }
+  &__section {
+    padding: 24px;
+    border-radius: 6px;
+    border: 1px solid #E8E9EF;
+    color: #73788B;
+    .section__header {
+      display: flex;
+      justify-content: space-between;
+      .header-wrapper {
+        .title {
+          margin-bottom: 8px;
+          display: flex;
+          align-items: center;
+          img {
+            height: 28px;
+            margin-right: 8px;
+          }
+          span {
+            color: #303646;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px;
+          }
+        }
+        .desc {
+          color: #73788B;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+        }
+      }
+      .action {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .section__content {
+      margin: 24px 0;
+      display: flex;
+      justify-content: space-between;
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        .title {
+          font-weight: $font-weight-medium;
+          color: #000;
+        }
+        .edit, .cancel, .icon-edit, .icon-cancel {
+          font-weight: $font-weight-medium;
+          margin-right: 6px;
+          cursor: pointer;
+        }
+        .edit, .icon-edit:before {
+          color: #2FB8B8;
+        }
+      }
+      .preview {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 45%;
+        flex-direction: column;
+        gap: 16px;
+        &__wrapper {
+          .img-wrapper {
+            display: flex;
+            gap: 16px;
+          }
+          .banner-img {
+            width: 135px;
+            height: 75px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-radius: 4px;
+            margin-top: 16px;
+            img {
+              height: 100%;
+            }
+            &.empty {
+              justify-content: center;
+              background: #F8F9FA;
+              cursor: pointer;
+              img {
+                height: auto;
+              }
+            }
+            &.mobile {
+              width: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

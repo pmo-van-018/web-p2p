@@ -1,0 +1,81 @@
+.sidebar-menu {
+  display: flex;
+  align-items: center;
+  &__wrapper {
+    background: #0A0D1A url("/assets/images/components/mobile/about/banner-sidebar.jpg") no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &__action {
+    padding: 45px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .base-button {
+      width: 162px;
+      height: 40px;
+      border-radius: 6px;
+    }
+  }
+
+  &__icon {
+    font-size: 24px;
+
+    &:before {
+      color: #51525C;
+    }
+  }
+
+  :deep(.b-sidebar) {
+    z-index: 1040;
+  }
+}
+
+.navbar-content {
+  padding: 16px 8px;
+  &__list {
+    padding: 0;
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #9496A8;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 16px;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  &__icon {
+    margin-right: 1rem;
+  }
+
+  &__icon-active {
+    display: none;
+  }
+  &__icon-inactive {
+    display: block;
+  }
+
+  .nuxt-link-exact-active {
+    background: #FFEED4;
+    color: #FD9800;
+    font-weight: 700;
+    .navbar-content {
+      &__icon-active {
+        display: block;
+      }
+      &__icon-inactive {
+        display: none;
+      }
+    }
+  }
+}

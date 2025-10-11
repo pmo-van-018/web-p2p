@@ -1,0 +1,87 @@
+.extra-appeal-time {
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    @include font-t16r;
+    color: $grey-400;
+    margin-bottom: 12px;
+  }
+  &__icon {
+    padding: 24px 0;
+    display: flex;
+    justify-content: center;
+  }
+  &__icon-extra {
+    font-size: 80px;
+    @media (min-width: 768px) {
+      font-size: 120px;
+    }
+    &:before {
+      color: $yellow-900;
+    }
+  }
+  &__type {
+    font-weight: 500;
+    color: $grey-600;
+    .buy {
+      color: $bullish-green;
+    }
+    .sell {
+      color: $bearish-red;
+    }
+  }
+  &__extra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  &__datetime {
+    flex: 0 0 45%;
+  }
+  &__actions {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    .base-button {
+      flex: 0 0 46%;
+      min-width: auto;
+    }
+  }
+  :deep(.dropdown-menu) {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  :deep(.dropdown-filter) {
+    height: 40px;
+    width: 100%;
+  }
+  :deep(.reportrange-text) {
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+  }
+  :deep(.vue-daterange-picker) {
+    width: inherit;
+  }
+  :deep(.date-picker-custom) {
+    width: 100%;
+    height: 40px;
+  }
+}
+
+.date-picker-custom {
+  &__date {
+    line-height: initial;
+    display: initial;
+    @include font-t14r;
+    color: $grey-900;
+    &--grey {
+      color: $grey-400;
+    }
+  }
+}

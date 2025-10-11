@@ -1,0 +1,97 @@
+.upload-banner {
+  @include font-t16r;
+  &__section {
+    .header {
+      margin-top: 16px;
+      color: #FA5F07;
+      .step {
+        background: #FA5F07;
+        padding: 0px 8px;
+        color: #FFF;
+        margin-right: 8px;
+      }
+    }
+    .content {
+      padding: 16px 0 0;
+      &.background {
+        width: 467px;
+        height: 232px;
+        .uploaded-img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .uploaded-img {
+        width: 480px;
+        position: relative;
+        .icon-cancel {
+          position: absolute;
+          right: 8px;
+          top: 8px;
+          &:before {
+            color: #838899;
+          }
+        }
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+      .empty {
+        border-radius: 6px;
+        border: 1px dashed #E2E4EB;
+        padding: 0 16px 16px;
+        background: #F8F9FA;
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer;
+        img {
+          width: 56px;
+          margin: 26px 0;
+        }
+        p {
+          color: #303646;
+          font-weight: 500;
+        }
+        span {
+          margin-bottom: 16px;
+        }
+      }
+      &.multi-file {
+        padding: 16px ;
+        border: 1px solid #E8E9EF;
+        margin: 16px 0;
+        & > p {
+          text-align: center;
+          margin: 16px 0 0;
+          color: #303646;
+          font-weight: 500;
+          font-size: 14px;
+        }
+        .animations {
+          display: flex;
+          justify-content: space-between;
+          .animation, .uploaded-img {
+            width: 135px;
+            height: 117px;
+          }
+          .empty {
+            padding: 0 16px;
+            img {
+              width: 32px;
+              margin: 26px 0 16px;
+            }
+            p {
+              color: #303646
+            }
+          }
+        }
+      }
+    }
+  }
+  &__action {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+  }
+}

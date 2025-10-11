@@ -1,0 +1,66 @@
+.management-orders {
+  &__head {
+    padding: 20px 0 24px;
+  }
+  &__body {
+    :deep(.base-table) {
+      min-height: calc(100vh - 422px);
+    }
+  }
+  &__note {
+    padding: 8px;
+    border-radius: 8px;
+    background: $yellow-100;
+    @include font-t14r;
+    color: $grey-900;
+    @media (min-width: 700px) {
+      padding: 1rem;
+    }
+  }
+  .order-no {
+    @include font-t14m;
+    color: var(--mode-light-dark-700);
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block;
+    &--cursor-default {
+      cursor: default;
+    }
+  }
+  :deep(.order-amount__fiat-value) {
+    color: var(--mode-light-dark-1500);
+  }
+}
+
+.description-text {
+  &__title {
+    @include font-t14r;
+    color: var(--mode-light-dark-1500);
+    &--underline {
+      text-decoration: underline;
+    }
+  }
+}
+.view-more {
+  display: flex;
+  justify-content: flex-end;
+  &__action {
+    cursor: pointer;
+    @include font-t14m;
+    color: var(--mode-light-dark-1500);
+    text-decoration: underline;
+    transition: all 0.3s linear;
+    &:hover {
+      color: $main-600;
+    }
+  }
+}
+
+.delay-animation {
+  animation: fadeinLoad 1s forwards;
+  opacity: 0;
+}
+.order-datetime {
+    @include font-t14m;
+    color: var(--mode-light-dark-700);
+}

@@ -1,0 +1,19 @@
+:deep(.filter-head-table__selected) {
+  display: flex;
+  flex-wrap: wrap;
+}
+:deep(.filter-head-table__left) {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  padding-right: 12px;
+}
+:deep(.dropdown-toggle) {
+  width: 10vw;
+  max-width: 180px;
+}
+:deep(.search-group) {
+  width: 23vw;
+  min-width: 257px;
+  max-width: 419px;
+}

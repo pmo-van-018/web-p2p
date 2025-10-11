@@ -1,0 +1,24 @@
+.status-label {
+  background: #E6F8EC;
+  border-radius: 30px;
+  padding: 6px 46px;
+  &.is-blue {
+    background: $blue-50;
+  }
+  &.is-yellow {
+    background: $yellow-50;
+  }
+  &.is-orange {
+    background: $orange-50;
+  }
+  &.is-green {
+    background: $green-50;
+  }
+  &.is-grey {
+    background: $grey-200;
+  }
+  &__inner {
+    @include font-t12m;
+    color: $grey-900;
+  }
+}

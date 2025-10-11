@@ -1,0 +1,21 @@
+diff --git a/node_modules/@nuxtjs/axios/lib/module.js b/node_modules/@nuxtjs/axios/lib/module.js
+index 36d41dd..18c9ee5 100755
+--- a/node_modules/@nuxtjs/axios/lib/module.js
++++ b/node_modules/@nuxtjs/axios/lib/module.js
+@@ -85,11 +85,11 @@ function axiosModule (_moduleOptions) {
+       'cf-ray',
+       'content-length',
+       'content-md5',
+-      'content-type',
+-      'host',
+-      'x-forwarded-host',
+-      'x-forwarded-port',
+-      'x-forwarded-proto'
++      // 'content-type',
++      // 'host',
++      // 'x-forwarded-host',
++      // 'x-forwarded-port',
++      // 'x-forwarded-proto'
+     ],
+     proxy: false,
+     retry: false,

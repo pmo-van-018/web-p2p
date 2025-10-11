@@ -1,0 +1,29 @@
+.filter-head {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include font-t12m;
+    font-weight: 600;
+  }
+  &__left {
+    flex: 0 0 65%;
+    width: 80%;
+    color: #899;
+  }
+  &__right {
+    color: $main-600;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    &.active {
+      color: #FF8D07;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+.detail-appeal {
+  flex: 1;
+  &__top {
+    padding: 1rem;
+    background: $grey-50;
+    @media (min-width: 768px) {
+      padding: 25px 40px;
+    }
+  }
+  &__container {
+    padding: 1rem;
+    @media (min-width: 768px) {
+      padding: 16px 40px;
+    }
+  }
+  &__action {
+    padding: 2rem 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .base-button {
+      width: 100%;
+      padding: 10px 2px;
+    }
+  }
+  &__info {
+    padding: 36px 0 26px;
+    border-top: 1px solid $grey-50;
+  }
+  &__title {
+    @include font-t16m;
+    color: $grey-600;
+    margin-bottom: 1rem;
+  }
+  &__steps {
+    background: $grey-50;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  ::v-deep {
+    .detail-card {
+      padding: 0;
+      .title {
+        display: none;
+      }
+    }
+    .collapse-appeal {
+      border-bottom: 1px solid $grey-50;
+    }
+    .detail-header__content {
+      flex-direction: column;
+    }
+  }
+}
+.detail-content {
+  &__text {
+    @include font-t16m;
+    color: $grey-900;
+    margin: 0;
+    .danger {
+      color: $bearish-red;
+    }
+    .warning {
+      color: $yellow-800;
+    }
+  }
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  &__context {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+    padding: 8px 0 24px;
+  }
+  &__extra {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+  }
+  &__extra-icon {
+    &:before {
+      color: $yellow-900;
+    }
+  }
+  &__extra-action {
+    color: $yellow-900;
+    @include font-t12m;
+  }
+  &__close {
+    button {
+      min-width: auto;
+    }
+  }
+  &__desc {
+    @include font-t14r;
+    color: $grey-400;
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.detail-note {
+  background: $yellow-50;
+  border-radius: 8px;
+  @media (min-width: 768px) {
+    margin: 1rem 0;
+  }
+  &__container {
+    padding: 1rem 1.5rem;
+  }
+  &__list {
+    margin: 0;
+    padding-left: 1rem;
+  }
+  &__item {
+    list-style: decimal;
+    @include font-t14r;
+    color: $grey-600;
+    margin-bottom: 4px;
+  }
+}

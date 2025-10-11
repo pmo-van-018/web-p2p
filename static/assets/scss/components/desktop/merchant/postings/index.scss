@@ -1,0 +1,46 @@
+.postings {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &__title {
+    padding: 16px 48px;
+    background-color: $grey-50;
+    margin: 0;
+    @media (max-width: 1600px) {
+      padding: 16px 24px;
+    }
+  }
+  &__head {
+    padding: 1.5rem 0;
+  }
+  &__content {
+    background: #ffffff;
+    padding: 12px 48px 24px;
+    @media (max-width: 1600px) {
+      padding: 12px 24px 24px;
+    }
+    :deep(.base-table) {
+      min-height: calc(100vh - 380px);
+    }
+  }
+  .posting-item {
+    @include font-t14m;
+    display: flex;
+    flex-direction: column;
+    &.actions {
+      flex-direction: row;
+      gap: 21px;
+      cursor: pointer;
+      flex-wrap: wrap;
+      span {
+        font-size: 24px;
+        &.icon-copy::before {
+          color: $grey-400;
+        }
+        &.offline-status.icon-eye-slash::before {
+          content: "\e954";
+        }
+      }
+    }
+  }
+}

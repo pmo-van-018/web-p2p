@@ -1,0 +1,152 @@
+.profile {
+  text-align: center;
+  @media screen and (max-width: 576px) {
+    padding-bottom: 90px;
+  }
+  &__banner {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+
+    @media screen and (max-width: 576px) {
+      height: 170px;
+    }
+  }
+
+  &__avatar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 156px;
+    height: 156px;
+    margin: -78px auto 0;
+    font-size: 100px;
+    color: $grey-900;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: $yellow-800;
+
+    &:hover {
+      .profile__edit-avatar {
+        opacity: 1;
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      width: 100px;
+      height: 100px;
+      margin: -50px auto 0;
+      font-size: 60px;
+    }
+  }
+
+  &__edit-avatar {
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    font-size: 16px;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    opacity: 0;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    @media screen and (max-width: 576px) {
+      width: 100px;
+      height: 100px;
+    }
+    .icon-edit {
+      &::before {
+        color: #fff;
+        font-size: 36px;
+        @media screen and (max-width: 576px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  &__nickname {
+    @include font-t24b;
+    margin: 16px auto 32px;
+    color: var(--mode-light-dark-1500);
+
+    @media screen and (max-width: 576px) {
+      margin: 12px auto 24px;
+      font-size: 20px;
+    }
+  }
+
+  &__info {
+    max-width: 785px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  &__info-item {
+    @include font-t16r;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 24px;
+    text-align: left;
+    border-radius: 8px;
+    color: var(--mode-light-dark-800);
+    background-color: var(--mode-light-dark-200);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:not(.wallet-address) {
+      @media screen and (max-width: 576px) {
+        display: block;
+
+        .profile__label {
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    &.wallet-address {
+      justify-content: space-between;
+    }
+
+    .profile__label {
+      width: 250px;
+      margin-right: 20px;
+      color: var(--mode-light-dark-700);
+
+
+      @media screen and (max-width: 576px) {
+        flex: 1;
+        width: auto;
+      }
+    }
+
+    .profile__content {
+      flex: 1;
+      font-weight: 600;
+    }
+
+    :deep(.copy-content__text) {
+      color: var(--mode-light-dark-800);
+    }
+
+    @media screen and (max-width: 576px) {
+      @include font-t14r;
+      margin-bottom: 16px;
+      padding: 12px;
+    }
+  }
+}

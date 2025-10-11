@@ -1,0 +1,101 @@
+$payment-info: "payment-info";
+
+.#{$payment-info} {
+    &__payment-methods {
+        display: flex;
+        align-items: stretch;
+        gap: 24px;
+    }
+
+    &__highlight {
+        display: flex;
+        align-items: center;
+        padding: 16px;
+        border-radius: 16px;
+        background: var(--card-payment-background-color);
+        :deep(.layout-title) {
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    &__payment-methods-item {
+        width: calc(50% - 12px);
+    }
+
+    &__payment-methods-note {
+        margin-top: 16px;
+        &.note {
+            @include dark-mode {
+                background: #052C2C;
+            }
+        }
+    }
+
+    &__desc {
+        @include font-t14r;
+        color: var(--mode-light-dark-700);
+    }
+
+    &__timeout {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__tx-hash {
+        color: $grey-400;
+        @include font-t14r;
+
+        span {
+            cursor: pointer;
+            color: $light-blue-100;
+            font-weight: 600;
+        }
+    }
+
+    &__action {
+        margin-top: 20px;
+        margin-bottom: 32px;
+
+        .contact_customer,
+        .join-tele {
+            color: $white;
+        }
+
+        .contact_customer {
+            background: $red-500;
+        }
+
+        .join-tele {
+            background: $blue-400;
+        }
+    }
+
+    &__submit {
+        padding: 10px 16px;
+        margin-right: 24px;
+
+        &--fixed-width {
+            max-width: 290px;
+        }
+    }
+
+    &__button-icon {
+        font-size: 24px;
+        margin-right: 8px;
+
+        &:before {
+            color: $white;
+        }
+    }
+    &__wrapper {
+        padding-bottom: 16px;
+        border-bottom: var(--mode-light-dark-300);
+    }
+}
+
+:deep(.info-block) {
+    margin-bottom: 0;
+    flex: 100%;
+}

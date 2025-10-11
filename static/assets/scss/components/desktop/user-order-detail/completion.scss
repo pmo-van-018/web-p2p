@@ -1,0 +1,50 @@
+$completion: "completion";
+
+.#{$completion} {
+    margin-top: 39px;
+    &__icon {
+        font-size: 162px;
+    }
+    &__text-inner {
+        margin-top: 1rem;
+    }
+    &__text-link {
+        @include font-t16m;
+        color: $orange-600;
+        &:hover {
+            opacity: 0.9;
+            text-decoration: none;
+        }
+    }
+    &__amount {
+        color: $bullish-green;
+        margin-top: 24px;
+        text-transform: uppercase;
+        @include font-t24b;
+        &--red {
+            color: $bearish-red
+        }
+    }
+    &__text {
+        color: $grey-500;
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    &__action {
+        margin-top: 24px;
+        padding: 10px 209px;
+        &--sell {
+            padding: 10px 162px;
+        }
+    }
+    &__support {
+        justify-content: center;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+}

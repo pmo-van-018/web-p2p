@@ -1,0 +1,16 @@
+.order-trans-code {
+  &__content {
+    @include font-t14r;
+    color: var(--mode-light-dark-700);
+  }
+  :deep(.copy-button) {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+  }
+  :deep(.copy-button__icon) {
+    font-size: 20px;
+    margin: 0;
+  }
+}

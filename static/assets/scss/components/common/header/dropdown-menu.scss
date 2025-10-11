@@ -1,0 +1,117 @@
+.dropdown-nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &::after {
+    content: "";
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid $white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(50%);
+    bottom: -8px;
+    display: none;
+  }
+
+  &__wrapper {
+    background: $white;
+    box-shadow: 0 1px 3px rgba(16, 24, 40, 0.1), 0 1px 2px rgba(16, 24, 40, 0.06);
+    border-radius: 8px;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-width: max-content;
+    margin-top: 8px;
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      @include font-t14r;
+      color: $grey-900;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+
+      span {
+        font-size: 24px;
+
+        &::before {
+          color: $grey-400;
+          transition: 0.3s;
+        }
+      }
+
+      &:hover {
+        color: $main-600;
+
+        span {
+          &::before {
+            color: $main-600;
+          }
+        }
+
+        :deep() {
+          svg {
+            path {
+              fill: $main-600;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  :deep(button) {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    min-width: unset !important;
+    @include font-t16m;
+    color: $white;
+    padding: 0;
+
+    &::after {
+      border-top-color: $white;
+      transition: 0.3s;
+    }
+  }
+
+  &.show {
+    &::after {
+      display: block;
+    }
+  }
+
+  &:active,
+  &:hover,
+  &.show {
+    :deep(button) {
+      color: $main-600 !important;
+      filter: brightness(1);
+
+      &::after {
+        border-top-color: $main-600;
+      }
+    }
+  }
+
+  &.show {
+    :deep(button) {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  :deep(.dropdown-menu) {
+    padding: 0;
+    margin: 0 !important;
+    background-color: transparent;
+    border: none;
+  }
+}

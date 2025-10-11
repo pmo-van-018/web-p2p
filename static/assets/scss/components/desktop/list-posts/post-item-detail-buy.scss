@@ -1,0 +1,47 @@
+.post-item-detail-buy {
+    display: flex;
+    flex: 1;
+    padding: 24px;
+    flex-direction: column;
+    row-gap: 18px;
+    .content-btn {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      .btn-cancel {
+        flex: 1;
+        height: 40px;
+        display: flex;
+        min-width: auto;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn-approved {
+        flex: 2.5;
+        height: 40px;
+        color: $grey-50;
+        background: $bullish-green;
+        display: flex;
+        min-width: auto;
+        align-items: center;
+        justify-content: center;
+        &.disabled {
+          background-color: $grey-300;
+        }
+      }
+    }
+  }
+  .input-crypto {
+    :deep(.error) {
+      position: absolute;
+      @include font-t12r;
+    }
+    :deep(input) {
+      &:focus {
+        border: 1px solid var(--function-loading-link-600);
+        outline: none;
+        background: var(--branding-blue-50);
+        box-shadow: 0 0 0 3px var(--branding-blue-100);
+      }
+    }
+  }

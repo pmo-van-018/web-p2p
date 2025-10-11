@@ -1,0 +1,10 @@
+.heading-info-loader {
+  padding: 10px 30px;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    gap: 1rem 5rem;
+  }
+}

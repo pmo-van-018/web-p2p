@@ -1,0 +1,356 @@
+@mixin button-color ($color, $background, $border) {
+  color: $color;
+  border-color: $border;
+  @if $background {
+    background-color: $background;
+  }
+}
+
+@mixin button-disabled ($color: $grey-100, $background: $grey-300, $border: transparent) {
+  &:disabled {
+    &,
+    &:hover,
+    &:active {
+      @include button-color($color, $background, $border);
+      text-shadow: none;
+      box-shadow: none;
+    }
+  }
+}
+
+@mixin button-variant($color, $background, $backgroundHover: $grey-200, $backgroundActive: $grey-200) {
+  @include button-color($color, $background, $background);
+
+  &:hover {
+    @include button-color($color, $backgroundHover, $backgroundHover);
+  }
+  &:active {
+    @include button-color($color, $backgroundHover, $backgroundActive);
+  }
+
+  @include button-disabled;
+}
+
+@mixin btn-default() {
+  $btn-default-color: $grey-900;
+  $btn-default-bg: $grey-200;
+  $btn-default-border: $grey-200;
+
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+}
+
+@mixin btn-primary() {
+  $btn-color: #fff;
+  $btn-bg: $orange-600;
+  $btn-hover: $orange-700;
+  $btn-active: $orange-800;
+  $btn-disabled: $orange-200;
+
+  @include button-color($btn-color, $btn-bg, $btn-bg);
+  [class*='icon'] {
+    &:before {
+      color: $btn-color;
+    }
+  }
+  &:hover {
+    @include button-color($btn-color, $btn-hover, $btn-hover);
+    [class*='icon'] {
+      &:before {
+        color: $btn-color;
+      }
+    }
+  }
+  &:active {
+    @include button-color($btn-color, $btn-active, $btn-active);
+    [class*='icon'] {
+      color: $btn-color;
+    }
+  }
+
+  @include button-disabled($btn-color, $btn-disabled, $btn-disabled);
+
+  &.base-button__outlined {
+    @include button-color(var(--branding-action-600), var(--branding-orange-50), var(--branding-action-600));
+    [class*='icon'] {
+      &:before {
+        color: var(--branding-action-600);
+      }
+    }
+    &:hover {
+      @include button-color(#fff, $orange-700, $orange-700);
+      [class*='icon'] {
+        &:before {
+          color: $btn-color;
+        }
+      }
+    }
+    &:active {
+      @include button-color(#fff, $orange-800, $orange-800);
+      [class*='icon'] {
+        &:before {
+          color: $btn-color;
+        }
+      }
+    }
+    @include button-disabled(var(--branding-action-200), transparent, var(--branding-action-200));
+  }
+  &.base-button__text {
+    @include button-color($orange-600, transparent, transparent);
+    &:hover {
+      @include button-color($orange-700, transparent, transparent);
+    }
+    &:active {
+      @include button-color($orange-800, transparent, transparent);
+    }
+    @include button-disabled($orange-200, transparent, transparent);
+  }
+}
+
+@mixin btn-grey() {
+  $btn-color: $white;
+  $btn-bg: $grey-300;
+  $btn-hover: $grey-400;
+  $btn-active: $grey-500;
+  $btn-disabled: rgba($grey-500, 0.1);
+
+  @include button-color($btn-color, $btn-bg, $btn-bg);
+
+  &:hover {
+    @include button-color($btn-color, $btn-hover, $btn-hover);
+  }
+  &:active {
+    @include button-color($btn-color, $btn-active, $btn-active);
+  }
+
+  @include button-disabled(rgba($grey-900, 0.1), $btn-disabled, $btn-disabled);
+
+  &.base-button__outlined {
+    @include btn-outlined();
+  }
+}
+
+@mixin btn-blue() {
+  $btn-color: $white;
+  $btn-bg: $blue-400;
+  $btn-hover: $blue-300;
+  $btn-active: $blue-500;
+  $btn-disabled: $blue-100;
+
+  @include button-color($btn-color, $btn-bg, $btn-bg);
+
+  &:hover {
+    @include button-color($btn-color, $btn-hover, $btn-hover);
+  }
+  &:active {
+    @include button-color($btn-color, $btn-active, $btn-active);
+  }
+
+  @include button-disabled($btn-color, $btn-disabled, transparent);
+
+  &.base-button__outlined {
+    @include button-color($blue-400, $white, $blue-400);
+    &:hover {
+      @include button-color($blue-500, $white, $blue-400);
+    }
+    &:active {
+      @include button-color($blue-500, $blue-50, $blue-500);
+    }
+    @include button-disabled($blue-200, $white, $blue-200);
+  }
+}
+
+@mixin btn-text() {
+  $btn-color: $grey-900;
+  $btn-bg: transparent;
+  $color-hover: rgba(0, 0, 0, 0.02);
+  $color-active: rgba(0, 0, 0, 0.02);
+
+  @include button-variant($btn-color, $btn-bg, $color-hover, $color-active)
+}
+
+@mixin btn-success() {
+  $btn-color: $white;
+  $btn-bg: $bullish-green;
+  $btn-hover: rgba($bullish-green, 0.8);
+  $btn-active: #009F66;
+  $btn-disabled: rgba($bullish-green, 0.15);
+
+  @include button-color($btn-color, $btn-bg, $btn-bg);
+
+  &:hover {
+    @include button-color($btn-color, $btn-hover, $btn-hover);
+  }
+  &:active {
+    @include button-color($btn-color, $btn-active, $btn-active);
+  }
+
+  @include button-disabled($btn-color, $btn-disabled, transparent);
+}
+
+@mixin btn-danger() {
+  $btn-color: $white;
+  $btn-bg: $bearish-red;
+  $btn-hover: $red-400;
+  $btn-active: #CF2929;
+  $btn-disabled: rgba($bearish-red, 0.2);
+
+  @include button-color($btn-color, $btn-bg, $btn-bg);
+
+  &:hover {
+    @include button-color($btn-color, $btn-hover, $btn-hover);
+  }
+  &:active {
+    @include button-color($btn-color, $btn-active, $btn-active);
+  }
+
+  @include button-disabled($btn-color, $btn-disabled, transparent);
+}
+
+@mixin btn-info() {
+  $btn-color: var(--mode-light-dark-800);
+  $btn-bg: var(--mode-light-dark-400);
+  $color-hover: var(--mode-light-dark-300);
+  $color-active: var(--mode-light-dark-400);
+
+  @include button-variant($btn-color, $btn-bg, $color-hover, $color-active)
+}
+
+@mixin btn-outlined() {
+  @include button-color(var(--mode-light-dark-900, $grey-600), transparent, $grey-300);
+  &:hover {
+    @include button-color(var(--mode-light-dark-900, $grey-600), transparent, $grey-300);
+  }
+  &:active {
+    @include button-color(var(--mode-light-dark-900, $grey-700), transparent, $grey-600);
+  }
+  @include button-disabled(rgba($grey-700, 0.1), transparent, rgba($grey-600, 0.1));
+}
+
+.base-button {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  border-radius: 8px;
+  color: inherit;
+  touch-action: manipulation;
+  padding: 10px 5px;
+  min-width: 90px;
+  @include font-t16m;
+  position: relative;
+  @media (min-width: 600px) {
+    padding: 8px 16px;
+  }
+  &:hover,
+  &:focus {
+    outline: 0;
+  }
+  &:not(:disabled):hover {
+    text-decoration: none;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    > * {
+      pointer-events: none;
+    }
+  }
+  &__load-infinite {
+    display: none;
+    margin: 0 auto;
+    transition: all 0.15s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    path, rect {
+      fill: var(--mode-light-dark-800);
+    }
+  }
+  &__outlined {
+    @include btn-outlined;
+    padding: 7px 16px;
+    border: 1px solid $grey-300;
+  }
+  &__contained {
+    &:hover {
+      box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.02), 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
+    }
+  }
+  &__primary {
+    @include btn-primary;
+  }
+  &__grey {
+    @include btn-grey;
+  }
+  &__info {
+    @include btn-info;
+  }
+  &__success {
+    @include btn-success;
+  }
+  &__danger {
+    @include btn-danger;
+  }
+  &__blue {
+    @include btn-blue;
+  }
+  &__text {
+    padding: 7px 16px;
+    @include btn-text;
+    svg {
+      path, rect {
+        fill: #000;
+      }
+    }
+  }
+  &__sm {
+    @include font-t14m;
+    padding: 5.5px 16px;
+  }
+  &__full-width {
+    width: 100%;
+  }
+  span {
+    transition: all 0.15s;
+    opacity: 1;
+  }
+  &__loading {
+    span {
+      opacity: 0;
+      visibility: hidden;
+    }
+    svg {
+      display: block;
+      opacity: 1;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__dot {
+    background-color: $white;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    padding: 2px;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+  }
+  &__dot-inner {
+    background: linear-gradient(128.64deg, #FF4B4B 24%, #FFB6B6 185.65%);
+    border-radius: inherit;
+    width: 1rem;
+    height: 1rem;
+    display: block;
+  }
+}

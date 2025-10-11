@@ -1,0 +1,36 @@
+.order-filter {
+  padding: 12px 0;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__left {
+    flex: 0 0 65%;
+    width: 65%;
+  }
+  &__process-text {
+    @include font-t10m;
+    color: $grey-400;
+  }
+  .icon-filter {
+    &:before {
+      color: $grey-500;
+    }
+  }
+  &__process {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &--active {
+      .order-filter__process-text {
+        color: $orange-600;
+      }
+      .icon-filter {
+        &:before {
+          color: $orange-600;
+        }
+      }
+    }
+  }
+}

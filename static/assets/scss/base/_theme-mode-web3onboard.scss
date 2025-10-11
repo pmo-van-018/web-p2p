@@ -1,0 +1,16 @@
+:root {
+  --onboard-modal-background: #fff;
+  --onboard-connect-header-color: #000;
+  --onboard-wallet-button-border-color: #{$metal-300};
+  --onboard-connect-text-color: #000;
+  --w3o-border-color: #{$metal-200};
+}
+@media (prefers-color-scheme: dark) {
+  .theme-light-dark {
+    --onboard-modal-background: #{$metal-900};
+    --onboard-connect-header-color: #fff;
+    --onboard-wallet-button-border-color: #{$metal-600};
+    --onboard-connect-text-color: #fff;
+    --w3o-border-color: #{$metal-700};
+  }
+}

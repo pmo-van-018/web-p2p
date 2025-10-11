@@ -1,0 +1,117 @@
+.wrap-chart {
+  margin: 30px 24px 0 30px;
+  overflow: auto;
+  canvas {
+    width: 100% !important;
+  }
+  &::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+    background: #f0f0f0;
+  }
+  &::-webkit-scrollbar-thumb:horizontal {
+    background: #d1d1d6;
+    border-radius: 10px;
+  }
+  @media (max-width: 750px) {
+    margin: 25px 10px 10px 10px;
+  }
+}
+.chart {
+  display: flex;
+  border-bottom: 2px solid #f0f0f0;
+  align-items: center;
+  padding: 24px 28px;
+  margin: 0;
+  &__title {
+    flex: 2;
+    .note {
+      font-size: 14px;
+      line-height: 16px;
+      color: #4f4f4f;
+    }
+  }
+  &__action {
+    flex: 1;
+    display: flex;
+    .action_btn {
+      flex: 1;
+      margin-right: 8px;
+      div {
+        min-width: 80px;
+        height: 40px;
+        text-align: center;
+        padding: 8px 0;
+        background-color: #f3f4f7;
+        border: 1px solid #e2e4eb;
+        color: #73788b;
+        border-radius: 8px;
+        cursor: pointer;
+        &.selected {
+          background-color: #FFF5EF;
+          border: 1px solid #FB7F39;
+          color: #FB7F39;
+        }
+        &:hover,
+        &:focus {
+          color: #fff;
+          border-color: var(--branding-action-700);
+          background-color: var(--branding-action-700);
+        }
+      }
+    }
+  }
+  .action {
+    &__export {
+      width: 156px;
+      height: 40px;
+      text-align: center;
+      padding: 8px 0;
+      background-color: #FFF5EF;
+      border: 1px solid #FB7F39;
+      color: #FB7F39;
+      border-radius: 8px;
+      margin-left: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 41px;
+
+      .icon-download:before {
+        color: #FB7F39;
+      }
+      &:hover,
+      &:focus {
+        color: #fff;
+        border-color: var(--branding-action-700);
+        background-color: var(--branding-action-700);
+        .icon-download:before {
+          color: #fff;
+        }
+      }
+      span {
+        margin-right: 8px;
+        font-size: 20px;
+      }
+    }
+  }
+  @media (max-width: 750px) {
+    display: block;
+    position: relative;
+    padding: 25px 10px;
+    &__action {
+      margin-top: 15px;
+      align-items: center;
+      justify-content: center;
+    }
+    .action {
+      &__export {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 134px;
+      }
+    }
+  }
+}

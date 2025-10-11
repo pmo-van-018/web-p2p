@@ -1,0 +1,9 @@
+.message-order {
+  padding: 16px 12px;
+  background: var(--mode-light-dark-badget-pastel-green);
+  border-left: 4px solid $light-blue-100;
+  &__content {
+    @include font-t14r;
+    color: var(--mode-light-dark-1000);
+  }
+}

@@ -1,0 +1,115 @@
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin-top: 1rem;
+  background-color: white;
+  .row-group {
+    display: flex;
+  }
+
+  .divider {
+    height: 1px;
+    background: $grey-100;
+  }
+
+  .row-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    .label {
+      @include font-t12r;
+      color: $grey-500;
+    }
+    .value {
+      display: flex;
+      @include font-t14m;
+      color: $grey-900;
+      align-items: center;
+      gap: 8px;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+      span {
+        text-decoration-line: underline;
+      }
+
+      &--type,
+      &--info,
+      &--payment {
+        span {
+          text-decoration-line: none;
+        }
+      }
+      &--type {
+        display: block;
+      }
+      &--info {
+        gap: 4px;
+        .icon-info {
+          font-size: 14px;
+          &::before {
+            color: var(--mode-light-dark-500);
+          }
+        }
+      }
+    }
+    .buy {
+      color: $bullish-green;
+    }
+    .sell {
+      color: $bearish-red;
+    }
+  }
+  .action {
+    margin-top: 8px;
+  }
+
+  .payment-detail {
+    padding: 16px;
+    background: radial-gradient(241.98% 84.09% at 1.29% 1.61%, rgba(255, 186, 7, 0.20) 0%, rgba(255, 154, 36, 0.00) 95.83%), linear-gradient(140deg, #FFF9F0 7.50%, #FDF6EC 100%);
+    border-radius: 8px;
+    font-size: 12px;
+    color: $grey-500;
+
+    .row-info {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: $grey-500;
+    }
+
+    .value {
+      font-size: 14px;
+      font-weight: 600;
+      color: $grey-900;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .row-limit {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .payment-info {
+      .value.value--payment {
+        font-size: 12px;
+      }
+      .payment-detail {
+        span {
+          font-size: 12px;
+          flex-basis: 50%;
+        }
+        .row-info .value {
+          text-align: right;
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
+

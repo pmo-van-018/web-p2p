@@ -1,0 +1,58 @@
+.status-wrapper {
+  border-radius: 4px;
+  background-color: #E8E9EF;
+  padding: 4px;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  &__text {
+    @include font-t10m;
+    color: #303646;
+    @media (min-width: 768px) {
+      @include font-t12m;
+    }
+  }
+  &.success {
+    background-color: #EEFBEF;
+    .status-wrapper {
+      &__text {
+        color: #45B957;
+      }
+    }
+  }
+  &.failed {
+    background-color: #FFF8F8;
+    .status-wrapper {
+      &__text {
+        color: #FF2E2E;
+      }
+    }
+  }
+  &__loading {
+    --border-width: 2px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    @media (min-width: 768px) {
+      height: 16px;
+      width: 16px;
+    }
+    --mask: radial-gradient(farthest-side, transparent calc(100% - var(--border-width) - 0.5px), #000 calc(100% - var(--border-width) + 0.5px));
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    background: linear-gradient(to top, #000, rgba(255,122,0, 0)) 90% no-repeat,
+    conic-gradient(from 90deg at 50% 50%, #000 0deg, rgba(255, 122, 0, 0) 360deg) no-repeat;
+    animation: spin 1s linear infinite;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

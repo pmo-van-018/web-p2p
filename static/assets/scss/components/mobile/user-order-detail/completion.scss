@@ -1,0 +1,114 @@
+$completion: "completion";
+$history: "history";
+
+.#{$completion} {
+  padding-bottom: 2.5rem;
+  &__header {
+    background: var(--mode-light-dark-100);
+    padding: 1rem;
+  }
+  &__icon {
+    font-size: 120px;
+  }
+
+  &__text-inner {
+    margin: 1rem auto 0;
+    max-width: 343px;
+  }
+
+  &__text-link {
+    @include font-t14m;
+    color: $orange-600;
+    &:hover {
+      opacity: 0.9;
+      text-decoration: none;
+    }
+  }
+
+  &__amount {
+    color: $bullish-green;
+    margin-top: 40px;
+    text-transform: uppercase;
+    @include font-t24b;
+    @media (max-width: 768px) {
+      margin-top: 24px;
+    }
+    &--red {
+      color: $bearish-red
+    }
+  }
+
+  &__text {
+    color: $grey-500;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  &__status {
+    max-width: 400px;
+    height: 58px;
+  }
+
+  &__action {
+    margin-top: 12px;
+    padding: 10px;
+    width: 100%;
+    max-width: 375px;
+    &--sell {
+      margin-top: 24px;
+    }
+  }
+
+  &__support {
+    margin-top: 12px;
+    max-width: 375px;
+    text-align: left;
+    align-items: center;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 16px 0;
+  }
+}
+.#{$history} {
+  &__header {
+    padding: 12px 16px 8px;
+    background: var(--mode-light-dark-100);
+  }
+  &__content {
+      padding: 0 16px;
+  }
+}
+.user-order-info {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--mode-light-dark-300);
+  &__type {
+    @include font-t12b;
+    span {
+      @include font-t12b;
+    }
+    &.buy {
+      color: $bullish-green;
+    }
+    &.sell {
+      color: $bearish-red;
+    }
+  }
+  &__text {
+    @include font-t12b;
+    color: var(--mode-light-dark-700);
+  }
+  &__nickname {
+    padding: 2px 12px;
+    border-radius: 4px;
+    background-color: var(--mode-light-dark-300);
+    @include font-t12b;
+  }
+}

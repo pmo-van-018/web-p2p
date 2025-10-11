@@ -1,0 +1,59 @@
+.approve-shift {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  &__icon {
+    width: 120px;
+    height: 120px;
+    margin-top: 16px;
+
+    img {
+      width: 100%;
+      object-fit: contain
+    }
+  }
+
+  &__description {
+    text-align: center;
+    color: #49526A;
+
+    &.font-t16b {
+      color: #000;
+    }
+
+    span {
+      font-weight: 400;
+    }
+
+    &.success {
+      color: #45B957 !important;
+    }
+
+    &.error {
+      color: #FF2E2E !important;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #F3F4F7;
+    border-radius: 6px
+  }
+
+  &__info-label {
+    @include font-t14r;
+    margin-right: 8px;
+    color: #73788B;
+  }
+
+  &__info-value {
+    @include font-t16b;
+    color: #000;
+  }
+}

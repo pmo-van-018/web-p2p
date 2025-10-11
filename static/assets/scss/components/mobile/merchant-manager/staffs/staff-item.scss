@@ -1,0 +1,42 @@
+.role-management-item {
+  .actions {
+    .icon-edit {
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+  &__number {
+    @include font-t12b;
+    color: $red-500;
+  }
+  &__view-orders {
+    padding: 4px;
+    border-radius: 6px;
+    background: $red-50;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    .icon-note-order {
+      font-size: 20px;
+      &:before {
+        color: $red-500;
+      }
+    }
+  }
+  .view-balance {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    svg {
+      width: 16px;
+      height: 16px
+    }
+    &__text {
+      @include font-t12r;
+      font-weight: $font-weight-medium;
+      text-decoration: underline;
+      color: $grey-700;
+    }
+  }
+}

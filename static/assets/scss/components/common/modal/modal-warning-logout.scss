@@ -1,0 +1,36 @@
+.modal-content {
+  text-align: center;
+  background-color: $white;
+
+  .icon-info-dash-circle {
+    margin: 32px 0;
+    font-size: 120px;
+  }
+
+  .description {
+    @include font-t14r;
+    text-align: center;
+    color: $grey-600;
+
+    &__content {
+      font-weight: 700;
+    }
+  }
+
+  .countdown-box {
+    width: 90px;
+    margin: 16px auto;
+  }
+
+  .countdown-text {
+    @include font-t14m;
+    margin-bottom: 12px;
+    text-align: center;
+    color: $grey-900;
+  }
+
+  .countdown-box {
+    @include font-t20m;
+    margin-bottom: 8px auto;
+  }
+}

@@ -1,0 +1,29 @@
+.order-info {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    @include font-t12r;
+    color: var(--mode-light-dark-700);
+  }
+  &__value {
+    @include font-t14m;
+    font-weight: $font-weight-semi-bold;
+    color: var(--mode-light-dark-1500);
+    &.buy {
+      @include font-t16m;
+      color: $bullish-green;
+    }
+    &.sell {
+      @include font-t16m;
+      color: $bearish-red;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+$payment: "payment";
+
+.#{$payment} {
+    &__sub-title-action {
+        color: var(--mode-light-dark-700);
+        margin-bottom: 20px;
+        @include font-t14r;
+    }
+    &__action {
+        margin-top: 20px;
+    }
+    &__submit {
+        margin-right: 24px;
+    }
+
+    .join-tele {
+        background: $blue-400;
+        color: $white;
+    }
+    &__button-action {
+        .icon-complaint {
+            font-size: 24px;
+            margin-right: 6px;
+            &:before {
+                color: $white;
+            }
+        }
+    }
+}

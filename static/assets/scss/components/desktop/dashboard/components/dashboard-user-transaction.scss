@@ -1,0 +1,93 @@
+.dashboard-user-transaction {
+  padding: 55px 0;
+  color: #000;
+
+  &__banner {
+    max-width: calc(clamp(530px, 35vw, 700px));
+
+    @media (max-width: 1400px) {
+      display: none;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @media (max-width: 1400px) {
+      justify-content: center;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+
+    @media (min-width: 1550px) {
+      width: 700px;
+    }
+  }
+
+  &__content {
+    padding: 24px;
+    border-radius: 6px;
+    background: var(--mode-light-dark-100);
+  }
+
+  &__content--main {
+    ::v-deep {
+      sup {
+        top: -20px !important;
+      }
+
+    }
+  }
+
+  ::v-deep {
+    .dashboard-transaction-card__inner-text {
+      font-size: 14px !important;
+    }
+
+    .dashboard-transaction-card__item {
+      background-color: var(--mode-light-dark-0) !important;
+    }
+
+    .dashboard-overview-card {
+      border: none;
+
+      &__value {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__title {
+    @include font-t16m;
+    color: var(--mode-light-dark-1500);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__sub-title {
+    @include font-t12r;
+    margin-top: 4px;
+    margin-bottom: 24px;
+    color: var(--mode-light-dark-700);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: calc(clamp(16px, 1.1vw, 24px));
+
+    @media (max-width: 650px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

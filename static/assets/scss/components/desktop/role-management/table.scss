@@ -1,0 +1,173 @@
+.role-management-table {
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .role-management-item {
+    @include font-t12m;
+    color: $grey-600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    vertical-align: middle;
+
+    &.disabled {
+      pointer-events: none;
+      opacity: 0.5;
+
+      &:hover,
+      &:focus {
+        pointer-events: none;
+      }
+    }
+    &__text {
+      @include font-t14r;
+      color: var(--mode-light-dark-900);
+      &--grey {
+        color: var(--mode-light-dark-700);
+      }
+      &--medium {
+        font-weight: $font-weight-medium;
+      }
+    }
+
+    &.underline {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    &.actions {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      grid-gap: 36px;
+      gap: 36px;
+      cursor: pointer;
+      overflow: inherit;
+      max-width: 220px;
+      margin-left: auto;
+
+      &--end {
+        justify-content: flex-end;
+      }
+
+      .staff-list {
+        @include font-t14r;
+        color: $grey-400;
+        text-decoration: underline;
+      }
+    }
+
+    &.underline {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .wallet-address {
+      &__name {
+        display: inline-block;
+        vertical-align: middle;
+
+        &.disabled {
+          pointer-events: none;
+          opacity: 0.5;
+
+          &:hover,
+          &:focus {
+            pointer-events: none;
+          }
+        }
+      }
+    }
+
+    [class^="icon-"],
+    :deep(.copy-button__icon) {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .sub-text {
+      font-weight: 400;
+      color: $grey-400;
+    }
+
+    .active-status {
+      font-weight: 400;
+      color: $green-500;
+    }
+
+    .active-status-wrapper {
+      padding: 3px;
+      text-align: center;
+      @include font-t12m;
+      border-radius: 4px;
+
+      &.active-status {
+        color: $green-500;
+        background: $green-50;
+      }
+
+      &.inactive-status {
+        color: $grey-500;
+        background: $grey-100;
+      }
+
+      &.deleted-status {
+        color: $red-400;
+        background: $red-50;
+      }
+    }
+
+    .copy-button {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .total-appeal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 9px;
+    gap: 12px;
+    border-radius: 6px;
+    border: 1px solid #FFB341;
+    background: #FF8D07;
+    position: relative;
+    cursor: pointer;
+    @include font-t12m;
+    color: $grey-600;
+
+    .icon-appeal {
+      position: absolute;
+      right: -8px;
+      top: -8px;
+      width: 16px;
+      height: 16px;
+    }
+
+    .count-appeal {
+      color: #FFF;
+    }
+  }
+
+  .view-balance {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+
+    svg {
+      width: 20px;
+      height: 20px
+    }
+
+    &__text {
+      @include font-t14r;
+      font-weight: $font-weight-medium;
+      text-decoration: underline;
+    }
+  }
+}

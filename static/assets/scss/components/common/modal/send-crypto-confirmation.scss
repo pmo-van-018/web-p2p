@@ -1,0 +1,96 @@
+$send-crypto-confirmation: "send-crypto-confirmation";
+
+.#{$send-crypto-confirmation} {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-items: center;
+    &__icon {
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title {
+        color: $bearish-red;
+        @include font-t16b;
+        text-align: center;
+        span {
+            color: var(--mode-light-dark-700);
+            @include font-t16m;
+        }
+
+        &--medium {
+            @include font-t16m;
+        }
+    }
+
+    &__desc {
+        display: flex;
+        align-items: flex-end;
+        gap: 12px;
+        justify-content: center;
+        span {
+            color: var(--mode-light-dark-700);
+            @include font-t16r;
+        }
+        strong {
+            color: var(--mode-light-dark-1500);
+            @include font-t24b;
+            line-height: 31px;
+        }
+    }
+
+    &__content-info {
+        padding: 16px 24px;
+        background: #F4F4F5;
+        border-radius: 8px;
+        margin-top: 24px;
+    }
+
+    &__note {
+        text-align: center;
+        color: var(--mode-light-dark-700);
+        @include font-t14r;
+    }
+
+    &.mobile {
+        .#{$send-crypto-confirmation} {
+            &__desc {
+                @include font-t12r;
+            }
+        }
+    }
+    .crypto-note {
+        display: flex;
+        flex-direction: column;
+        border-left: 3px solid var(--branding-primary-600);
+        background: var(--mode-light-dark-badget-pastel-green);
+        padding: 8px;
+        gap: 8px;
+        text-align: left;
+        &__top {
+            display: flex;
+            gap: 4px;
+        }
+        &__title {
+            @include font-t14m;
+            color: var(--mode-light-dark-1500);
+        }
+        .icon-question {
+            font-size: 18px;
+            &:before {
+                color: $light-blue-100;
+            }
+        }
+        &__list {
+            margin-bottom: 0;
+            list-style-type: decimal;
+            padding-left: 1rem;
+        }
+        &__item {
+            @include font-t12r;
+            color: var(--mode-light-dark-1500);
+        }
+    }
+}

@@ -1,0 +1,108 @@
+.footer-banner {
+  padding: 0 pxVwMobile(12);
+  margin: pxVwMobile(50) auto 0;
+
+  @media (min-width: 576px) {
+    max-width: pxVwTablet(780);
+    margin: pxVwTablet(90) auto 0;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: pxVw(996);
+    margin: pxVw(150) auto 0;
+    padding: 0;
+  }
+
+  &__content {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 5%;
+    text-align: center;
+  }
+
+  &__inner {
+    position: relative;
+    height: calc(clamp(98px, 28vw, 220px));
+    margin-left: 50px;
+    background: url("/assets/images/components/mobile/home/join-action-banner.png") no-repeat;
+    background-size: 100% 100%;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: -20%;
+      bottom: 0;
+      width: pxVwMobile(125);
+      height: pxVwMobile(134);
+      background: url("/assets/images/components/desktop/home/join-action-mascot.png") no-repeat;
+      background-size: contain;
+      background-position: bottom;
+    }
+
+    @media (min-width: 576px) {
+      height: pxVwTablet(121);
+      margin-left: pxVwTablet(130);
+      background: url("/assets/images/components/desktop/home/join-action-banner.png") no-repeat;
+      background-size: 100% 100%;
+      border-radius: 8px 8px 0 0;
+
+      &::after {
+        left: -15%;
+        width: pxVwTablet(206);
+        height: pxVwTablet(223);
+      }
+    }
+
+    @media (min-width: 992px) {
+      margin-left: pxVw(187);
+      height: pxVw(220);
+
+      &::after {
+        left: -25%;
+        width: pxVw(340);
+        height: pxVw(369);
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: pxVwMobile(16);
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 0.910501px 2.7315px rgba(0, 0, 0, 0.14);
+
+    &--bottom {
+      font-size: pxVwMobile(16);
+      padding-top: pxVwMobile(6);
+    }
+
+    @media (min-width: 576px) {
+      font-size: pxVwTablet(20);
+
+      &--bottom {
+        font-size: pxVwTablet(20);
+      }
+    }
+
+    @media (min-width: 992px) {
+      font-size: pxVw(32);
+
+      &--bottom {
+        padding-top: pxVw(30);
+        font-size: pxVw(36);
+        line-height: pxVw(54);
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.swiper-wrapper {
+  width: 60%;
+}
+.coin-top {
+  &__item {
+    border: 1px solid $grey-300;
+    border-radius: 10px;
+    min-width: 180px;
+    padding: 10px;
+
+    &--coin-up {
+      color: rgba(1, 174, 112, 1);
+      @include font-t14r;
+    }
+    &--coin-down {
+      color: rgba(241, 44, 44, 1);
+      @include font-t14r;
+    }
+    &--coin-price {
+      padding-left: 0;
+      @include font-t14r;
+    }
+    &__item-icon {
+      padding-right: 5px;
+    }
+    &__item-info {
+      padding: 0;
+    }
+    &__price-change {
+      padding-right: 0;
+
+      img {
+        width: 6%;
+      }
+
+      &--union {
+        width: 10%;
+      }
+    }
+    &--asset-icon {
+      width: 50%;
+      @media (min-width: 375px) and (max-width: 479px) {
+        width: 100%;
+      }
+    }
+  }
+  &__font14b {
+    @include font-t14b;
+  }
+  &__network-type {
+    @include font-t14r;
+    padding-left: 0;
+  }
+  &__active-mobile {
+    display: block;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}

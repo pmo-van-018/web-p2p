@@ -1,0 +1,27 @@
+.order-amount {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  &__fiat {
+    display: flex;
+    align-items: center;
+  }
+  &__fiat-value {
+    @include font-t16m;
+    color: $neutrals-500;
+    @media (min-width: 1480px) {
+      @include font-t20m;
+    }
+  }
+  .icon-copy {
+    font-size: 20px;
+  }
+  &__asset {
+    @include font-t12r;
+    color: var(--mode-light-dark-700);
+    @media (min-width: 1480px) {
+      @include font-t14m;
+    }
+  }
+}

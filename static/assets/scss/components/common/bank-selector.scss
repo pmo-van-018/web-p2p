@@ -1,0 +1,182 @@
+.bank-selector {
+  width: 100%;
+  height: 40px;
+
+  .bank-number {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: inline;
+    padding-right: 12px;
+  }
+
+  &__fullname {
+    white-space: pre-wrap;
+  }
+
+  &__empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    @include font-t14m;
+    color: $grey-500;
+  }
+
+  &__logo {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #F7F7F7;
+    border-radius: 50%;
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__dropdown {
+    width: 100%;
+    height: 100%;
+
+    .dropdown-cnt {
+      width: 100%;
+      @include scrollbars(3px, var(--mode-light-dark-700), var(--mode-light-dark-0));
+      overflow: auto;
+      padding: 0 8px;
+      max-height: 190px;
+      margin-bottom: 16px;
+    }
+
+    .icon-triangle-down {
+      font-size: 16px;
+      position: absolute;
+      top: 12px;
+      right: 12px;
+
+      &::before {
+        color: $grey-500;
+      }
+    }
+
+    .bank-empty {
+      display: flex;
+      height: 100%;
+      @include font-t14r;
+      color: $grey-400;
+      align-items: center;
+    }
+
+    .bank-item {
+      display: flex;
+      align-items: center;
+      color: var(--mode-light-dark-1000);
+      @include font-t14r;
+
+      .bank-img {
+        width: 24px;
+        height: 24px;
+        margin-right: 12px;
+      }
+      .bank-name {
+        max-width: calc(100% - 48px);
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      &.active {
+        background-color: var(--mode-light-dark-100);
+      }
+
+      &--add {
+        margin-bottom: -12px;
+        border-radius: 0 0 8px 8px;
+
+        .bank-img::before {
+          color: $yellow-900;
+          font-size: 20px;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}
+
+:deep(.dropdown-item) {
+  display: flex;
+  align-items: center;
+  @include font-t14r;
+  color: var(--mode-light-dark-1000);
+  padding: 8px 10px;
+  border-radius: 4px;
+
+  &:hover,
+  &:active {
+    background-color: var(--mode-light-dark-100);
+  }
+}
+
+:deep(.dropdown-menu) {
+  width: 100%;
+  margin-top: 2px;
+  padding: 0;
+  border-radius: 8px;
+  background-color: var(--mode-light-dark-0);
+  color: var(--mode-light-dark-1500);
+
+  .bank-selector__fullname {
+    color: var(--mode-light-dark-700);
+  }
+}
+
+:deep(.dropdown-toggle) {
+  background-color: var(--mode-light-dark-0) !important;
+  outline: none !important;
+  border: 1px solid $grey-300 !important;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05) !important;
+  border-radius: 8px;
+
+  &:hover {
+    filter: brightness(1);
+  }
+
+  &:after {
+    border-top: none;
+  }
+}
+
+.dropdown-search {
+  padding: 8px 9px;
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: var(--mode-light-dark-200);
+    border-radius: 8px;
+  }
+
+  &__icon {
+    font-size: 24px;
+    padding-left: 8px;
+
+    &:before {
+      color: var(--mode-light-dark-1000);
+    }
+  }
+
+  &__input {
+    flex: 1;
+  }
+
+  :deep(.base-input input) {
+    border: none;
+    box-shadow: none;
+    background: var(--mode-light-dark-200);
+    @include font-t14r;
+
+    &::placeholder {
+      color: $grey-400;
+    }
+  }
+}

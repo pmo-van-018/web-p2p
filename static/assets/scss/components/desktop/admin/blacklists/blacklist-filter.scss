@@ -1,0 +1,70 @@
+:deep(.filter-head-table__selected) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+:deep(.filter-head-table__left) {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  @media (min-width: 1501px) {
+    flex: 0 0 82%;
+  }
+  @media (min-width: 1600px) {
+    flex: 0 0 80%;
+  }
+}
+
+:deep(.dropdown-filter) {
+  width: 256px;
+}
+
+:deep(.search-group) {
+  width: 400px;
+}
+
+.filter-head-table {
+  &__button {
+    font-size: 24px;
+    margin-left: 22px;
+    @media (max-width: 1440px) {
+      margin-left: 12px;
+    }
+  }
+  &__action {
+    display: flex;
+    align-items: center;
+    .text {
+      @include font-t14m;
+      color: $grey-900;
+      margin-left: 4px;
+    }
+  }
+  &__action-inner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .icon-add-primary {
+    font-size: 20px;
+  }
+  &__icon-add-white {
+    &.icon-add-primary {
+      &:before {
+        color: #fff;
+      }
+    }
+  }
+  &__create {
+    cursor: pointer;
+    border: solid 1px $grey-300;
+    padding: 5px 17px;
+    border-radius: 8px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  :deep(.dropdown-content) {
+    width: 216px;
+  }
+}

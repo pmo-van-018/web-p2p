@@ -1,0 +1,224 @@
+.post-item-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1.5;
+  padding: 24px 24px 34px;
+
+  .content-seller {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .content-avatar--bg-yellow-900 {
+      background-color: $yellow-900;
+    }
+
+    .content-avatar--bg-yellow-600 {
+      background-color: $yellow-600;
+    }
+
+    .content-avatar--bg-green-200 {
+      background-color: $green-200;
+    }
+
+    .content-avatar--bg-green-500 {
+      background-color: $green-500;
+    }
+
+    .content-avatar--bg-orange-200 {
+      background-color: $orange-200;
+    }
+
+    .content-avatar--bg-orange-500 {
+      background-color: $orange-500;
+    }
+
+    .content-avatar {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+
+      .text-avatar {
+        position: absolute;
+        text-transform: uppercase;
+        @include font-t20m;
+        margin-bottom: 0px;
+        color: $white;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .avatar {
+        width: 100%;
+      }
+      .avatar-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      .status {
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        right: 1px;
+        bottom: -2px;
+        border-radius: 100px;
+        padding: 1px;
+        border: 2px solid $white;
+
+        &.offline {
+          background-color: #BDBDC1;
+        }
+
+        &.online {
+          background-color: $green-500;
+        }
+      }
+    }
+
+    .content-status {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .line {
+        border-right: 3px solid var(--mode-light-dark-200);
+        height: 14px;
+        margin-right: 8px;
+        margin-left: 8px;
+        padding: 2px 0;
+      }
+
+      .text-seller {
+        @include ellipsis-multiline;
+        @include font-t14m;
+        margin-left: 8px;
+        margin-right: 24px;
+        margin-bottom: 0;
+        color: var(--mode-light-dark-1500);
+        max-width: 100%;
+        width: calc(clamp(200px, 22vw, 400px));
+      }
+
+      .text-status {
+        @include font-t14r;
+        margin-bottom: 0px;
+        color: var(--mode-light-dark-600);
+      }
+    }
+  }
+
+  .content-info-amount {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 18px;
+
+    .content-money {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 10px;
+
+      .content-price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        .title-price {
+          @include font-t14r;
+          margin-bottom: 0px;
+          color: var(--mode-light-dark-600);
+        }
+
+        .price {
+          @include font-t24b;
+          margin-bottom: 0px;
+          color: $bullish-green;
+
+          &.price--red {
+            color: $bearish-red;
+          }
+        }
+      }
+
+      .content-time {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        .title-time {
+          @include font-t14r;
+          margin-bottom: 0px;
+          color: var(--mode-light-dark-600);
+        }
+
+        .time {
+          @include font-t14m;
+          margin-bottom: 0px;
+          color: var(--mode-light-dark-700);
+        }
+      }
+    }
+
+    .content-amount {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 22px;
+
+      .content-limit {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        .text-limit {
+          display: flex;
+          color: var(--mode-light-dark-600);
+
+          @include font-t14r;
+          margin-bottom: 0px;
+        }
+
+        .text-money {
+          display: flex;
+          color: var(--mode-light-dark-700);
+
+          @include font-t14r;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+
+  .text-title-note {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    color: var(--mode-light-dark-800);
+    @include font-t14m;
+  }
+
+  .text-rule {
+    color: $grey-600;
+    @include font-t14r;
+    margin-bottom: 0;
+  }
+
+  .text-note {
+    padding-left: 20px;
+    color: var(--mode-light-dark-600);
+    @include font-t14r;
+    margin-bottom: 0;
+  }
+
+  &__note {
+    padding: 8px 16px;
+    background: var(--mode-light-dark-200);
+    color: var(--mode-light-dark-800);
+  }
+}

@@ -1,0 +1,63 @@
+ .header-holiday {
+   position: relative;
+   background: url("/assets/images/components/mobile/landing/banner/background-header.png") no-repeat #F8F9FA center;
+   background-size: cover;
+   z-index: 1;
+   @media (min-width: 768px) {
+     background: url("/assets/images/components/desktop/landing/banner/background-header.png") no-repeat #F8F9FA center;
+     background-size: cover;
+   }
+  &__container {
+    position: relative;
+    z-index: 1;
+  }
+   &__statistic {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     z-index: 1;
+   }
+  &:deep(.banner-swiper) {
+    .swiper-pagination {
+      position: absolute;
+      bottom: 76px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (min-width: 768px) {
+        bottom: 114px;
+      }
+      .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+
+        &::before {
+          background: $metal-500;
+          content: '';
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+        }
+
+        &-active {
+          width: 30px;
+
+          &::before {
+            width: 30px;
+            border-radius: 9px;
+            background: #2FB8B8;
+          }
+        }
+      }
+    }
+  }
+}

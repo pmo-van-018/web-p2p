@@ -1,0 +1,103 @@
+.setup-2fa {
+  &__header {
+    text-align: center;
+    margin-top: 64px;
+    img {
+      width: 105px;
+    }
+    p {
+      @include font-t14m;
+      margin: 26px 0;
+      &.input-otp {
+        margin-top: 36px;
+        color: #090B0E;
+      }
+    }
+  }
+  &__qrcode {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+    .qrcode {
+      text-align: center;
+      &__image {
+        background: $metal-100;
+        padding: 8px;
+        border-radius: 8px;
+        margin-bottom: 8px;
+        &.register-step {
+          max-width: 180px;
+          text-align: center;
+          margin: 26px auto;
+        }
+        .image-content {
+          display: flex;
+        }
+      }
+      &__content {
+        p {
+          color: $metal-600;
+          margin-bottom: 4px;
+          @include font-t10r;
+          &.app-title {
+            font-weight: 600;
+            font-size: 12px;
+          }
+          &.register-title {
+            color: #090B0E;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 4px;
+          }
+          &.register-desc {
+            color: $metal-700;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  &__register-key {
+    background-color: $metal-100;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    border-radius: 4px;
+    span {
+      @include font-t16m;
+      color: #090B0E;
+      &.label {
+        @include font-t14r;
+        color: $metal-600;
+      }
+    }
+    .key {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+    }
+  }
+  &__input-otp {
+    background: $metal-100;
+    padding: 8px 16px;
+    border-radius: 6px;
+    input {
+      width: 100%;
+      border: none;
+      background: transparent;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__action {
+    text-align: center;
+    margin-top: 24px;
+    .confirm {
+      @include font-t16m;
+      color: $main-600;
+      border: none;
+    }
+  }
+}

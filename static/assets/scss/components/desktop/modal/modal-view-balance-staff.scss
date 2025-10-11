@@ -1,0 +1,121 @@
+.modal-balance-staff {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    @include font-t16m;
+    @media (min-width: 992px) {
+      @include font-t24m;
+    }
+  }
+  &__info {
+    margin-bottom: 12px;
+  }
+  &__close {
+    font-size: 24px;
+    cursor: pointer;
+    height: 24px;
+  }
+  &__thumb {
+    svg {
+      width: 150px;
+      height: 118px;
+      object-fit: contain;
+      @media (min-width: 992px) {
+        width: 200px;
+        height: 158px;
+      }
+    }
+  }
+  .staff-info {
+    &__title {
+      @include font-t10m;
+      color: $grey-600;
+      @media (min-width: 992px) {
+        @include font-t12m;
+      }
+    }
+    &__value {
+      @include font-t10m;
+      color: $grey-900;
+      @media (min-width: 992px) {
+        @include font-t14m;
+      }
+    }
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 12px;
+    }
+    &__wallet {
+      display: flex;
+      align-items: center;
+    }
+    &__wallet-value {
+      @include font-t10m;
+      color: $grey-900;
+      @media (min-width: 992px) {
+        @include font-t14m;
+      }
+    }
+  }
+  .assets {
+    &__head {
+      @include font-t10m;
+      color: $grey-600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 4px;
+      padding: 8px;
+      @media (min-width: 992px) {
+        @include font-t12m;
+      }
+    }
+    &__icon {
+      width: 2rem;
+      height: 2rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    &__inner {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    &__item {
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:nth-child(odd) {
+        background-color: #F5F6F8;
+      }
+    }
+    &__content {
+      @include font-t12r;
+      @media (min-width: 992px) {
+        @include font-t14r;
+      }
+    }
+    &__value {
+      @include font-t14m;
+      color: #000;
+      @media (min-width: 992px) {
+        @include font-t16m;
+      }
+    }
+  }
+}
+
+:deep(.modal-content) {
+  border: none;
+  border-radius: 8px;
+}

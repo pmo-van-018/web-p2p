@@ -1,0 +1,67 @@
+.modal-cancel-supporter {
+  padding: 0.5rem;
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    width: 100%;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__close {
+    cursor: pointer;
+    .icon-cancel {
+      font-size: 24px;
+      &:before {
+        color: $grey-900;
+      }
+    }
+  }
+  &__title {
+    @include font-t20m;
+    color: $grey-900;
+  }
+  &__thumb {
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+  }
+  &__content {
+    @include font-t16r;
+    color: $grey-500;
+    margin: 0;
+    text-align: center;
+  }
+  &__action {
+    display: flex;
+    gap: 1rem;
+  }
+  &__info {
+    border-radius: 8px;
+    background: $grey-50;
+    padding: 16px 24px;
+  }
+  &__info-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__info-label {
+    @include font-t14r;
+    color: $grey-400;
+  }
+  &__info-name {
+    @include font-t14m;
+    color: $grey-900;
+  }
+}

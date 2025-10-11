@@ -1,0 +1,47 @@
+$index: "user-orders";
+
+.#{$index} {
+    flex-grow: 1;
+    background: #FFF;
+    &__header {
+        background: #FFF;
+    }
+    &__header-tab {
+        padding: 12px 16px 0;
+        display: flex;
+        column-gap: 32px;;
+        border-bottom: solid 1px #F4F4F5;
+    }
+    &__header-tab-item {
+        cursor: pointer;
+        padding-bottom: 12px;
+        color: $grey-400;
+        @include font-t14b;
+        &--active {
+            color: $grey-900;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                left: 0;
+                bottom: 0;
+                background: $orange-600;
+            }
+        }
+        span {
+            padding: 0 2px;
+            background: #F4F4F5;
+            color: #FAAC2E;
+            min-width: 20px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 4px;
+        }
+    }
+    &__content {
+        background: #FFF;
+        margin-top: 8px;
+    }
+}

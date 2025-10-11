@@ -1,0 +1,87 @@
+:deep(.filter-head-table__selected) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+:deep(.filter-head-table__left) {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  @media (min-width: 1500px) {
+    flex: 0 0 70%;
+  }
+}
+
+:deep(.vue-daterange-picker) {
+  min-width: 269px !important;
+  width: 16vw;
+  max-width: 300px;
+}
+
+:deep(.dropdown-toggle) {
+  width: 10vw;
+  max-width: 180px;
+}
+
+:deep(.search-group) {
+  width: 20vw;
+  min-width: 250px !important;
+  max-width: 364px;
+}
+
+.filter-head-table {
+  &__button {
+    font-size: 24px;
+    margin-left: 22px;
+    @media (max-width: 1440px) {
+      margin-left: 12px;
+    }
+  }
+  &__view {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__action {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    .text {
+      @include font-t16m;
+      margin-left: 4px;
+    }
+  }
+  &__limit-action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .icon-charge {
+      font-size: 20px;
+    }
+  }
+  &__action-inner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .icon-add-primary {
+    font-size: 20px;
+  }
+  &__icon-add-white {
+    &.icon-add-primary {
+      &:before {
+        color: #fff;
+      }
+    }
+  }
+  &__create {
+    cursor: pointer;
+    border: solid 1px $grey-300;
+    padding: 5px 17px;
+    border-radius: 8px;
+    gap: 4px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

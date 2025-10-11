@@ -1,0 +1,33 @@
+$command-info: "command-info";
+
+.#{$command-info} {
+  width: 100%;
+  display: flex;
+  column-gap: 32px;
+  justify-content: space-between;
+  &__item {
+    flex: 1;
+    justify-content: center;
+    &.grey-card {
+      background-color: var(--mode-light-dark-100);
+      border-radius: 8px;
+      padding: 1rem;
+      :deep(.info-label__network) {
+        margin: 0;
+      }
+    }
+  }
+  &.mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    .#{$command-info}__item {
+      &:last-child {
+        grid-column: span 2;
+      }
+    }
+    .info-label__title {
+      color: $grey-400
+    }
+  }
+}

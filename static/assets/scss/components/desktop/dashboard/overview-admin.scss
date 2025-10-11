@@ -1,0 +1,75 @@
+.grid-overview {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 21px 24px;
+  }
+
+  &__inner-item {
+    padding: 39px 0;
+  }
+
+  &__context {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 16px;
+    margin-top: 24px;
+    background: $white;
+    border-radius: 8px;
+  }
+
+  &__content {
+    padding: 8px;
+  }
+  &__item {
+    &.revenue-chart, &.price-chart {
+      background-image: url("/assets/images/components/desktop/admin/revenue-bg.png");
+      background-image: url("/assets/images/components/desktop/operations/price-statistic.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position-y: bottom;
+      background-position-x: right;
+      padding: 16px 18px;
+      border-radius: 8px;
+      box-shadow: 0px 1.548px 1.956px 0px rgba(12, 20, 45, 0.01), 0px 7.319px 7.644px 0px rgba(12, 20, 45, 0.01), 0px 19px 24px 0px rgba(12, 20, 45, 0.02);
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      .title {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 0;
+        color: #49526A;
+      }
+      .view-btn {
+        margin-top: 8px;
+        padding: 6px 43px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 6px;
+        background-color: #2FB8B8;
+        &:hover {
+          background-color: #05A7A7;
+        }
+      }
+    }
+    &.price-chart {
+      background-image: url("/assets/images/components/desktop/operations/price-statistic.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-y: bottom;
+      background-position-x: right;
+    }
+  }
+}

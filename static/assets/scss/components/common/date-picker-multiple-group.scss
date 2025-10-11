@@ -1,0 +1,212 @@
+.date-picker-multiple-group {
+  outline: 1px solid $grey-400;
+  border-radius: 8px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    width: auto;
+    max-width: 395px;
+  }
+
+  &__date {
+    @include font-t14r;
+
+    &--grey {
+      color: #a0a0ab;
+    }
+  }
+
+  &__icon {
+    width: 32px;
+    height: 20px;
+
+    span {
+      font-size: 20px;
+    }
+
+    .icon-close-circle-outline {
+      cursor: pointer;
+    }
+  }
+
+  :deep(.vue-daterange-picker) {
+    display: block;
+    height: 40px;
+  }
+
+  :deep(.form-control) {
+    border: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  :deep(.dropdown-menu) {
+    background: #FFFFFF;
+    box-shadow: 0 4px 12px 1px rgba(173, 106, 6, 0.15);
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    transform: translate3d(0, 40px, 0px) !important;
+  }
+
+  :deep(.dropdown-item) {
+    padding: 8px;
+
+    &:hover,
+    &.active {
+      background: rgba(246, 132, 32, 0.05);
+      border-radius: 8px;
+      color: $main-600;
+
+      .dropdown-content__title {
+        color: $main-600;
+      }
+
+      .icon-clock-trade {
+
+        .path1,
+        .path2,
+        .path5,
+        .path6,
+        .path7 {
+          &::before {
+            color: $main-600;
+          }
+        }
+      }
+
+      .icon-clock-user {
+
+        .path1,
+        .path2,
+        .path6,
+        .path7 {
+          &::before {
+            color: $main-600;
+          }
+        }
+      }
+    }
+  }
+
+  .dropdown-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &.active {
+      color: $main-600;
+
+      .dropdown-content {
+        &__title {
+          color: $main-600;
+        }
+
+        &__icon {
+          &:before {
+            color: $main-600;
+          }
+        }
+      }
+    }
+
+    &__icon {
+      font-size: 16px;
+    }
+
+    &__title {
+      @include font-t14r;
+      color: $grey-700;
+    }
+  }
+
+  .icon-selected {
+    background: $main-600;
+    border-radius: 6px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      color: $white;
+
+      &::before {
+        color: $white;
+      }
+    }
+
+    .icon-clock-trade {
+
+      .path3,
+      .path4 {
+        &::before {
+          color: $main-600;
+        }
+      }
+    }
+
+    .icon-clock-user {
+
+      .path3,
+      .path4,
+      .path5 {
+        &::before {
+          color: $main-600;
+        }
+      }
+    }
+  }
+
+  :deep(.dropdown-action) {
+    .dropdown-toggle {
+      @include font-t12r;
+      color: #000000;
+      max-width: 100%;
+      width: 100%;
+      min-width: 100%;
+      padding: 0 12px;
+      border-radius: 0;
+      border-right: 1px solid $grey-400;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      justify-content: center;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  :deep(.vue-daterange-picker) {
+    .daterangepicker {
+
+      .drp-calendar.left,
+      .drp-calendar.right {
+        .calendar-table {
+          td.in-range {
+            background: #ff8d072e;
+          }
+
+          td.active {
+            background: $main-600;
+          }
+
+          td.active.end-date {
+            position: relative;
+          }
+
+          td.off {
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+}

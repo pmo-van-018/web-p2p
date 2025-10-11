@@ -1,0 +1,44 @@
+.progress-line {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: $grey-400;
+  @include font-t14r;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  width: 100%;
+  &__outer {
+    width: 100%;
+  }
+  &__full-width {
+    margin-right: 0;
+    padding-right: 0;
+  }
+  &__inner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+    background-color: #D9D9D9;
+  }
+  &__text {
+    display: inline-block;
+    color: $grey-400;
+    @include font-t14r;
+    white-space: nowrap;
+    text-align: right;
+    vertical-align: middle;
+    word-break: normal;
+    flex: 0 0 48px;
+  }
+  &__bg {
+    position: relative;
+    background-color: $green-500;
+    transition: all .4s cubic-bezier(.08,.82,.17,1) 0s;
+    height: 4px;
+  }
+}

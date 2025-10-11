@@ -1,0 +1,27 @@
+$title-header: "title-header";
+
+.#{$title-header} {
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--mode-light-dark-300);
+    &__title {
+        color: var(--mode-light-dark-1000);
+        @include font-t16m;
+    }
+    &__sub-title {
+        color: var(--mode-light-dark-800);
+        @include font-t12r;
+        span {
+            color: $orange-600;
+            margin-left: 5px;
+        }
+    }
+    &.sell-payment-custom {
+        .#{$title-header} {
+            &__title {
+                color: var(--mode-light-dark-1000);
+                margin-bottom: 4px;
+                @include font-t20b;
+            }
+        }
+    }
+}

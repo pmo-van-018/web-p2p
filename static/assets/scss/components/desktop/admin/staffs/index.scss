@@ -1,0 +1,84 @@
+.managements {
+  height: 100%;
+  &__title {
+    @include font-t20b;
+    color: $grey-600;
+  }
+  &__content {
+    @include font-t14r;
+    color: $grey-400;
+    margin: 0;
+    padding-top: 12px;
+  }
+  &__filter {
+    padding: 34px 0 16px;
+  }
+  &__table {
+    :deep(.base-table) {
+      min-height: calc(100vh - 350px);
+    }
+  }
+  [class^="icon-"],
+  :deep(.copy-button__icon),
+  :deep(.wallet-address-qrcode-button__icon) {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  &__item {
+    @include font-t14r;
+    color: $grey-600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+
+    &.actions {
+      display: flex;
+      flex-direction: row;
+      grid-gap: 36px;
+      gap: 36px;
+      cursor: pointer;
+      overflow: inherit;
+      max-width: 220px;
+      margin-left: auto;
+      .staff-list {
+        @include font-t14r;
+        color: $grey-400;
+        text-decoration: underline;
+      }
+    }
+    &.underline {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .sub-text {
+      font-weight: 400;
+      color: $grey-400;
+    }
+
+    .active-status {
+      font-weight: 400;
+      color: $green-500;
+    }
+    .icon-edit {
+      font-size: 24px;
+    }
+  }
+  .wallet-address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    max-width: 218px;
+    &__name {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .delay-animation {
+    animation: fadeinLoad 1s forwards;
+    opacity: 0;
+  }
+}

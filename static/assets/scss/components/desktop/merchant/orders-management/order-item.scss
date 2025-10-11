@@ -1,0 +1,120 @@
+.order-item {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid $grey-100;
+  overflow: hidden;
+  padding: 24px 0;
+  transition: 0.3s;
+  justify-content: space-between;
+  cursor: default;
+  :deep(.icon-copy){
+    font-size: 20px;
+    margin-left: 2px;
+  }
+  &:hover {
+    background: $grey-100;
+  }
+  .order-type {
+    width: 10%;
+  }
+  .order-info {
+    width: 15%;
+  }
+  .amount {
+    width: 20%;
+  }
+  .transfer-content {
+    width: 15%;
+  }
+  .progressing {
+    width: 30%;
+  }
+  .action {
+    width: 10%;
+    min-width: 160px;
+  }
+  .order-type {
+    &__bottom {
+      @include font-t14m;
+      color: $grey-900;
+      span {
+        color: $n-700;
+        font-weight: $font-weight-regular;
+      }
+    }
+  }
+  .order-info {
+    display: flex;
+    &__type {
+      @include font-t14m;
+      color: $bullish-green;
+      margin-right: 4px;
+      min-width: 35px;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+    &__text {
+      @include font-t14m;
+      color: $grey-600;
+      margin-bottom: 4px;
+      cursor: pointer;
+      text-decoration: underline;
+      width: fit-content;
+    }
+    &__status {
+      @include font-t14r;
+      color: $grey-500;
+    }
+  }
+  .amount {
+    display: flex;
+    flex-direction: column;
+    &__vnd {
+      @include font-t20b;
+      color: $bullish-green;
+      margin-bottom: 4px;
+    }
+    &__crypto {
+      @include font-t14m;
+      color: $grey-600;
+    }
+  }
+  .transfer-content {
+    @include font-t20m;
+    color: $grey-900;
+  }
+  .progressing {
+    @include font-t14r;
+    color: $grey-900;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+    span {
+      font-size: 40px;
+      margin-right: 12px;
+    }
+  }
+  .action-btn {
+    min-width: 154px;
+    height: 40px;
+    @include font-t12b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-size: 20px;
+      margin-right: 4px;
+    }
+  }
+  .bullish-green {
+    color: $bullish-green;
+  }
+  .bearish-red {
+    color: $bearish-red;
+  }
+}
+:deep(.countdown__item) {
+  color: $grey-900;
+}

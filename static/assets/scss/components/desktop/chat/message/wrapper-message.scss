@@ -1,0 +1,70 @@
+.wrapper-message {
+  border-radius: 6px;
+  color: $grey-30;
+  &.received {
+    .wrapper-message {
+      &__container {
+        border-radius: 12px 12px 12px 0;
+        color: $grey-600;
+        background: var(--mode-light-dark-200);
+      }
+      &__content {
+        color: var(--mode-light-dark-1500);
+      }
+      &__date {
+        color: var(--mode-light-dark-500);
+      }
+    }
+  }
+  &__info {
+    @include font-t12r;
+    color: #05A7A7;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    .dots {
+      width: 4px;
+      height: 4px;
+      border-radius: 100px;
+      margin: 0 4px;
+    }
+  }
+  &__info-role {
+    opacity: 0.7;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    background-color: $persian-green;
+    border-radius: 12px 12px 0 12px;
+    padding: 8px 12px;
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__content {
+    color: $white;
+    @include font-t14r;
+    margin-bottom: 2px;
+    word-break: break-word;
+  }
+  &__date {
+    @include font-t12r;
+    color: #EEEEF1;
+  }
+  &__role-operation {
+    @include font-t12r;
+    color: #EEEEF1;
+    text-align: right;
+  }
+  &__dots {
+    background-color: $grey-200;
+    width: 4px;
+    height: 4px;
+    border-radius: 100px;
+    margin: 0 4px;
+  }
+}

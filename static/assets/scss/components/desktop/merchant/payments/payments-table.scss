@@ -1,0 +1,79 @@
+.payments-table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+  padding: 0 24px;
+  border: solid 1px var(--mode-light-dark-100);
+  border-top: none;
+  .t-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    color: var(--mode-light-dark-700);
+  }
+  .t-body {
+    display: flex;
+    flex-direction: column;
+    column-gap: 24px;
+    border-top: 1px solid var(--mode-light-dark-100);
+    .payment-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--mode-light-dark-100);
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+  .t-col {
+    display: flex;
+    color: var(--mode-light-dark-1500);
+  }
+  .bank-account {
+    width: 20%;
+  }
+  .bank-name {
+    width: 15%;
+  }
+  .bank-number {
+    width: 30%;
+  }
+  .bank-branch {
+    width: 40%;
+    flex: 1;
+    justify-content: space-between;
+    .tool {
+      gap: 32px;
+      span {
+        font-size: 26px;
+        cursor: pointer;
+      }
+    }
+  }
+  .bank-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    img {
+      width: 24px;
+      height: auto;
+    }
+  }
+  &__body {
+    min-height: calc(100vh - 422px);
+  }
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+  }
+}
+
+.custom-tooltip-payment {
+  left: 16px !important;
+}

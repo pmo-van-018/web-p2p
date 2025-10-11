@@ -1,0 +1,120 @@
+$history: "history";
+$order-pending: "order-pending";
+
+.#{$order-pending},
+.#{$history} {
+    &__toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 37px 24px 0 0;
+        padding-right: 24px;
+    }
+    &__filter {
+        display: flex;
+        column-gap: 12px;
+        align-items: center;
+    }
+    &__search-container {
+        position: relative;
+        .icon-search-outline {
+            position: absolute;
+            top: 50%;
+            right: 8px;
+            transform: translateY(-50%);
+            font-size: 24px;
+        }
+    }
+    &__search {
+        width: 364px;
+        padding: 9px 49px 9px 12px;
+        border: 1px solid $grey-300;
+        border-radius: 8px;
+        outline: none;
+        color: $grey-900;
+        @include font-t14r;
+        &::placeholder {
+            color: $grey-300;
+        }
+    }
+    &__reset {
+        color: $yellow-800;
+        padding-left: 20px;
+        cursor: pointer;
+        @include font-t14m;
+    }
+    &__refresh {
+        width: 156px;
+        display: flex;
+        align-items: center;
+        border: 1px solid $grey-300;
+        border-radius: 8px;
+        padding: 7px 10px;
+        cursor: pointer;
+        column-gap: 8px;
+        justify-content: center;
+        .icon-loading {
+            font-size: 20px;
+            &.spin {
+                animation: spin 1s linear infinite;
+            }
+            .path1::before {
+                color: $yellow-800;
+            }
+        }
+    }
+    &__list-header {
+        margin-top: 24px;
+        display: flex;
+        padding: 16px 24px;
+        border-top: solid 1px $grey-100;
+        
+    }
+    &__list-header-item {
+        color: $grey-400;
+        @include font-t14r;
+        &:nth-child(1) {
+            width: 21%;
+        }
+        &:nth-child(2) {
+            width: 20%;
+        }
+        &:nth-child(4),
+        &:nth-child(3) {
+            width: 18%;
+        }
+        :deep(.icon-icon-filter) {
+            font-size: 16px;
+        }
+        .c-btn-sort {
+            span:hover {
+                opacity: 1;
+            }
+            &__item--hide {
+                visibility: hidden;
+            }
+        }
+    }
+    &__footer {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: 48px;
+    }
+    &__page {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        color: $n-400;
+        @include font-t14m;
+    }
+}
+
+.#{$order-pending} {
+    &__list-header-item {
+        &:last-child {
+            width: 36%;
+        }
+    }
+}

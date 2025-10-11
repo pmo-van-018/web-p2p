@@ -1,0 +1,63 @@
+.customer-care-wrapper {
+  width: 100vw;
+  height: 100%;
+  background: var(--mode-light-dark-0);
+  z-index: 1040;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  right: 0;
+  bottom: 0;
+  &.visible {
+    animation: 0.5s ease 0s 1 normal forwards running widget-show;
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    position: fixed;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  &__head {
+    display: flex;
+    background: var(--mode-light-dark-100);
+    justify-content: space-between;
+    padding: 8px 16px;
+    align-items: center;
+  }
+  &__body {
+    overflow: hidden;
+    overflow-y: auto;
+    height: calc(100% - 50px - 62px);
+    @include scrollbars(2px, $grey-200, $white);
+    &--height {
+      height: calc(100% - 50px);
+    }
+  }
+  &__icon-back {
+    font-size: 24px;
+  }
+  &__action {
+    padding: 11px 16px;
+  }
+  &__head-center {
+    @include font-t14b;
+    color: var(--mode-light-dark-1500);
+  }
+  &__head-left {
+    cursor: pointer;
+  }
+  &__head-right {
+    border-radius: 6px;
+    &:hover {
+      cursor: pointer;
+      background: rgba($grey-50, 0.3);
+    }
+  }
+}

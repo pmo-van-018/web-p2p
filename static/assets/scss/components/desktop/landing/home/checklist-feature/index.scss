@@ -1,0 +1,217 @@
+.checklist-feature {
+  padding: pxVwMobile(30) 0 pxVwMobile(24);
+
+  @media (min-width: 576px) {
+    padding: pxVwTablet(32) 0 pxVwTablet(32);
+  }
+
+  @media (min-width: 992px) {
+    padding: pxVw(77) 0 pxVw(77);
+  }
+
+  &__container {
+    @media (min-width: 1500px) {
+      max-width: 1408px;
+      margin: 0 auto;
+    }
+  }
+
+  &__description {
+    max-width: pxVwMobile(480);
+    @include font-t12r;
+    margin: pxVwMobile(16) auto;
+    padding: 0 pxVwMobile(16);
+    text-align: center;
+
+    @media (min-width: 576px) {
+      max-width: pxVwTablet(480);
+      font-size: pxVwTablet(16);
+    }
+
+    @media (min-width: 992px) {
+      max-width: pxVw(670);
+      @include font-t20r;
+    }
+
+  }
+
+  &__thumbnail {
+    position: relative;
+    text-align: center;
+
+    img {
+      aspect-ratio: 688/700;
+      width: clamp(229px, 38vw, 688px);
+      height: clamp(240px, 41vw, 700px);
+      object-fit: contain;
+    }
+
+    @media (min-width: 992px) {
+      flex: 0 0 55%;
+      text-align: left;
+    }
+  }
+
+  &__action {
+    min-width: 210px;
+    height: pxVwMobile(40);
+
+    @media (min-width: 992px) {
+      height: pxVw(56);
+      @include font-t24m;
+    }
+  }
+
+  &__outer {
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    @media (min-width: 992px) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  }
+
+  &__grid {
+    display: none;
+
+    @media (min-width: 992px) {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr 1fr;
+      align-items: center;
+    }
+
+    @media (min-width: 1024px) {
+      background: url("/assets/images/components/desktop/home/home-background.png") center no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+  :deep(.highlight) {
+    @media (max-width: 992px) {
+      &::after {
+        width: 155px;
+      }
+    }
+  }
+}
+
+.checklist {
+  &__wrapper {
+    padding: 40px 12px 0;
+  }
+
+  &__list {
+    @media (max-width: 992px) and (min-width: 576px) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  }
+
+  &__title {
+    font-weight: $font-weight-medium;
+    font-size: pxVwMobile(14);
+    line-height: 1.5;
+    color: $black-900;
+    margin: 0;
+
+    @media (min-width: 576px) {
+      font-size: pxVwTablet(16);
+    }
+
+    @media (min-width: 992px) {
+      @include font-t24m;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: pxVwMobile(12);
+    line-height: pxVwMobile(18);
+    color: #52535E;
+    margin-top: pxVwMobile(5);
+    margin-bottom: 0;
+
+    @media (min-width: 576px) {
+      margin-top: pxVwTablet(5);
+      text-align: center;
+      font-size: pxVwTablet(14);
+      line-height: pxVwTablet(21);
+    }
+
+    @media (min-width: 992px) {
+      margin-top: pxVw(5);
+      text-align: left;
+      @include font-t16r;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @media (max-width: 992px) and (min-width: 576px) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: 12px;
+
+    &:not(:last-child) {
+      margin-bottom: pxVwMobile(24);
+    }
+
+    @media (max-width: 992px) and (min-width: 576px) {
+      width: 45%;
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 992px) {
+      gap: unset;
+      margin-bottom: 36px;
+    }
+  }
+
+  &__inner {
+    @media (min-width: 992px) {
+      padding-left: 18px;
+    }
+  }
+
+  &__thumb {
+    width: pxVwMobile(61);
+    height: pxVwMobile(61);
+    flex: 0 0 pxVwMobile(61);
+    object-fit: cover;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3.327px;
+
+
+    @media (min-width: 992px) {
+      width: pxVw(56);
+      height: pxVw(56);
+      flex: 0 0 pxVw(56);
+      box-shadow: 0 6.712243556976318px 5.3697943687438965px 0 #44C1C109, 0 11.793214797973633px 3.7523868083953857px 0 #42BEBE0B, 0 21.9782657623291px 17.153766632080078px 0 #2460600D, 0 53.60552215576172px 42.88441848754883px 0 #24606012;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

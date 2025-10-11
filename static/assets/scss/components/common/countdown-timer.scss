@@ -1,0 +1,60 @@
+.countdown-timer {
+  border-radius: 6px;
+  border: 1.5px solid rgba(255, 141, 7, 0.20);
+  background: rgba(255, 141, 7, 0.05);
+  padding: 4px;
+  min-width: 64px;
+  display: flex;
+  justify-content: center;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    flex: 1;
+  }
+  &__content {
+    @include font-t10b;
+    color: $grey-900;
+    @media (min-width: 1480px) {
+      @include font-t12b;
+    }
+  }
+  &__loader {
+    --border-width: 4px;
+
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    flex: 0 0 14px;
+
+    --mask: radial-gradient(
+                    farthest-side,
+                    transparent calc(100% - var(--border-width) - 0.5px),
+                    #000 calc(100% - var(--border-width) + 0.5px)
+    );
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    background: linear-gradient(to top, #FF7A00, rgba(255,122,0, 0)) 90% no-repeat,
+    conic-gradient(from 90deg at 50% 50%, #FF7A00 0deg, rgba(255, 122, 0, 0) 360deg) no-repeat;
+    animation: spin 1s linear infinite;
+  }
+  &.warning {
+    border: 1.5px solid rgba(234, 41, 14, 0.20);
+    background: rgba(234, 41, 14, 0.05);
+    .countdown-timer {
+      &__loader {
+        background: linear-gradient(to top, #FF0000, rgba(255,0,0, 0)) 90% no-repeat,
+        conic-gradient(from 90deg at 50% 50%, #FF0000 0deg, rgba(255, 0, 0, 0) 360deg) no-repeat;
+      }
+    }
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

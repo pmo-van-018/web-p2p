@@ -1,0 +1,90 @@
+.transaction-rpc {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    @media (min-width: 768px) {
+      gap: 1rem;
+    }
+  }
+  &__head {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  &__detail-order {
+    border-radius: 6px;
+    border: 1px solid #E8E9EF;
+    background: #fff;
+    padding: 8px;
+    @include font-t14r;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    span {
+      color: #73788B;
+    }
+  }
+  &__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    @include font-t14m;
+    color: #FF2E2E;
+    @media (min-width: 768px) {
+      @include font-t16m;
+    }
+  }
+  &__content {
+    @include font-t12r;
+    color: #73788B;
+    @media (min-width: 768px) {
+      @include font-t14r;
+    }
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  &__body-title {
+    @include font-t12m;
+    color: #000000;
+    @media (min-width: 768px) {
+      @include font-t14m;
+    }
+  }
+  &__action {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    @media (min-width: 768px) {
+      gap: 23px;
+    }
+  }
+}
+.transaction-txt {
+  border-radius: 4px;
+  border: 1px solid #E8E9EF;
+  background-color: #FFF;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__inner {
+    @include font-t14r;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__text {
+    color: #73788B;
+  }
+  &__id {
+    color: #000;
+    cursor: pointer;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,126 @@
+$index: "user-order-detail";
+
+.#{$index} {
+  background-color: var(--mode-light-dark-0);
+  position: relative;
+
+  &__header {
+    width: 100%;
+    background-color: var(--mode-light-dark-100);
+  }
+
+  &__header-content {
+    max-width: 708px;
+    margin: auto;
+    padding: 24px 0;
+  }
+
+  &__loader {
+    max-width: 708px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    align-items: flex-end;
+  }
+
+  &__title {
+    color: $grey-900;
+    @include font-t24b;
+  }
+
+  &__order {
+    @include font-t14r;
+    color: var(--mode-light-dark-600);
+
+    &--highlight {
+      color: var(--mode-light-dark-1500);
+    }
+  }
+
+  &__time {
+    @include font-t14r;
+    color: var(--mode-light-dark-600);
+
+    &--highlight {
+      @include font-t14b;
+      color: var(--mode-light-dark-1500);
+    }
+  }
+
+  &__content {
+    margin-top: 10px;
+    width: -webkit-fill-available;
+
+    &__wrapper {
+      max-width: 708px;
+      margin: auto;
+    }
+  }
+
+  :deep(.stepper-order__header) {
+    padding-bottom: 10px;
+  }
+
+  .countdown-action__header {
+    margin-top: 10px;
+  }
+
+  :deep(.layout-title) {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: none;
+  }
+
+  .user-link {
+    cursor: pointer;
+    text-decoration: underline;
+    @include ellipsis-multiline;
+    width: calc(clamp(200px, 22vw, 400px));
+  }
+
+  .user-link:hover {
+    color: $yellow-900;
+  }
+
+  &__chat-action {
+    position: fixed;
+    bottom: 21px;
+    right: 1rem;
+  }
+}
+
+.user-order-info {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  &__type {
+    @include font-t16b;
+
+    span {
+      @include font-t12b;
+    }
+
+    &.buy {
+      color: $bullish-green;
+    }
+
+    &.sell {
+      color: $bearish-red;
+    }
+  }
+
+  &__text {
+    @include font-t14b;
+    color: var(--mode-light-dark-700);
+  }
+
+  &__nickname {
+    @include font-t14b;
+    padding: 2px 12px;
+    color: var(--mode-light-dark-1000);
+    background-color: var(--mode-light-dark-300);
+    border-radius: 4px;
+  }
+}

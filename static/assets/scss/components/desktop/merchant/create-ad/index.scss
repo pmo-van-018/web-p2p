@@ -1,0 +1,75 @@
+.create-ad {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &__header {
+    @include font-t20b;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px 48px 18px;
+    color: $grey-900;
+    background: $grey-50;
+    &.manager {
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+    @media (max-width: 1600px) {
+      padding: 16px 24px 18px;
+    }
+    @media (max-width: 750px) {
+      padding: 16px 16px 12px;
+    }
+  }
+  .ad-type-nav {
+    @include font-t14b;
+    color: $grey-400;
+    padding-bottom: 12px;
+    border-bottom: 2px solid transparent;
+    display: block;
+    &.active {
+      color: $grey-900;
+      border-bottom-color: $grey-400
+    }
+  }
+  &__content {
+    width: 100%;
+    flex: 1;
+    padding: 8px 24px 32px;
+    @media (max-width: 750px) {
+      background-color: #Fff;
+      padding: 16px;
+    }
+  }
+  &__section {
+    width: 100%;
+    flex: 1;
+    padding: 8px 24px 32px;
+    @media (max-width: 750px) {
+      padding: 16px 16px 84px;
+      background-color: #Fff;
+    }
+  }
+}
+
+:deep(.nav-tabs) {
+  padding-inline: 48px;
+  background: $grey-50;
+  gap: 32px;
+  @media (max-width: 1600px) {
+    padding-inline: 24px;
+  }
+  @media (max-width: 750px) {
+    padding-inline: 16px;
+  }
+  .nav-link {
+    padding: 0 !important;
+    border: none !important;
+    background-color: transparent !important;
+    &.active .ad-type-nav {
+      color: $grey-900;
+      border-bottom: 2px solid $yellow-800;
+    }
+  }
+}

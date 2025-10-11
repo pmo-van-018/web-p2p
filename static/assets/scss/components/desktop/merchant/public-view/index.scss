@@ -1,0 +1,207 @@
+.public-view {
+  &__header {
+    background-color: var(--mode-light-dark-100);
+
+    .merchant-name {
+      padding-top: 24px;
+
+      .avatar-img {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+      }
+
+      .avatar-character {
+        @include font-t40b;
+        color: #fff;
+      }
+
+      .name {
+        @include font-t16m;
+        color: var(--mode-light-dark-900);
+        max-width: 175px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-transform: capitalize;
+      }
+    }
+
+    .merchant-data {
+      display: flex;
+      gap: 24px;
+      padding: 16px 0;
+      flex-wrap: wrap;
+
+      ::v-deep {
+        .overview-card {
+          flex: 1;
+
+          @media (max-width: 640px) {
+            width: 100%;
+          }
+        }
+
+        .dashboard-overview-card {
+          padding: 16px;
+        }
+
+        @media (max-width: 1400px) {
+
+          .overview-card__title,
+          dashboard-overview-card__title {
+            min-height: 40px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  &__tabs {
+    background-color: var(--mode-light-dark-100);
+
+    :deep(.tabs) {
+      display: inline-block;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    padding-top: 26px;
+  }
+
+  :deep(.nav-tabs .nav-link) {
+    padding: 6px 0 20px;
+
+    &.active {
+      background-color: transparent;
+    }
+  }
+}
+
+.buy-table {
+  .merchant-table__pagination .base-pagination {
+    justify-content: flex-end;
+  }
+
+  .avatar-container {
+    display: flex;
+    align-items: center;
+
+    :deep(.b-avatar-img img) {
+      aspect-ratio: 1;
+      object-fit: contain;
+    }
+
+    .avatar-item__right {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      justify-content: space-around;
+      @include font-t14r;
+      margin-bottom: 0px;
+      color: var(--mode-light-dark-1500);
+
+      .text-top {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .price {
+    color: var(--mode-light-dark-1000);
+    @include font-t20b;
+    margin-bottom: 0px;
+  }
+
+  .content-amount {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .content-limit {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .text-limit {
+        display: flex;
+        flex: 1;
+        color: var(--mode-light-dark-600);
+        max-width: 88px;
+        @include font-t14r;
+        margin-bottom: 0px;
+      }
+
+      .text-money {
+        display: flex;
+        flex: 2.5;
+        color: var(--mode-light-dark-1500);
+        @include font-t14m;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .content-detail {
+    display: flex;
+    height: 100%;
+    perspective: 1px;
+    background-color: var(--mode-light-dark-100);
+    width: 100%;
+    box-shadow: 0 0 5px 0 rgb(95 95 95 / 22%);
+    flex-direction: row;
+    position: relative;
+    z-index: 1;
+
+    .line {
+      border-right: 1px solid var(--mode-light-dark-200);
+    }
+  }
+
+  :deep(.common-table__head-tr) {
+    background: var(--mode-light-dark-0);
+  }
+
+  :deep(.common-table__body td) {
+    border-top: 1px solid transparent;
+  }
+
+  :deep(.common-table__body tr:nth-child(even)) {
+    background-color: var(--mode-light-dark-100);
+  }
+
+  :deep(.common-table__body tr:nth-child(2)) {
+    @include dark-mode {
+      .content-detail {
+        border-top: none;
+      }
+    }
+  }
+
+  :deep(.common-table__head-tr th) {
+    border-bottom: 2px solid var(--mode-light-dark-300);
+    border-top: none;
+    padding: 10px 8px;
+    @include font-t14m;
+  }
+
+  :deep(.common-table__body tr.disable) {
+    opacity: 0.3;
+    background-color: #FFF;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+  :deep(.base-button__success[disabled]) {
+    background-color: rgba(69, 185, 87, 1);
+  }
+  :deep(.base-button__danger[disabled]) {
+    background-color: rgba(255, 46, 46, 1);
+  }
+}

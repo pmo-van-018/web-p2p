@@ -1,0 +1,49 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b_8974_59309)">
+<path d="M8.66568 15.4547C8.66568 11.378 11.9679 8.07573 16.0446 8.07573C17.6957 8.07573 19.2227 8.61637 20.45 9.53691C20.4793 9.55152 20.5012 9.57344 20.5304 9.59535V5.95703H1.53516V18.4208C1.53516 19.0565 2.04657 19.5679 2.68218 19.5679H9.92229C9.92229 19.5679 9.87846 19.5167 9.86384 19.4875C9.10403 18.3332 8.66568 16.9451 8.66568 15.4547Z" fill="#FF8D07"/>
+</g>
+<g opacity="0.5" filter="url(#filter1_b_8974_59309)">
+<path d="M13.6556 3H2.68218C2.04657 3 1.53516 3.51141 1.53516 4.14702V5.33788H13.6556V3Z" fill="#FF8D07"/>
+</g>
+<g opacity="0.5" filter="url(#filter2_b_8974_59309)">
+<path d="M17.0311 3H14.832V5.33788H17.0311V3Z" fill="#FF8D07"/>
+</g>
+<g opacity="0.5" filter="url(#filter3_b_8974_59309)">
+<path d="M20.5293 4.14702C20.5293 3.51141 20.0179 3 19.3823 3H18.1914V5.33788H20.522V4.14702H20.5293Z" fill="#FF8D07"/>
+</g>
+<g filter="url(#filter4_b_8974_59309)">
+<path d="M16.4659 9.72461C13.149 9.72461 10.4531 12.4132 10.4531 15.73C10.4531 19.0469 13.149 21.7428 16.4659 21.7428C19.7827 21.7428 22.4786 19.0542 22.4786 15.73C22.4786 12.4059 19.7827 9.72461 16.4659 9.72461ZM18.7818 16.3218H17.0503V18.046C17.0503 18.3674 16.7873 18.6305 16.4659 18.6305C16.1444 18.6305 15.8741 18.3674 15.8741 18.046V16.3218H14.1499C13.8284 16.3218 13.5654 16.0588 13.5654 15.73C13.5654 15.4013 13.8284 15.1456 14.1499 15.1456H15.8741V13.4214C15.8741 13.0926 16.1371 12.8296 16.4659 12.8296C16.7946 12.8296 17.0503 13.0926 17.0503 13.4214V15.1456H18.7818C19.1033 15.1456 19.3663 15.4086 19.3663 15.73C19.3663 16.0515 19.1033 16.3218 18.7818 16.3218Z" fill="#FF8D07"/>
+</g>
+<defs>
+<filter id="filter0_b_8974_59309" x="-0.708267" y="3.71361" width="23.4829" height="18.0982" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="1.12171"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_8974_59309"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_8974_59309" result="shape"/>
+</filter>
+<filter id="filter1_b_8974_59309" x="-0.708267" y="0.756577" width="16.6079" height="6.82474" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="1.12171"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_8974_59309"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_8974_59309" result="shape"/>
+</filter>
+<filter id="filter2_b_8974_59309" x="12.5886" y="0.756577" width="6.68606" height="6.82474" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="1.12171"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_8974_59309"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_8974_59309" result="shape"/>
+</filter>
+<filter id="filter3_b_8974_59309" x="15.948" y="0.756577" width="6.82278" height="6.82474" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="1.12171"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_8974_59309"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_8974_59309" result="shape"/>
+</filter>
+<filter id="filter4_b_8974_59309" x="8.2097" y="7.48119" width="16.5142" height="16.5044" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="1.12171"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_8974_59309"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_8974_59309" result="shape"/>
+</filter>
+</defs>
+</svg>

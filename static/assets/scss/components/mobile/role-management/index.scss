@@ -1,0 +1,95 @@
+.role-management {
+  background-color: $white;
+  &__top {
+    padding: 10px 16px;
+  }
+  &__title {
+    color: $grey-900;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+  }
+  &__title-name {
+    @include ellipsis-multiline;
+    width: calc(clamp(300px, 60vw, 500px));
+  }
+  &__head {
+    :deep(.van-sticky) {
+      background-color: $white;
+    }
+  }
+  &__head-inner {
+    border-top: 1px solid $grey-100;
+    border-bottom: 1px solid $grey-100;
+    position: relative;
+    z-index: 1;
+    padding: 0 1rem;
+  }
+  &__create {
+    span {
+      margin-left: 16px;
+      font-size: 20px;
+    }
+  }
+  .role-management-table {
+    padding: 0 16px;
+    margin-bottom: 20px;
+  }
+
+  .role-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__title {
+      @include font-t16b;
+      color: $grey-500;
+      margin: 0;
+    }
+    &__sub {
+      @include font-t10b;
+      color: $yellow-900;
+      margin-top: 2px;
+    }
+    &__icon {
+      margin-top: 8px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .icon-add-primary {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .order-waiting {
+    background: rgba(244, 244, 245, 0.7);
+    border-radius: 6px;
+    padding: 4px;
+    &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .icon-note-order {
+      font-size: 16px;
+      &:before {
+        color: $red-500;
+      }
+    }
+    &__content {
+      display: flex;
+      align-items: center;
+    }
+    &__text {
+      @include font-t10m;
+      color: $grey-800;
+      margin-left: 8px;
+    }
+    &__count {
+      @include font-t10b;
+      color: $red-400;
+      margin-left: 6px;
+    }
+  }
+}

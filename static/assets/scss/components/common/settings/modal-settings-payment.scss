@@ -1,0 +1,46 @@
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  .bank-list {
+    background-color: $grey-50;
+    padding: 22px 14px 8px;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    @media (max-width: 750px) {
+      padding: 8px 12px;
+    }
+    &__wrapper {
+      @include scrollbars(3px, $grey-200, $white);
+      height: 233px;
+      overflow: auto;
+    }
+  }
+  .divide {
+    border-top-color: $grey-100;
+  }
+}
+
+:deep(.bank-item) {
+  display: flex;
+  .bank-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+  }
+  .bank-name {
+    color: var(--mode-light-dark-1000);
+  }
+}
+:deep(.custom-control-label) {
+  gap: 8px;
+}
+:deep(.c-primary-checkbox .custom-control-label:before) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+:deep(.c-primary-checkbox .custom-control-label:after) {
+  top: 50%;
+  transform: translateY(-50%);
+}

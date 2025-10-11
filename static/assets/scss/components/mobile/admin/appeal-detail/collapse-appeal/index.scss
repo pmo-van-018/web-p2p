@@ -1,0 +1,37 @@
+.collapse-appeal {
+  &__head {
+    padding: 18px 0;
+    &.note {
+      background: $yellow-50;
+      border-radius: 8px;
+      padding: 18px 16px;
+    }
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    @include font-t16b;
+    color: $grey-600;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  &__title-icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  &__icon {
+    font-size: 16px;
+    &:before {
+      color: $grey-500;
+    }
+  }
+  &.collapsed {
+    .collapse-appeal {
+
+    }
+  }
+}

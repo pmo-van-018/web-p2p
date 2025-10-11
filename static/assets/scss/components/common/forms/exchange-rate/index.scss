@@ -1,0 +1,137 @@
+.exchange-rate {
+  padding: 24px;
+  border: 3px solid var(--mode-light-dark-200);
+  border-radius: 6px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__header-inner {
+    display: flex;
+    gap: 8px;
+  }
+  &__from-binance {
+    @include font-t14r;
+    color: var(--mode-light-dark-600);
+  }
+  &__title {
+    @include font-t16m;
+    color: #000;
+  }
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__form-label {
+    @include font-t14m;
+    color: var(--mode-light-dark-900);
+    margin-bottom: 8px;
+  }
+  .exchange-result {
+    &__head {
+      margin-bottom: 8px;
+    }
+    &__body {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    &__data {
+      border-radius: 8px;
+      padding: 12px;
+      background-color: var(--mode-light-dark-100 );
+    }
+    &__data {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__text, &__content {
+      @include font-t14r;
+      color: var(--mode-light-dark-700);
+    }
+    &__value, &__head {
+      @include font-t14m;
+      color: var(--mode-light-dark-900);
+    }
+    &__value {
+      &.text-blue {
+        color: var(--branding-primary-600);
+      }
+    }
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+    &__no-data {
+      width: 48px;
+      height: 48px;
+    }
+    &__loading {
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      &:after {
+        content: " ";
+        display: block;
+        width: 26px;
+        height: 26px;
+        margin: 4px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        border-color: #D3D8F0 transparent #D3D8F0 transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+      }
+    }
+    &__group {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+  }
+  .exchange-input-percent {
+    width: 110px;
+    .input-percent {
+      :deep(.base-input input) {
+        padding-right: 30px;
+      }
+    }
+  }
+}
+.exchange-result {
+  &__text {
+    .icon-info {
+      &::before{
+        color: $grey-400;
+      }
+    }
+  }
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

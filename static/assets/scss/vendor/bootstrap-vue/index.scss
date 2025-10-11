@@ -1,0 +1,24 @@
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1600px
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1560px
+) !default;
+$font-family-base: 'Roboto Condensed', sans-serif;
+$b-skeleton-background-color: var(--skeleton-loading-color);
+$b-skeleton-animate-wave-color: hsla(0, 0%, 100%, 0.4);
+
+$table-border-color: var(--mode-light-dark-300);
+
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-vue/src/index.scss';

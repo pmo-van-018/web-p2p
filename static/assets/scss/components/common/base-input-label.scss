@@ -1,0 +1,320 @@
+$base-input: 'base-input';
+
+.#{$base-input} {
+  position: relative;
+  margin-bottom: 1rem;
+  &__wrap {
+    display: flex;
+    flex-flow: column-reverse;
+    position: relative;
+    .icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 17px;
+      font-size: 22px;
+    }
+    .icon-status {
+      font-size: 18px;
+    }
+    &--reverse {
+      flex-flow: column;
+      label {
+        transform: unset;
+      }
+    }
+    &.input-error {
+      input {
+        border-color: var(--function-sell-warning-error-600) !important;
+        &:focus {
+          box-shadow: 0px 0px 0px 3px var(--branding-red-100);
+          background: var(--branding-red-50);
+        }
+      }
+    }
+    a {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      cursor: pointer;
+      color: $grey-400;
+      @include font-t14m;
+      text-align: right;
+      padding-left: 10px;
+      flex-shrink: 0;
+    }
+    .warning {
+      color: $yellow-800;
+    }
+
+    &.focused {
+      input {
+        &:disabled {
+          background-color: $grey-400;
+        }
+      }
+    }
+  }
+  input {
+    background: var(--mode-light-dark-0);
+    @include font-t14r;
+    height: 40px;
+    border: 1px solid var(--mode-light-dark-400);
+    border-radius: 8px;
+    padding: 12px 8px;
+    color: var(--mode-light-dark-1000);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    &:focus {
+      outline: 0;
+      // border-color: transparent;
+    }
+    &::placeholder {
+      color: var(--mode-light-dark-500);
+      @include font-t14r;
+    }
+    &:disabled {
+      background-color:$grey-800;
+      color: rgba(39, 41, 47, 1);
+      opacity: 1;
+      cursor: no-drop;
+    }
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--mode-light-dark-1000);
+    transition: background-color 5000s ease-in-out 0s;
+  }
+  label {
+    @include font-t14m;
+    color: var(--mode-light-dark-1500);
+    margin-bottom: 6px;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+  .label-right {
+    position: absolute;
+    right: 0;
+    top: 3px;
+    span {
+      color: #ebb039;
+    }
+    &.active {
+      @include font-t16m;
+      right: 12px;
+      bottom: 0;
+      top: unset;
+      z-index: 2;
+      line-height: 24px;
+      cursor: pointer;
+      span {
+        color: $green-500;
+      }
+    }
+    &.disable {
+      right: 12px;
+      bottom: 0;
+      top: unset;
+      z-index: 2;
+      @include font-t16m;
+      cursor: no-drop;
+      pointer-events: none;
+      span {
+        color: unset;
+      }
+    }
+  }
+  .label-card {
+    margin-bottom: 8px;
+  }
+  .label-contact-form {
+    position: relative;
+    &::after {
+      content:"";
+      background-image: url('#{$staticDomain}/assets/images/components/desktop/contact/star.svg');
+      background-size: 6px 16px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 6px;
+      height: 16px;
+      margin-left: 4px;
+    }
+  }
+  .contact-content {
+    @include font-t16r;
+    line-height: 20px;
+    background-color:$grey-800;
+    border-radius: 8px;
+    height: 145px;
+    color: $white;
+    border-color:$grey-800;
+    resize: none;
+    padding: .8rem 1rem;
+    &::placeholder {
+      @include font-t16r;
+    }
+    @media (max-width: $size-medium) {
+      height: 160px;
+    }
+  }
+  &__vnd {
+    margin-top: 10px;
+    color: $grey-500;
+  }
+  &__vnd-note {
+    color: $grey-500;
+    font-size:14px;
+    line-height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 17px;
+  }
+  .error {
+    margin-top: 6px;
+    color: $red-500;
+    display: inline-block;
+    @include font-t14r;
+    &--inline {
+      display: inline;
+      margin-top: 0;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      color: $white;
+      transform: translateY(-50%);
+      line-height: 1;
+      background:$red-500;
+      padding: 3px;
+      border-radius: 2px;
+      font-weight: $font-weight-bold;
+      z-index: 9;
+      margin-right: 10px;
+    }
+    &--outline {
+      font-size: 12px;
+      display: block;
+      margin-top: 5px;
+      color: $red-500;
+      font-style: italic;
+    }
+  }
+  &--password {
+    input {
+      padding-right: 2.5rem !important;
+    }
+  }
+  &.required {
+    input {
+      &::placeholder {
+        &:after {
+          content: '*';
+          color: $red-500;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+  .section-card__tooltip {
+    top: -12px;
+    left: 407px
+  }
+  .icon-show {
+    position: absolute;
+    right: 7px;
+    top: 13px;
+  }
+  .checkmark {
+    display:inline-block;
+    width: 22px;
+    height:22px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    position: absolute;
+    right: 7px;
+    top: 20%;
+  }
+  .checkmark_stem {
+      position: absolute;
+      width:3px;
+      height:9px;
+      background-color:#009c3a;
+      left:11px;
+      top:6px;
+  }
+  .checkmark_kick {
+      position: absolute;
+      width:3px;
+      height:3px;
+      background-color:#009c3a;
+      left:8px;
+      top:12px;
+  }
+  .group-action {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    display: flex;
+    &--minus,
+    &--plus {
+      width: 32px;
+      height: 32px;
+      padding: 0;
+      border-radius: 6px;
+      background: #353D50;
+      margin: 0;
+      font-size: 26px;
+      text-align: center;
+      line-height: 30px;
+      margin-left: 5px;
+      display: inline-block;
+      color: $white;
+      &:disabled {
+        color:#272727;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .form-special-value {
+    line-height: 13px;
+    color: #fff;
+    background: #0f192f;
+    border: 1px solid #0f192f;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: .8rem 1rem;
+    width: 100%;
+    -webkit-appearance: none;
+    transition: .2s linear;
+    background: $grey-800;
+    @include font-t16r;
+    height: 40px;
+    box-shadow: none;
+    &.text-blur {
+      color: $grey-400;
+    }
+  }
+  &.background--dark {
+    .#{$base-input}__wrap {
+      &.focused {
+        input {
+          &:disabled {
+            background-color:$grey-800;
+            color: $white;
+            -webkit-text-fill-color: $white;
+            cursor: no-drop;
+          }
+        }
+      }
+    }
+  }
+  &.add-bank-custom {
+    .error {
+      position: absolute;
+    }
+  }
+}

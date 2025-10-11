@@ -1,0 +1,79 @@
+.orders-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+  flex: 1;
+  .t-head {
+    width: 100%;
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    border-top: 1px solid $grey-100;
+    border-bottom: 1px solid $grey-100;
+    .t-col {
+      @include font-t14r;
+      color: $grey-400;
+      display: flex;
+      flex-direction: column;
+      &__cnt {
+        display: flex;
+        align-items: center;
+        svg {
+          width: 20px;
+          margin-left: 4px;
+          cursor: pointer;
+        }
+      }
+    }
+    .order-type {
+      width: 10%;
+    }
+    .order-info {
+      cursor: pointer;
+      width: 15%;
+    }
+    .amount {
+      cursor: pointer;
+      width: 20%;
+    }
+    .transfer-content {
+      width: 15%;
+    }
+    .progressing {
+      width: 30%;
+    }
+    .action {
+      width: 10%;
+      min-width: 160px;
+    }
+  }
+  .t-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__empty {
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      img {
+        width: 188px;
+        height: auto;
+      }
+      span {
+        @include font-t14m;
+        color: $grey-500;
+        margin-top: 28px;
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.appeal-card {
+  transition: all 0.3s linear;
+  padding: 12px 0;
+  border-bottom: 1px solid #F4F4F5;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s linear;
+  }
+  &__left {
+    .view-detail__text {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      color: $grey-600;
+    }
+  }
+  &__body-content {
+    margin: 12px 0 10px;
+  }
+  &__footer-text {
+    @include font-t10m;
+    color: $grey-400;
+    margin-top: 10px;
+  }
+}
+
+.card-content {
+  &__container {
+    margin-bottom: 12px;
+  }
+  &___content {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      padding-top: 4px;
+    }
+  }
+  &__text {
+    @include font-t10m;
+    color: $grey-400;
+  }
+  &__value {
+    @include font-t12m;
+    color: $grey-600;
+    margin-left: 4px;
+    @include ellipsis-multiline;
+    width: calc(clamp(190px, 20vw, 400px));
+    :deep(.copy-content__text) {
+      @include font-t12m;
+      color: $grey-600;
+    }
+    &.highlight-time {
+      color: $yellow-800;
+      @include font-t14m;
+    }
+    &.highlight-timeout {
+      color: $grey-300;
+      @include font-t14m;
+    }
+    &--underline {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  &__underline {
+    text-decoration: underline;
+  }
+  :deep(.processing__title) {
+    font-weight: 500;
+    font-size: 12px;
+  }
+}
+
+.view-detail {
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  &__text {
+    @include font-t12m;
+    color: $yellow-800;
+  }
+  &__icon {
+    font-size: 12px;
+    color: $yellow-800;
+  }
+}
+
+.date-time {
+  @include font-t10m;
+  color: $grey-400;
+}

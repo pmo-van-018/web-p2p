@@ -1,0 +1,52 @@
+.pagination-custom {
+  &__icon {
+    font-size: 20px;
+    &::before {
+      border-color: var(--mode-light-dark-700);
+    }
+  }
+
+  .icon-arrow-prev,
+  .icon-arrow-next {
+    font-size: 16px;
+  }
+
+  :deep(button) {
+    min-width: 40px;
+    border-radius: 0;
+  }
+
+  :deep(.pagination) {
+    margin: 0;
+  }
+
+  :deep(.page-link) {
+    @include font-t14m;
+    color: var(--mode-light-dark-700);
+    position: inherit;
+    border: 1px solid var(--mode-light-dark-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: transparent;
+  }
+
+  :deep(.page-item.active .page-link) {
+    color: var(--mode-light-dark-700);
+    background-color: var(--mode-light-dark-100);
+    border-color: var(--mode-light-dark-200);
+  }
+
+  :deep(.page-link:focus) {
+    box-shadow: none;
+  }
+
+  :deep(.page-item.disabled) {
+    cursor: not-allowed;
+
+    .pagination-custom__icon::before {
+      color: var(--mode-light-dark-200);
+    }
+  }
+}

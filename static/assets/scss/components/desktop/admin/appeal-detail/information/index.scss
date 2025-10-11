@@ -1,0 +1,27 @@
+.information {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  :deep(.detail-card) {
+    padding: 0;
+    .title {
+      @include font-t14r;
+      font-weight: 700;
+      color: $grey-900;
+    }
+  }
+  .transactions {
+    .transaction-list {
+      padding: 8px 12px;
+      background-color: #fff;
+    }
+  }
+  &::v-deep() {
+    .title {
+      @include font-t14r;
+      font-weight: 700;
+      color: $grey-900;
+      margin: 14px 0;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.referral-code {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  &__thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    img {
+      width: 230px;
+      height: 155px;
+      object-fit: contain;
+    }
+  }
+  &__input {
+    position: relative;
+    :deep(.base-input) {
+      margin-bottom: 0;
+    }
+  }
+  &__input-error {
+    @include font-t12m;
+    color: $red-500;
+  }
+  &__input-copy {
+    position: absolute;
+    right: 1rem;
+    top: 20px;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: $light-blue-100;
+    @include font-t12m;
+  }
+  &__input-border-error {
+    :deep(.form-input.input-custom) {
+      border-radius: 8px;
+      border: 1px solid $red-500;
+      box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.15);
+    }
+  }
+  &__title {
+    color: var(--mode-light-dark-1500);
+    @include font-t16m;
+    text-align: center;
+  }
+}

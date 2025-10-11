@@ -1,0 +1,13 @@
+.order-status {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    @include font-t14r;
+    color: var(--mode-light-dark-1500);
+    &--text-color {
+      color: $grey-300;
+    }
+  }
+}

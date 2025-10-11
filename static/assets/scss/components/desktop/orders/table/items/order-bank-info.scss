@@ -1,0 +1,37 @@
+.order-bank-info {
+  &__text {
+    @include font-t12r;
+    @media (min-width: 1480px) {
+      @include font-t14r;
+    }
+  }
+  &__icon {
+    cursor: pointer;
+    img {
+      width: 14px;
+      height: 14px;
+      @media (min-width: 1480px) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  .bank-icon {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    @media (min-width: 1480px) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  .copy-button {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  :deep(.copy-button__icon) {
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 0;
+  }
+}

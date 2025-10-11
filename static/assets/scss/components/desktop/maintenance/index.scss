@@ -1,0 +1,61 @@
+.maintenance {
+  background: $green-800;
+  &__container {
+    display: flex;
+    gap: 1rem;
+    padding: 2px 15px;
+    @media (min-width: 768px) {
+      padding: 6px 15px;
+    }
+  }
+  &__left {
+    display: flex;
+    gap: 4px;
+    @media (min-width: 1024px) {
+      align-items: center;
+    }
+  }
+  &__right {
+    flex: 1;
+    height: 21px;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+  }
+  &__icon {
+    font-size: 20px;
+    &:before {
+      color: #FFFFFF;
+    }
+  }
+  &__notice {
+    @include font-t14m;
+    color: #FFFFFF;
+  }
+  .marquee {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: 1.25rem;
+    &__content {
+      flex-shrink: 0;
+      display: flex;
+      justify-content: space-around;
+      gap: 1rem;
+      min-width: 100%;
+      color: #FFFFFF;
+      @include font-t14m;
+      animation: marquee-content 10s linear infinite;
+    }
+  }
+}
+
+@keyframes marquee-content {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}

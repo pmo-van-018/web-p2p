@@ -1,0 +1,106 @@
+$order-item: "order-item";
+
+.#{$order-item} {
+    display: flex;
+    padding: 24px;
+    border-top: 1px solid #f4f4f5;
+    height: 96px;
+    &:last-child {
+        border-bottom: 1px solid #f4f4f5;
+    }
+    &__field {
+        width: 18%;
+        &:last-child {
+            width: 10%;
+            text-align: right;
+        }
+        &:nth-last-child(2) {
+            max-width: 460px;
+        }
+        &--process {
+            width: 36%;
+        }
+    }
+    &__id {
+        display: flex;
+        column-gap: 4px;
+        align-items: baseline;
+        width: 21%;
+    }
+    &__id-label {
+        @include font-t14m;
+        color: $bullish-green;
+    }
+    &__id-value {
+        color: $grey-900;
+        @include font-t14m;
+        text-decoration-line: underline;
+    }
+    &__id-status {
+        color: $grey-500;
+        @include font-t14r;
+        text-decoration-line: none;
+    }
+    &__price {
+        display: flex;
+        @include font-t20b;
+        color: $bullish-green;
+        &--bold {
+            margin-right: 2px;
+            text-decoration: underline;
+            @include font-t20b;
+        }
+    }
+    &__amount {
+        color: $grey-500;
+        @include font-t12m;
+    }
+    &__transcode {
+        color: $grey-600;
+        display: flex;
+        align-items: baseline;
+        @include font-t20m;
+    }
+    &__time {
+        color: $grey-600;
+        @include font-t14m;
+    }
+    &__status {
+        color: $grey-500;
+        max-width: 460px;
+        @include font-t14r;
+    }
+    &__substatus {
+        color: $grey-300;
+        @include font-t14r;
+    }
+    &__detail {
+        color: $grey-500;
+        text-decoration-line: underline;
+        cursor: pointer;
+        flex: 1;
+        @include font-t14m;
+    }
+    .price-col {
+        width: 20%;
+    }
+    // SELL STYLE
+    &.sell {
+        .#{$order-item} {
+            &__id-label {
+                color: $bearish-red;
+            }
+            &__price {
+                color: $bearish-red;
+            }
+        }
+    }
+    :deep(.countdown) {
+        margin-top: 2px;
+    }
+    :deep(.copy-button) {
+        .icon-copy{
+            font-size: 20px;
+        }
+    }
+}

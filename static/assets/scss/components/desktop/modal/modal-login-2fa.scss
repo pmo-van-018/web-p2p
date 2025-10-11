@@ -1,0 +1,36 @@
+.login-2fa {
+  &__header {
+    text-align: center;
+    margin: 24px;
+    img {
+      width: 60px;
+    }
+    p {
+      @include font-t14m;
+      margin: 26px 0;
+      color: #090B0E;
+    }
+  }
+  &__input-otp {
+    background: $metal-100;
+    padding: 8px 16px;
+    border-radius: 6px;
+    input {
+      width: 100%;
+      border: none;
+      background: transparent;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__action {
+    text-align: center;
+    margin-top: 24px;
+    .confirm {
+      @include font-t16m;
+      color: $main-600;
+      border: none;
+    }
+  }
+}

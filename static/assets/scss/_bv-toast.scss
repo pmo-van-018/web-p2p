@@ -1,0 +1,50 @@
+.transaction-alert {
+  width: 380px;
+  height: 72px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 16px;
+  padding-left: 60px;
+  background-repeat: no-repeat;
+  &.success {
+    background-image: url("/assets/images/common/toast-success.svg");
+  }
+  &.processing {
+    background-image: url("/assets/images/common/toast-processing.svg");
+  }
+  &.fail {
+    background-image: url("/assets/images/common/toast-fail.svg");
+  }
+  &.buy-order {
+    background-image: url("/assets/images/common/toast-buy.svg");
+  }
+  &.sell-order {
+    background-image: url("/assets/images/common/toast-sell.svg");
+  }
+  .toast-header {
+    width: 100%;
+    padding: 0;
+    border-bottom: none;
+    background-color: transparent;
+    @include font-t14m;
+    color: $grey-900;
+    .buy {
+      color: $bullish-green;
+      margin-right: 2px;
+    }
+    .sell {
+      color: $bearish-red;
+      margin-right: 2px;
+    }
+    .close {
+      min-width: initial;
+      font-weight: 100;
+      margin-bottom: 0 !important;
+    }
+  }
+  .toast-body {
+    @include font-t12r;
+    color: $grey-500;
+    padding: 0;
+  }
+}

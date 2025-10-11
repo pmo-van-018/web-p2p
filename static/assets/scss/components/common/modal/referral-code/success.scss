@@ -1,0 +1,44 @@
+.referral-code {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  &__thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    img {
+      width: 160px;
+      height: 160px;
+      object-fit: contain;
+    }
+  }
+  &__title {
+    color: var(--mode-light-dark-1500);
+    @include font-t16m;
+    text-align: center;
+  }
+  &__description {
+    color: var(--mode-light-dark-700);
+    @include font-t14r;
+    margin-top: 8px;
+    text-align: center;
+  }
+  &__footer {
+    border-radius: 8px;
+    border: 1px solid var(--mode-light-dark-400);
+    padding: 10px 16px;
+  }
+  &__copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  &__copy-text {
+    @include font-t14m;
+    color: var(--mode-light-dark-700);
+  }
+}

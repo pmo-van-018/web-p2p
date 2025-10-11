@@ -1,0 +1,86 @@
+$result-connect-wallet: "result-connect-wallet";
+
+.#{$result-connect-wallet} {
+    &__content {
+        position: relative;
+        text-align: center;
+    }
+
+    &__close {
+        position: absolute;
+        top: -36px;
+        right: -18px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    &__banner {
+        align-items: center;
+        display: flex;
+        margin: auto;
+        width: max-content;
+    }
+
+    &__img {
+        width: 100px;
+        height: 100px;
+    }
+
+    &__icon {
+        margin: 0 24px;
+        &.icon-connective {
+            font-size: 39px;
+        }
+        &.icon-cancel {
+            font-size: 32px;
+            color: red;
+        }
+    }
+
+    &__icon-img {
+        height: 100%;
+    }
+
+    &__title {
+        color: $grey-800;
+        margin-top: 24px;
+        @include font-t20m;
+    }
+
+    &__note {
+        color: $grey-600;
+        margin-top: 6px;
+        @include font-t16r;
+        span {
+            color: $yellow-800;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    &__action {
+        display: flex;
+        column-gap: 16px;
+        width: max-content;
+        margin: 24px auto 0;
+        &--successed {
+            width: 100%;
+            .#{$result-connect-wallet}__action-btn {
+                min-width: 100%;
+            }
+        }
+    }
+
+    &__action-btn {
+        min-width: 160px;
+    }
+}
+
+:deep(.modal-content) {
+    border: none;
+    border-radius: 8px;
+}
+
+:deep(.modal-body) {
+    padding: 56px 50px 32px;
+}

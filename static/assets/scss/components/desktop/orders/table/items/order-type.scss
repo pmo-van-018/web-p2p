@@ -1,0 +1,38 @@
+.order-type {
+  display: flex;
+  flex-direction: column;
+  &__name {
+    @include font-t12m;
+    color: $bullish-green;
+    @media (min-width: 1480px) {
+      @include font-t16m;
+    }
+    &.sell {
+      color: $bearish-red;
+    }
+  }
+  &__asset-name {
+    @include font-t12m;
+    color: var(--mode-light-dark-1500);
+    @media (min-width: 1480px) {
+      @include font-t16m;
+    }
+  }
+  &__asset-network {
+    @include font-t12m;
+    color: var(--mode-light-dark-700);
+    @media (min-width: 1480px) {
+      @include font-t16m;
+    }
+  }
+  &.is-horizontal {
+    flex-direction: row;
+    gap: 3px;
+    align-items: flex-end;
+    .order-type {
+      &__name, &__asset-name, &__asset-network {
+        font-weight: $font-weight-medium;
+      }
+    }
+  }
+}

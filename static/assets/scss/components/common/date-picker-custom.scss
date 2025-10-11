@@ -1,0 +1,104 @@
+$date-picker-custom: "date-picker-custom";
+
+.#{$date-picker-custom} {
+    position: relative;
+    height: 40px;
+    &__date {
+        &--grey {
+            color: $grey-300;
+        }
+    }
+    :deep(.vue-daterange-picker) {
+        min-width: 212px;
+        height: 40px;
+        .reportrange-text {
+            height: 100%;
+            border-radius: 8px;
+            border-color: var(--mode-light-dark-300);
+            background-color: transparent;
+            padding: 10px 12px;
+            color: var(--mode-light-dark-700);
+            @include font-t14r;
+        }
+        .daterangepicker {
+            min-width: unset;
+            background-color: var(--mode-light-dark-200);
+            border: 1px solid var(--mode-light-dark-300);
+            &:after {
+                border-bottom-color: var(--mode-light-dark-200);
+            }
+            &:before {
+                border-bottom-color: var(--mode-light-dark-300);
+            }
+            .drp-calendar.left, .drp-calendar.right {
+                width: 217px;
+                .calendar-table {
+                    background-color: var(--mode-light-dark-200);
+                    border: none;
+                    th, td {
+                        width: 24px;
+                        min-width: 24px;
+                        padding: 0;
+                        position: relative;
+                        border: none;
+                        background-color: var(--mode-light-dark-200);
+                    }
+                    td.in-range {
+                        background: transparent;
+                        color: var(--mode-light-dark-1500);
+                        position: relative;
+                        z-index: 1;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            background: var(--branding-orange-100);
+                            z-index: -1;
+                        }
+                    }
+                    td.active {
+                        background: $orange-600;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background: transparent;
+                        }
+                    }
+                    td.active.end-date {
+                        position: relative;
+                    }
+                    td.off {
+                        background: transparent;
+                    }
+                    .next span, .prev span {
+                        border: solid var(--mode-light-dark-1500);
+                        border-width: 0 2px 2px 0;
+                    }
+                }
+            }
+        }
+    }
+    &::after {
+        border: none;
+        font-size: 16px;
+        width: 16px;
+        content: "\e957";
+        color: $grey-500;
+        font-style: normal;
+        font-weight: 400;
+        font-feature-settings: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        font-family: icomoon !important;
+        font-variant: normal;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

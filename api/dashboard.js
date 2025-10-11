@@ -1,0 +1,20 @@
+export const DASHBOARD_API = {
+  GET_DATA_CHART_REPORT: '/statistic/merchant/chart',
+  GET_DATA_CHART_REPORT_BY_ADMIN: '/statistic/admin/chart',
+  ADMIN_EXPORT_DATA_CHART: '/statistic/admin/export-chart',
+  MERCHANT_EXPORT_DATA_CHART: '/statistic/merchant/export-chart',
+  EXPORT_DATA_ORDER_HISTORY: '/operation/dashboard/export-order-history',
+  GET_BY_USER: '/statistic/overview',
+  GET_OPERATION_BY_USER: id => `/statistic/get-merchant-public-statistic/${id}`,
+  GET_BY_OPERATION: '/statistic/merchant/overview',
+  GET_BY_ADMIN: '/statistic/admin/overview',
+  MERCHANT_EXPORT_REPORT: '/statistic/merchant/export-report',
+  ADMIN_EXPORT_REPORT: '/statistic/admin/export-report',
+  GET_STAFF_DASHBOARD: id => `/statistic/merchant/get-staff-statistic/${id}`,
+  GET_MANAGER_DASHBOARD: id => `/statistic/admin/get-merchant-statistic/${id}`,
+  SHOW_USER_DASHBOARD: id => `/statistic/admin/get-user-statistic/${id}`,
+  TRADING_BY_PERIOD: '/statistic/admin/trading-volume-by-period',
+  REFRESH_STATISTIC_USER: '/statistic/refresh-statistic',
+  REFRESH_STATISTIC_ADMIN: '/statistic/admin/refresh-statistic',
+  REFRESH_STATISTIC_OPERATION: '/statistic/merchant/refresh-statistic'
+}

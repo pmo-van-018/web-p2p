@@ -1,0 +1,60 @@
+$history: "history";
+$order-pending: "order-pending";
+
+.#{$order-pending},
+.#{$history} {
+    &__filter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 16px;
+        border-bottom: solid 1px $grey-100;
+    }
+    &__filter-item {
+        display: flex;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $grey-400;
+        align-items: center;
+        column-gap: 2px;
+        :deep(.icon-filter),
+        :deep(.icon-triangle-down) {
+            font-size: 16px;
+            margin-left: 2px;
+        }
+        span {
+            &::before {
+                color: $grey-500;
+            }
+        }
+        &--active {
+            color: $orange-600;
+            span {
+                &::before {
+                    color: $orange-600;
+                }
+                transform: rotate(180deg);
+            }
+        }
+        &--active-no-rote {
+            color: $orange-600;
+            span {
+                &::before {
+                    color: $orange-600;
+                }
+            }
+        }
+    }
+    &__list {
+        padding: 0 16px;
+    }
+}
+
+.#{$order-pending} {
+    &__list-header-item {
+        &:last-child {
+            width: 36%;
+        }
+    }
+}

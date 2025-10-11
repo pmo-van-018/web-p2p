@@ -1,0 +1,71 @@
+.request-card {
+  &__container {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: $white;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__text {
+      color: $grey-400;
+      @include font-t10m;
+      &.nickname {
+        color: $grey-800;
+        @include font-t12m;
+      }
+    }
+    &__status {
+      @include font-t10m;
+      color: #70707B;
+      border-radius: 4px;
+      &.online, &.offline {
+        border-radius: 4px;
+        padding: 1px 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        .status-dot {
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+        }
+      }
+      &.online {
+        background: #E6F6EE;
+        color: $green-500;
+        .status-dot {
+          background-color: $green-500;
+        }
+      }
+      &.offline {
+        background: $grey-100;
+        color: $grey-500;
+        .status-dot {
+          background-color: $grey-500;
+        }
+      }
+    }
+    &__value {
+      color: $grey-800;
+      @include font-t12m;
+    }
+  }
+}

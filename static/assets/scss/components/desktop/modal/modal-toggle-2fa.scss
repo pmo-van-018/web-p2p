@@ -1,0 +1,41 @@
+.toggle-2fa {
+  &__header {
+    text-align: center;
+    margin: 24px;
+    img {
+      width: 120px;
+    }
+    p {
+      @include font-t14r;
+      margin: 26px 0;
+      color: #49526A;
+      &.title {
+        color: #090B0E;
+        font-weight: 600;
+      }
+    }
+  }
+  &__input-otp {
+    background: $metal-100;
+    padding: 8px 16px;
+    border-radius: 6px;
+    input {
+      width: 100%;
+      border: none;
+      background: transparent;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__action {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    .confirm {
+      @include font-t16m;
+      color: $main-600;
+      border: none;
+    }
+  }
+}

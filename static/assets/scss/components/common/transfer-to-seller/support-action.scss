@@ -1,0 +1,20 @@
+$support-action: "support-action";
+
+.#{$support-action} {
+    margin-top: 20px;
+    color: $yellow-900;
+    display: flex;
+    @media (max-width: 768px) {
+        margin-top: 12px;
+        align-items: center;
+        
+    }
+    &__icon {
+        font-size: 18px;
+    }
+    &__text {
+        text-decoration-line: underline;
+        margin-left: 10px;
+        @include font-t14m;
+    }
+}

@@ -1,0 +1,73 @@
+#modalOrdersFilterTop___BV_modal_outer_ {
+  z-index: 1030 !important;
+}
+:deep(.modal-dialog) {
+  margin: 0;
+  align-items: flex-start;
+  max-width: 100%;
+  .modal-content {
+    border: none;
+    background-color: white;
+    border-radius: 0;
+    margin-top: 135px;
+    padding: 20px 15px;
+  }
+  .modal-body {
+    padding: 0;
+  }
+}
+:deep(.crypto-input) {
+  label {
+    display: none;
+  }
+  .base-input {
+    margin-bottom: 0;
+    input {
+      @include font-t14r;
+    }
+  }
+  .crypto-input__unit-display {
+    top: 50%;
+    transform: translateY(-50%);
+    color: $grey-500;
+    @include font-t14r;
+  }
+}
+.filter-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .quick-suggest {
+    display: flex;
+    gap: 8px;
+    &-item {
+      width: 54px;
+      height: 28px;
+      border: 1px solid $grey-300;
+      border-radius: 4px;
+      @include font-t14r;
+      color: $grey-500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &.active {
+        background: $yellow-50;
+        border: 1px solid $orange-600;
+        color: $orange-600;
+        border-radius: 4px;
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    padding-top: 16px;
+    border-top: 1px solid $grey-50;
+    button {
+      min-width: unset;
+      flex: 1;
+    }
+  }
+}

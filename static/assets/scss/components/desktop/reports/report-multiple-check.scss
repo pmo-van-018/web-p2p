@@ -1,0 +1,13 @@
+.form-multiple {
+  margin: 0;
+}
+:deep(.custom-control) {
+  padding: 0;
+  margin-bottom: 12px;
+}
+:deep(.custom-control-label::before) {
+  display: none;
+}
+:deep(.custom-control-label::after) {
+  display: none;
+}

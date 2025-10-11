@@ -1,0 +1,49 @@
+$countdown-action: "countdown-action";
+
+.#{$countdown-action} {
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+    &__desc {
+        color: var(--mode-light-dark-600);
+        margin-top: 8px;
+        @include font-t14r;
+    }
+    &.mobile {
+        position: relative;
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--mode-light-dark-300);
+        .#{$countdown-action} {
+            &__header {
+                margin-top: 0;
+            }
+            &__desc {
+                margin-top: 4px;
+                max-width: calc(100vw - 165px);
+                @include font-t12r;
+
+                span {
+                    color: $yellow-800;
+                }
+            }
+            &__desc.appeal-limit {
+                max-width: 100%;
+            }
+        }
+        &.end-time-waiting-custom {
+            .#{$countdown-action} {
+                &__desc {
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1480px) {
+        :deep(.process-countdown__text) {
+            color: #000;
+            @include font-t16m;
+        }
+    }
+}

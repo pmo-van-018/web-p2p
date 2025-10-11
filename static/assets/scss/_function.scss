@@ -1,0 +1,14 @@
+@function pxVw($target-width) {
+  $percentage: $target-width / 1408 * 100;
+  @return clamp(1px, #{$percentage}vw, #{$target-width}px);
+}
+
+@function pxVwTablet($target-width) {
+  $percentage: $target-width / 768 * 100;
+  @return clamp(1px, #{$percentage}vw, #{$target-width}px);
+}
+
+@function pxVwMobile($target-width) {
+  $percentage: $target-width / 375 * 100;
+  @return clamp(1px, #{$percentage}vw, #{$target-width}px);
+}

@@ -1,0 +1,43 @@
+.payments-table {
+  border-radius: 0 0 8px 8px;
+  padding: 0 16px;
+  border: solid 1px var(--mode-light-dark-200);
+  border-top: none;
+  .payment-item {
+    padding: 14px 0;
+    &:not(:last-child) {
+      border-bottom: solid 1px var(--mode-light-dark-200);
+    }
+    .icon-edit {
+      font-size: 24px;
+    }
+    &_row{
+      &:not(:last-child) {
+        margin-bottom: 14px;
+      }
+      max-width: 100%;
+      min-width: 100%;
+      div {
+        &:last-child {
+          max-width: 55%;
+          word-wrap: break-word;
+        }
+      }
+    }
+    &__text-value {
+      color: var(--mode-light-dark-1500);
+    }
+    &__icon {
+      font-size: 24px;
+    }
+    .bank-name {
+      display: flex;
+      align-items: center;
+      color: var(--mode-light-dark-1500);
+      img {
+        width: 24px;
+        margin-right: 12px;
+      }
+    }
+  }
+}

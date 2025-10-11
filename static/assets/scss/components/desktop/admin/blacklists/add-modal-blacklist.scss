@@ -1,0 +1,25 @@
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+}
+.add-blacklist {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__text {
+    @include font-t14r;
+    color: #49526A;
+  }
+  &__action {
+    display: flex;
+    gap: 1rem;
+  }
+}

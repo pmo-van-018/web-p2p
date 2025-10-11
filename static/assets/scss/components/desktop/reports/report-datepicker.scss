@@ -1,0 +1,41 @@
+$default-color: $grey-900;
+$primary-color: $main-600;
+@import '~vue2-datepicker/scss/index.scss';
+button {
+  min-width: auto;
+}
+.mx-datepicker-range {
+  width: 100%;
+}
+.mx-input-wrapper {
+  border: 1px solid #D1D1D6;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  &:hover, &:focus {
+    border-color: $main-600;
+  }
+}
+.mx-calendar {
+  width: 100%;
+}
+.mx-icon-calendar {
+  right: 16px;
+}
+.datepicker-custom {
+  display: flex;
+  gap: 9px;
+  &__icon {
+    font-size: 18px;
+  }
+  &__value {
+    @include font-t14m;
+    color: var(--mode-light-dark-1500);
+  }
+  &__icon-arrow {
+    font-size: 13px;
+    &:before {
+      color: var(--mode-light-dark-1500);
+    }
+  }
+}

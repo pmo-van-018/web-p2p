@@ -1,0 +1,60 @@
+.management-wrapper {
+  &__head {
+    padding: 24px 0;
+    position: relative;
+    :deep(.search-group) {
+      min-width:364px;
+    }
+  }
+  &__body {
+    :deep(.base-table) {
+      min-height: calc(100vh - 378px);
+    }
+  }
+  &__text {
+    @include font-t12r;
+    color: $neutrals-600;
+  }
+  &__action-message {
+    min-width: auto;
+    padding: 6px;
+  }
+  &__message-icon {
+    cursor: pointer;
+    width: 2rem;
+  }
+  &__total-processing {
+    @include font-t14r;
+    color: $grey-500;
+    position: absolute;
+    right: 0;
+    top: -42px;
+    strong {
+      color: $grey-600;
+    }
+  }
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+.delay-animation {
+  animation: fadeinLoad 1s forwards;
+  opacity: 0;
+}
+.status-text {
+  padding: 6px 1rem;
+  @include font-t12m;
+  border-radius: 4px;
+  background: rgba(238, 84, 62, 0.05);
+  display: inline-flex;
+  &__inner {
+    color: $red-500;
+  }
+  &.new {
+    background: #EEF9F9;
+    .status-text__inner {
+      color: #05A7A7;
+    }
+  }
+}

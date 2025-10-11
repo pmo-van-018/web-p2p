@@ -1,0 +1,19 @@
+.modal-content {
+  .transation-type-list {
+    background-color: $grey-50;
+    padding: 22px 14px 8px;
+    max-height: 375px;
+    overflow: auto;
+    border-radius: 8px;
+  }
+  .divide {
+    border-top-color: $grey-100;
+  }
+}
+:deep(.transation-type-item) {
+  .transation-type-img {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+  }
+}

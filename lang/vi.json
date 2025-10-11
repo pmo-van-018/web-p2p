@@ -1,0 +1,3355 @@
+{
+  "meta": {
+    "all": {
+      "title": "",
+      "description": ""
+    }
+  },
+  "title_head": {
+    "transaction": "Các giao dịch",
+    "request_supporter": "Yêu cầu hỗ trợ"
+  },
+  "tabs": {
+    "orders": {
+      "pending": "Đang chờ",
+      "waiting_for_progressing": "Chờ xử lý",
+      "waiting_for_user_to_confirm": "Chờ người dùng xác nhận",
+      "appeal": "Đang thoả thuận",
+      "completed": "Hoàn thành",
+      "cancelled": "Đã huỷ",
+      "processing_by_you": "Đang xử lý bởi bạn",
+      "processed": "Đã xử lý"
+    },
+    "merchant_view": {
+      "buy": "Quảng cáo mua",
+      "sell": "Quảng cáo bán"
+    },
+    "supporter": {
+      "pending": "Chờ xử lý",
+      "processing": "Đang xử lý bởi bạn"
+    },
+    "customer_care": {
+      "pending": "Chờ xử lý",
+      "processing": "Đang xử lý",
+      "processed": "Đã xử lý"
+    },
+    "shift": {
+      "pending": "Chưa phê duyệt",
+      "approved": "Đã phê duyệt"
+    }
+  },
+  "common": {
+    "buy": "Mua",
+    "sell": "Bán",
+    "all": "Tất cả",
+    "from": "từ",
+    "to": "cho",
+    "select_bank": "Chọn ngân hàng",
+    "copy_all_info": "Sao chép tất cả thông tin lệnh",
+    "select_all": "Chọn tất cả",
+    "reset": "Đặt lại",
+    "apply": "Áp dụng",
+    "pause": "Tạm dừng",
+    "refresh": "Làm mới",
+    "collapse": "Thu gọn",
+    "topic": "Chủ đề",
+    "new": "Mới",
+    "old": "Gấp",
+    "paste": "Dán",
+    "custom": "Tùy chỉnh",
+    "message": "Tin nhắn",
+    "history": "Lịch sử",
+    "view_message": "Xem tin nhắn",
+    "login": "Đăng nhập",
+    "username": "Tên đăng nhập",
+    "password": "Mật khẩu",
+    "current_password": "Mật khẩu hiện tại",
+    "new_password": "Mật khẩu mới",
+    "confirm_new_password": "Xác nhận mật khẩu mới",
+    "change_password": "Đổi mật khẩu",
+    "filters": {
+      "ascending": "Tăng dần",
+      "decrease": "Giảm dần"
+    },
+    "status": {
+      "completed": "Đã Hoàn thành",
+      "complete": "Hoàn thành",
+      "cancelled": "Đã hủy",
+      "paid": "Đã thanh toán",
+      "delivered": "Đã chuyển",
+      "unpaid": "Chưa thanh toán",
+      "undelivered": "Chưa chuyển",
+      "confirm": "Xác nhận thanh toán",
+      "delivered_money": "Đã chuyển {name}",
+      "undelivered_money": "Chưa chuyển {name}"
+    },
+    "status_detail": {
+      "undelivered_fiat": "Chưa chuyển Fiat",
+      "undelivered_crypto": "Chưa chuyển Crypto",
+      "delivered_fiat": "Đã chuyển Fiat",
+      "delivered_crypto": "Đã chuyển Crypto",
+      "complete": "Hoàn thành",
+      "cancelled": "Đã hủy"
+    },
+    "setting_filter": "Thiết lập lại bộ lọc",
+    "setting_filter_mb": "Thiết lập lại",
+    "button": {
+      "refresh": "Làm mới"
+    },
+    "tooltip": {
+      "partner_contact": "Liên hệ đối tác",
+      "response_appeal": "Phản hồi khiếu nại",
+      "view_message": "Xem tin nhắn",
+      "unsupported_hover_ethereum": "Ví liên kết không hỗ trợ, vui lòng đổi qua các ví hỗ trợ mạng Tron",
+      "unsupported_hover_tron": "Ví liên kết không hỗ trợ, vui lòng đổi qua các ví hỗ trợ mạng Polygon, BSC, KDONG"
+    },
+    "tabs": {
+      "pending": "Đang chờ",
+      "complete": "Hoàn thành"
+    },
+    "no_data": "Không có dữ liệu.",
+    "no_attachment_file": "Không có tệp đính kèm nào",
+    "no_attachment_image": "Không có hình ảnh nào",
+    "wallet_address": "Địa chỉ ví",
+    "loading": "Đang tải dữ liệu...",
+    "view": "Xem"
+  },
+  "overview": {
+    "post": "tin",
+    "person": "người",
+    "block": "Vô hiệu hóa",
+    "transaction": "Giao dịch",
+    "bottom": {
+      "title": "Tổng giao dịch",
+      "sub_title": "Mọi thông tin sẽ được cập nhật vào mỗi ngày sau khi các giao dịch hoàn thành hoặc hủy"
+    },
+    "chart_transaction": "Biểu đồ giao dịch",
+    "day": "ngày",
+    "times": "trong 30 ngày",
+    "complain": "khiếu nại ",
+    "transaction_in_progress": {
+      "title": "Giao dịch đang thực hiện ",
+      "note": "Tổng số giao dịch đang thực hiện"
+    },
+    "manager_user": {
+      "admin": "Quản lý nhân viên và người dùng",
+      "manager": "Quản lý nhân viên"
+    },
+    "transaction_in_month": "Giao dịch trong 30 ngày qua",
+    "total_transaction": "Tổng thu nhập và khối lượng giao dịch",
+    "doughnut_chart": {
+      "empty": "Chưa có dữ liệu được ghi nhận",
+      "title": "Giao dịch trong 24h",
+      "content": "Tỷ lệ giao dịch trong vòng 24 giờ(h)"
+    },
+    "trans_in_month": {
+      "title": "Giao dịch trong 30 ngày",
+      "note": "Tổng số giao dịch đã hoàn tất (bao gồm cả mua và bán) trong 30 ngày qua"
+    },
+    "trans_all": {
+      "title": "Tất cả giao dịch",
+      "note": "Tổng số giao dịch đã hoàn tất (bao gồm cả mua và bán)"
+    },
+    "ad_all": {
+      "title": "Quảng cáo trực tuyến",
+      "note": "Tổng số quảng cáo trực tuyến (bao gồm cả mua và bán)"
+    },
+    "trans_month_all": {
+      "title": "Tất cả giao dịch",
+      "note": "Tổng số giao dịch đã hoàn tất (bao gồm cả mua và bán) trong 30 ngày qua"
+    },
+    "trans_month": {
+      "title": "Giao dịch trong 30 ngày",
+      "note": "Tổng số giao dịch đã hoàn tất (bao gồm cả mua và bán) trong 30 ngày qua"
+    },
+    "total_trans_month": {
+      "title": "Khối lượng giao dịch trong 30 ngày",
+      "note": "Khối lượng tiền pháp định đã giao dịch (bao gồm cả mua và bán) trong 30 ngày qua"
+    },
+    "total_trans_user": {
+      "title": "Tổng khối lượng giao dịch",
+      "note": "Khối lượng tiền pháp định đã giao dịch (bao gồm cả mua và bán)"
+    },
+    "total_trans_month_user": {
+      "title": "Khối lượng giao dịch",
+      "note": "Khối lượng tiền pháp định đã giao dịch (bao gồm cả mua và bán) trong 30 ngày qua"
+    },
+    "total_trans_fee_month": {
+      "title": "Tổng phí giao dịch trong 30 ngày",
+      "note": "Tổng phí giao dịch (bao gồm cả mua và bán) trong 30 ngày qua"
+    },
+    "total_penalty_fee_month": {
+      "title": "Tổng phí phạt trong 30 ngày",
+      "note": "Tổng phí phạt (bao gồm cả mua và bán) trong 30 ngày qua"
+    },
+    "total_trans": {
+      "title": "Khối lượng giao dịch",
+      "note": "Khối lượng tiền pháp định đã giao dịch (bao gồm cả mua và bán)"
+    },
+    "total_trans_fee": {
+      "title": "Tổng phí giao dịch",
+      "note": "Tổng phí giao dịch (bao gồm cả mua và bán)"
+    },
+    "total_penalty_fee": {
+      "title": "Tổng phí phạt",
+      "note": "Tổng phí phạt (bao gồm cả mua và bán)"
+    },
+    "completion_rate_month": {
+      "title": "Tỷ lệ lệnh hoàn tất trong 30 ngày",
+      "note": "Tỷ lệ lệnh hoàn tất = <br/> Giao dịch thành công (30 ngày) / Tổng số giao dịch (30 ngày) x 100%"
+    },
+    "completion_rate_month_user": {
+      "title": "Tỷ lệ lệnh hoàn tất",
+      "note": "Tỷ lệ lệnh hoàn tất = <br/> Giao dịch thành công (30 ngày) / Tổng số giao dịch (30 ngày) x 100%"
+    },
+    "completion_rate": {
+      "title": "Tỷ lệ lệnh hoàn tất trong 30 ngày",
+      "note": "Tỷ lệ lệnh hoàn tất = <br/> Giao dịch thành công (30 ngày) / Tổng số giao dịch (30 ngày) x 100%"
+    },
+    "total_number_trader": {
+      "title": "Tổng số nhân viên",
+      "note": "Tổng số giao dịch viên và hỗ trợ viên của bạn"
+    },
+    "number_trader": {
+      "title": "Tổng số nhân viên",
+      "note": "Tổng số giao dịch viên và hỗ trợ viên của bạn"
+    },
+    "total_merchants": {
+      "title": "Tổng số thương gia",
+      "note": "Tổng số thương gia trên hệ thống"
+    },
+    "total_users": {
+      "title": "Tổng số người dùng",
+      "note": "Tổng số người dùng trên hệ thống"
+    },
+    "registered": {
+      "title": "Đã đăng ký",
+      "note": "Thời gian đăng ký làm trên hệ thống đến hiện tại"
+    },
+    "order_complained": {
+      "title": "Tổng số khiếu nại",
+      "note": "Tổng số giao dịch có phát sinh khiếu nại của thương gia"
+    },
+    "month": {
+      "trans": {
+        "title": "Tất cả giao dịch",
+        "note": "Tổng số giao dịch đã hoàn tất (bao gồm cả mua và bán) trong 30 ngày qua"
+      },
+      "total_trans": {
+        "title": "Khối lượng giao dịch",
+        "note": "Khối lượng tiền pháp định đã giao dịch (bao gồm cả mua và bán) trong 30 ngày qua"
+      },
+      "total_trans_fee": {
+        "title": "Tổng phí giao dịch",
+        "note": "Tổng phí giao dịch (bao gồm cả mua và bán) trong 30 ngày qua"
+      },
+      "total_penalty_fee": {
+        "title": "Tổng phí phạt",
+        "note": "Tổng phí phạt (bao gồm cả mua và bán) trong 30 ngày qua"
+      },
+      "completion_rate": {
+        "title": "Tỷ lệ lệnh hoàn tất",
+        "note": "Tỷ lệ lệnh hoàn tất = <br/> Giao dịch thành công (30 ngày) / Tổng số giao dịch (30 ngày) x 100%"
+      }
+    }
+  },
+  "order_filter": {
+    "placeholder": "Nhập mã lệnh, số lượng tiền hoặc nội dung chuyển khoản",
+    "refresh": "Làm mới",
+    "to_be_paid": "Chưa thanh toán",
+    "confirm_paid": "Xác nhận thanh toán",
+    "paid": "Đã thanh toán",
+    "buy": "Mua",
+    "sell": "Bán",
+    "type": "Loại lệnh",
+    "status": "Trạng thái",
+    "ascending": "Tăng dần",
+    "decrease": "Giảm dần",
+    "money": "Số lượng tiền",
+    "crypto_money": "Số lượng tiền mã hóa",
+    "crypto_sell": "Số lượng muốn bán",
+    "crypto_buy": "Số lượng muốn mua",
+    "trans_code": "Nội dung chuyển khoản",
+    "filter": "Bộ lọc",
+    "transfer_code": "Nội dung chuyển khoản",
+    "code_command": "Mã lệnh",
+    "delete": "Xoá bộ lọc",
+    "reset": "Đặt lại",
+    "confirm": "Xác nhận",
+    "asset_type": "Loại tài sản",
+    "placeholder_transcode": "Ví dụ: don hang shopee ma SHO456",
+    "placeholder_amount": "Ví dụ: 150,000",
+    "trading_code": "Mã lệnh",
+    "empty_select": "Không có dữ liệu",
+    "wallet_address": "Địa chỉ ví",
+    "nickname": "Tên hiển thị",
+    "key_request": "Mã gửi yêu cầu",
+    "user_name_sent": "Tên người gửi",
+    "admin_support_name": "Tên nhân viên CSKH",
+    "ref_post": "Mã quảng cáo"
+  },
+  "placeholder": {
+    "date_picker": {
+      "start_date": "Ngày bắt đầu",
+      "end_date": "Ngày kết thúc",
+      "enter_date": "Nhập hoặc chọn ngày"
+    },
+    "search": "Tìm kiếm",
+    "search_id": "Nhập mã lệnh",
+    "trans_code": "Tìm kiếm nội dung chuyển khoản",
+    "trading_code": "Tìm kiếm mã lệnh",
+    "money": "Tìm kiếm số lượng tiền pháp định",
+    "quick_search": "Tìm kiếm nhanh",
+    "wallet_address": "Tìm kiếm địa chỉ ví",
+    "nickname": "Tìm kiếm tên hiển thị",
+    "key_request": "Tìm kiếm mã gửi yêu cầu",
+    "user_name_sent": "Tìm kiếm tên người gửi",
+    "ref_post": "Tìm kiếm mã quảng cáo",
+    "username": "Nhập tên đăng nhập",
+    "password": "Nhập mật khẩu"
+  },
+  "refresh_table": {
+    "pull_refresh": "Kéo xuống để làm mới...",
+    "release_refresh": "Kéo xuống để làm mới..."
+  },
+  "header": {
+    "btn_wallet": "Liên kết ví",
+    "logout": "Đăng xuất",
+    "wellcome": "Chào mừng bạn \n đến với ANOTRADE",
+    "watch": "Xem",
+    "slogan": "Nơi giao dịch tiền mã hóa hàng đầu Việt Nam"
+  },
+  "footer": {
+    "about_us": "Giới thiệu",
+    "policy": "Chính sách bảo mật",
+    "terms": "Điều khoản và điều kiện",
+    "home": "Trang chủ",
+    "faq": "FAQs",
+    "help": "Trung tâm trợ giúp",
+    "sign": "ANO.TRADE © {year}",
+    "menu": {
+      "policy": "Chính sách bảo mật",
+      "faqs": "Câu hỏi thường gặp",
+      "about": "Về chúng tôi",
+      "terms": "Điều khoản sử dụng",
+      "support": "Hỗ trợ",
+      "contact": "Liên hệ"
+    }
+  },
+  "help": {
+    "title": "Các câu  hỏi thường gặp",
+    "account": {
+      "title": "Tài khoản",
+      "description": "Giải đáp những thắc mắc liên quan đến tài khoản"
+    },
+    "system": {
+      "title": "Tổng quan hệ thống",
+      "description": "Giải đáp những thắc mắc liên quan đến giao dịch, kết nối ví, khiếu nại"
+    }
+  },
+  "left_menu": {
+    "overview": "Tổng quan",
+    "orders": "Các giao dịch",
+    "account": "Thông tin tài khoản",
+    "ad_post": "Quảng cáo"
+  },
+  "left_menu_notification": {
+    "overview": "Tất cả",
+    "orders": "Giao dịch",
+    "notification": "Thông báo hệ thống"
+  },
+  "home": {
+    "seller": "Người bán hàng",
+    "buyer": "Người mua hàng",
+    "price_name": "Giá",
+    "price_hight_to_low": "Giá (cao nhất đến thấp nhất)",
+    "price_low_to_hight": "Giá (thấp nhất đến cao nhất)",
+    "available_limit": "Khả dụng/Giới hạn",
+    "action": "Giao dịch",
+    "available": "Khả dụng",
+    "limit": "Giới hạn",
+    "buy": "Mua",
+    "sell": "Bán",
+    "title": "Nền tảng giao dịch hàng đầu",
+    "fast": "Nhanh chóng",
+    "safe": "An toàn",
+    "security": "Bảo mật",
+    "des": "Mua và bán {assetName} một cách an toàn và dễ dàng trên ANOTRADE",
+    "btn_search": "Tìm giao dịch",
+    "btn-buy": "Mua",
+    "btn-sell": "Bán",
+    "label-buy": "Tôi muốn mua",
+    "label-sell": "Tôi muốn bán",
+    "label-get": "Tôi sẽ nhận được",
+    "btn-cancel": "Hủy",
+    "title-note": "Ghi chú:",
+    "note-null": "Không có ghi chú từ đối tác",
+    "price": "Giá",
+    "pay-time": "Thời gian thanh toán",
+    "rule": "QUY TẮC GIAO DỊCH:",
+    "rule-1": "Luôn phải dùng chuyển tiền nhanh 24/7",
+    "rule-2": "Nội dung chuyển khoản là số lệnh ",
+    "rule-3": "Không được phép ghi các nội dung mua/bán trong nội dung chuyển khoản ngân hàng",
+    "rule-4": "Chỉ giao dịch với tài khoản trùng khớp với tên đã đăng ký",
+    "rule-5": "Luôn phải dùng chuyển tiền nhanh 24/7",
+    "sell-note-1": "Mình dùng phương thức chuyển khoản nhanh 24/7 nên bạn yên tâm.",
+    "sell-note-2": "Nội dung chuyển khoản mình chỉ ghi số lệnh, không bao gồm mua bán tiền mã hóa, bạn yên tâm nhé.",
+    "sell-note-3": "Khối lượng giao dịch của mình rất lớn và uy tín tuyệt đối.",
+    "unit-vnd": "VND",
+    "unit-vndt": "VIC",
+    "finish-uppercase": "Hoàn tất",
+    "finish": "hoàn tất",
+    "command": "lệnh",
+    "buy-all": "Mua hết",
+    "sell-all": "Bán hết",
+    "input_amount": "Tìm kiếm theo số lượng muốn {type} (VND)",
+    "title-connect-wallet": "để liên kết ví",
+    "title-sign-wallet": "Quét mã dưới đây để ký ví",
+    "open": "Quét mã này bằng ứng dụng",
+    "wallet": "ví V99",
+    "copy-wallet": "Copy mã QR",
+    "qr-timeout": "Mã QR Hết Hạn",
+    "minute": "phút",
+    "delete": "Xóa",
+    "note": "Lưu ý từ hệ thống",
+    "note_operation": "Lưu ý từ thương gia",
+    "account_name": "Tài khoản nhận tiền",
+    "balance": "Số dư",
+    "range_amount": "Khoảng giá",
+    "reset": "Đặt lại",
+    "confirm": "Xác nhận",
+    "statistic_tooltip": "Số lệnh và tỷ lệ hoàn tất được tổng hợp trong 6 tháng gần nhất",
+    "landing": {
+      "header": {
+        "text_version": "web 3.0",
+        "title_slide_first": ["Tỷ giá", "cạnh tranh nhất", "thị trường"],
+        "title_slide_second": [
+          "Cá nhân hoá",
+          "tuyệt đối",
+          "Toàn quyền kiểm soát giao dịch"
+        ],
+        "title_slide_three": [
+          "Miễn phí giao dịch",
+          "trọn đời",
+          "Hiệu suất và tốc độ vượt trội"
+        ],
+        "scroll-text": "Cuộn xuống",
+        "scroll-subtitle": "Để khám phá nhiều hơn",
+        "content": "Nhanh chóng - An toàn - Bảo mật",
+        "sub-content": "Nhanh chóng và an toàn nhất Việt Nam",
+        "button-name": "Khám phá",
+        "member": "Thành viên",
+        "transaction-number": "Giao dịch mỗi ngày",
+        "partners": "Đối tác kinh doanh",
+        "success-transaction-number": "Giao dịch thành công"
+      },
+      "coin-top": {
+        "title": "Top tiền mã hoá"
+      },
+      "why-choice": {
+        "title": "Tại sao chọn",
+        "sub-title": "Nhiều sự lựa chọn đầu tư thông minh và lợi nhuận được tối ưu khi tham gia giao dịch tại ANOTRADE",
+        "incognito-title": "Giao dịch ẩn danh",
+        "incognito-content": "Không yêu cầu người dùng phải cung cấp thông tin cá nhân, đảm bảo giao dịch trở nên tự do và ẩn danh. Thông tin người dùng được bảo vệ, chỉ cần có ví tiền điện tử để thực hiện giao dịch, giảm nguy cơ rò rỉ thông tin cá nhân và tránh các vấn đề về lừa đảo.",
+        "price-title": "Thanh khoản cao",
+        "price-content": "Tài sản của bạn sẽ có tính thanh khoản cao hơn. Bạn có thể nhanh chóng mua, bán hoặc trao đổi một cách dễ dàng và thuận tiện. Khám phá cơ hội đầu tư tiềm năng từ các loại tiền mã hóa.",
+        "safe-title": "An toàn và nhanh chóng",
+        "safe-content": "Kết hợp với công nghệ Blockchain, ANOTRADE bảo mật tối đa cho các giao dịch. Từ việc đăng ký tài khoản đến thực hiện giao dịch, chúng tôi giảm bớt sự phức tạp và làm cho trải nghiệm của bạn nhanh chóng nhất có thể. Cho phép bạn tập trung vào việc đầu tư tài sản số một cách hiệu quả."
+      },
+      "features": {
+        "title": "Tham gia",
+        "sub-title": "không sợ rủi ro",
+        "description": "Các biện pháp bảo mật cao cấp cùng quỹ sàn của ANOTRADE sẽ bảo vệ dữ liệu và tài sản của bạn trước các rủi ro.",
+        "item": {
+          "decentralized-title": "Sàn giao dịch phi tập trung",
+          "decentralized-content": "Nơi bạn có toàn quyền kiểm soát tài sản và giao dịch mà không phải dựa vào bất kỳ tổ chức trung gian nào. Tận hưởng tính minh bạch và tiềm năng tăng trưởng vượt bậc cùng ANOTRADE.",
+          "fee-title": "Miễn phí giao dịch",
+          "fee-content": "Giao dịch không mất phí, quyền lợi được đảm bảo cho bạn khi thực hiện giao dịch với các đối tác.",
+          "support-title": "Hỗ trợ khách hàng 24/7",
+          "support-content": "Hỗ trợ khách hàng trực tiếp, tư vấn và giải quyết các khiếu nại phát sinh trong quá trình giao dịch.",
+          "performance-title": "Hiệu suất và tốc độ",
+          "performance-content": "ANOTRADE đem đến khả năng xử lý dữ liệu chính xác và tốc độ. Mang lại trải nghiệm nhanh chóng, mượt mà, giúp bạn tiết kiệm thời gian và tăng hiệu suất giao dịch.",
+          "trusted-title": "Đối tác tin cậy",
+          "trusted-content": "Tất cả các đối tác trên hệ thống đều được xác minh kỹ lưỡng, đảm bảo một môi trường giao dịch an toàn và đáng tin cậy."
+        },
+        "trade-now-button": "Tìm hiểu thêm"
+      },
+      "join": {
+        "title": "Tham gia ",
+        "highlight": "thật đơn giản!",
+        "timeline-access-title": "Truy cập vào web ANOTRADE",
+        "timeline-connect-title": "Liên kết ví",
+        "timeline-connect-content": "Bấm vào nút “Liên kết ví”, sau đó tiến hành chọn các non-custodial wallet để liên kết các ví với hệ thống ANOTRADE<br>Lưu ý: Mỗi ví sẽ có các hình thức liên kết khác nhau (bằng Password, QRCode...) tùy mỗi dịch vụ mà ví đó hỗ trợ.",
+        "timeline-sign-title": "Ký xác nhận liên kết ví",
+        "timeline-sign-content": "Sau khi liên kết ví, hệ thống sẽ yêu cầu bạn ký xác nhận để hoàn thành việc đăng ký tài khoản trên ANOTRADE<br>Vui lòng đọc kỹ <a href='/terms' target='_blank' class='link-action'>Điều khoản sử dụng</a> và <a href='/privacy-principles' target='_blank' class='link-action'>Chính sách bảo mật</a> trước khi xác nhận liên kết ví với hệ thống ANOTRADE",
+        "timeline-finish-title": "Hoàn tất đăng ký",
+        "timeline-finish-content": "Tài khoản của bạn sẽ được tự động khởi tạo và định danh thông qua địa chỉ ví mà bạn liên kết.<br/> Sau khi khởi tạo tài khoản thành công, hệ thống sẽ tự động đăng nhập và hoàn tất quá trình đăng kí"
+      },
+      "transaction": {
+        "title": "Giao dịch",
+        "highlight": "mọi lúc, mọi nơi",
+        "content": "Nhờ đột phá công nghệ, ANOTRADE mang đến trải nghiệm và hiệu suất vượt trội. Cung cấp cho người dùng nền tảng giao dịch an toàn và đáng tin cậy bậc nhất.",
+        "sub-content": "Sàn giao dịch ANOTRADE tương thích với nhiều thiết bị. Bạn có thể thực hiện giao dịch mọi lúc, mọi nơi. Đừng bỏ lỡ cơ hội tham gia vào cuộc cách mạng tài chính ngay hôm nay!",
+        "button-name": "Giao dịch ngay"
+      },
+      "join-action": {
+        "title": "giao dịch tiền mã hoá",
+        "content": "nhanh chóng - an toàn",
+        "action-text": "nhanh chóng - an toàn"
+      },
+      "wallet-connect": "Liên kết ví"
+    }
+  },
+  "lang": {
+    "vi": "Tiếng Việt"
+  },
+  "action": {
+    "cancel_order": "Hủy lệnh",
+    "cancel_transaction": "Hủy giao dịch",
+    "confirm_received_crypto": "Đã nhận tiền mã hóa",
+    "submit_transferred": "Đã chuyển, thông báo cho người bán",
+    "contact_merchant": "Liên hệ với người bán",
+    "transferred_contact_merchant": "Tôi đã chuyển tiền, liên hệ người bán",
+    "not_transfer_cancelled": "Tôi chưa chuyển tiền và muốn huỷ giao dịch",
+    "close": "Đóng",
+    "delete_all": "Xóa lựa chọn",
+    "payment_confirmation": "Xác nhận thanh toán",
+    "payment_cancellation": "Xác nhận hủy",
+    "complain": "Khiếu nại",
+    "contact_support": "Liên hệ CSKH",
+    "confirm": "Xác nhận",
+    "reset": "Đặt lại",
+    "delete_filter": "Xoá bộ lọc",
+    "exit": "Thoát",
+    "delete_profile": "Xóa hồ sơ",
+    "save": "Lưu",
+    "link_again": "Liên kết lại",
+    "buy_sell_crypto": "Bắt đầu mua/bán tiền mã hóa",
+    "refresh": "Làm mới ngay",
+    "transfer_crypto": "Chuyển {assetName} đến người mua",
+    "send_vndt": "Chuyển {assetName}",
+    "pay_for_seller": "Thanh toán cho người bán",
+    "contact_buyer": "Liên hệ với người mua",
+    "received_enough_money": "Đã nhận đủ tiền từ người mua",
+    "finish": "Hoàn tất",
+    "pay": "Thanh toán",
+    "process_appeal": "Xử lý khiếu nại",
+    "join_chat_appeal": "Tham gia nhóm khiếu nại",
+    "view_more": "Xem chi tiết",
+    "join_group": "Vào nhóm chat",
+    "agree_with_buyer": "Đạt thỏa thuận với người mua",
+    "join_appeal": "Vào nhóm khiếu nại",
+    "cancel": "Huỷ",
+    "continue": "Tiếp tục",
+    "re_update": "Cập nhật lại",
+    "understood": "Đã hiểu",
+    "button_export": "Xuất báo cáo",
+    "button_export_history": "Xuất nhật ký",
+    "continue_trading": "Tiếp tục giao dịch khác",
+    "confirming": "Đang xác nhận",
+    "resend": "Gửi lại",
+    "click_here": "Nhấn vào đây",
+    "reconfirm": "Xác nhận lại",
+    "confirmed_processed": "Xác nhận đã xử lý",
+    "pick": "Nhận",
+    "cancel_support": "Hủy phiên hỗ trợ",
+    "aborted": "Hủy bỏ",
+    "request_supporter": "Yêu cầu hỗ trợ",
+    "received_support": "Nhận hỗ trợ",
+    "processed": "Đã xử lý",
+    "approve_all": "Phê duyệt tất cả",
+    "approve": "Phê duyệt",
+    "add_wallet_address": "Thêm địa chỉ",
+    "reconfirmed_sending_crypto": "Đã chuyển tiền mã hóa, xác nhận lại",
+    "limit": "Giới hạn",
+    "term_transfer": "Thanh toán tạm",
+    "add_new": "Thêm mới"
+  },
+  "label": {
+    "full_name": "Tên chủ tài khoản",
+    "bank_account": "Số tài khoản/Số thẻ",
+    "bank_name": "Tên ngân hàng",
+    "transfer_contents": "Nội dung chuyển khoản",
+    "amount_money": "Số tiền",
+    "note": "Ghi chú",
+    "bank_qrcode": "Truy cập ứng dụng ngân hàng của bạn và quét mã QRCode",
+    "please_completed_transaction": "Vui lòng hoàn tất giao dịch",
+    "payment_confirmation": "Xác nhận thanh toán",
+    "payment_cancellation": "Xác nhận hủy giao dịch",
+    "end_time": "Hết thời gian giao dịch",
+    "transaction_aborted": "Giao dịch đã hủy bỏ",
+    "copied": "Đã sao chép",
+    "payment_method": "Tài khoản thanh toán",
+    "sign_nonce": {
+      "title": "Xác nhận ký ví",
+      "description": "Xác nhận ký ví để liên kết và sử dụng tài khoản của bạn trên ANOTRADE, hãy chắc chắn rằng bạn đã đọc và đồng ý với {term} và {policy} của chúng tôi.",
+      "term": "Điều khoản",
+      "policy": "Chính sách"
+    }
+  },
+  "input": {
+    "crypto-label-required": "Số lượng đặt lệnh"
+  },
+  "transfer_seller": {
+    "label": {
+      "order_number": "Mã lệnh:",
+      "time_create": "Thời gian tạo",
+      "info": "Thanh toán cho người bán",
+      "waiting": "Chờ người bán chuyển tiền mã hóa",
+      "completed": "Hoàn tất",
+      "user": "Người dùng",
+      "supporter": "Hỗ trợ viên xử lý"
+    },
+    "dealing": {
+      "title": "Thỏa thuận với người bán trong",
+      "title_mb": "Hết thời gian thanh toán",
+      "desc_mb": "Thời gian thỏa thuận với người bán sẽ hết sau ",
+      "desc": ""
+    },
+    "note": {
+      "transfer_info": {
+        "title": "Mua {assetName} từ {name}",
+        "sub_title": "",
+        "countdown_text": "Thanh toán cho người bán trong vòng"
+      },
+      "transfer_dealing": {
+        "title": "Mua {assetName} từ {name}",
+        "sub_title": "",
+        "countdown_text": "Thỏa thuận với người bán trong"
+      },
+      "transfer_waiting": {
+        "title": "Mua {assetName} từ {name}",
+        "sub_title": "Chờ người bán xác nhận nhận tiền và chuyển tiền mã hoá",
+        "countdown_text": ""
+      },
+      "transfer_requested_support": {
+        "title": "Mua {assetName} từ {name}",
+        "sub_title": "Vui lòng chờ bộ phận CSKH xử lý và đưa ra quyết định cuối cùng ",
+        "countdown_text": "Bạn đã gửi yêu cầu hỗ trợ cho CSKH"
+      },
+      "transfer_dealing_confirm_paid": {
+        "title": "Mua {assetName} từ {name}",
+        "sub_title": "",
+        "countdown_text": "Thỏa thuận với người bán trong"
+      },
+      "transfer_merchant_confirm_paid": {
+        "title": "Mua {assetName} từ {name}",
+        "sub_title": "",
+        "countdown_text": "Người bán sẽ chuyển tiền mã hóa cho bạn trong vòng"
+      },
+      "transfer_waiting_end_time": {
+        "title": "Mua {assetName} từ {name}",
+        "sub_title": "Người bán đã xác nhận nhận tiền, chờ người bán chuyển tiền mã hóa",
+        "countdown_text": "Giao dịch sẽ tự động hủy sau "
+      },
+      "transfer_complain_forever": {
+        "title": "Mua {assetName} từ {name}",
+        "sub_title": "Người bán đã xác nhận nhận tiền, chờ người bán chuyển tiền mã hoá",
+        "countdown_text": ""
+      },
+      "transfer_completed": {
+        "title": "Mua {assetName} từ {name}",
+        "sub_title": "Người bán đã xác nhận chuyển tiền mã hoá, giao dịch đang hoàn tất",
+        "countdown_text": ""
+      },
+      "transfer_successful": {
+        "title": "Giao dịch hoàn tất",
+        "sub_title": "Bạn đã mua thành công {value} VIC",
+        "countdown_text": ""
+      },
+      "transfer_failed": {
+        "title": "Mua {assetName} từ {name}",
+        "sub_title": "Người bán đã xác nhận chuyển tiền mã hoá, giao dịch đang hoàn tất",
+        "countdown_text": ""
+      },
+      "transfer_cancel": {
+        "title": "Bạn đã hủy giao dịch",
+        "sub_title": "Bạn đã hủy lệnh",
+        "countdown_text": ""
+      },
+      "transfer_cancel_system": {
+        "title": "Giao dịch đã bị hủy bởi hệ thống",
+        "sub_title": "Giao dịch đã bị huỷ bởi hệ thống",
+        "countdown_text": ""
+      },
+      "transfer_complain": {
+        "title": "Khiếu nại",
+        "sub_title": "",
+        "countdown_text": "Khiếu nại người bán trong vòng"
+      },
+      "transfer_end_time": {
+        "title": "Mua {assetName} từ {name}",
+        "sub_title": "Đã hết thời gian thanh toán cho người bán",
+        "countdown_text": ""
+      },
+      "transfer_reopen": {
+        "title": "Chờ người bán chuyển lại tiền mã hóa",
+        "sub_title": "Giao dịch đã được mở lại, chờ người bán chuyển lại tiền mã hóa vào ví của bạn"
+      }
+    },
+    "info": {
+      "label": {
+        "transaction_info": "Thông tin giao dịch",
+        "payment_methods": "Phương thức thanh toán",
+        "waiting_merchant_confirm": "Chờ người bán xác nhận đã nhận tiền và chuyển tiền mã hoá",
+        "waiting_merchant_confirm_mb": "Chờ người bán chuyển tiền mã hoá",
+        "confirm_after_transfer": "Sau khi thanh toán, bấm vào nút “Đã chuyển, thông báo cho người bán”.",
+        "message_system": "Tin nhắn từ hệ thống"
+      },
+      "notes": [
+        "Sử dụng phương thức chuyển khoản nhanh 24/7 để thanh toán. Bộ phận CSKH không hỗ trợ xử lý khiếu nại nếu bạn sử dụng phương thức thanh toán khác.",
+        "Chụp ảnh hoặc ghi hình quá trình chuyển khoản của bạn.",
+        "Khi có sự cố, hãy trao đổi với đối tác để nhanh chóng xử lý vấn đề, trước khi yêu cầu sự hỗ trợ từ bộ phận CSKH."
+      ],
+      "notes_info_seller": [
+        "Luôn phải dùng chuyển tiền nhanh 24/7",
+        "Ghi đúng nội dung chuyển khoản trong ứng dụng chuyển tiền, nếu không sẽ bị treo lệnh",
+        "Không được phép ghi các nội dung mua/bán trong nội dung chuyển khoản ngân hàng",
+        "Mọi sai sót về thông tin thanh toán, bạn tự chịu trách nhiệm"
+      ],
+      "note_transfer_contents": "Sao chép và dán nội dung chuyển khoản vào phần ghi chú thanh toán trên ứng dụng chuyển tiền của bạn",
+      "note_transfer_contents_received": "Người mua sẽ thực hiện chuyển tiền cho bạn với nội dung chuyển khoản sau",
+      "modal_note_1": "Vui lòng xác nhận bạn đã chuyển tiền đến người bán thông qua phương thức đã cung cấp trước khi nhấn vào nút “Đã chuyển tiền, thông báo cho người bán”.",
+      "modal_note_2": "Tôi hiểu rằng tôi sẽ phải sử dụng nền tảng thanh toán của mình để hoàn tất giao dịch này. ANOTRADE sẽ không tự động thanh toán cho giao dịch này thay mặt tôi.",
+      "modal_note_3": "Tôi đã hoàn tất chuyển tiền.",
+      "modal_note_4": "Lưu ý: Nếu bạn đã chuyển khoản cho người bán, vui lòng không hủy giao dịch này. Bạn có thể mất tiền và không hoàn lại được.",
+      "modal_question": "Bạn có chắc muốn hủy giao dịch <span>{id}</span> với người bán?"
+    },
+    "waiting": {
+      "label": {
+        "transaction_info": "Thông tin giao dịch",
+        "payment_methods": "Phương thức thanh toán",
+        "problem_transaction": "Nếu có vấn đề về giao dịch, bạn có thể thỏa thuận sau",
+        "auto_cancel": "Giao dịch sẽ tự động hủy sau",
+        "title": "Chờ người bán chuyển tiền mã hoá",
+        "sub_title": "Nếu có vấn đề về giao dịch, bạn được khiểu nại sau",
+        "sub_title_cancel": "Giao dịch sẽ tự động huỷ sau",
+        "sub_title_complain": "Người bán đã xác nhận nhận tiền, chờ người bán chuyển tiền mã hoá hoặc khiếu nại",
+        "contact_admin": "Bạn đã gửi yêu cầu hỗ trợ cho CSKH",
+        "payment_method_title": "Người mua sẽ chuyển tiền cho bạn vào tài khoản"
+      },
+      "transaction_info": {
+        "full_name": "Họ và Tên",
+        "bank_no": "Tài khoản ngân hàng/Số thẻ",
+        "bank_name": "Tên ngân hàng",
+        "bank_note": "Nội dung chuyển khoản"
+      },
+      "command_info": {
+        "amount_money": "Số lượng tiền",
+        "rate": "Tỷ giá",
+        "amount_encode_money": "Số lượng tiền mã hóa"
+      }
+    },
+    "completed": {
+      "label": {
+        "transaction_info": "Thông tin giao dịch",
+        "payment_methods": "Phương thức thanh toán",
+        "cryptocurrency_trading": "Giao dịch tiền mã hóa",
+        "confirmed_payment": "Bạn đã xác nhận thanh toán cho người bán",
+        "deposit_order": "Lệnh gửi tiền mã hoá",
+        "complain": "Tôi đã thanh toán thừa tiền cho người bán, cần trợ giúp",
+        "buy_success": "Bạn đã mua thành công, hãy kiểm tra ví của bạn.",
+        "title": "Người bán đang chuyển tiền mã hoá",
+        "sub_title_failed": "Lệnh gửi tiền mã hoá thất bại, bạn có thể chờ người bán chuyển lại tiền mã hoá hoặc khiếu nại",
+        "payment_method_title": "Người mua đã chuyển tiền cho bạn vào tài khoản"
+      },
+      "transaction_info": {
+        "trade_code": "Mã giao dịch",
+        "note": "Để xem chi tiết quá trình chuyển tiền mã hóa, vui lòng nhấn vào đường dẫn bên dưới.",
+        "progressing": "Đang xử lý",
+        "successful": "Thành công",
+        "failed": "Thất bại"
+      }
+    },
+    "complain": {
+      "title": "Tôi cần trợ giúp",
+      "sub_title": "Vui lòng chọn lý do bạn muốn chúng tôi hỗ trợ:",
+      "option_1": "Tôi đã thanh toán và tôi đã hủy lệnh",
+      "option_2": "Tôi đã trả thừa tiền cho người bán",
+      "submit_complain": "Hỗ trợ Khách hàng",
+      "note": "Bạn có thể khiếu nại người bán trong thời gian trên",
+      "waiting_complain": "Lệnh gửi tiền mã hóa thất bại, bạn có thể chờ người bán chuyển lại tiền mã hóa hoặc khiếu nại"
+    },
+    "cancel": {
+      "label": {
+        "transaction_info": "Thông tin giao dịch",
+        "payment_methods": "Phương thức thanh toán",
+        "paid_canceled": "Tôi đã thanh toán và tôi đã hủy giao dịch, cần trợ giúp",
+        "title": "Bạn đã huỷ giao dịch",
+        "sub_title": "Bạn đã huỷ giao dịch"
+      },
+      "info_seller": "Lệnh đã bị hủy, không thể hiển thị phương thức thanh toán."
+    },
+    "end_time": {
+      "label": {
+        "transaction_info": "Thông tin giao dịch",
+        "payment_methods": "Phương thức thanh toán",
+        "auto_cancel": "Giao dịch sẽ tự động hủy sau",
+        "time_out_payment": "Đã hết thời gian thanh toán cho người bán.",
+        "time_out_contact_support": "Hãy liên hệ với CSKH nếu bạn không đạt được thỏa thuận được với người bán",
+        "reopen_order": "Giao dịch đã được mở lại, chờ người bán chuyển tiền đến ví của bạn.",
+        "time_out": "Hết thời gian thanh toán",
+        "time_out_payment_cancel": "Đã hết thời gian thanh toán cho người bán. Giao dịch sẽ tự động hủy sau"
+      }
+    }
+  },
+  "not_found": {
+    "title": "Xin lỗi! Chúng tôi không thể tìm thấy trang bạn yêu cầu.",
+    "button_back": "Quay lại",
+    "button_home": "Về trang chủ"
+  },
+  "lock": {
+    "title": {
+      "first_wrapper": "Tài khoản ",
+      "last_wrapper": " của bạn đã bị vô hiệu hóa, vui lòng liên hệ với quản trị viên nếu có bất kỳ thắc mắc nào. Xin cảm ơn!"
+    },
+    "button_back": "Quay lại"
+  },
+  "maintenance": {
+    "title": "Chúng tôi đang bảo trì",
+    "note": "Thời gian hoàn thành dự kiến:",
+    "wallet": "Hiện tại ví {wallet} không khả dụng do đang trong quá trình bảo trì. Mong quý khách thông cảm",
+    "network": " Hiện tại mạng {network} không khả dụng do đang trong quá trình bảo trì. Mong quý khách thông cảm",
+    "wallet_connect": "Hiện tại liên kết thông qua WalletConnect không khả dụng do đang trong quá trình bảo trì. Mong quý khách thông cảm"
+  },
+  "notification": {
+    "title": "Thông báo",
+    "hide_notify": "Ẩn thông báo đã xem",
+    "show_notify": "Tất cả thông báo",
+    "delete": "Xoá tất cả",
+    "view": "Xem tất cả",
+    "news": "Thông báo mới",
+    "check_read": "Đọc tất cả",
+    "check_receive": "Nhấn để cài đặt thông báo",
+    "no_data": "Không có thông báo mới",
+    "pagination_title": "Số thông báo mỗi trang",
+    "tab": {
+      "all": "Tất cả",
+      "transaction": "Giao dịch",
+      "system": "Thông báo hệ thống"
+    },
+    "modalSetting": {
+      "title": "Cài đặt thông báo",
+      "setting_enable": "Bật thông báo",
+      "all": "Chọn tất cả",
+      "transaction": "Thông báo giao dịch",
+      "system": "Thông báo hệ thống",
+      "login": "Thông báo đăng nhập",
+      "btn-save": "Lưu",
+      "btn-cancel": "Hủy"
+    },
+    "modalDelete": {
+      "title": "Xóa thông báo",
+      "noted": "Bạn có chắc chắn muốn xoá tất cả thông báo?",
+      "button": "Xác nhận"
+    },
+    "nodata": "Bạn không có thông báo nào"
+  },
+  "user": {
+    "payments": {
+      "note": "Khi bạn bán tiền mã hoá, phương thức thanh toán đã thêm sẽ được hiển thị cho người mua làm lựa chọn chấp nhận thanh toán, hãy đảm bảo rằng thông tin thanh toán là chính xác.",
+      "label": {
+        "no_data": "Bạn chưa thêm phương thức thanh toán nào",
+        "edit": "Sửa",
+        "delete": "Xóa",
+        "payment": "Thông tin thanh toán",
+        "bank_name": "Tên ngân hàng",
+        "bank_number": "Số tài khoản/ Số thẻ",
+        "bank_account": "Tên chủ tài khoản",
+        "bank_branch": "Chi nhánh mở tài khoản",
+        "bank_branch_mb": "Chi nhánh <br> mở tài khoản",
+        "add_payment_method": "Thêm phương thức thanh toán",
+        "amount_money": "Số tiền",
+        "trans_code": "Nội dung chuyển khoản",
+        "add_payment_mobile": "Thông tin thanh toán",
+        "tool-bar": "Hành động",
+        "transfer": "Chuyển khoản ngân hàng"
+      }
+    }
+  },
+  "merchant": {
+    "settings": {
+      "title": "Cài đặt",
+      "button": "Thay đổi",
+      "empty": "Chưa có",
+      "buy": "Mua",
+      "sell": "Bán",
+      "level": "cấp bậc",
+      "set_up": "Đã thiết lập",
+      "more_bank": "và {count} ngân hàng khác",
+      "bank": {
+        "title": "Ngân hàng thanh toán",
+        "description": "Chọn các ngân hàng hỗ trợ thanh toán trên hệ thống",
+        "placeholder": "Tìm kiếm ngân hàng",
+        "modal": {
+          "title": "Ngân hàng thanh toán",
+          "description": "Chọn các ngân hàng hỗ trợ thanh toán trên hệ thống",
+          "select_all": "Chọn tất cả",
+          "button": "Xác nhận"
+        }
+      },
+      "timer_merchant": {
+        "title": "Thời gian thực hiện lệnh của thương gia",
+        "description": "Chọn các giới hạn thời gian lệnh của thương gia",
+        "modal": {
+          "title": "Thời gian thực hiện lệnh của thương gia",
+          "description": "Chọn các giới hạn thời gian lệnh của thương gia",
+          "time_sell": {
+            "title": "Giới hạn thời gian lệnh bán",
+            "description": "Thời gian để thương gia chuyển tiền mã hóa cho người mua"
+          },
+          "time_buy": {
+            "title": "Giới hạn thời gian lệnh mua",
+            "description": "Thời gian để thương gia chuyển tiền pháp định cho người bán"
+          },
+          "button": "Xác nhận"
+        }
+      },
+      "timer_user": {
+        "title": "Thời gian thực hiện lệnh của người dùng",
+        "description": "Chọn các giới hạn thời gian lệnh của người dùng",
+        "modal": {
+          "title": "Thời gian thực hiện lệnh của người dùng",
+          "description": "Chọn các giới hạn thời gian lệnh của người dùng",
+          "time_sell": {
+            "title": "Thời gian lệnh bán",
+            "description": "Thời gian người bán chuyển tiền mã hóa cho thương gia"
+          },
+          "time_buy": {
+            "title": "Thời gian lệnh mua",
+            "description": "Thời gian người mua chuyển tiền pháp định cho thương gia"
+          },
+          "button": "Xác nhận"
+        }
+      },
+      "transation_type": {
+        "title": "Loại tài sản giao dịch",
+        "description": "Chọn các loại tiền mã hóa cho phép giao dịch trên hệ thống",
+        "modal": {
+          "title": "Loại tài sản giao dịch",
+          "description": "Chọn các loại tiền mã hóa cho phép giao dịch trên hệ thống",
+          "select_all": "Chọn tất cả",
+          "button": "Xác nhận"
+        }
+      },
+      "transation_fee": {
+        "title": "Phí giao dịch và phí phạt",
+        "description": "Thiết lập phí giao dịch và phí phạt cho thương gia với các lệnh mua bán"
+      },
+      "rank": {
+        "title": "Cấp bậc của thương gia",
+        "description": "Thiết lập các cấp bậc của thương gia"
+      },
+      "limit_fee_time": {
+        "title": "Giới hạn, phí và thời gian",
+        "description": "Thiết lập giới hạn đặt lệnh, mức phí, thời gian liên hệ đối tác và CSKH",
+        "label": {
+          "order_limit": "Giới hạn đặt lệnh",
+          "post_limit": "Giới hạn quảng cáo",
+          "fee": "Phí giao dịch",
+          "penalty_fee": "Phí phạt",
+          "user_ask_merchant_time": "Thời gian người dùng liên hệ thương gia",
+          "user_ask_cs_time": "Thời gian người dùng liên hệ CSKH",
+          "submit_evidence_time": "Thời gian cung cấp bằng chứng",
+          "submit_evidence_time_required": "Thời gian cung cấp bằng chứng không được trống",
+          "crypto_transaction_time": "Thời gian chờ xử lý chuyển tiền mã hoá",
+          "crypto_transaction_time_required": "Thời gian xử lý chuyển tiền mã hóa không được trống"
+        },
+        "tooltip": {
+          "order_limit": "Giới hạn đặt lệnh tối thiểu/tối đa của người dùng đối với mỗi giao dịch",
+          "post_limit": "Giới hạn số lượng tối thiểu/tối đa khi thương gia tạo quảng cáo",
+          "fee": "Tỷ lệ phí mà thương gia cần trả trên mỗi giao dịch thành công",
+          "penalty_fee": "Tỷ lệ phí mà thương gia cần trả trên mỗi giao dịch nếu người dùng khiếu nại thắng và người quản trị sẽ đưa ra phán quyết phạt",
+          "user_ask_merchant_time": "Thời gian chờ tối đa cho phép để người dùng liên hệ với thương gia trong lúc giao dịch gặp vấn đề",
+          "user_ask_cs_time": "Thời gian chờ tối đa cho phép để người dùng liên hệ bộ phận CSKH khi giao dịch gặp vấn đề",
+          "submit_evidence_time": "Giới hạn thời gian cung cấp bằng chứng khi có khiếu nại",
+          "crypto_transaction_time": "Thời gian chờ tối đa khi chuyển tiền mã hóa của người dùng và thương gia"
+        },
+        "modal": {
+          "button": "Xác nhận"
+        }
+      },
+      "maintenance": {
+        "title": "Bảo trì",
+        "description": "Thiết lập bảo trì cho các mạng và ví trên hệ thống",
+        "modal": {
+          "title": "Thiết lập bảo trì",
+          "description": "Chọn các mạng và ví muốn bảo trì trên hệ thống",
+          "select_network": "CHỌN MẠNG BẢO TRÌ",
+          "select_wallet": "CHỌN VÍ BẢO TRÌ",
+          "select_all": "Chọn tất cả",
+          "button": "Áp dụng",
+          "content_confirm": "Bạn đang thiết lập chế độ bảo trì, các mạng hoặc ví được chọn sẽ bị vô hiệu hóa và được thông báo trên toàn bộ hệ thống. Vui lòng kiểm tra kỹ các lựa chọn trước khi xác nhận."
+        },
+        "succeed_content": "Thiết lập bảo trì thành công",
+        "failed_content": "Thiết lập bảo trì thất bại",
+        "wallet": "Bảo trì ví",
+        "network": "Bảo trì mạng"
+      },
+      "other": {
+        "title": "Cài đặt khác",
+        "description": "Thiết lập giới hạn về: Phương thức thanh toán, giao dịch,  khiếu nại và yêu cầu hỗ trợ được phép nhận xử lý",
+        "label": {
+          "user_payment_limit": "Giới hạn phương thức thanh toán người dùng",
+          "payment_limit_required": "Giới hạn phương thức thanh toán không được để trống",
+          "manager_payment_limit": "Giới hạn phương thức thanh toán thương gia",
+          "received_by_supporter_limit": "Giới hạn giao dịch cho phép hỗ trợ viên tiếp nhận",
+          "received_by_supporter_limit_required": "Giới hạn giao dịch tiếp nhận bởi hỗ trợ viên không được để trống",
+          "received_by_admin_supporter_limit": "Giới hạn khiếu nại cho phép CSKH tiếp nhận",
+          "received_by_admin_supporter_limit_required": "Giới hạn khiếu nại tiếp nhận bởi CSKH không được để trống",
+          "support_requests_receiving_limit": "Giới hạn yêu cầu hỗ trợ cho phép CSKH tiếp nhận",
+          "support_requests_receiving_limit_required": "Giới hạn yêu cầu hỗ trợ cho phép CSKH tiếp nhận không được để trống",
+          "range_limit_required":"Giới hạn cho phép nằm trong khoảng từ {min} đến {max}"
+        }
+      }
+    },
+    "overview": {
+      "title": "Tổng quan",
+      "transaction": "Giao dịch",
+      "pending": "Đang chờ",
+      "complete": "Hoàn thành",
+      "post": "Quảng cáo",
+      "online": "Trực tuyến",
+      "offline": "Ngoại tuyến",
+      "button_export": "Xuất báo cáo",
+      "refresh_statistic": "Cập nhật dữ liệu",
+      "loading": "Dữ liệu đang được cập nhật lại...",
+      "times": "lần",
+      "day": "Ngày",
+      "week": "Tuần",
+      "month": "Tháng",
+      "action_export": "Xuất dữ liệu",
+      "note_chart": "Tổng hợp khối lượng giao dịch và phí"
+    },
+    "layout": {
+      "overview": "Tổng quan",
+      "account": "Thông tin tài khoản",
+      "pending_transactions": "Đang chờ",
+      "create_post": "Tạo quảng cáo",
+      "transactions": "Các giao dịch",
+      "transaction_detail": "Chi tiết giao dịch",
+      "history": "Hoàn thành",
+      "appeal": "Đang khiếu nại",
+      "cancelled": "Huỷ"
+    },
+    "no_data": "Không có dữ liệu được ghi nhận",
+    "decision": {
+      "cancelled": "Hủy khiếu nại",
+      "merchant_win": "Bạn đã thắng kiện",
+      "user_win": "Người dùng thắng kiện",
+      "open_order": "Mở lại giao dịch",
+      "force_close_appeal": "Bạn không chuyển tiền mã hóa cho người dùng. ANOTRADE hoàn tiền cho người dùng, bạn bị tính phí phạt cho giao dịch này.",
+      "BUY_EUWIN_FORCE_CLOSE": "Số tiền giao dịch đã được cập nhật từ <strong>{fiatSymbol} {fromFiat}</strong> (~ {fromCrypto} {assetName}) thành <strong>{fiatSymbol} {toFiat}</strong> (~ {toCrypto} {assetName}).",
+      "BUY_EUWIN_CANCEL_MC_VIOLATE": "ANOTRADE đã hoàn tiền cho người dùng, bạn sẽ bị tính phí phạt vào giao dịch này.",
+      "BUY_NOWIN_CANCEL_EVIDENT_NOT_APPROVED": "Bạn và người dùng không cung cấp đủ bằng chứng để làm căn cứ xử lý.",
+      "BUY_NOWIN_CANCEL_MC_HAS_RETURNED": "Bạn đã chuyển hoàn tiền pháp định cho người dùng.",
+      "SELL_EUWIN_CANCEL_MC_VIOLATE": "ANOTRADE sẽ hoàn tiền cho người dùng, bạn sẽ bị tính phí phạt vào giao dịch này.",
+      "SELL_NOWIN_CANCEL_MC_HAS_RETURNED": "Bạn đã chuyển hoàn tiền mã hóa cho người dùng."
+    },
+    "order-status": {
+      "completed": "Hoàn thành",
+      "cancelled": "Đã hủy"
+    },
+    "order-step": {
+      "buyer-cancel": "Giao dịch bị hủy bởi người bán",
+      "seller-cancel": "Giao dịch bị hủy bởi người mua",
+      "cancel-by-system": "Giao dịch bị hủy bởi hệ thống"
+    },
+    "list_order": {
+      "status_cancel": "Đã huỷ",
+      "buy_order": "Lệnh mua",
+      "sell_order": "Lệnh bán",
+      "order_receive_limit": "Số giao dịch có thể nhận",
+      "order_item": {
+        "see_detail": "Xem chi tiết",
+        "close_detail": "Đóng lại",
+        "buy": "Mua",
+        "sell": "Bán",
+        "send_vndt": "Chuyển {assetName}",
+        "send_vndt_again": "Chuyển lại {assetName}",
+        "pay": "Thanh toán",
+        "payment_method": "Phương thức thanh toán",
+        "pay_for_seller": "Thanh toán cho người bán",
+        "code_command": "Mã lệnh",
+        "ad_id": "Mã AD",
+        "info": "Thông tin giao dịch",
+        "price": "Tỷ giá",
+        "trans_fee": "Phí giao dịch",
+        "total_trans_fee": "Tổng phí giao dịch",
+        "crypto_command": "Lệnh gửi tiền mã hoá"
+      },
+      "order_filter": {
+        "placeholder": "Nhập mã lệnh, số lượng tiền hoặc nội dung chuyển khoản",
+        "refresh": "Làm mới",
+        "to_be_paid": "Chưa thanh toán",
+        "confirm_paid": "Xác nhận thanh toán",
+        "paid": "Đã thanh toán",
+        "buy": "Mua",
+        "sell": "Bán",
+        "type": "Loại lệnh",
+        "status": "Trạng thái",
+        "ascending": "Tăng dần",
+        "decrease": "Giảm dần",
+        "money": "Số lượng tiền pháp định",
+        "crypto_money": "Số lượng tiền mã hóa",
+        "trans_code": "Nội dung chuyển khoản",
+        "filter": "Bộ lọc",
+        "bank_number": "Số tài khoản",
+        "transfer_code": "Nội dung chuyển khoản",
+        "code_command": "Mã lệnh",
+        "delete": "Xoá bộ lọc",
+        "reset": "Đặt lại",
+        "confirm": "Xác nhận",
+        "asset_type": "Loại tài sản",
+        "placeholder_transcode": "Ví dụ: don hang shopee ma SHO456",
+        "placeholder_amount": "Ví dụ: 150,000",
+        "penalty_fee": "Phí phạt",
+        "user": "Người dùng",
+        "merchant": "Giao dịch viên",
+        "staff": "nhân viên",
+        "supporter_process": "Hỗ trợ viên xử lý",
+        "all": "Tất cả"
+      },
+      "order_pagination": {
+        "limit_desc": "Số giao dịch mỗi trang"
+      },
+      "order_table": {
+        "ads_type": "Loại lệnh",
+        "asset_type": "Loại tài sản",
+        "order_code": "Mã lệnh",
+        "amount": "Số lượng tiền",
+        "crypto": "Số lượng tiền mã hóa",
+        "transfer_code": "Nội dung chuyển khoản",
+        "progressing": "Tiến trình",
+        "status": "Tình trạng",
+        "action": "Hành động",
+        "supporter_process": "Hỗ trợ viên xử lý",
+        "state": "Trạng thái",
+        "deal": "Thỏa thuận"
+      },
+      "descriptionMerchant": {
+        "BUY_ORDER_CREATED_BY_USER": "Chờ người mua chuyển tiền",
+        "BUY_ORDER_CREATED_BY_USER_DEAL_TIME": {
+          "text_countdown": "Đã hết thời gian thanh toán, người mua có thể liên hệ bạn",
+          "text_countdown_chat": "Người mua đã liên hệ bạn",
+          "text_timeout": "Đã hết thời gian thanh toán, người mua có thể liên hệ bạn",
+          "text_timeout_chat": "Người mua đã liên hệ bạn"
+        },
+        "BUY_NOTIFY_SENT_FIAT_BY_USER": "Xác nhận thanh toán và chuyển {assetName} đến người mua",
+        "BUY_NOTIFY_SENT_FIAT_BY_USER_DEAL_TIME": {
+          "text_countdown": "Người mua đã thanh toán và có thể sẽ liên hệ bạn",
+          "text_countdown_chat": "Người mua đã thanh toán và đã liên hệ bạn",
+          "text_timeout": "Người mua đã thanh toán và có thể sẽ liên hệ bạn",
+          "text_timeout_chat": "Người mua đã thanh toán và đã liên hệ bạn"
+        },
+        "BUY_ENABLE_APPEAL_WHILE_CONFIRMING_FIAT_BY_MERCHANT": "Xác nhận thanh toán và chuyển {assetName}, người mua có thể gửi khiếu nại tới CSKH",
+        "BUY_CONFIRMED_FIAT_BY_MERCHANT": "Chuyển {assetName} đến người mua",
+        "BUY_APPEAL_SENT_WHILE_CONFIRMING_FIAT_BY_MERCHANT": "Người mua đã gửi khiếu nại tới CSKH",
+        "BUY_ENABLE_APPEAL_WHEN_CONFIRMED_FIAT_BY_MERCHANT": "Chuyển {assetName} đến người mua, người mua có thể khiếu nại",
+        "BUY_CONFIRMED_FIAT_BY_MERCHANT_DEAL_TIME": {
+          "text_countdown": "Chuyển {assetName} đến người mua, người mua có thể liên hệ bạn",
+          "text_countdown_chat": "Chuyển {assetName} đến người mua, Người mua đã liên hệ bạn",
+          "text_timeout": "Chuyển {assetName} đến người mua, người mua có thể gửi khiếu nại tới CSKH",
+          "text_timeout_chat": "Chuyển {assetName} đến người mua, người mua có thể gửi khiếu nại tới CSKH"
+        },
+        "BUY_SENT_FIAT_APPEAL_BY_USER": "Người mua đã khiếu nại, vui lòng phản hồi",
+        "BUY_SENDING_CRYPTO_BY_MERCHANT": "Tiền mã hóa đang được chuyển",
+        "BUY_SENDING_CRYPTO_SUCCESS": "",
+        "BUY_SENDING_CRYPTO_FAILED": {
+          "text_countdown": "Lệnh chuyển tiền mã hóa thất bại, người mua có thể liên hệ bạn hoặc liên hệ CSKH",
+          "text_timeout": "Lệnh chuyển tiền mã hóa thất bại, người mua có thể liên hệ bạn hoặc liên hệ CSKH",
+          "text_timeout_chat": "Lệnh chuyển tiền mã hóa thất bại, người mua đã liên hệ bạn"
+        },
+        "BUY_ORDER_CANCELLED_BY_USER": "",
+        "BUY_ORDER_CANCELLED_BY_SYSTEM": "",
+        "BUY_APPEAL_SENT_SENDING_CRYPTO_FAILED": "Người mua đã gửi khiếu nại tới CSKH, vui lòng phản hồi",
+        "SELL_ORDER_CREATED_BY_USER": "Chờ người bán chuyển tiền mã hóa",
+        "SELL_SENDING_CRYPTO_BY_USER": "Tiền mã hoá đang được chuyển",
+        "SELL_SENDING_CRYPTO_FAILED": "Chuyển tiền mã hóa thất bại, chờ người bán chuyển lại",
+        "SELL_SENDING_CRYPTO_SUCCESS": "Thanh toán cho người bán",
+        "SELL_ENABLE_APPEAL_MERCHANT_NOT_SENDING_FIAT": "Thanh toán cho người bán, người bán có thể khiếu nại",
+        "SELL_NOTIFY_SENT_FIAT_BY_MERCHANT": "Chờ người bán xác nhận thanh toán, giao dịch tự động hoàn tất trong",
+        "SELL_SENDING_CRYPTO_SUCCESS_DEAL_TIME": {
+          "text_countdown": "Người bán đã chuyển {assetName} và có thể liên hệ với bạn",
+          "text_countdown_chat": "Người bán đã chuyển {assetName} và liên hệ với bạn",
+          "text_timeout": "Thanh toán cho người bán, người bán có thể gửi khiếu nại tới CSKH",
+          "text_timeout_chat": "Thanh toán cho người bán, người bán có thể khiếu nại"
+        },
+        "SELL_NOTIFY_SENT_FIAT_BY_MERCHANT_DEAL_TIME": {
+          "text_countdown": "Chờ người bán xác nhận thanh toán",
+          "text_countdown_chat": "Người bán đã liên hệ với bạn để thỏa thuận",
+          "text_timeout": "Chờ người bán xác nhận thanh toán",
+          "text_timeout_chat": "Người bán đã liên hệ với bạn để thỏa thuận"
+        },
+        "SELL_ENABLE_APPEAL_NOTIFY_SENT_FIAT_BY_MERCHANT": "Chờ người bán xác nhận thanh toán, giao dịch tự động hoàn tất trong",
+        "SELL_APPEAL_SENT_FIAT_NOT_RECEIVED_BY_USER": "Người bán đã gửi khiếu nại tới CSKH, vui lòng phản hồi",
+        "SELL_ORDER_CANCELLED_BY_USER": "",
+        "SELL_ORDER_CANCELLED_BY_SYSTEM": "",
+        "SELL_CONFIRMED_FIAT_BY_USER": "",
+        "failed_transaction": "Gặp sự cố trong quá trình kiểm tra giao dịch. Hệ thống đang cố gắng xử lý, vui lòng chờ trong ít phút"
+      },
+      "descriptionDetailMerchant": {
+        "BUY_ORDER_CREATED_BY_USER": "Đang chờ người mua chuyển tiền đến tài khoản của bạn",
+        "BUY_ENABLE_APPEAL_WHILE_SENDING_FIAT": "Người mua đã hết thời gian thanh toán và có thể khiếu nại",
+        "BUY_NOTIFY_SENT_FIAT_BY_USER_DEAL_TIME": {
+          "text_countdown": "Người mua đã thanh toán và có thể liên hệ bạn. Vui lòng xác nhận và tiến hành chuyển {assetName}.",
+          "text_countdown_chat": "Người mua đã thanh toán và liên hệ bạn để thỏa thuận",
+          "text_timeout": "Người mua đã thanh toán và có thể liên hệ bạn. Vui lòng xác nhận và tiến hành chuyển {assetName}.",
+          "text_timeout_chat": "Người mua đã thanh toán và liên hệ bạn để thỏa thuận"
+        },
+        "BUY_APPEAL_SENT_WHILE_CONFIRMING_FIAT_BY_MERCHANT": "Người mua đã gửi khiếu nại tới CSKH. Thời gian để cung cấp bằng chứng sẽ kết thúc vào",
+        "BUY_CONFIRMED_FIAT_BY_MERCHANT_DEAL_TIME": {
+          "text_countdown": "Chuyển {assetName} đến người mua để hoàn tất giao dịch, người mua có thể liên hệ bạn",
+          "text_countdown_chat": "Chuyển {assetName} đến người mua để hoàn tất giao dịch, người mua đã liên hệ bạn để thỏa thuận",
+          "text_timeout": "Chuyển {assetName} đến người mua để hoàn tất giao dịch, nếu không người mua có thể gửi khiếu nại tới CSKH",
+          "text_timeout_chat": "Chuyển {assetName} đến người mua để hoàn tất giao dịch, nếu không người mua có thể gửi khiếu nại tới CSKH"
+        },
+        "BUY_ORDER_CREATED_BY_USER_DEAL_TIME": {
+          "text_countdown": "Người mua đã hết thời gian thanh toán và có thể liên hệ bạn để thoả thuận",
+          "text_countdown_chat": "Người mua đã liên hệ bạn để thoả thuận",
+          "text_timeout": "Người mua đã hết thời gian thanh toán và có thể liên hệ bạn để thoả thuận",
+          "text_timeout_chat": "Người mua đã liên hệ bạn để thoả thuận"
+        },
+        "BUY_NOTIFY_SENT_FIAT_BY_USER": "Xác nhận thanh toán và chuyển {assetName} đến người mua",
+        "BUY_ENABLE_APPEAL_WHILE_CONFIRMING_FIAT_BY_MERCHANT": "Xác nhận thanh toán và chuyển {assetName}, nếu không người mua có thể gửi khiếu nại tới CSKH",
+        "BUY_CONFIRMED_FIAT_BY_MERCHANT": "Chuyển {assetName} đến người mua để hoàn tất giao dịch",
+        "BUY_ENABLE_APPEAL_WHEN_CONFIRMED_FIAT_BY_MERCHANT": "Bạn cần chuyển {assetName} đến người mua",
+        "BUY_SENT_FIAT_APPEAL_BY_USER": "Người mua đã khiếu nại, vui lòng phản hồi",
+        "BUY_SENDING_CRYPTO_BY_MERCHANT": "Tiền mã hoá đang được chuyển đến ví của người mua",
+        "BUY_SENDING_CRYPTO_SUCCESS": "",
+        "BUY_ORDER_CANCELLED_BY_USER": "Giao dịch đã bị hủy bởi người mua",
+        "BUY_ORDER_CANCELLED_BY_SYSTEM": "Giao dịch bị hủy bởi hệ thống, quá thời gian cho phép",
+        "SELL_SENDING_CRYPTO_SUCCESS_DEAL_TIME": {
+          "text_countdown": "Người bán đã chuyển {assetName} và có thể liên hệ với bạn để thỏa thuận",
+          "text_countdown_chat": "Người bán đã chuyển {assetName} và liên hệ với bạn để thỏa thuận",
+          "text_timeout": "Thanh toán cho người bán, người bán có thể gửi khiếu nại tới CSKH",
+          "text_timeout_chat": "Thanh toán cho người bán, người bán có thể gửi khiếu nại tới CSKH"
+        },
+        "SELL_NOTIFY_SENT_FIAT_BY_MERCHANT_DEAL_TIME": {
+          "text_countdown": "Người bán đang xác nhận thanh toán và có thể liên hệ bạn để thỏa thuận",
+          "text_countdown_chat": "Người bán đang xác nhận thanh toán và đã liên hệ bạn để thỏa thuận",
+          "text_timeout": "Người bán đang xác nhận thanh toán và có thể liên hệ bạn để thỏa thuận",
+          "text_timeout_chat": "Người bán đang xác nhận thanh toán và đã liên hệ bạn để thỏa thuận"
+        },
+        "SELL_ENABLE_APPEAL_NOTIFY_SENT_FIAT_BY_MERCHANT": "Người bán đang xác nhận thanh toán, giao dịch tự động hoàn tất trong",
+        "BUY_SENDING_CRYPTO_FAILED": {
+          "text_timeout": "Lệnh chuyển tiền mã hóa thất bại, bạn cần chuyển lại {assetName} để hoàn tất giao dịch, nếu không người mua có thể gửi khiếu nại tới CSKH",
+          "text_timeout_chat": "Lệnh chuyển tiền mã hóa thất bại, người mua đã liên hệ bạn"
+        },
+        "SELL_APPEAL_SENT_FIAT_NOT_RECEIVED_BY_USER": "Người bán đã gửi khiếu nại tới CSKH. Thời gian để cung cấp bằng chứng sẽ kết thúc vào",
+        "BUY_APPEAL_SENT_SENDING_CRYPTO_FAILED": "Người mua đã gửi khiếu nại tới CSKH. Thời gian để cung cấp bằng chứng sẽ kết thúc vào",
+        "SELL_ORDER_CREATED_BY_USER": "Đang chờ người bán chuyển tiền mã hoá đến ví của bạn",
+        "SELL_SENDING_CRYPTO_BY_USER": "Tiền mã hóa đang được chuyển đến ví của bạn",
+        "SELL_SENDING_CRYPTO_FAILED": "Chuyển tiền mã hóa thất bại, chờ người bán chuyển lại",
+        "SELL_SENDING_CRYPTO_SUCCESS": "Bạn cần chuyển tiền đến người bán trong vòng",
+        "SELL_ENABLE_APPEAL_MERCHANT_NOT_SENDING_FIAT": "Chuyển tiền đến người bán, người bán có thể khiếu nại",
+        "SELL_NOTIFY_SENT_FIAT_BY_MERCHANT": "Người bán đang xác nhận thanh toán, giao dịch tự động hoàn tất trong",
+        "SELL_ORDER_CANCELLED_BY_USER": "Giao dịch bị hủy bởi người bán",
+        "SELL_ORDER_CANCELLED_BY_SYSTEM": "Giao dịch bị hủy bởi hệ thống",
+        "SELL_CONFIRMED_FIAT_BY_USER": ""
+      }
+    },
+    "payments": {
+      "label": {
+        "no_data": "Bạn chưa thêm phương thức thanh toán nào",
+        "edit": "Sửa",
+        "delete": "Xóa",
+        "payment": "Thông tin thanh toán",
+        "bank_name": "Tên ngân hàng",
+        "bank_number": "Số tài khoản/ Số thẻ",
+        "bank_account": "Tên chủ tài khoản",
+        "bank_branch": "Chi nhánh mở tài khoản",
+        "bank_branch_mb": "Chi nhánh <br> mở tài khoản",
+        "add_payment_method": "Thêm phương thức thanh toán",
+        "amount_money": "Số tiền",
+        "trans_code": "Nội dung chuyển khoản",
+        "add_payment_mobile": "Thông tin thanh toán",
+        "tool-bar": "Hành động",
+        "transfer": "Chuyển khoản ngân hàng"
+      },
+      "note": "Khi bạn bán tiền mã hoá, phương thức thanh toán đã thêm sẽ được hiển thị cho người mua làm lựa chọn chấp nhận thanh toán, hãy đảm bảo rằng thông tin thanh toán là chính xác."
+    },
+    "transaction_detail": {
+      "title": "Chi tiết giao dịch",
+      "footer_desc_1": "Người mua đã thanh toán, vui lòng kiểm tra tài khoản và xác nhận",
+      "footer_desc_2": "Bạn cần chuyển VIC đến người mua trong thời gian giao dịch",
+      "footer_desc_3": "Giao dịch đã bị huỷ",
+      "footer_desc_4": "Đang chờ người mua chuyển tiền đến tài khoản của bạn",
+      "footer_desc_5": "Bạn cần chuyển tiền đến người bán trong vòng",
+      "footer_btn_1": "Đã nhận đủ tiền từ người mua",
+      "footer_btn_2": "Chuyển VIC đến người mua",
+      "footer_btn_5": "Đã chuyển tiền, thông báo cho người bán",
+      "footer_subdesc_1": "Người mua có thể sẽ khiếu nại bạn.",
+      "footer_subdesc_3a": "Giao dịch đã bị huỷ bởi người mua",
+      "footer_subdesc_3b": "Giao dịch đã bị hủy bởi hệ thống",
+      "buy": "Mua",
+      "sell": "Bán",
+      "AD_code": "Mã AD",
+      "time_create": "Thời gian tạo",
+      "payment_methods": "Phương thức thanh toán",
+      "account_name": "Tên chủ tài khoản",
+      "account_no": "Số tài khoản/ Số thẻ",
+      "bank_name": "Tên ngân hàng",
+      "bank_note": "Nội dung",
+      "cryptocurrency_trading": "Lệnh gửi tiền mã hoá",
+      "transactions_empty": "Chưa có giao dịch",
+      "transaction_info": "Thông tin giao dịch",
+      "amount_money": "Số lượng tiền pháp định",
+      "rate": "Tỷ giá",
+      "amount_cryptocurrencies": "Số lượng tiền mã hóa",
+      "transaction_fee": "Phí giao dịch",
+      "transaction_fee_tmp": "Phí giao dịch tạm tính",
+      "total_fee": "Tổng phí giao dịch",
+      "penalty_fee": "Phí phạt",
+      "penalty_fee_tmp": "Phí phạt tạm tính",
+      "total_penalty_fee": "Tổng phí phạt",
+      "tx_note": "Lưu ý: Để xem chi tiết quá trình chuyển tiền mã hóa, vui lòng nhấn vào đường dẫn bên cạnh..",
+      "transaction_fee_note": "Tỷ lệ phí bạn cần trả cho ANOTRADE trên mỗi giao dịch thành công.",
+      "transaction_fee_note_tmp": "Tỷ lệ phí bạn phải trả trên mỗi giao dịch thành công",
+      "transaction_penalty_fee_note": "Tỷ lệ phí  thương gia cần trả cho hệ thông trên mỗi giao dịch nếu người dùng khiếu nại thắng",
+      "penalty_fee_note": "Nếu xảy ra khiếu nại và phân xử cuối cùng là người dùng thắng kiện, bạn sẽ chịu phí phạt trên mỗi giao dịch.",
+      "penalty_fee_note_tmp": "Tỷ lệ phí phạt bạn cần trả cho ANOTRADE trên mỗi giao dịch nếu đối tác khiếu nại thắng",
+      "status": {
+        "to_be_paid": "Chưa thanh toán",
+        "confirm_paid": "Xác nhận thanh toán",
+        "paid": "Đã thanh toán",
+        "completed": "Hoàn thành",
+        "cancelled": "Đã hủy"
+      },
+      "status_sell": {
+        "to_be_paid": "Chưa chuyển",
+        "confirm_paid": "Xác nhận thanh toán",
+        "paid": "Đã chuyển",
+        "completed": "Hoàn thành",
+        "cancelled": "Đã hủy"
+      },
+      "note_cancelled": "Lệnh đã được hoàn tất, không thể hiển thị phương thức thanh toán",
+      "note_cancelled_admin": "Giao dịch đã hoàn tất, phương thức thanh toán không khả dụng.",
+      "buyer_paid_to_you": "Người mua đã thanh toán cho bạn",
+      "wallet_address_info": {
+        "title": "Thông tin địa chỉ ví",
+        "sender": "Người gửi",
+        "receiver": "Người nhận"
+      },
+      "transaction_error": "Gặp sự cố trong quá trình kiểm tra giao dịch"
+    },
+    "modal_confirm_reveice": {
+      "confirmed_payment_received": "Xác nhận đã nhận tiền",
+      "note": "Hãy chắc chắn rằng bạn đã nhận đủ tiền từ người mua và đối chiếu với các thông tin bên dưới trước khi xác nhận.",
+      "piat_reveice": "Số tiền nhận được",
+      "account_reveice_information": "Thông tin tài khoản nhận",
+      "transfer_contents": "Nội dung chuyển khoản",
+      "confirm_content": "Tôi đã nhận đủ tiền từ người mua"
+    },
+    "modal_confirm_send_crypto": {
+      "cryptocurrency_deposit_confirmation": "Xác nhận gửi tiền mã hóa",
+      "amount_send": "Số lượng:",
+      "note_processing": "Đang chờ xác nhận gửi tiền mã hóa từ ví của bạn.<br>Vui lòng kiểm tra ví và xác nhận lệnh.",
+      "confirm_transaction_failed": "Có lỗi xảy ra, xác nhận thất bại",
+      "note_failed": "Kiểm tra lịch sử giao dịch trên ví để biết nguyên nhân, thực hiện lại việc chuyển tiền mã hoá.",
+      "note": {
+        "title": "Lưu ý",
+        "confirm_when_completed": "Chỉ xác nhận lại nếu hệ thống không thể ghi nhận trạng thái giao dịch sau khi bạn đã chuyển thành công trên mạng lưới.",
+        "reconfirm_warning": "Nếu có nhiều yêu cầu xác nhận chuyển tiền mã hóa giống số tiền giao dịch trên sàn, xin vui lòng kiểm tra giao dịch trên mạng lưới và tránh việc gửi tiền mã hóa nhiều lần."
+      }
+    },
+    "modal_result_send_crypto": {
+      "cryptocurrency_deposit": "Gửi tiền mã hóa",
+      "transaction_failed": "Lệnh gửi tiền mã hoá thất bại.",
+      "transaction_successed": "Lệnh gửi tiền mã hoá thành công.",
+      "transaction_processing": "Lệnh gửi tiền mã hóa đang xử lý.",
+      "note_failed": "Kiểm tra lịch sử giao dịch trên ví để biết nguyên nhân, thực hiện lại việc chuyển tiền mã hoá.",
+      "note_successed": "Kiểm tra lịch sử giao dịch và ví của bạn để xem lại chi tiết.",
+      "note_processing": "Giao dịch này có thể mất một khoảng thời gian để thực hiện, vui lòng chờ đợi."
+    },
+    "modal_confirm_order": {
+      "receive_enough": "Tôi đã nhận đủ",
+      "from_buyer": "từ người mua",
+      "transfer_contents": "Nội dung chuyển khoản:",
+      "check_box": "Đã nhận đủ tiền từ người mua",
+      "button": "Chuyển {assetName} đến người mua",
+      "desc_1": "Đang chờ xác nhận gửi tiền mã hoá từ ví của bạn.",
+      "desc_2": "Vui lòng kiểm tra ví và xác nhận lệnh.",
+      "loading": "Đang xử lý"
+    },
+    "modal_appeal": {
+      "buyer_sent_appeal": "Người bán đã gửi khiếu nại",
+      "seller_sent_appeal": "Người mua đã gửi khiếu nại",
+      "agreement_with_seller": "Thoả thuận với người bán",
+      "agreement_with_buyer": "Thoả thuận với người mua",
+      "join_chat_agree_with_seller": "Tham gia nhóm chat để thỏa thuận với người bán và hoàn tất giao dịch",
+      "join_chat_agree_with_buyer": "Tham gia nhóm chat để thỏa thuận với người mua và hoàn tất giao dịch",
+      "notes": {
+        "agreement": "Nếu đã nhận được tiền từ người mua, bạn có thể bấm <b>Đạt thỏa thuận với người mua</b> để tiếp tục giao dịch.",
+        "contact_admin": "Nếu hết thời gian mà bạn và người mua không thể đạt được thỏa thuận, người mua sẽ có quyền gửi khiếu nại lên bộ phận CSKH.",
+        "dont_sent_crypto": "Không chuyển tiền mã hóa cho đến khi nhận được tiền từ người mua, chúng tôi sẽ không chịu trách nhiệm về khoản tiền mã hóa đã chuyển.",
+        "send_vndt": "Nếu đã nhận được tiền từ người mua, bạn có thể bấm <b>Chuyển {assetName}</b> để tiếp tục giao dịch.",
+        "confirm_info_transaction": "Vui lòng kiểm tra lại các thông tin giao dịch, cung cấp đầy đủ các bằng chứng (video, hình ảnh) để ANOTRADE có thể xử lý nhanh nhất.",
+        "if_you_lose": "Nếu bị xử thua kiện với người mua, bạn có thể sẽ bị phạt.",
+        "if_you_lose_sell": "Nếu bị xử thua kiện với người bán, bạn có thể sẽ bị phạt.",
+        "reduce_rate": "Bị xử thua sẽ làm giảm tỷ lệ giao dịch thành công của bạn.",
+        "provider_proof": "Nếu đã thanh toán cho người bán, vui lòng cung cấp bằng chứng và không thực hiện lại việc thanh toán. ANOTRADE sẽ không có trách nhiệm hoàn lại tiền đã chuyển thừa cho người bán.",
+        "dont_not_transfer": "Không chuyển {assetName} cho đến khi bạn nhận được tiền thanh toán từ người mua.",
+        "provider_proof_sell": "Nếu đã thanh toán cho người bán, vui lòng cung cấp bằng chứng để ANOTRADE có thể xử lý nhanh nhất.",
+        "continue_order": "Nếu đã nhận được tiền từ người mua, bạn có thể thông báo với giao dịch viên để tiếp tục giao dịch"
+      }
+    },
+    "detail_cancelled": {
+      "count_order": "Số lượng giao dịch bị hủy bởi người dùng và hệ thống: {count}",
+      "count_appeal_order": "Số lượng giao dịch bị hủy sau khi khiếu nại (chi tiết ở phía dưới): {count}"
+    },
+    "public_view": {
+      "command_type": "Loại lệnh",
+      "price_low_to_high": "Giá (thấp nhất đến cao nhất)",
+      "price_high_to_low": "Giá (cao nhất đến thấp nhất)",
+      "available_limit": "Khả dụng/Giới hạn",
+      "available": "Khả dụng",
+      "limit": "Giới hạn",
+      "action": "Giao dịch",
+      "network": "Mạng",
+      "btn_buy": "Mua",
+      "btn_sell": "Bán",
+      "trans_in_month": {
+        "title": "Tất cả giao dịch trong 30 ngày",
+        "note": "Tổng số giao dịch đã hoàn tất (bao gồm cả mua và bán) trong 30 ngày qua"
+      },
+      "trans_all": {
+        "title": "Tất cả giao dịch",
+        "note": "Tổng số lệnh đã hoàn tất (bao gồm cả mua và bán)"
+      },
+      "completion_rate_month": {
+        "title": "Tỷ lệ lệnh hoàn tất trong 30 ngày",
+        "note": "Tỷ lệ lệnh hoàn tất = <br/> Giao dịch thành công (30 ngày) / Tổng số giao dịch (30 ngày) x 100%"
+      }
+    },
+    "supporter": {
+      "pick_btn": "Nhận",
+      "buy": "Mua",
+      "sell": "Bán",
+      "title": {
+        "list_order": "Danh sách giao dịch",
+        "contact": "Thoả thuận với người <span class=\"{typeClass}\">{type}<span",
+        "appeal": "Người {type} đã gửi <span class=\"appeal\">khiếu nại<span"
+      },
+      "process_status": {
+        "doing": "Đang xử lý",
+        "done": "Đã xử lý",
+        "resolved": "Xử lý xong"
+      }
+    }
+  },
+  "admin": {
+    "listing_appeal": "Danh sách khiếu nại",
+    "progressing": "Tiến trình khiếu nại",
+    "appeal_title": "Khiếu nại lệnh",
+    "transaction_title": "Lệnh gửi tiền mã hóa",
+    "no_transaction": "Chưa giao dịch",
+    "order_number": "Số lệnh",
+    "time_create": "Thời gian tạo giao dịch:",
+    "complaint_ended_at": "Khiếu nại đã kết thúc vào lúc",
+    "complaint_will_end": "Thời gian khiếu nại sẽ kết thúc vào",
+    "complaint_added_extra": "Thời gian khiếu nại đã được gia hạn đến",
+    "close_appeal": {
+      "options": {
+        "evident": "Thương gia và người dùng không cung cấp đủ bằng chứng để làm căn cứ xử lý.",
+        "returned_fiat": "Thương gia đã chuyển hoàn tiền pháp định cho người dùng"
+      }
+    },
+    "steps": {
+      "contacted": "Nhóm chat đã được tạo",
+      "user_complained_merchant": "Người dùng đã khiếu nại thương gia",
+      "extra_time": "Gia hạn thời gian khiếu nại",
+      "result_appeal": "Kết quả khiếu nại",
+      "complained_ended": "Khiếu nại kết thúc"
+    },
+    "evident_content": {
+      "win_case": "Khi thời gian khiếu nại kết thúc, bạn có quyền quyết định thương gia hoặc người dùng thắng kiện.",
+      "extra_time": "Trường hợp bạn chưa có quyết định cuối cùng thì có thể gia hạn thời gian để các bên cung cấp thêm bằng chứng."
+    },
+    "note_detail": {
+      "note_1": "Bạn có quyền yêu cầu hai bên cung cấp các bằng chứng để làm cơ sở đưa ra quyết định cuối cùng.",
+      "note_2": "Nếu hai bên đạt được thỏa thuận mở lại giao dịch với số tiền giao dịch mới, bạn có thể thay đổi số tiền mã hóa khi mở lại giao dịch.",
+      "note_3": "Nếu một trong hai bên không phản hồi, hoặc không cung cấp đủ bằng chứng mà bạn yêu cầu trong thời gian quy định, bạn có thể xử cho bên còn lại thắng kiện.",
+      "note_4": "Nếu người dùng có dấu hiệu gian lận, bạn có quyền xử cho phía thương gia thắng kiện và hủy khiếu nại."
+    },
+    "action": {
+      "merchant_won": "Thương gia thắng kiện",
+      "user_won": "Người dùng thắng kiện",
+      "close_appeal": "Đóng khiếu nại",
+      "extra_time": "Thêm thời gian"
+    },
+    "contact": {
+      "title": "",
+      "scan_qr": "Tham gia vào nhóm chat để xem các bên liên quan cung cấp bằng chứng trước khi đưa ra phán quyết cuối cùng"
+    },
+    "modal": {
+      "title": {
+        "confirm_user_win": "Xác nhận người dùng thắng kiện",
+        "confirm_merchant_win": "Xác nhận thương gia thắng kiện",
+        "confirm_closed": "Xác nhận đóng khiếu nại",
+        "extra_time_appeal": "Gia hạn thời gian khiếu nại",
+        "confirm_reopen_appeal": "Xác nhận mở lại giao dịch"
+      },
+      "select": {
+        "title": "Chọn trạng thái giao dịch khi sau khi phán quyết người dùng thắng",
+        "reopen_waiting_merchant": "Mở lại giao dịch - chờ thương gia chuyển tiền mã hóa",
+        "cancelled_refund_money": "Hủy - ANOTRADE hoàn tiền cho người dùng"
+      },
+      "content": {
+        "user_win": "Bạn đã phân xử cho <strong>người dùng</strong> thắng kiện khiếu nại của giao dịch",
+        "merchant_win": "Bạn đã phân xử cho <strong>thương gia</strong> thắng kiện khiếu nại của giao dịch",
+        "open_transaction": "giao dịch đã mở lại nhưng thương gia không chuyển tiền mã hóa vào ví người dùng."
+      },
+      "confirm": {
+        "transferred_returned": "Thương gia đã chuyển hoàn tiền mã hóa cho người dùng",
+        "no_win": "Bạn xác nhận rằng không có người thắng kiện cho khiếu nại của giao dịch",
+        "re_open_transaction": "Nếu người mua đã thanh toán ít (hoặc nhiều) hơn số tiền được yêu cầu và mong muốn hoàn tất giao dịch bằng số tiền thực tế đã chuyển cho người bán. Vui lòng điều chỉnh số tiền giao dịch.",
+        "transferred_crypto": "ANOTRADE chuyển hoàn tiền mã hóa cho người dùng và tính tổng phí phạt cho thương gia là <strong>{penaltyFee}% ({duringSymbol} {fiatSymbol} {totalPenaltyFee})</strong>",
+        "transferred_fiat": "ANOTRADE chuyển hoàn tiền pháp định cho người dùng và tính tổng phí phạt cho thương gia là <strong>{penaltyFee}% ({duringSymbol} {fiatSymbol} {totalPenaltyFee})</strong>",
+        "user_win": {
+          "note_1": "Xác nhận người dùng thắng kiện ở trường hợp này tương đương với việc bạn sẽ đóng khiếu nại, giao dịch sẽ chuyển sang trạng thái Hủy bởi admin.",
+          "note_2": "Chắc chắn rằng bạn đã kiểm tra kỹ bằng chứng các bên cung cấp trước khi xác nhận, giao dịch đã đóng sẽ không thể mở lại.",
+          "note_3": "Việc hoàn tiền cho người dùng sẽ được thực hiện ngoại tuyến bởi đội ngũ quản lý.",
+          "note_4": "Phí phạt sẽ được tính cho thương gia là <strong>{penaltyFee}% ({duringSymbol} {fiatSymbol} {totalPenaltyFee})</strong>"
+        },
+        "sell_merchant_win": {
+          "note_1": "Xác nhận thương gia thắng kiện tương đương với việc bạn sẽ đóng lại khiếu nại và giao dịch sẽ chuyển sang trạng thái thành công.",
+          "note_2": "Chắc chắn rằng bạn đã kiểm tra kỹ bằng chứng các bên cung cấp trước khi xác nhận, giao dịch đã đóng sẽ không thể mở lại.",
+          "note_3": "Nếu thương gia vi phạm các điều khoản, điều kiện của ANOTRADE hoặc cố tình cung cấp các bằng chứng không xác thực, bạn có thể xử phạt thương gia."
+        },
+        "sell_close_appeal": {
+          "note_1": "Sau khi đóng khiếu nại giao dịch sẽ chuyển sang trạng thái Hủy bởi Admin.",
+          "note_2": "Chắc chắn rằng bạn đã kiểm tra kỹ bằng chứng các bên cung cấp trước khi xác nhận, giao dịch đã đóng sẽ không thể mở lại."
+        },
+        "buy_merchant_win": {
+          "note_1": "Xác nhận thương gia thắng kiện tương đương với việc bạn sẽ đóng lại khiếu nại và giao dịch sẽ chuyển sang trạng thái Hủy bởi Admin.",
+          "note_2": "Chắc chắn rằng bạn đã kiểm tra kỹ bằng chứng các bên cung cấp trước khi xác nhận, khiếu nại đã đóng sẽ không thể mở lại.",
+          "note_3": "Nếu thương gia có dấu hiệu gian lận bạn có thể xử phạt thương gia."
+        },
+        "buy_user_win": {
+          "note_1": "Chọn trạng thái của giao dịch mà bạn muốn áp dụng, sau khi xác nhận, giao dịch sẽ chuyển sang trạng thái tương ứng mà bạn chọn.",
+          "note_2": "Chắc chắn rằng bạn đã kiểm tra kỹ bằng chứng các bên cung cấp trước khi xác nhận, giao dịch đã hoàn tất sẽ không thể mở lại.",
+          "note_3": "Nếu thương gia không tiến hành chuyển tiền mã hóa vào ví người dùng, bạn có thể hủy giao dịch, chuyển tiền cho người dùng và tính phí phạt cho thương gia."
+        },
+        "buy_close_appeal": {
+          "note_1": "Sau khi đóng khiếu nại giao dịch sẽ chuyển sang trạng thái Hủy bởi Admin.",
+          "note_2": "Chắc chắn rằng bạn đã kiểm tra kỹ bằng chứng các bên cung cấp trước khi xác nhận, giao dịch đã đóng sẽ không thể mở lại."
+        },
+        "force_close_appeal": {
+          "note_1": "Sau khi đóng khiếu nại giao dịch sẽ chuyển sang trạng thái Hủy bởi admin.",
+          "note_2": "Chắc chắn rằng bạn đã kiểm tra kỹ bằng chứng các bên cung cấp trước khi xác nhận, giao dịch đã đóng sẽ không thể mở lại.",
+          "note_3": "Việc hoàn tiền cho người dùng sẽ được thực hiện ngoại tuyến bởi đội ngũ quản lý.",
+          "note_4": "Phí phạt sẽ được tính cho thương gia là <strong>{penaltyFee}% ({duringSymbol} {fiatSymbol} {totalPenaltyFee})</strong>"
+        }
+      }
+    },
+    "table": {
+      "merchant": "Thương gia",
+      "user": "Người dùng",
+      "time_appeal": "Thời gian khiếu nại",
+      "ended_time": "Thời gian hết hạn",
+      "progress_appeal": "Tiến trình khiếu nại",
+      "progressing": "Tiến trình khiếu nại",
+      "action": "Hành động",
+      "closed_time": "Hết thời gian",
+      "staff": "Nhân viên",
+      "admin_supporter": "Nhân viên CSKH",
+      "time_process_appeal": "Thời gian xử lý khiếu nại",
+      "number_of_extension": "Số lần gia hạn khiếu nại"
+    },
+    "processing": {
+      "title": {
+        "result_appeal": "Kết quả khiếu nại",
+        "finished_appeal": "Kết thúc khiếu nại",
+        "extract_time": "Gia hạn thời gian khiếu nại",
+        "user_complained_merchant": "Người dùng đã khiếu nại thương gia"
+      },
+      "sub_title": {
+        "contact": "Tham gia vào nhóm chat để xem các bên liên quan cung cấp bằng chứng trước khi đưa ra phán quyết cuối cùng.",
+        "cancel_appeal": "Hủy khiếu nại.",
+        "merchant_won": "Thương gia thắng kiện.",
+        "order_cancel": "giao dịch bị hủy",
+        "order_success": "giao dịch thành công",
+        "user_not_fault": "Người dùng không vi phạm",
+        "user_won": "Người dùng thắng kiện.",
+        "transaction_completed": "Giao dịch thành công.",
+        "transaction_cancelled": "Giao dịch bị hủy bởi Admin {name}.",
+        "user_won_opened_transaction": "Người dùng thắng kiện - mở lại giao dịch.",
+        "user_not_receiving_crypto": "Người dùng đã khiếu nại thương gia vì không nhận được tiền mã hóa vào ví.",
+        "user_not_receiving_fiat": "Người dùng đã khiếu nại thương gia vì không nhận được tiền pháp định vào tài khoản.",
+        "force_close_appeal": "Thương gia không chuyển tiền mã hóa cho người dùng. ANOTRADE sẽ hoàn tiền cho người dùng, thương gia sẽ bị tính phí phạt vào giao dịch này.",
+        "extract_time": "Thời gian hết hạn của khiếu nại đã được gia hạn từ {timeStart} ngày {dateStart} thành <strong>{timeEnd} ngày {dateEnd}</strong>.",
+        "decision": {
+          "BUY_MCWIN_CANCEL": "",
+          "BUY_EUWIN_REOPEN": "Số tiền giao dịch đã được cập nhật từ <strong>{fiatSymbol} {fromFiat}</strong> (~ {fromCrypto} {assetName}) thành <strong>{fiatSymbol} {toFiat}</strong> (~ {toCrypto} {assetName}).",
+          "BUY_EUWIN_FORCE_CLOSE": "Số tiền giao dịch đã được cập nhật từ <strong>{fiatSymbol} {fromFiat}</strong> (~ {fromCrypto} {assetName}) thành <strong>{fiatSymbol} {toFiat}</strong> (~ {toCrypto} {assetName}).",
+          "BUY_EUWIN_CANCEL_MC_VIOLATE": "ANOTRADE hoàn tiền cho người dùng, thương gia sẽ bị tính phí phạt vào giao dịch này.",
+          "BUY_NOWIN_CANCEL_EVIDENT_NOT_APPROVED": "Thương gia và người dùng không cung cấp đủ bằng chứng để làm căn cứ xử lý.",
+          "BUY_NOWIN_CANCEL_MC_HAS_RETURNED": "Thương gia đã chuyển hoàn tiền pháp định cho người dùng.",
+          "SELL_MCWIN_SUCCESS": "Thương gia đã chuyển tiền pháp định vào tài khoản người dùng.",
+          "SELL_EUWIN_CANCEL_MC_VIOLATE": "ANOTRADE sẽ hoàn tiền cho người dùng, thương gia sẽ bị tính phí phạt vào giao dịch này.",
+          "SELL_NOWIN_CANCEL_MC_HAS_RETURNED": "Thương gia đã chuyển hoàn tiền mã hóa cho người dùng."
+        }
+      }
+    },
+    "revenue_chart": {
+      "statistic": "Thống kê",
+      "revenue_price": "doanh thu và tỷ giá",
+      "view": "Xem",
+      "title": "Thống kê doanh thu và tỷ giá",
+      "revenue": "Doanh thu",
+      "price": "Tỷ giá",
+      "loading": "Đang tải dữ liệu...",
+      "no_data": "Không có dữ liệu",
+      "invalid_date_range": "Khoảng thời gian không được phép vượt quá {max} {unit}",
+      "close": "Đóng",
+      "filter": {
+        "day": "Ngày",
+        "month": "Tháng",
+        "year": "Năm"
+      },
+      "tooltip": {
+        "revenue": "Tổng phí giao dịch & phí phạt của tất cả giao dịch trên hệ thống",
+        "price": "Trung bình cộng tỷ giá của tất cả giao dịch trên hệ thống"
+      }
+    },
+    "title": "Danh sách quản trị viên",
+    "description": "Quản lý quản trị viên",
+    "form_edit": {
+      "title": "Cập nhập quản trị viên",
+      "active": {
+        "content": "Kích hoạt quản trị viên",
+        "desc": "Một khi đã kích hoạt, quản trị viên có thể đăng nhập trở lại vào hệ thống.",
+        "succeed": "Kích hoạt quản trị viên thành công",
+        "failed": "Kích hoạt quản trị viên thất bại"
+      },
+      "inactive": {
+        "content": "Vô hiệu hóa quản trị viên",
+        "desc": "Một khi đã vô hiệu hóa, quản trị viên sẽ bị khóa và không thể đăng nhập vào hệ thống.",
+        "succeed": "Vô hiệu hóa quản trị viên thành công",
+        "failed": "Vô hiệu hóa quản trị viên thất bại"
+      }
+    },
+    "form_add": {
+      "title": "Thêm mới quản trị viên",
+      "title_failure": "Thêm mới thất bại",
+      "title_succeed": "Thêm mới thành công"
+    },
+    "form_delete": {
+      "content": "Xóa tài khoản quản trị viên",
+      "desc": "Xóa tài khoản quản trị viên sẽ xóa vĩnh viễn thông tin hồ sơ, dữ liệu cá nhân. Bằng cách xóa tài khoản, quản trị viên sẽ không thể đăng nhập và sẽ bị xóa vĩnh viễn khỏi hệ thống.",
+      "description_sub_1": "Quản trị viên sẽ không thể đăng nhập vào hệ thống",
+      "description_sub_2": "Các thông tin nhận dạng (địa chỉ ví, tên hiển thị...) của quản trị viên trong hệ thống sẽ tự động bị xóa bỏ",
+      "title_success": "Xóa tài khoản thành công",
+      "title_failure": "Xóa tài khoản thất bại"
+    },
+    "create": "Thêm quản trị viên"
+  },
+  "modal": {
+    "title": {
+      "connect_wallet": "Kết nối ví",
+      "system": "Thông báo hệ thống",
+      "warning_system": "Cảnh báo hệ thống",
+      "add_payment": "Thêm phương thức thanh toán",
+      "edit_payment": "Cập nhật phương thức thanh toán",
+      "upload_landing_banner": "Thay đổi hình ảnh biểu ngữ landing page",
+      "upload_marketplace_banner": "Thay đổi hình ảnh biểu ngữ marketplace"
+    },
+    "content": {
+      "connected_failed": "Kết nối ví thất bại",
+      "connect_succeed": "Kết nối ví thành công",
+      "upload_file_failed": "Upload file thất bại",
+      "upload_image_failed": "Upload hình ảnh thất bại",
+      "can_not_add_payment": "Không thể thêm mới phương thức thanh toán",
+      "can_not_edit_payment": "Không thể cập nhật phương thức thanh toán"
+    },
+    "description": {
+      "connect_succeed": "Hoàn tất liên kết ví. Chào mừng bạn đến trang giao dịch tại ANOTRADE"
+    },
+    "connect_wallet": {
+      "title_failed": "Liên kết ví bị lỗi",
+      "title_successed": "Chào mừng đến với ANOTRADE",
+      "note_failed_section_1": "Liên kết đang bị lỗi, vui lòng thử lại.",
+      "note_failed_section_2_1": "Hoặc liên hệ với đội ngũ",
+      "note_failed_section_2_2": "để được hướng dẫn.",
+      "text_support": "hỗ trợ",
+      "note_successed": "Sàn giao dịch ANOTRADE được tối ưu dành riêng cho người<br>dùng Tiếng Việt. Bạn có thể dễ dàng trao đổi<br>tiền mã hóa qua hệ thống ví V99."
+    },
+    "completed_order": "Vui lòng hoàn tất giao dịch hiện tại trước khi sử dụng các chức năng khác của hệ thống!",
+    "message": {
+      "system_notification": "Thông báo hệ thống",
+      "login_information_failed": "Tên đăng nhập hoặc mật khẩu không đúng",
+      "update_support_request_failed": "Cập nhật trạng thái thất bại",
+      "update_support_request_succeed": "Đã xử lý thành công",
+      "upload_file_failed": "Dung lượng tệp đính kèm quá lớn",
+      "upload_file_invalid": "Định dạng tệp đính kèm không được hỗ trợ",
+      "image_exceed_limit": "Dung lượng không quá {limit}MB",
+      "image_format_invalid": "Định dạng hình ảnh không được hỗ trợ",
+      "system_failed": "Đã có lỗi xảy ra",
+      "upload_fail": "Tải lên thất bại",
+      "get_buy_info_failed": "Lấy thông tin lệnh mua thất bại",
+      "get_list_order_failed": "Lấy danh sách giao dịch thất bại",
+      "create_buy_failed": "Tạo lệnh mua thất bại",
+      "cancel_buy_failed": "Hủy lệnh mua thất bại",
+      "confirm_buy_failed": "Xác nhận lệnh mua thất bại",
+      "get_sell_info_failed": "Lấy thông tin lệnh bán thất bại",
+      "create_sell_failed": "Tạo lệnh bán thất bại",
+      "confirm_received_failed": "Xác nhận đã nhận tiền thất bại",
+      "cancel_sell_failed": "Hủy lệnh bán thất bại",
+      "submit_crypto_transaction_failed": "Gửi thông tin giao dịch thất bại",
+      "error_system": "Đã có lỗi xảy ra, vui lòng thử lại.",
+      "connect_wallet": "Liên kết ví thất bại",
+      "payment_create_failed": "Không thể thêm phương thức thanh toán mới",
+      "payment_update_failed": "Cập nhật phương thức thanh toán thất bại",
+      "payment_delete_failed": "Xóa phương thức thanh toán thất bại",
+      "disable_delete_payment": "Không thể xoá phương thức thanh toán",
+      "disable_update_payment": "Không thể cập nhật phương thức thanh toán",
+      "get_list_payment_failed": "Lấy danh sách phương thức thanh toán thất bại",
+      "get_detail_payment_failed": "Lấy thông tin phương thức thanh toán thất bại",
+      "merchant_postings_create_failed": "Tạo quảng cáo thất bại",
+      "merchant_postings_update_failed": "Cập nhật quảng cáo thất bại",
+      "get_detail_postings_failed": "Lấy danh sách quảng cáo thất bại",
+      "get_list_postings_failed": "Lấy thông tin quảng cáo thất bại",
+      "not_enough_balance": "Số dư ví không đủ",
+      "not_pick_order": "Không thể nhận giao dịch",
+      "invalid_network": "Chuyển mạng để thực hiện giao dịch",
+      "incorrect_from_wallet": "Địa chỉ gửi không đúng",
+      "session_expire": "Phiên đăng nhập hết hạn",
+      "transaction_underpriced": "Giao dịch bị định giá thấp",
+      "unauthenticated_password": "Vui lòng đăng nhập lại!",
+      "UNAUTHENTICATED": "Vui lòng đăng nhập lại!",
+      "MERCHANT_SELL_POST_IS_UNAVAILABLE": "Quảng cáo bán của merchant không khả dụng",
+      "MERCHANT_BLOCKED_USER": "Người dùng nằm trong danh sách đen",
+      "USER_BLOCKED_MERCHANT": "Người dùng block Merchant",
+      "USER_HAS_A_PENDING_BUY_ORDER": "Bạn có một lệnh mua đang chờ hoàn tất",
+      "USER_VIOLATES_BUY_ORDER_RULES": "Người dùng vi phạm quy tắc giao dịch mua với 5 lần hủy lệnh mua trong 24 tiếng",
+      "BUY_PRICE_IS_INVALID": "Tỷ giá không hợp lệ",
+      "AMOUNT_IS_GREATER_THAN_AVAILABLE_AMOUNT": "Số tiền mua lớn hơn số lượng khả dụng của quảng cáo",
+      "BUY_AMOUNT_IS_GREATER_THAN_AVAILABLE_AMOUNT": "Số tiền mua lớn hơn số lượng khả dụng của quảng cáo",
+      "BUY_AMOUNT_IS_LESS_THAN_POST_MIN_AMOUNT": "Số tiền mua nhỏ hơn số lượng tối thiểu của quảng cáo",
+      "BUY_AMOUNT_IS_GREATER_THAN_POST_MAX_AMOUNT": "Số tiền mua lớn hơn số lượng tối đa của quảng cáo",
+      "ORDER_CREATION_IS_FAILED": "Tạo lệnh giao dịch thất bại",
+      "ORDER_NOT_FOUND": "Không tìm thấy order",
+      "POST_NOT_FOUND": "Không tìm thấy quảng cáo",
+      "ADMIN_SUPPORTER_NOT_FOUND": "Không tìm thấy nhân viên CSKH",
+      "ADMIN_SUPPORTER_UPDATE_FAILED": "Cập nhật nhân viên CSKH thất bại",
+      "CANNOT_DISABLE_ADMIN_SUPPORTER_HAS_PENDING_APPEAL": "Đang có phát sinh khiếu nại, không thể vô hiệu hóa nhân viên CSKH",
+      "FIAT_PAYMENT_TIME_IS_EXPIRED": "Hết thời gian giao dịch cho end-user",
+      "ORDER_STATUS_IS_INVALID": "Trạng thái lệnh không hợp lệ",
+      "ORDER_STATUS_IS_INVALID_FORCE_RELOAD": "Trạng thái lệnh không hợp lệ, vui lòng tải lại trang!",
+      "FIAT_CONFIRMATION_IS_FAILED": "Xác nhận đã nhận tiền thất bại",
+      "CRYPTO_PAYMENT_TIME_IS_EXPIRED": "Hết thời gian giao dịch cho merchant",
+      "ORDER_TIMEOUT": "Thời gian giao dịch và khiếu nại đã hết. Giao dịch mua đã bị hủy bởi hệ thống.",
+      "ORDER_CANCELATION_FAILED": "Hủy giao dịch mua thất bại.",
+      "ORDER_STATUS_IS_CANCELLED_OR_FINISHED": "Giao dịch bán đã bị hủy hoặc đã hoàn thành bước ở phía người dùng.",
+      "GET_ORDER_DETAIL_FAIL": "Tải chi tiết đơn đặt hàng không thành công",
+      "CRYPTO_MERCHANT_ADDRESS_IS_INCORRECT": "Địa chỉ ví của người bán không hợp lệ",
+      "CRYPTO_USER_ADDRESS_IS_INCORRECT": "Địa chỉ ví của người mua không hợp lệ",
+      "ADDRESS_IS_INCORRECT": "Địa chỉ ví không hợp lệ",
+      "TX_HASH_ALREADY_EXISTS": "TxId đã tồn tại trên hệ thống",
+      "TX_HASH_IS_INVALID": "Mã không hợp lệ, vui lòng kiểm tra lại trên mạng lưới",
+      "CRYPTO_AMOUNT_IS_INCORRECT": "Số lượng tiền mã hóa gửi đi không hợp lệ",
+      "CRYPTO_TRANSACTION_ALREADY_EXISTS": "Có giao dịch tiền mã hóa đang chờ ở ví",
+      "CRYPTO_SUBMISSION_IS_FAILED": "Gửi giao dịch mã hóa không thành công",
+      "USER_REJECT_SIGN_WALLET": "Người dùng từ chối liên kết ví",
+      "FORBIDDEN": "Đã xảy ra lỗi",
+      "AUTHENTICATE_FORBIDDEN": "Bạn không có quyền truy cập",
+      "INTERNAL_ERROR": "Đã xảy ra lỗi",
+      "EXPIRE": "Đã hết phiên liên kết ví, vui lòng liên kết lại",
+      "INTERNAL_SERVER_ERROR": "Hệ thống lỗi",
+      "PAYMENT_METHOD_DOES_NOT_EXIST": "Phương thức thanh toán không tồn tại, vui lòng thêm mới phương thức thanh toán",
+      "MERCHANT_BUY_POST_IS_UNAVAILABLE": "Quảng cáo bán của merchant không khả dụng",
+      "USER_HAS_A_PENDING_SELL_ORDER": "Bạn có một lệnh bán đang chờ hoàn tất",
+      "USER_VIOLATES_SELL_ORDER_RULES": "Bạn đã vi phạm quy tắc giao dịch bán với 5 lần hủy lệnh bán trong 24 tiếng",
+      "SELL_ORDER_STATUS_IS_INVALID": "Giao dịch mua đã được hoàn thành hoặc hủy thành công phía người dùng.",
+      "SELL_ORDER_TIMEOUT": "Thời gian giao dịch và khiếu nại đã hết. Giao dịch mua đã bị hủy bởi hệ thống.",
+      "SELL_ORDER_CANCELLATION_FAILED": "Hủy giao dịch bán thất bại.",
+      "SELL_PRICE_IS_INVALID": "Tỷ giá của giao dịch khác với tỷ giá của quảng cáo",
+      "SELL_AMOUNT_IS_GREATER_THAN_AVAILABLE_AMOUNT": "Số tiền bán lớn hơn số lượng khả dụng của quảng cáo",
+      "SELL_AMOUNT_IS_LESS_THAN_POST_MIN_AMOUNT": "Số tiền bán nhỏ hơn số lượng tối thiểu của quảng cáo",
+      "SELL_AMOUNT_IS_GREATER_THAN_POST_MAX_AMOUNT": "Số tiền bán lớn hơn số lượng tối đa của quảng cáo",
+      "PAYMENT_METHOD_CREATION_IS_FAILED": "Tạo mới phương thức thanh toán thất bại",
+      "PAYMENT_METHOD_UPDATE_IS_FAILED_WHEN_EXISTING_ORDER": "Phương thức thanh toán hiện tại đã có phát sinh Quảng cáo/ Giao dịch.",
+      "PAYMENT_METHOD_DELETION_IS_FAILED_WHEN_EXISTING_ORDER": "Phương thức thanh toán hiện tại đã có phát sinh Quảng cáo/ Giao dịch.",
+      "CAN_NOT_STORE_PAYMENT_METHOD_WHEN_EXISTING_ORDER": "Phương thức thanh toán hiện tại đã có phát sinh Quảng cáo/ Giao dịch.",
+      "BANK_ID_IS_INVALID": "Mã ngân hàng thanh toán không hợp lệ",
+      "BANK_NUMBER_IS_EMPTY": "Số tài khoản trống",
+      "BANK_HOLDER_IS_EMPTY": "Chủ tài khoản trống",
+      "PAYMENT_DETAILS_IS_EXIST": "Thông tin thanh toán đã tồn tại trong danh sách của bạn",
+      "PAYMENT_METHOD_HAS_REACH_LIMIT": "Số phương thức thanh toán vượt quá giới hạn cho phép.",
+      "NO_PERMISSION_TO_UPDATE_PAYMENT_METHOD": "Bạn không có quyền để cập nhật phương thức thanh toán này",
+      "NO_PERMISSION_TO_CREATE_PAYMENT_METHOD": "Bạn không có quyền để tạo mới phương thức thanh toán",
+      "PAYMENT_METHOD_UPDATE_IS_FAILED": "Cập nhật phương thức thanh toán thất bại",
+      "PAYMENT_METHOD_ID_IS_INVALID": "Mã phương thức thanh toán không hợp lệ",
+      "NO_PERMISSION_TO_DELETE_PAYMENT_METHOD": "Bạn không có quyền để xóa phương thức thanh toán này",
+      "PAYMENT_METHOD_DELETION_IS_FAILED": "Xóa phương thức thanh toán không thành công",
+      "PAYMENT_METHOD_IS_EMPTY": "Chưa thiết lập phương thức thanh toán",
+      "PRICE_TYPE_IS_INVALID": "Loại tỷ giá không hợp lệ",
+      "FIXED_PRICE_BEFORE_FEE_IS_EMPTY": "Chưa thiết lập tỷ giá cố định trước phí",
+      "POSTING_CREATION_IS_FAILED": "Tạo quảng cáo mua thất bại",
+      "POST_STATUS_IS_CLOSED": "Trạng thái quảng cáo không phải trạng thái đóng",
+      "NO_PERMISSION_TO_VIEW_POST": "Không có quyền để xem quảng cáo",
+      "POST_ID_INVALID": "Mã quảng cáo không hợp lệ",
+      "POSTING_TYPE_IS_INVALID": "Loại quảng cáo không hợp lệ",
+      "FIAT_TYPE_IS_INVALID": "Loại tiền phát định không hợp lệ",
+      "CRYPTO_TYPE_IS_INVALID": "Loại tiền mã hóa không hợp lệ",
+      "FIXED_PRICE_AFTER_FEE_IS_EMPTY": "Tỷ giá cố định sau phí trống",
+      "CRYPTO_AMOUNT_IS EMPTY": "Chưa thiết lập số lượng tiền mã hóa",
+      "UPPER_FIAT_LIMIT_IS_HIGHER_THAN_HIGHEST_SYSTEM_LIMIT": "Giới hạn lệnh tối đa lớn hơn giới hạn quảng cáo lớn nhất của hệ thống",
+      "LOWER_FIAT_LIMIT_IS_SMALLER_THAN_LOWEST_SYSTEM_LIMIT": "Giới hạn lệnh tối thiểu nhỏ hơn giới hạn quảng cáo nhỏ nhất của hệ thống",
+      "NO_PERMISSION_TO_UPDATE_POST": "Không có quyền để sửa đổi quảng cáo",
+      "PAYMENT_METHOD_IS_INVALID": "Mã phương thức thanh toán không hợp lệ",
+      "PAYMENT_METHOD_NOT_FOUND": "Mã phương thức thanh toán không hợp lệ",
+      "PAYMENT_METHOD_IS_NO_LONGER_SUPPORTED": "Phương thức thanh toán không còn được hỗ trợ",
+      "CANNOT_UPDATE_CLOSED_POST": "Không thể chỉnh sửa quảng cáo đã bị đóng",
+      "POST_STATUS_IS_INVALID": "Trạng thái quảng cáo không hợp lệ",
+      "POST_ID_IS_INVALID": "Mã quảng cáo không hợp lệ",
+      "POSTING_UPDATE_IS_FAILED": "Cập nhật quảng cáo thất bại",
+      "USER_TO_MERCHANT_TIME_IS_EMPTY": "Thời gian từ user đến merchant trống",
+      "CRYPTO_AMOUNT_IS_SMALLER_THAN_UPPER_ORDER_LIMIT": "Số lượng tiền mã hóa nhỏ hơn giới hạn lệnh trên",
+      "BUY_CRYPTO_AMOUNT_IS_SMALLER_THAN_UPPER_ORDER_LIMIT": "Số lượng muốn mua nhỏ hơn giới hạn lệnh tối đa",
+      "SELL_CRYPTO_AMOUNT_IS_SMALLER_THAN_UPPER_ORDER_LIMIT": "Số lượng muốn bán nhỏ hơn giới hạn lệnh tối đa",
+      "CRYPTO_AMOUNT_IS_HIGHER_THAN_WALLET_BALANCE": "Số lượng tiền mã hóa lớn hơn số lượng khả dụng của ví",
+      "LOWER_FIAT_LIMIT_IS_EMPTY": "Chưa thiết lập giới hạn lệnh dưới",
+      "UPPER_FIAT_LIMIT_IS_EMPTY": "Chưa thiết lập giới hạn lệnh tối đa",
+      "UPPER_FIAT_LIMIT_IS_SMALLER_THAN_LOWER_ORDER_LIMIT": "Giới hạn lệnh tối đa nhỏ hơn giới hạn lệnh dưới",
+      "UPPER_FIAT_LIMIT_IS_HIGHER_THAN_CRYPTO_AMOUNT": "Giới hạn lệnh tối đa lớn hơn số lượng tiền mã hóa",
+      "UPPER_FIAT_LIMIT_IS_HIGHER_THAN_LEVEL_LIMIT": "Giới hạn lệnh trên lớn hơn giá trị hạn mức",
+      "MERCHANT_ACCOUNT_CAN_NOT_CREATE_ORDER": "Tài khoản nhân viên không thể tạo đơn hàng",
+      "MERCHANT_MANAGER_CAN_NOT_CREATE_ORDER": "Tài khoản thương gia không thể tạo đơn hàng",
+      "ADMIN_CAN_NOT_CREATE_ORDER": "Tài khoản admin không thể tạo đơn hàng",
+      "RECHECK_BALANCE_WALLET": "Kiểm tra số dư ví và thực hiện lại việc chuyển tiền mã hóa",
+      "CHOOSE_NETWORK_AGAIN": "Thực hiện việc xác nhận chuyển mạng trên ví để tiếp tục việc chuyển tiền mã hóa.",
+      "INCORRECT_FROM_ADDRESS": "Sai địa chỉ ví gửi. Vui lòng chọn đúng ví để gửi.",
+      "TRANSACTION_UNDERPRICED": "Giao dịch bị định giá thấp",
+      "SAME_ONLINE_POSTING_AD_ALREADY_EXIST": "Đã tồn tại quảng cáo tương tự ở trạng thái trực tuyến",
+      "CRYPTO_AMOUNT_IS_SMALLER_THAN_LOWER_ORDER_LIMIT": "Số lượng tiền mã hóa nhỏ hơn giới hạn lệnh dưới",
+      "BUY_CRYPTO_AMOUNT_IS_SMALLER_THAN_LOWER_ORDER_LIMIT": "Số lượng muốn mua nhỏ hơn giới hạn lệnh dưới",
+      "SELL_CRYPTO_AMOUNT_IS_SMALLER_THAN_LOWER_ORDER_LIMIT": "Số lượng muốn bán nhỏ hơn giới hạn lệnh dưới",
+      "USER_TO_MERCHANT_TIME_IS_INVALID": "Thời gian từ user đến merchant không hợp lệ",
+      "BUY_CRYPTO_AMOUNT_EXCEEDS_THE_SYSTEM_LIMIT": "Số lượng muốn mua nằm ngoài giới hạn cho phép của hệ thống",
+      "SELL_CRYPTO_AMOUNT_EXCEEDS_THE_SYSTEM_LIMIT": "Số lượng muốn bán nằm ngoài giới hạn cho phép của hệ thống",
+      "ASSET_IS_INVALID": "Tài sản không hợp lệ",
+      "DECISION_RESULT_IS_INVALID": "Kết quả khiếu nại không hợp lệ",
+      "TIME_EXTRA_IS_IN_THE_PAST": "Thời gian gia hạn trước thời gian hiện tại",
+      "FIXED_PRICE_BEFORE_FEE_IS_INVALID": "Tỷ giá mong muốn không hợp lệ",
+      "AMOUNT_IS_LESS_THAN_POST_MIN_AMOUNT": "Số tiền mua nhỏ hơn số lượng tối thiểu của quảng cáo",
+      "NO_PERMISSION_TO_CREATE_MERCHANT_MANAGER": "Không có quyền tạo mới thương gia",
+      "MERCHANT_MANAGER_WALLET_ADDRESS_IS_EMPTY": "Địa chỉ ví thương gia trống",
+      "MERCHANT_MANAGER_WALLET_ADDRESS_ALREADY_CREATED": "Địa chỉ ví thương gia đã tồn tại trước đó",
+      "NICKNAME_IS_EXISTED": "Tên hiển thị đã tồn tại trước đó",
+      "NO_PERMISSION_TO_CREATE_STAFF": "Không có quyền tạo mới nhân viên",
+      "STAFF_WALLET_ADDRESS_IS_EMPTY": "Địa chỉ ví nhân viên trống",
+      "STAFF_WALLET_ADDRESS_ALREADY_CREATED": "Địa chỉ ví đã tồn tại trước đó",
+      "NO_PERMISSION_TO_UDPATE_STAFF": "Không có quyền chỉnh sửa nhân viên",
+      "ORDER_ID_IS_INVALID": "Giao dịch không hợp lệ",
+      "LOWER_FIAT_LIMIT_IS_INVALID": "Giới hạn lệnh tối thiểu không hợp lệ",
+      "MERCHANT_NOT_FOUND": "Không tìm thấy thương gia",
+      "TOTAL_ORDER_SUPPORT_LIMITS_ARE_EXCEEDED": "Số lượng giao dịch cho phép tiếp nhận là: <b>{count}</b>.</br>Bạn không được tiếp nhận quá số lượng cho phép.",
+      "ORDER_ALREADY_HAS_SUPPORTER": "Giao dịch này đã được xử lý bởi hỗ trợ viên, vui lòng chọn giao dịch khác",
+      "CANNOT_UPDATE_PAYMENT_METHOD_WAS_DEACTIVATED": "Phương thức thanh toán hiện tại không còn hỗ trợ cho quảng cáo này. Vui lòng cập nhật phương thức thanh toán khác.",
+      "PRICE_IS_INVALID": "Tỷ giá không hợp lệ",
+      "MERCHANT_MANAGER_CREATION_FAILED": "Tạo thương gia thất bại",
+      "ADMIN_SUPPORTER_CREATION_FAILED": "Thêm mới nhân viên CSKH thất bại",
+      "APPEAL_PERMISSION_DENIED": "Không tạo được nhóm chat, vui lòng thử lại",
+      "APPEAL_IS_DISABLED": "Khiếu nại đã bị vô hiệu hóa",
+      "CREATE_APPEAL_FAILED": "Tạo khiếu nại thất bại",
+      "ORDER_UPDATED_IS_FAILED": "Cập nhật giao dịch thất bại",
+      "APPEAL_ADD_MORE_TIME_FAILED": "Gia hạn thời gian thất bại",
+      "APPEAL_NOT_FOUND": "Không tìm thấy khiếu nại",
+      "APPEAL_STATUS_IS_INVALID": "Trạng thái khiếu nại không hợp lệ",
+      "NOTE_IS_INVALID": "Ghi chú không được chứa kí tự đặc biệt",
+      "MAX_ORDER_LIMIT_IS_SMALLER_THAN_MIN_ORDER_LIMIT": "Giới hạn lệnh tối đa nhỏ hơn giới hạn lệnh tối thiểu",
+      "MAX_POST_LIMIT_IS_SMALLER_THAN_MIN_POST_LIMIT": "Giới hạn quảng cáo tối đa nhỏ hơn giới hạn tối thiểu",
+      "CANNOT_DISABLE_MANAGER_HAS_PENDING_ORDER": "Đang có phát sinh giao dịch, không thể vô hiệu hóa thương gia",
+      "CANNOT_DISABLE_OPERATOR_HAS_PENDING_ORDER": "Đang có phát sinh giao dịch, không thể vô hiệu hóa giao dịch viên",
+      "CANNOT_DISABLE_SUPPORTER_HAS_PENDING_ORDER": "Đang có phát sinh giao dịch, không thể vô hiệu hóa hỗ trợ viên",
+      "TOKEN_IS_NO_LONGER_SUPPORTED": "{token} không còn được hỗ trợ.",
+      "REPORT_TIME_INVALID": "Thời gian truy xuất chỉ cho phép trong vòng 6 tháng.",
+      "REPORT_PERMISSION_DENIED": "Bạn không có quyền truy xuất báo cáo.",
+      "REPORT_EMPTY": "Không có dữ liệu.",
+      "APPEAL_ALREADY_RESOLVED": "Order đã được xử lý",
+      "RESOLVE_APPEAL_PERMISSION_DENIED": "Xử lý order bị từ chối, vui lòng thử lại",
+      "APPEAL_ALREADY_HAS_SUPPORTER": "Khiếu nại đã được nhân viên khác nhận xử lý",
+      "TOTAL_ORDER_PICKED_LIMITS_ARE_EXCEEDED": "Số lượng khiếu nại cho phép tiếp nhận là: <b>{count} khiếu nại</b> <br/> Bạn không được tiếp nhận quá số lượng cho phép.",
+      "TOTAL_REQUEST_PICKED_LIMITS_ARE_EXCEEDED": "Số lượng yêu cầu cho phép tiếp nhận là: <b>{count} yêu cầu</b> <br/> Bạn không được tiếp nhận quá số lượng cho phép.",
+      "APPEAL_EMPTY_ADMIN_SUPPORTER": "Khiếu nại không có nhân viên CSKH hỗ trợ",
+      "PERMISSION_DENIED_TO_UPDATE_APPEAL": "Quản trị viên đã hủy phiên hỗ trợ của bạn tại giao dịch này",
+      "ADMIN_SUPPORTER_VIEW_APPEAL_PERMISSION_DENIED": "Bạn không có quyền truy cập khiếu nại này",
+      "ONLY_PENDING_ROOM_AT_TIME": "Bạn đã yêu cầu trợ giúp",
+      "RESOLVE_SUPPORT_REQUEST_FAILED": "Không thể xử lý yêu cầu, vui lòng thử lại",
+      "SUPPORT_REQUEST_STATUS_IS_INVALID": "Trạng thái hỗ trợ không hợp lệ",
+      "SUPPORT_REQUEST_NOT_FOUND": "Không tìm thấy yêu cầu hỗ trợ",
+      "ADMIN_SUPPORTER_VIEW_SUPPORT_REQUEST_PERMISSION_DENIED": "Bạn không có quyền truy cập yêu cầu này",
+      "SUPPORT_REQUEST_ALREADY_RECEIVED": "Yêu cầu hỗ trợ đã được nhân viên khác nhận xử lý",
+      "RECEIVE_SUPPORT_REQUEST_FAILED": "Không thể nhận xử lý yêu cầu, vui lòng thử lại",
+      "NETWORK_NOT_SUPPORTED": "Mạng hiện tại không hỗ trợ",
+      "MANAGER_HAS_PENDING_ORDER": "Bạn không thể kích hoạt địa chỉ ví hiện tại khi đang có phát sinh giao dịch. Vui lòng hoàn thành các giao dịch trước khi kích hoạt ví",
+      "WALLET_ADDRESS_IS_EXISTED": "Địa chỉ ví đã tồn tại trước đó",
+      "THE_WALLET_ADDRESS_IS_IN_THE_BLACKLIST": "Địa chỉ ví nằm trong danh sách hạn chế của hệ thống",
+      "WALLET_ADDRESS_IS_NOT_EXISTED_IN_BLACKLIST": "Địa chỉ ví không nằm trong danh sách hạn chế của hệ thống",
+      "WALLET_ADDRESS_IS_EXISTING_IN_OTHER_ROLES": "Địa chỉ ví này đã tồn tại ở các vai trò thương gia, thuộc thương gia hoặc quản trị hệ thống. Vui lòng kiểm tra.",
+      "WALLET_ADDRESS_IS_EXISTED_IN_BLACKLIST": "Địa chỉ ví đã tồn tại trước đó",
+      "ADD_WALLET_ADDRESS_TO_BLACKLIST_FAILED": "Thêm địa chỉ ví thất bại",
+      "PAYMENT_NUMBER_IS_EXIST": "Số tài khoản đã được sử dụng",
+      "WRONG_NETWORK_IN_CREATING_POST": "Mạng không hỗ trợ tạo quảng cáo",
+      "ASSET_ID_IS_INVALID": "Loại tiền mã hoá không hợp lệ",
+      "ROOM_IS_EXISTED": "Cuộc trò chuyện đã tồn tại trước đó",
+      "OPERATOR_CANNOT_CREATE_ROOM_CHAT": "Tạo cuộc trò chuyện thất bại",
+      "OPERATOR_IS_NOT_IN_ORDER": "Bạn không có quyền tham gia cuộc trò chuyện này",
+      "CRYPTO_TRANSACTION_NOT_SUCCESS": "Không thể cập nhật trạng thái giao dịch",
+      "OPERATOR_NOT_OWN_ORDER": "Bạn không có quyền thao tác giao dịch này",
+      "NOT_SUPPORT_OLD_VERSION": "Không thể cập nhật trạng thái giao dịch",
+      "CRYPTO_TRANSACTION_IS_FAILED": "Chuyển tiền mã hóa thất bại",
+      "STAFF_IS_EXCEED": "Số lượng nhân viên vượt quá giới hạn cho phép",
+      "INPUT_VALIDATE_ERROR": "Dữ liệu nhập vào không đúng",
+      "USER_ASK_CS_TIME_IS_INVALID": "Thời gian người dùng liên hệ CSKH không hợp lệ",
+      "USER_ASK_MERCHANT_TIME_IS_INVALID": "Thời gian người dùng liên hệ thương gia không hợp lệ",
+      "SIWE_MISSING_MESSAGE": "Không có nội dung ký",
+      "SIWE_MISSING_SIGNATURE": "Không có chữ ký số",
+      "SIWE_MALFORMED_MESSAGE": "Nội dung ký không hợp lệ",
+      "SIWE_INVALID_ORIGIN": "URI không đúng",
+      "SIWE_DOMAIN_MISMATCH": "Tên miền không đúng",
+      "SIWE_EXPIRED_MESSAGE": "Thời gian xác thực hết hạn",
+      "SIWE_NOT_YET_VALID_TIME": "Thời gian xác thực chưa hiệu lực",
+      "SIWE_INVALID_NONCE": "Số nonce không hợp lệ",
+      "SIWE_INVALID_SIGNATURE": "Chữ ký số không hợp lệ",
+      "EXISTING_REQUEST_SUPPORT": "Đang có yêu cầu hỗ trợ chưa được xử lý",
+      "BALANCE_CONFIGS_INVALID": "Giới hạn cho tài sản không hợp lệ",
+      "BALANCE_LIMIT_IS_INVALID": "Giới hạn cho tài sản không hợp lệ",
+      "CREATE_BALANCE_CONFIG_FAIL": "Giới hạn tài sản thất bại",
+      "ASSET_IS_BEING_MAINTAINED": "Tài sản đang được bảo trì",
+      "SUPER_ADMIN_NOT_FOUND": "Không tìm thấy quản trị viên",
+      "TITLE_FROM_SYSTEM": "Thông báo hệ thống",
+      "TOO_MANY_REQUEST_CONTENT": "Hệ thống đang xử lý, vui lòng thử lại sau ít phút",
+      "USERNAME_OR_PASSWORD_IS_INCORRECT": "Tên đăng nhập hoặc mật khẩu không đúng"
+    },
+    "payment_confirmation": {
+      "transfer_money_to_seller": "Chuyển tiền vào tài khoản của người bán"
+    },
+    "sell_payment_confirmation": {
+      "confirm_received_enough_money": "Tôi đã nhận đủ <span>{value}</span> từ người mua",
+      "transfer_content": "Nội dung chuyển khoản: ",
+      "received_money_from_buyer": "Đã nhận đủ tiền từ người mua"
+    },
+    "send_crypto_confirmation": {
+      "title": "Xác nhận gửi tiền mã hoá",
+      "tx_confirm_title": "Xác nhận chuyển tiền mã hóa",
+      "tx_confirm_desc_1": "Vui lòng sao chép và dán TxID vào ô bên dưới,",
+      "tx_confirm_desc_2": "hệ thống sẽ kiểm tra và cập nhật trạng thái mới nhất cho giao dịch",
+      "tx_confirm_form_title": "TxID",
+      "tx_confirm_tooltip": "TxID (hay còn được gọi là TxHash, Transaction ID) là mã giao dịch ghi nhận trên blockchain, bằng chứng chuyển crypto từ địa chỉ ví này sang địa chỉ ví khác.",
+      "guide_get_txid": "Hướng dẫn lấy TxID",
+      "fiat_send": "Số lượng",
+      "has_error": "Có lỗi xảy ra, xác nhận thất bại",
+      "consult": "<span>Lưu ý:</span> Bạn còn {count} lần nhập TxID. Nếu nhập sai quá số lần cho phép, hệ thống sẽ tự động hủy giao dịch.",
+      "onchain": {
+        "error_title": "Cập nhật trạng thái chuyển tiền mã hóa thất bại",
+        "error_sub_title": "Vui lòng kiểm tra giao dịch trên mạng lưới hoặc thử lại"
+      }
+    },
+    "send_crypto_result": {
+      "title": "Gửi tiền mã hoá",
+      "desc_processing": "Lệnh gửi tiền mã hóa đang xử lý",
+      "desc_failed": "Lệnh gửi tiền mã hoá thất bại",
+      "note_processing": "Giao dịch này có thể mất một khoảng thời gian để thực hiện, vui lòng chờ đợi.",
+      "note_failed": "Kiểm tra lịch sử giao dịch trên ví để biết nguyên nhân, thực hiện lại việc chuyển tiền mã hoá."
+    },
+    "ad_result": {
+      "create_title": "Đăng tin thành công",
+      "update_title": "Cập nhật thành công"
+    },
+    "appeal": {
+      "title": "Thông tin nhóm thỏa thuận",
+      "sell_warning_1": "Không thực hiện các giao dịch khác ngoài hệ thống, ANOTRADE sẽ không chịu trách nhiệm nếu bạn bị mất tiền.",
+      "sell_warning_2": "Tuyệt đối không xác nhận <span>Đã nhận đủ tiền từ người mua</span> cho đến khi bạn đã nhận đủ tiền trong tài khoản. Việc xác nhận đã nhận đủ tiền tương đương với việc bạn đồng ý giao dịch đã thành công.",
+      "sell_warning_3": "Nếu hết thời gian thỏa thuận mà bạn vẫn chưa nhận được tiền vào tài khoản vui lòng bấm <span>Liên hệ CSKH</span>.",
+      "sell_contact_warning_1": "Cung cấp bằng chứng giao dịch (video, hình ảnh, hoặc đường dẫn) để được xử lý khiếu nại.",
+      "sell_contact_warning_2": "Tuyệt đối không xác nhận <span>Đã nhận đủ tiền từ người mua</span> cho đến khi bạn đã nhận đủ tiền trong tài khoản. Việc xác nhận đã nhận đủ tiền tương đương với việc bạn đồng ý giao dịch đã thành công.",
+      "sell_contact_warning_3": "Nếu bạn gian lận hoặc cung cấp thông tin bằng chứng sai lệch, tài khoản của bạn có thể bị khóa và không giao dịch được trên ANOTRADE.",
+      "sell_contact_warning_4": "Nếu hết thời gian thỏa thuận mà bạn vẫn chưa nhận được tiền vào tài khoản vui lòng bấm <span>Liên hệ CSKH</span>.",
+      "buy_step_2_warning_1": "Không thực hiện các giao dịch khác ngoài hệ thống, ANOTRADE sẽ không chịu trách nhiệm nếu bạn bị mất tiền.",
+      "buy_step_2_warning_2": "Không hủy giao dịch này nếu bạn đã thanh toán cho người bán. Số tiền đã thanh toán cho người bán sẽ không được hoàn lại nếu bạn hủy giao dịch.",
+      "buy_step_2_warning_3": "Nếu hết thời gian thỏa thuận mà bạn vẫn chưa đạt thỏa thuận với người bán, vui lòng bấm <span>Liên hệ CSKH</span>.",
+      "buy_step_4_warning_1": "Bộ phận CSKH chỉ hỗ trợ xử lý khiếu nại khi bạn cung cấp đủ bằng chứng hợp lệ cho giao dịch này.",
+      "buy_step_4_warning_2": "Không hủy giao dịch này nếu bạn đã thanh toán cho người bán. Số tiền đã thanh toán cho người bán sẽ không được hoàn lại nếu bạn hủy giao dịch.",
+      "buy_step_4_warning_3": "Nếu hết thời gian thỏa thuận mà người bán chưa chuyển tiền mã hóa, bạn có thể bấm <span>Liên hệ CSKH</span> để được giải quyết.",
+      "buy_contact_warning_1": "Cung cấp bằng chứng giao dịch (video, hình ảnh, hoặc đường dẫn) để được xử lý khiếu nại.",
+      "buy_contact_warning_2": "Không hủy giao dịch này nếu bạn đã thanh toán cho người bán. Số tiền đã thanh toán cho người bán sẽ không được hoàn lại nếu bạn hủy giao dịch.",
+      "buy_contact_warning_3": "Nếu bạn gian lận hoặc cung cấp thông tin bằng chứng sai lệch, tài khoản của bạn có thể bị khóa và không giao dịch được trên ANOTRADE.",
+      "buy_contact_warning_4": "ANOTRADE sẽ là người đưa ra phán quyết cuối cùng sau khi xem xét bằng chứng được cung cấp từ hai bên.",
+      "join_chat": "Vào nhóm chat",
+      "not_show": "Không hiển thị lại",
+      "confirmation_warning_1": "Kiểm tra lại các thông tin giao dịch đã thực hiện",
+      "confirmation_warning_2": "Cung cấp bằng chứng giao dịch bằng video, hình ảnh, hoặc đường dẫn để được xử lý khiếu nại",
+      "confirmation_warning_3": "Nếu bạn thua kiện hoặc hủy khiếu nại, giao dịch sẽ bị hủy bỏ",
+      "confirmation_warning_4": "Nếu bạn có dấu hiệu gian lận, hoặc cung cấp thông tin sai lệch tài khoản của bạn có thể sẽ bị khóa",
+      "confirmation_warning_5": "CSKH sẽ đưa ra phát quyết cuối cùng khi nhận kiểm tra bằng chứng"
+    },
+    "contact_admin": {
+      "title": "Xác nhận liên hệ CSKH",
+      "desc": "Kiểm tra thông tin giao dịch trước khi gửi yêu cầu hỗ trợ CSKH",
+      "confirm": "Tôi đã đọc và đồng ý với nội dung trên"
+    },
+    "system_note": {
+      "title": "Những lưu ý khi sử dụng hệ thống",
+      "note_1": "Sử dụng phương thức chuyển khoản nhanh 24/7 để thanh toán.",
+      "note_2": "Chụp ảnh hoặc ghi hình quá trình chuyển khoản của bạn.",
+      "skip": "Không hiển thị lại lần sau",
+      "confirm": "Tôi đã hiểu"
+    },
+    "tx_guide": {
+      "title": "Hướng dẫn lấy TxID",
+      "step": "Bước",
+      "desc_1": "Bấm vào extensions ví Metamask trên trình duyệt",
+      "desc_2": "Chọn đúng địa chỉ ví đã phát sinh giao dịch",
+      "desc_3": "Tại tab <span>[Activity]</span>, tìm và bấm vào giao dịch đã phát sinh trên ví.",
+      "desc_4": "Bấm vào “Copy transaction ID” để sao chép TxHash của giao dịch",
+      "desc_5": "Dán TxHash vào đây và bấm <span>[Xác nhận]</span>. Hệ thống sẽ tự động cập nhật trạng thái giao dịch tương ứng"
+    }
+  },
+  "end_user": {
+    "created_at": "Thời gian tạo",
+    "last_trade_at": "Thời gian mua/bán gần nhất",
+    "last_login_at": "Thời gian đăng nhập gần nhất"
+  },
+  "end_user_sell": {
+    "label": {
+      "order_number": "Số lệnh",
+      "time_create": "Thời gian tạo",
+      "info": "Thanh toán cho người mua",
+      "waiting": "Chờ nhận tiền từ người mua",
+      "completed": "Hoàn tất",
+      "sell_completed": "Bạn đã bán {assetName} thành công",
+      "auto_complete": "Giao dịch tự động hoàn tất trong vòng"
+    },
+    "note": {
+      "transfer_info": {
+        "title": "Bán {assetName} cho {name}",
+        "sub_title": "",
+        "countdown_text": "Chuyển tiền mã hóa cho người mua, giao dịch sẽ tự động hủy trong"
+      },
+      "transfer_waiting": {
+        "title": "Bán {assetName} cho {name}",
+        "sub_title": "Chờ người mua chuyển tiền",
+        "countdown_text": ""
+      },
+      "transfer_completed": {
+        "title": "Giao dịch hoàn tất",
+        "sub_title": "Bạn đã bán thành công {value} VIC",
+        "countdown_text": ""
+      },
+      "transfer_cancel": {
+        "title": "Bạn đã hủy giao dịch",
+        "sub_title": "Bạn đã hủy lệnh",
+        "countdown_text": ""
+      },
+      "transfer_end_time": {
+        "title": "Đã hủy lệnh",
+        "sub_title": "Hệ thống đã huỷ giao dịch do hết thời gian cho phép",
+        "countdown_text": ""
+      }
+    },
+    "info": {
+      "label": {
+        "transaction_info": "Xác nhận thông tin giao dịch",
+        "my_info": "Người mua sẽ chuyển tiền cho bạn vào tài khoản sau",
+        "need_to_transfer": "Bạn cần chuyển VIC đến người mua"
+      },
+      "payment": {
+        "title": "Giao dịch đã hoàn tất, không thể hiển thị phương thức thanh toán",
+        "note_1": "Luôn phải dùng chuyển tiền nhanh 24/7",
+        "note_2": "Ghi đúng nội dung chuyển khoản trong ứng dụng chuyển tiền, nếu không sẽ bị treo lệnh",
+        "note_3": "Không được phép ghi các nội dung mua/bán trong nội dung chuyển khoản ngân hàng",
+        "note_4": "Mọi sai sót về thông tin thanh toán, bạn tự chịu trách nhiệm"
+      },
+      "modal_question": "Bạn có chắc muốn hủy giao dịch <br><span>{id}</span> với người bán?",
+      "modal_question2": "Bạn có chắc muốn hủy giao dịch <br><span>{id}</span> với người mua?",
+      "modal_note_1": "Nếu bạn đã chuyển khoản cho người bán, vui lòng không hủy giao dịch này. Bạn có thể mất tiền và không hoàn lại được.",
+      "modal_note_2": "Nếu bạn đã chuyển tiền mã hóa cho người mua, vui lòng không hủy giao dịch này. Bạn có thể mất tiền mã hóa và không hoàn lại được."
+    },
+    "waiting": {
+      "label": {
+        "contact_admin": "Liên hệ CSKH",
+        "contact_buyer": "Liên hệ với người mua",
+        "transaction_info": "Xác nhận thông tin giao dịch",
+        "payment_methods": "Phương thức thanh toán",
+        "cryptocurrency_trading": "Giao dịch tiền mã hóa",
+        "wait_buyer": "Người mua sẽ chuyển tiền cho bạn trong vòng",
+        "wait_buyer_timeout": "Chờ nhận tiền từ người mua",
+        "appeal_buyer": "Thỏa thuận với người mua trong",
+        "time_out_and_complain": "Đã hết thời gian thanh toán, người mua chưa xác nhận chuyển tiền, bạn có thể khiếu nại",
+        "auto_complete": "Giao dịch tự động hoàn tất trong",
+        "auto_cancel": "Chưa nhận đủ tiền, bạn có thể khiếu nại trong vòng",
+        "appeal_enabled": "",
+        "appeal_admin_enabled": "Hãy liên hệ với CSKH nếu bạn không đạt được thỏa thuận được với người mua",
+        "request_admin": "Bạn đã gửi yêu cầu hỗ trợ cho CSKH",
+        "wait_admin": "Vui lòng chờ bộ phận CSKH xử lý và đưa ra quyết định cuối cùng",
+        "buyer_sent": "Người mua đã thanh toán cho bạn, kiểm tra và xác nhận hoặc liên hệ CSKH trước khi giao dịch tự động hoàn tất.",
+        "confirm_transaction": "Kiểm tra và xác nhận giao dịch trong"
+      }
+    },
+    "end_time": {
+      "label": {
+        "transaction_info": "Thông tin giao dịch",
+        "payment_methods": "Phương thức thanh toán"
+      },
+      "info_cancel": "Lệnh đã được hoàn tất, không thể hiển thị phương thức thanh toán"
+    },
+    "cancel": {
+      "label": {
+        "transaction_info": "Xác nhận thông tin giao dịch",
+        "payment_methods": "Phương thức thanh toán"
+      },
+      "info_cancel": "Lệnh đã được hoàn tất, không thể hiển thị phương thức thanh toán",
+      "auto_cancel": "Chưa nhận đủ tiền, bạn có thể khiếu nại trong vòng"
+    },
+    "unknown_transfer": "Gặp sự cố trong quá trình kiểm tra giao dịch",
+    "unknown_description": "Hệ thống đang cố gắng xử lý vấn đề này, vui lòng đợi trong vài phút"
+  },
+  "delete_bank_modal": {
+    "title": "Xác nhận xoá phương thức thanh toán",
+    "warning": "Bạn có quảng cáo đang sử dụng phương thức thanh toán này, việc xóa phương thức thanh toán sẽ đưa các quảng cáo về ngoại tuyến.",
+    "note": "Bạn có chắc muốn xoá phương thức thanh toán này?",
+    "btn": "Xác nhận"
+  },
+  "update_bank_modal": {
+    "title": "Cập nhật phương thức thanh toán",
+    "warning": "Bạn có quảng cáo đang sử dụng phương thức thanh toán này, việc chỉnh sửa phương thức thanh toán sẽ đưa các quảng cáo về ngoại tuyến.",
+    "note": "Bạn có chắc muốn cập nhật phương thức thanh toán này?",
+    "btn": "Xác nhận"
+  },
+  "add_bank_modal": {
+    "title": "Thêm phương thức thanh toán",
+    "title_edit": "Cập nhật phương thức thanh toán",
+    "name": "Tên ngân hàng",
+    "number": "Số tài khoản/Số thẻ",
+    "holder": "Tên chủ tài khoản",
+    "branch": "Chi nhánh mở tài khoản (không bắt buộc)",
+    "placeholder_number": "Nhập số tài khoản ngân hàng",
+    "placeholder_holder": "Nhập tên chủ tài khoản viết hoa, không dấu",
+    "placeholder_branch": "Nhập chi nhánh mở tài khoản",
+    "note": "Phương thức thanh toán được thêm mới sẽ hiển thị cho người mua trong quá trình giao dịch chuyển tiền pháp định, vui lòng đảm bảo thông tin trên là chính xác.",
+    "btn": "Xác nhận",
+    "update": "Cập nhật",
+    "completed": "Hoàn thành",
+    "validator": {
+      "bank_number_max_length": "Vui lòng không nhập quá 20 ký tự",
+      "common_max_length": "Vui lòng không nhập quá 32 ký tự",
+      "name": "Vui lòng nhập tên chủ tài khoản",
+      "name_special": "Tên chủ tài khoản không bao gồm số và các ký tự đặc biệt, viết hoa không dấu",
+      "bank": "Vui lòng nhập số tài khoản ngân hàng"
+    },
+    "no_payment": "Hiện chưa có phương thức thanh toán",
+    "no_result_bank": "Không tìm thấy ngân hàng",
+    "confirmed_checkbox": "Tôi xác nhận thông tin trên là chính xác"
+  },
+  "payment": {
+    "title_add": "Thêm phương thức thanh toán",
+    "do_not_add_title": "Không thêm phương thức thanh toán",
+    "maximum_payment": "Bạn đã thêm tối đa 10 phương thức thanh toán"
+  },
+  "alert": {
+    "new_buy_order": "Bạn có giao dịch mua mới",
+    "new_sell_order": "Bạn có giao dịch bán mới",
+    "transaction_success": "Lệnh gửi {amount} {assetName} thành công",
+    "transaction_fail": "Lệnh gửi tiền mã hóa thất bại"
+  },
+  "create_ad": {
+    "title": "Đăng quảng cáo",
+    "buy": "Tôi muốn mua",
+    "sell": "Tôi muốn bán",
+    "amount_buy": "Số lượng muốn mua",
+    "amount_sell": "Số lượng muốn bán",
+    "fiat_reveice": "Số tiền nhận được",
+    "fiat_send": "Số tiền phải trả"
+  },
+  "update_post": {
+    "title": "Cập nhật tin quảng cáo"
+  },
+  "create_post": {
+    "title": "Xác nhận tạo tin quảng cáo"
+  },
+  "table": {
+    "no_data": "Không có dữ liệu được ghi nhận"
+  },
+  "order": {
+    "detail": {
+      "ad_id": "Mã AD"
+    },
+    "copy_info": {
+      "code": "Mã giao dịch",
+      "created_at": "Thời gian tạo",
+      "bank": "Ngân hàng",
+      "number_account": "Số tài khoản",
+      "holder": "Chủ tài khoản",
+      "trans_code": "Nội dung chuyển khoản",
+      "amount": "Số tiền"
+    }
+  },
+  "postings": {
+    "title": "Quảng cáo",
+    "list": "Danh sách quảng cáo",
+    "view": "Lịch sử quảng cáo",
+    "create": "Tạo quảng cáo",
+    "status": "Đã đóng",
+    "close": "Đã đóng",
+    "toolbar": "Hành động",
+    "pagination": "Số quảng cáo mỗi trang",
+    "edit_posting": "Chỉnh sửa quảng cáo",
+    "modal": {
+      "set_status": {
+        "title_online": "Xác nhận đăng quảng cáo",
+        "title_offline": "Xác nhận gỡ quảng cáo",
+        "desc_online": "Quảng cáo sẽ chuyển sang chế độ trực tuyến và xuất hiện trong danh sách quảng cáo.",
+        "desc_offline": "Một khi gỡ, quảng cáo sẽ chuyển sang chế độ ngoại tuyến."
+      },
+      "close_post": {
+        "title": "Xác nhận đóng quảng cáo",
+        "desc": "Một khi đã đóng, bạn không thể chỉnh sửa quảng cáo này."
+      },
+      "button": "Xác nhận"
+    },
+    "table": {
+      "post_id": "Mã quảng cáo",
+      "post_type": "Loại quảng cáo",
+      "post_asset": "Loại tài sản",
+      "total_amount": "Tổng số lượng",
+      "total_trans": "Số lượng đã giao dịch",
+      "total_percent": "Tỷ lệ hoàn thành",
+      "total_fee": "Tổng phí giao dịch",
+      "total_penalty_fee": "Tổng phí phạt",
+      "status": "Trạng thái",
+      "transaction": "Giao dịch",
+      "available": "Khả dụng",
+      "limit": "Giới hạn",
+      "price": "Tỷ giá mong muốn",
+      "price_actually": "Tỷ giá hiển thị",
+      "price_title": "Tỷ giá",
+      "time_update": "Cập nhật gần nhất",
+      "time_create": "Thời gian tạo",
+      "action": "Hành động",
+      "transaction_fee": "Phí giao dịch",
+      "success_percent": "Tỷ lệ hoàn thành",
+      "operator": "Giao dịch viên",
+      "datepicker": {
+        "start": "Thời gian tạo từ",
+        "end": "Thời gian tạo đến"
+      }
+    },
+    "post_item": {
+      "online": "Trực tuyến",
+      "offline": "Ngoại tuyến",
+      "close": "Đã đóng",
+      "show": "Chuyển sang trực tuyến",
+      "hide": "Chuyển sang ngoại tuyến",
+      "edit": "Chỉnh sửa",
+      "delete": "Đóng",
+      "clone": "Nhân bản"
+    }
+  },
+  "postings_history": {
+    "post_id": "Mã lệnh",
+    "price_number": "Số lượng tiền",
+    "transfer_content": "Nội dung chuyển khoản",
+    "transfer_number": "Số lượng đã giao dịch",
+    "price": "Giá",
+    "total_amount": "Tổng số lượng",
+    "total_fee": "Tổng phí giao dịch",
+    "fee": "Phí giao dịch",
+    "total_penalty_fee": "Tổng phí phạt",
+    "penalty_fee": "Phí phạt",
+    "time_tranfer": "Thời gian khớp lệnh",
+    "total_amount_trans": "Số lượng đã giao dịch",
+    "status": "Trạng thái",
+    "title": "Lịch sử quảng cáo",
+    "detail": {
+      "title": "Chi tiết lịch sử quảng cáo",
+      "post_id": "Mã quảng cáo",
+      "type": "Loại",
+      "cryptocurrency": "Tiền mã hoá",
+      "fiat_money": "Tiền pháp định",
+      "transfer_number": "Số lượng tiền mã hóa đã giao dịch",
+      "transfer_content": "Nội dung chuyển khoản",
+      "limit_order": "Giới hạn lệnh",
+      "total_fee": "Tổng phí giao dịch",
+      "total_penalty_fee": "Tổng phí phạt",
+      "time_update": "Cập nhật gần nhất",
+      "time_create": "Thời gian tạo tin",
+      "status": "Trạng thái"
+    },
+    "post_item": {
+      "view_matched_orders": "Xem các lệnh đã khớp",
+      "duplicate_order": "Nhân bản quảng cáo"
+    }
+  },
+  "exchange_rate": {
+    "lower_fiat": {
+      "label": "Giới hạn lệnh tối thiểu",
+      "placeholder": "Nhập lệnh tối thiểu",
+      "label_require": "Vui lòng nhập giới hạn lệnh tối thiểu"
+    },
+    "unit": {
+      "percent": "%"
+    },
+    "upper_fiat": {
+      "label": "Giới hạn lệnh tối đa",
+      "placeholder": "Nhập lệnh tối đa",
+      "label_require": "Vui lòng nhập giới hạn lệnh tối đa"
+    },
+    "tooltip": {
+        "price": "Giá từ bài quảng cáo trên sàn Binance",
+        "input": "Tỷ lệ điều chỉnh cho giá từ Binance",
+        "recommend_price": "Giá tham khảo = Giá * Tỷ lệ điều chỉnh giá"
+    },
+    "percent_rate": "Tỷ lệ điều chỉnh giá",
+    "no_data": "Không tìm thấy tỷ giá nào phù hợp với phạm vi giới hạn bạn đặt ra",
+    "action": "Lấy tỷ giá",
+    "title": "Tra cứu tỷ giá",
+    "please_waiting": "Vui lòng đợi",
+    "result": "Kết quả",
+    "price": "Giá",
+    "available": "Khả dụng",
+    "recommend_price": "Giá tham khảo",
+    "limit": "Giới hạn",
+    "min_value_more_than_max_value": "Giới hạn lệnh tối thiểu lớn hơn giới hạn lệnh tối đa",
+    "max_value_less_than_min_value": "Giới hạn lệnh tối đa nhỏ hơn giới hạn lệnh tối thiểu",
+    "range_limit_required":"Giới hạn cho phép nằm trong khoảng từ {min} đến {max}",
+    "from_binance": "Từ Binance"
+  },
+  "form_post": {
+    "payment": {
+      "amount_available": "Số dư",
+      "title": "Chọn phương thức thanh toán",
+      "bank_name": "Tên ngân hàng",
+      "bank_number": "Số tài khoản/ Số thẻ",
+      "bank_branch": "Chi nhánh mở tài khoản",
+      "bank_holder": "Tên chủ tài khoản"
+    },
+    "label": {
+      "type_ad": "Loại quảng cáo",
+      "type_asset": "Loại tiền mã hoá",
+      "type_fiat": "Loại tiền pháp định",
+      "transaction_time": "Thời gian thanh toán",
+      "payment_time": "Thời gian thanh toán",
+      "price_and_amount": "Giá cả và số lượng",
+      "status": "Trạng thái",
+      "minute": "phút",
+      "price_before": "Giá của bạn",
+      "price_after": "Tỷ giá mong muốn",
+      "price_min": "Giá lệnh thấp nhất",
+      "price_max": "Giá lệnh cao nhất",
+      "asset_amount": "Số lượng muốn bán",
+      "amount_require": "tỷ giá mong muốn",
+      "min_fiat": "Giới hạn lệnh tối thiểu",
+      "max_fiat": "Giới hạn lệnh tối đa",
+      "payment_method": "Phương thức thanh toán",
+      "transaction_fee": "Phí giao dịch",
+      "punish_fee": "Phí phạt",
+      "note": "Ghi chú"
+    },
+    "title": {
+      "min_fiat": "Giới hạn lệnh tối thiểu",
+      "max_fiat": "Giới hạn lệnh tối đa"
+    },
+    "type": {
+      "sell": "Bán",
+      "buy": "Mua"
+    },
+    "status": {
+      "online": "Trực tuyến",
+      "offline": "Ngoại tuyến"
+    },
+    "button": {
+      "post": "Đăng tin",
+      "cancel": "Hủy",
+      "add_bank": "Thêm phương thức thanh toán",
+      "update": "Cập nhật"
+    },
+    "placeholder": {
+      "note": "Nhập nội dung lưu ý trong quá trình giao dịch cho đối tác"
+    },
+    "error": {
+      "price_before": "Tỷ giá trước phí",
+      "price_after": "Vui lòng nhập tỷ giá sau phí",
+      "asset_amount": "Vui lòng nhập số lượng tiền mã hóa",
+      "min_fiat": "Giới hạn lệnh tối thiểu là {value}",
+      "max_fiat": "Giới hạn lệnh tối đa là {value}",
+      "max_value_range": "Không được nhập quá {value}",
+      "min_value_range": "Không được nhập quá {value}",
+      "value_range": "Cho phép trong khoảng ~₫ {minValue} → ~₫ {maxValue}",
+      "min_value_more_than_max_value": "Không được lớn hơn giới hạn lệnh tối đa",
+      "max_value_less_than_min_value": "Không được nhỏ hơn giới hạn lệnh tối thiểu",
+      "max_value_less_than_available_value": "Số lượng muốn {type} nhỏ hơn giới hạn lệnh tối đa",
+      "min_value_less_than_available_value": "Số lượng muốn {type} nhỏ hơn lệnh tối thiểu",
+      "minimum_is": "Tối thiểu là"
+    },
+    "modal": {
+      "label": {
+        "ad_type": "Loại quảng cáo",
+        "price": "Giá của bạn",
+        "available_amount": "Số lượng khả dụng",
+        "transaction_limit": "Giới hạn lệnh",
+        "payment_method": "Phương thức thanh toán",
+        "transaction_time": "Thời gian thanh toán",
+        "status": "Trạng thái",
+        "ad_id": "MÃ AD"
+      },
+      "description": {
+        "create_success": "Tin quảng cáo của bạn đã được tạo thành công. Chú ý đến thông báo có giao dịch mới từ hệ thống.",
+        "update_success": "Tin quảng cáo của bạn đã được cập nhật thành công. Chú ý đến thông báo có giao dịch mới từ hệ thống.",
+        "create_success_offline": "Tin quảng cáo của bạn đã được tạo thành công và đặt ở chế độ ngoại tuyến. Chuyển sang chế độ trực tuyến để đối tác có thể xem được quảng cáo và giao dịch.",
+        "update_success_offline": "Tin quảng cáo của bạn đã được cập nhật thành công và đặt ở chế độ ngoại tuyến. Chuyển sang chế độ trực tuyến để đối tác có thể xem được quảng cáo và giao dịch."
+      },
+      "tooltip": {
+        "status": "Tin quảng cáo của bạn sẽ được hiển thị lên trang mua bán của hệ thống",
+        "status_offline": "Tin quảng cáo của bạn sẽ không được hiển thị trên trang mua bán khi ở trạng thái ngoại tuyến"
+      }
+    },
+    "tooltip": {
+      "your_price_desc": "Giá của bạn là giá được niêm yết trên thị trường cho người {type}",
+      "your_price_formula": "Giá của bạn = Giá chưa phí x (1 + Phí giao dịch)",
+      "min_price": "Giá lệnh thấp nhất là giá bán thấp nhất hiện tại trên thị trường. Để cạnh tranh bạn có thể thiết lập giá của bạn",
+      "max_price": "Giá lệnh cao nhất là giá bán cao nhất hiện tại trên thị trường. Để cạnh tranh bạn có thể thiết lập giá của bạn",
+      "transaction_fee": "Tỷ lệ phí bạn phải trả trên mỗi giao dịch thành công",
+      "punish_fee": "Tỷ lệ phí phạt bạn cần trả cho ANOTRADE trên mỗi giao dịch nếu đối tác khiếu nại thắng"
+    },
+    "unsupported_wallet": "Ví đăng nhập hiện tại không hỗ trợ"
+  },
+  "menu": {
+    "left_menu": {
+      "overview": "Tổng quan",
+      "orders": "Giao dịch",
+      "ads": "Quảng cáo",
+      "payment_methods": "Phương thức thanh toán",
+      "shift_manage": "Quản lý ca",
+      "system_setting": "Cài đặt hệ thống",
+      "ui_setting": "Cài đặt giao diện",
+      "supper_admin": "Quản trị viên"
+    },
+    "bottom_menu": {
+      "home": "P2P",
+      "order": "Giao dịch",
+      "ads": "Quảng cáo",
+      "account": "Tài khoản",
+      "appeal": "Khiếu nại",
+      "setting": "Cài đặt",
+      "dashboard": "Tổng quan",
+      "payments": "Thanh toán",
+      "support": "Hỗ trợ"
+    },
+    "order_menu": {
+      "name": "Giao dịch",
+      "pending": "Đang chờ",
+      "completed": "Hoàn thành"
+    },
+    "ads_menu": {
+      "name": "Quảng cáo",
+      "ads_list": "Danh sách quảng cáo",
+      "ads_history": "Lịch sử",
+      "ads_create": "Tạo mới"
+    },
+    "account_menu": {
+      "overview": "Tổng quan",
+      "dashboard": "Trang quản trị",
+      "payment_methods": "Phương thức thanh toán",
+      "setting": "Cài đặt",
+      "help": "FAQ",
+      "rule": "Điều khoản & điều kiện",
+      "security": "Chính sách bảo mật",
+      "about": "Trang chủ",
+      "logout": "Đăng xuất",
+      "about_us": "Về chúng tôi",
+      "supporter": "Hỗ trợ CSKH"
+    },
+    "report": "Báo cáo",
+    "appeal": "Khiếu nại",
+    "staffs": "Nhân viên",
+    "merchant": "Thương gia",
+    "user": "Người dùng",
+    "admin_supporter": "Nhân viên CSKH",
+    "help": "Hỗ trợ",
+    "blacklist":"Blacklist",
+    "news": "Thông báo"
+  },
+  "user_orders": {
+    "title": "Các giao dịch",
+    "status_pending": "Đang chờ",
+    "status_done": "Hoàn thành",
+    "status_cancel": "Đã huỷ",
+    "list_type": "Loại lệnh",
+    "asset_type": "Loại tài sản",
+    "list_status": "Trạng thái",
+    "setting_filter": "Thiết lập lại bộ lọc",
+    "filter_title": "Bộ lọc",
+    "amount": "Số lượng tiền pháp định",
+    "amount_mobile": "Số lượng tiền mã hóa",
+    "transfer_fee": "Phí phạt",
+    "amount_fiat": "Số lượng tiền",
+    "code_command": "Mã lệnh",
+    "transaction_info": "Nội dung chuyển khoản",
+    "btn-refresh": "Làm mới",
+    "pagination-title": "Số giao dịch mỗi trang",
+    "placeholder": "Nhập mã lệnh, số lượng tiền hoặc nội dung chuyển khoản",
+    "completed-time": "Thời gian hoàn thành",
+    "process-label": "Tiến trình",
+    "see_detail": "Xem chi tiết",
+    "reset": "Đặt lại",
+    "confirm": "Xác nhận",
+    "supporter_process": "Hỗ trợ viên xử lý",
+    "placeholder_transcode": "Ví dụ: don hang shopee ma SHO456",
+    "placeholder_amount": "Ví dụ: 150,000",
+    "order-status": {
+      "buyer-cancel": "Bạn đã hủy giao dịch",
+      "system-cancel": "Giao dịch bị hủy bởi hệ thống"
+    },
+    "decision": {
+      "cancelled": "Khiếu nại bị hủy",
+      "merchant_win": "Thương gia thắng kiện",
+      "user_win": "Bạn đã thắng kiện",
+      "open_order": "Mở lại giao dịch",
+      "force_close_appeal": "Thương gia không chuyển tiền mã hóa cho bạn.",
+      "BUY_EUWIN_FORCE_CLOSE": "Số tiền giao dịch đã được cập nhật từ <strong>{fiatSymbol} {fromFiat}</strong> (~ {fromCrypto} {assetName}) thành <strong>{fiatSymbol} {toFiat}</strong> (~ {toCrypto} {assetName}).",
+      "BUY_EUWIN_CANCEL_MC_VIOLATE": "ANOTRADE sẽ hoàn tiền cho bạn.",
+      "BUY_NOWIN_CANCEL_EVIDENT_NOT_APPROVED": "Thương gia và bạn không cung cấp đủ bằng chứng để làm căn cứ xử lý.",
+      "BUY_NOWIN_CANCEL_MC_HAS_RETURNED": "Thương gia đã chuyển hoàn tiền pháp định cho bạn.",
+      "SELL_EUWIN_CANCEL_MC_VIOLATE": "ANOTRADE sẽ hoàn tiền cho bạn.",
+      "SELL_NOWIN_CANCEL_MC_HAS_RETURNED": "Thương gia đã chuyển hoàn tiền mã hóa cho bạn."
+    },
+    "process": {
+      "BUY_ORDER_CREATED_BY_USER": "Thanh toán cho người bán trong vòng",
+      "BUY_ORDER_CREATED_BY_USER_DEAL_TIME": "",
+      "BUY_NOTIFY_SENT_FIAT_BY_USER": "Chờ người bán xác nhận đã nhận tiền và chuyển tiền mã hoá",
+      "BUY_NOTIFY_SENT_FIAT_BY_USER_DEAL_TIME": "",
+      "BUY_ENABLE_APPEAL_WHILE_CONFIRMING_FIAT_BY_MERCHANT": "Hãy liên hệ với CSKH nếu bạn không đạt được thỏa thuận được với người bán",
+      "BUY_APPEAL_SENT_WHILE_CONFIRMING_FIAT_BY_MERCHANT": "Bạn đã gửi yêu cầu hỗ trợ cho CSKH",
+      "BUY_CONFIRMED_FIAT_BY_MERCHANT": "Người bán sẽ chuyển tiền mã hóa cho bạn trong vòng",
+      "BUY_CONFIRMED_FIAT_BY_MERCHANT_DEAL_TIME": {
+        "countdown": "",
+        "timeout": "Hãy liên hệ với CSKH nếu bạn không đạt được thỏa thuận được với người bán",
+        "appeal": "Giao dịch đã được mở lại, chờ người bán chuyển tiền mã hóa đến ví của bạn"
+      },
+      "BUY_SENDING_CRYPTO_FAILED": "Lệnh gửi tiền mã hóa thất bại, bạn có thể chờ người bán chuyển lại tiền mã hóa hoặc liên hệ CSKH",
+      "BUY_APPEAL_SENT_SENDING_CRYPTO_FAILED": "Bạn đã gửi yêu cầu hỗ trợ cho CSKH",
+      "BUY_SENT_FIAT_APPEAL_BY_USER": "Chờ người bán gửi tiền mã hóa, bạn có thể khiếu nại",
+      "BUY_SENT_FIAT_NOT_RECEIVE_APPEAL_BY_USER": "Bạn đã khiếu nại người mua vì chưa được thanh toán",
+      "BUY_SENDING_CRYPTO_BY_MERCHANT": "Tiền mã hóa đang được chuyển đến ví của bạn",
+      "BUY_SENDING_CRYPTO_FAILED_APPEAL_BY_USER": "Bạn đã khiếu nại người bán vì lệnh gửi tiền mã hóa thất bại",
+      "SELL_ORDER_CREATED_BY_USER": "Bạn cần chuyển tiền mã hóa cho người bán, giao dịch sẽ hủy sau",
+      "SELL_SENDING_CRYPTO_BY_USER": "Tiền mã hóa đang chuyển sang ví người mua",
+      "SELL_SENDING_CRYPTO_FAILED": "Lệnh gửi tiền mã hóa thất bại, bạn cần chuyển lại tiền mã hóa cho người mua trong vòng",
+      "SELL_SENDING_CRYPTO_SUCCESS": "Người mua sẽ chuyển tiền cho bạn trong vòng",
+      "SELL_SENDING_CRYPTO_SUCCESS_DEAL_TIME": {
+        "countdown": "",
+        "timeout": "Hãy liên hệ với CSKH nếu bạn không đạt được thỏa thuận được với người mua"
+      },
+      "SELL_NOTIFY_SENT_FIAT_BY_MERCHANT_DEAL_TIME": "Người mua đã thanh toán cho bạn, kiểm tra và xác nhận hoặc tham gia nhóm chat với người mua nếu cần thỏa thuận",
+      "SELL_ENABLE_APPEAL_NOTIFY_SENT_FIAT_BY_MERCHANT": "Người mua đã thanh toán cho bạn, kiểm tra và xác nhận hoặc liên hệ CSKH trước khi giao dịch tự động hoàn tất.",
+      "SELL_APPEAL_SENT_FIAT_NOT_RECEIVED_BY_USER": "Bạn đã gửi yêu cầu hỗ trợ cho CSKH",
+      "SELL_NOTIFY_SENT_FIAT_BY_MERCHANT": "Người mua đã thanh toán cho bạn, vui lòng kiểm tra và xác nhận. Giao dịch tự động hoàn tất trong vòng"
+    }
+  },
+  "web3": {
+    "connect": {
+      "selecting_wallet": {
+        "header": "Các ví khả dụng",
+        "why_dont_i_see_my_wallet": "Lưu ý: Trường hợp liên kết bằng Trust Wallet, hệ thống chỉ hỗ trợ mạng Ethereum"
+      },
+      "selected_wallet": {
+        "header": "Kết nối thành công",
+        "main_text": "Đã kết nối"
+      },
+      "connecting-wallet": {
+        "header": "{connectionRejected, select, false {Đang kết nối {wallet}...} other {Kết nối bị từ chối}}",
+        "main-text": "Đang kết nối ...",
+        "paragraph": "Hãy đảm bảo bạn chọn đúng tài khoản muốn kết nối",
+        "previous-connection": "{wallet} đang có một kết nối đang chờ, vui lòng mở {wallet} để kết nối.",
+        "rejected-text": "Kết nối bị từ chối!",
+        "rejected-cta": "Bấm vào đây để thử lại",
+        "primary-button": "Trở lại chọn ví",
+        "mb-warning": "Vui lòng cài đặt và sử dụng trên ứng dụng Metamask",
+        "pc-warning": "Vui lòng cài đặt Metamask để liên kết loại ví này",
+        "trust-pc-warning": "Vui lòng cài đặt Trust Wallet để liên kết loại ví này",
+        "trust-mb-warning": "Vui lòng cài đặt và sử dụng trên ứng dụng Trust Wallet",
+        "tron-pc-warning": "Vui lòng cài đặt Tron Wallet để liên kết loại ví này",
+        "tron-mb-warning": "Vui lòng cài đặt và sử dụng trên ứng dụng Tron Wallet"
+      }
+    },
+    "modals": {
+      "action_required": {
+        "heading": "Yêu cầu thực hiện ở {wallet}",
+        "paragraph": "Vui lòng đổi qua ví đang hoạt động",
+        "link_text": "Tìm hiểu thêm.",
+        "button_text": "Đồng ý"
+      }
+    }
+  },
+  "appeal": {
+    "title": "Thời gian để cung cấp bằng chứng sẽ kết thúc vào",
+    "desc": "Vui lòng gửi đầy đủ bằng chứng vào nhóm chat, chờ bộ phận CSKH xử lý và đưa ra quyết định cuối cùng",
+    "deal": "Thoả thuận",
+    "complain": "Khiếu nại",
+    "in_process": "Đang xử lý",
+    "processed": "Đã xử lý",
+    "supporter": {
+      "admin_supporting": "Nhân viên đang hỗ trợ",
+      "confirm_cancel": "Xác nhận hủy phiên hỗ trợ",
+      "content": "Việc hủy phiên hỗ trợ sẽ đưa khiếu nại về tình trạng không có nhân viên CSKH. Sau đó, khiếu nại này sẽ được hiển thị công khai trên hệ thống để nhân viên CSKH khác có thể tiếp tục hỗ trợ"
+    }
+  },
+  "role_management": {
+    "edit": "Chỉnh sửa",
+    "delete": "Xóa",
+    "pagination": "Số lượng mỗi trang",
+    "show_wallet_address": "Địa chỉ ví theo mã QR",
+    "list_waiting_orders": "Danh sách giao dịch đang chờ",
+    "number_waiting_order": "Số giao dịch đang chờ xử lý",
+    "appeal_orders": "Giao dịch đang khiếu nại",
+    "info_balance": "Thông tin số dư",
+    "view_balance": "Xem số dư ví",
+    "information_profile": "Thông tin hồ sơ",
+    "used": "Sử dụng",
+    "unused": "Không sử dụng",
+    "active_wallet_address_title": "Kích hoạt địa chỉ ví",
+    "delete_wallet_address_title": "Xóa địa chỉ ví",
+    "inactive_content": "Tài khoản bị vô hiệu hóa, không thể hiển thị địa chỉ ví",
+    "interested": "Lưu ý",
+    "successful": "Thành công",
+    "failed": "Thất bại",
+    "adjustment": "Điều chỉnh",
+    "adjustment_title": "Điều chỉnh tỉ lệ hoàn tất",
+    "rate_comleted": "Tỉ lệ hoàn tất",
+    "manager_name": "Tên",
+    "status": "Trạng thái",
+    "total_completed": "Số lượng hoàn tất",
+    "total_completed_input": "Nhập số lượng hoàn tất mới",
+    "rate_completed": "Tỉ lệ hoàn tất (%)",
+    "rate_completed_input": "11.11",
+    "reset": "Đặt lại",
+    "asset_select": "Chọn loại tài sản",
+    "adjustment_success": "Điều chỉnh thành công",
+    "adjustment_failed": "Điều chỉnh thất bại",
+    "note_wallet_address": {
+      "first": "Thương gia được phép thêm nhiều địa chỉ ví, nhưng tại một thời điểm chỉ được kích hoạt và sử dụng 1 địa chỉ ví. Khi kích hoạt một địa chỉ ví bất kỳ, hệ thống sẽ tự động vô hiệu hóa các địa chỉ ví còn lại.",
+      "second": "Vui lòng cân nhắc thật kĩ và không tùy ý thay đổi địa chỉ ví nếu không thật sự cần thiết."
+    },
+    "avatar": {
+      "title": "Thay đổi ảnh hồ sơ",
+      "submit": "Cập nhật thay đổi",
+      "error": {
+        "title": "Thông báo từ hệ thống",
+        "used": "Ảnh đại diện đã được sử dụng"
+      }
+    },
+    "modal": {
+      "reset": "Đặt lại",
+      "confirm": "Xác nhận",
+      "save": "Lưu",
+      "cancel": "Hủy bỏ",
+      "next": "Tiếp tục",
+      "continue": "Tiếp theo"
+    },
+    "label": {
+      "wallet_address": "Địa chỉ ví",
+      "status_wallet_address": "Trạng thái ví",
+      "level": "Cấp bậc",
+      "nickname": "Tên hiển thị",
+      "merchant": "Thương gia",
+      "number_members": "Số nhân viên",
+      "staff": "Nhân viên",
+      "contract_from": "Ngày bắt đầu hợp đồng",
+      "time_create": "Thời gian tạo",
+      "time_update": "Thời gian cập nhật",
+      "status": "Trạng thái",
+      "action": "Hành động",
+      "search_input": "Nhập địa chỉ ví hoặc tên hiển thị",
+      "wallet_address_input": "Nhập địa chỉ ví",
+      "nickname_input": "Nhập tên hiển thị",
+      "copy_wallet_address": "Sao chép",
+      "contract_from_input": "Nhập hoặc chọn ngày bắt đầu hợp đồng",
+      "post_show_count": "Số quảng cáo trực tuyến",
+      "post_hide_count": "Số giao dịch đang chờ",
+      "order_waiting_count": "Số giao dịch đang chờ",
+      "order_appeal_count": "Số giao dịch đang khiếu nại",
+      "type": "Vai trò",
+      "registered_member": "Tổng số nhân viên",
+      "completed_time": "Thời gian hoàn tất lệnh",
+      "datepicker": {
+        "start": "Thời gian tạo từ",
+        "end": "Thời gian tạo đến"
+      },
+      "desc_nickname_manager": "Hệ thống sẽ hiển thị tại các màn hình thể hiện thông tin của thương gia",
+      "desc_nickname_staff": "Hệ thống sẽ hiển thị tại các màn hình thể hiện thông tin của nhân viên",
+      "desc_nickname_admin_supporter": "Hệ thống sẽ hiển thị tại các màn hình thể hiện thông tin của nhân viên",
+      "edit_staff_desc": "Cập nhật thông tin nhân viên",
+      "desc_wallet_active_manager": "Một khi đã kích hoạt thương gia, bạn không thể thay đổi địa chỉ ví, hãy chắc chắn rằng địa chỉ bạn nhập là chính xác trước khi tiến hành kích hoạt",
+      "desc_wallet_active_admin_supporter": "Một khi đã kích hoạt nhân viên CSKH, bạn không thể thay đổi địa chỉ ví, hãy chắc chắn rằng địa chỉ bạn nhập là chính xác trước khi tiến hành kích hoạt.",
+      "desc_wallet_active_staff": "Một khi đã kích hoạt nhân viên, bạn không thể thay đổi địa chỉ ví, hãy chắc chắn rằng địa chỉ bạn nhập là chính xác trước khi tiến hành kích hoạt",
+      "desc_type_active_staff": "Một khi đã kích hoạt nhân viên, bạn sẽ không thể thay đổi vai trò của nhân viên sau này, vui lòng kiểm tra thông tin trước khi tiến hành kích hoạt",
+      "heed": "Lưu ý: ",
+      "operator_supporter": "Giao dịch viên/Hỗ trợ viên",
+      "merchant_operator": "Giao dịch viên",
+      "merchant_supporter": "Hỗ trợ viên",
+      "role_text": "Vai trò",
+      "complaints_support": "Số khiếu nại đã nhận hỗ trợ",
+      "request_support": "Số yêu cầu đã nhận hỗ trợ",
+      "gasless": "Gasless",
+      "desc_wallet_active_supper_admin": "Một khi thêm mới quản trị viên, bạn không thể thay đổi địa chỉ ví, hãy chắc chắn rằng địa chỉ bạn nhập là chính xác trước khi bấm xác nhận."
+    },
+    "edit_post": "Chỉnh sửa quảng cáo",
+    "item": {
+      "all": "Tất cả",
+      "active": "Đang hoạt động",
+      "inactive": "Không hoạt động",
+      "deleted": "Đã xoá",
+      "edit": "Chỉnh sửa"
+    },
+    "validation": {
+      "error_wallet_address": "Địa chỉ ví không hợp lệ"
+    },
+    "message": {
+      "notify_active": "Việc kích hoạt địa chỉ ví hiện tại sẽ cùng lúc vô hiệu hóa và kết thúc phiên đăng nhập của địa chỉ ví mà thương gia <strong>{name}</strong> đang sử dụng.",
+      "continue": "Bạn muốn tiếp tục?",
+      "are_you_delete": "Bạn có chắc chắn muốn xóa địa chỉ ví hiện tại?"
+    }
+  },
+  "admin_supporter": {
+    "title": "Nhân viên CSKH",
+    "description": "Quản lý nhân viên CSKH",
+    "create": "Thêm nhân viên",
+    "form_create": {
+      "title": "Thêm mới nhân viên CSKH",
+      "title_success": "Thêm mới nhân viên CSKH thành công",
+      "title_failure": "Thêm mới nhân viên CSKH thất bại",
+      "description_success": "Thêm mới nhân viên CSKH thành công",
+      "description_failure": "Thêm mới nhân viên CSKH thất bại"
+    },
+    "form_edit": {
+      "title": "Cập nhật nhân viên CSKH",
+      "title_success": "Cập nhật nhân viên CSKH thành công",
+      "title_failure": "Cập nhật nhân viên CSKH thất bại",
+      "description_success": "Cập nhật nhân viên CSKH thành công",
+      "description_failure": "Cập nhật nhân viên CSKH thất bại"
+    },
+    "change_status": {
+      "title_active": "Kích hoạt nhân viên CSKH",
+      "title_inactive": "Vô hiệu hóa nhân viên CSKH",
+      "description_active": "Một khi đã kích hoạt, nhân viên CSKH có thể đăng nhập trở lại vào hệ thống, có thể tiếp nhận các Khiếu nại/ Yêu cầu hỗ trợ để tiến hành xử lý.",
+      "description_inactive": "Một khi đã vô hiệu hóa, nhân viên CSKH sẽ bị khóa và không thể đăng nhập vào hệ thống."
+    },
+    "form_delete": {
+      "confirm": "Xác nhận xóa",
+      "title": "Xóa tài khoản",
+      "title_success": "Xóa tài khoản thành công",
+      "title_failure": "Xóa tài khoản thất bại",
+      "description_success": "Tài khoản đã được xóa thành công.",
+      "description_failure": "Tài khoản hiện tại chưa thể xử lý xóa. Vui lòng thử lại sau!",
+      "description_main": "Xóa tài khoản nhân viên CSKH sẽ xóa vĩnh viễn thông tin hồ sơ, dữ liệu cá nhân. Bằng cách xóa tài khoản, nhân viên CSKH sẽ không thể đăng nhập và sẽ bị xóa vĩnh viễn khỏi hệ thống.",
+      "description_sub_1": "Nhân viên CSKH sẽ không thể đăng nhập vào hệ thống.",
+      "description_sub_2": "Các thông tin nhận dạng (địa chỉ ví, biệt danh...) của nhân viên trong hệ thống sẽ tự động bị xóa bỏ."
+    }
+  },
+  "merchant_managers": {
+    "title": "Thương gia",
+    "description": "Quản lý thương gia",
+    "create": "Thêm thương gia",
+    "view": "Xem",
+    "add_wallet_title": "Thêm mới địa chỉ ví",
+    "form_create": {
+      "title": "Thêm mới thương gia",
+      "title_success": "Thêm mới thành công",
+      "title_failure": "Thêm mới thất bại",
+      "description_success": "Thêm mới tài khoản thành công",
+      "description_failure": "Thêm mới tài khoản thất bại"
+    },
+    "form_edit": {
+      "title": "Cập nhật thương gia",
+      "title_success": "Cập nhật thành công",
+      "title_failure": "Cập nhật thất bại",
+      "description_success": "Cập nhật thông tin thành công",
+      "description_failure": "Cập nhật thông tin thất bại"
+    },
+    "change_status": {
+      "title_active": "Kích hoạt thương gia",
+      "title_inactive": "Vô hiệu hóa thương gia",
+      "description_active": "Một khi đã kích hoạt, thương gia và các nhân viên liên quan có thể sử dụng hệ thống.",
+      "description_inactive": "Một khi đã vô hiệu hóa, thương gia và tất cả nhân viên thuộc quản lý của thương gia sẽ bị khóa không thể đăng nhập vào hệ thống. Các quảng cáo trực tuyến liên quan sẽ chuyển về ngoại tuyến và các giao dịch đang chờ sẽ được quản trị viên tiếp tục xử lý"
+    },
+    "form_delete": {
+      "confirm": "Xác nhận xóa",
+      "title": "Xóa tài khoản",
+      "title_success": "Xóa tài khoản thành công",
+      "title_failure": "Xóa tài khoản thất bại",
+      "description_success": "Tài khoản đã được xóa thành công.",
+      "description_failure": "Tài khoản hiện tại chưa thể xử lý xóa. Vui lòng thử lại sau!",
+      "description_main": "Xóa tài khoản thương gia sẽ xóa vĩnh viễn thông tin hồ sơ, dữ liệu cá nhân và tất cả các nhân viên thuộc quản lý của thương gia này. Bằng cách xóa tài khoản, thương gia và các nhân viên thuộc quản lý sẽ không thể đăng nhập và sẽ bị xóa vĩnh viễn khỏi hệ thống.",
+      "description_sub_1": "Thương gia sẽ không thể đăng nhập vào hệ thống, và tất cả lịch sử giao dịch sẽ không được chuyển qua bất kỳ tài khoản nào khác tài khoản khác",
+      "description_sub_2": "Hệ thống sẽ tự động hủy bỏ tất cả các quảng cáo của nhân viên thuộc quyền quản lý của thương gia",
+      "description_sub_3": "Các giao dịch đang chờ sẽ được chuyển sang cho quản trị viên để tiếp tục xử lý",
+      "description_sub_4": "Các thông tin nhận dạng (địa chỉ ví, tên hiển thị...) của thương gia trong hệ thống sẽ tự động bị xóa bỏ."
+    },
+    "wallet_address": {
+      "add_wallet_succeed": "Thêm địa chỉ ví thành công",
+      "add_wallet_failed": "Thêm địa chỉ ví thất bại",
+      "delete_wallet_succeed": "Xóa địa chỉ ví thành công",
+      "delete_wallet_failed": "Xóa địa chỉ ví thất bại"
+    }
+  },
+  "staffs": {
+    "title": "Nhân viên",
+    "description": "Quản lý nhân viên",
+    "create": "Thêm nhân viên",
+    "form_create": {
+      "title": "Thêm mới nhân viên",
+      "title_operator": "Thêm mới giao dịch viên",
+      "title_supporter": "Thêm mới hỗ trợ viên",
+      "title_success": "Thêm mới thành công",
+      "title_failure": "Thêm mới thất bại",
+      "description_success": "Thêm mới tài khoản thành công",
+      "description_failure": "Thêm mới tài khoản thất bại"
+    },
+    "form_edit": {
+      "title": "Cập nhật nhân viên ",
+      "title_supporter": "Cập nhật nhân viên",
+      "title_success": "Cập nhật thành công",
+      "title_failure": "Cập nhật thất bại",
+      "description_success": "Cập nhật thông tin thành công",
+      "description_failure": "Cập nhật thông tin thất bại"
+    },
+    "change_status": {
+      "title_active": {
+        "merchant_operator": "Kích hoạt giao dịch viên",
+        "merchant_supporter": "Kích hoạt hỗ trợ viên"
+      },
+      "title_inactive": {
+        "merchant_operator": "Vô hiệu hóa giao dịch viên",
+        "merchant_supporter": "Vô hiệu hoá hỗ trợ viên"
+      },
+      "description_active": {
+        "merchant_operator": "Một khi đã kích hoạt, giao dịch viên có thể đăng nhập trở lại vào hệ thống, có thể thực hiện giao dịch mới và quảng cáo lên trang đăng tin.",
+        "merchant_supporter": "Một khi đã kích hoạt, hỗ trợ viên có thể đăng nhập trở lại vào hệ thống, có thể tiếp nhận các giao dịch để tiến hành xử lý."
+      },
+      "description_inactive": {
+        "merchant_operator": "Một khi đã vô hiệu hóa, giao dịch viên sẽ bị khóa không thể đăng nhập vào hệ thống, tất cả quảng cáo trực tuyến sẽ chuyển về ngoại tuyến.",
+        "merchant_supporter": "Một khi đã vô hiệu hóa, hỗ trợ viên sẽ bị khóa không thể đăng nhập vào hệ thống, tất cả giao dịch đang được hỗ trợ viên tiếp nhận sẽ được đưa về danh sách chung và hiển thị cho toàn bộ hỗ trợ viên khác."
+      }
+    },
+    "form_delete": {
+      "confirm": "Xác nhận xóa",
+      "title": "Xóa tài khoản",
+      "title_success": "Xóa tài khoản thành công",
+      "title_failure": "Xóa tài khoản thất bại",
+      "description_success": "Tài khoản đã được xóa thành công.",
+      "description_failure": "Tài khoản hiện tại chưa thể xử lý xóa. Vui lòng thử lại sau!",
+      "description_main": {
+        "merchant_operator": "Xóa tài khoản giao dịch viên sẽ xóa vĩnh viễn thông tin hồ sơ, dữ liệu cá nhân và tất cả các lịch sử giao dịch, quảng cáo. Bằng cách xóa tài khoản, giao dịch viên sẽ không thể đăng nhập và sẽ bị xóa vĩnh viễn khỏi hệ thống.",
+        "merchant_supporter": "Xóa tài khoản hỗ trợ viên sẽ xóa vĩnh viễn thông tin hồ sơ, dữ liệu cá nhân và tất cả các giao dịch đang tiếp nhận xử lý. Bằng cách xóa tài khoản, hỗ trợ viên sẽ không thể đăng nhập và sẽ bị xóa vĩnh viễn khỏi hệ thống."
+      },
+      "description_sub_1": {
+        "merchant_operator": "Giao dịch viên sẽ không thể đăng nhập vào hệ thống, và tất cả lịch sử giao dịch sẽ không được chuyển qua bất kỳ tài khoản nào khác.",
+        "merchant_supporter": "Hỗ trợ viên sẽ không thể đăng nhập vào hệ thống, và tất cả giao dịch đang tiếp nhận sẽ không được chuyển qua bất kỳ tài khoản nào khác."
+      },
+      "description_sub_2": {
+        "merchant_operator": "Tất cả các giao dịch đang chờ sẽ được chuyển sang cho thương gia quản lý.",
+        "merchant_supporter": "Hệ thống sẽ tự động xoá hỗ trợ viên ra khỏi các giao dịch đã tiếp nhận."
+      },
+      "description_sub_3": {
+        "merchant_operator": "Hệ thống sẽ tự động xóa tất cả các quảng cáo của giao dịch viên.",
+        "merchant_supporter": "Các thông tin nhận dạng (địa chỉ ví, biệt danh...) của hỗ trợ viên trong hệ thống sẽ tự động bị xóa bỏ."
+      },
+      "description_sub_4": {
+        "merchant_operator": "Các thông tin nhận dạng (địa chỉ ví, biệt danh...) của giao dịch viên trong hệ thống sẽ tự động bị xóa bỏ.",
+        "merchant_supporter": ""
+      }
+    }
+  },
+  "staff": {
+    "filters": {
+      "merchant": "Thương gia"
+    },
+    "placeholder": {
+      "search": "Nhập tên thương gia",
+      "wallet_and_nickname": "Nhập địa chỉ ví hoặc tên hiển thị",
+      "wallet_and_nickname_manager": "Nhập địa chỉ ví hoặc tên hiển thị của thương gia"
+    },
+    "note": "Xin lưu ý rằng",
+    "title": "Nhân viên",
+    "content": "Quản lý nhân viên",
+    "active": "Đang hoạt động",
+    "inactive": "Không hoạt động",
+    "wallet_address": "Địa chỉ ví",
+    "merchant": "Thương gia",
+    "status": "Trạng thái",
+    "selected_time": "Chọn thời gian",
+    "selected_merchant": "Chọn thương gia",
+    "key": {
+      "nickname": "Tên hiển thị",
+      "post_online": "Số quảng cáo trực tuyến",
+      "pending_orders": "Số giao dịch đang chờ",
+      "type": "Vai trò",
+      "merchant": "Thương gia",
+      "created_at": "Thời gian tạo",
+      "updated_at": "Thời gian cập nhật",
+      "action": "Hành động",
+      "buy_order": "Tổng số giao dịch mua",
+      "sell_order": "Tổng số giao dịch bán",
+      "last_trade": "Thời gian mua / bán gần nhất",
+      "last_login": "Thời gian đăng nhập gần nhất"
+    },
+    "list_user": "Danh sách người dùng"
+  },
+  "warning_logout": {
+    "descriptions": {
+      "first_wrapper": "Tài khoản ",
+      "last_wrapper": "đã thay đổi địa chỉ ví, bạn sẽ bị đăng xuất khỏi hệ thống trong vòng: "
+    },
+    "countdown_text": "Tài khoản của bạn sẽ bị đăng xuất trong",
+    "button_text": "Đăng xuất ngay"
+  },
+  "datetime_unit": {
+    "day": "ngày",
+    "hour": "giờ",
+    "minute": "phút",
+    "second": "giây"
+  },
+  "date_picker": {
+    "month": "Tháng",
+    "quarter": "Quý",
+    "selected_date": "Chọn ngày",
+    "custom": "Tuỳ chỉnh",
+    "to": "đến",
+    "this_week": "Tuần này",
+    "this_month": "Tháng này",
+    "last_month": "30 ngày trước",
+    "note": "Hệ thống hỗ trợ hiển thị lịch sử trong vòng 3 tháng",
+    "created_at": "Thời gian tạo",
+    "last_trade_at": "Mua/bán gần nhất",
+    "last_login_at": "Đăng nhập gần nhất"
+  },
+  "operations": {
+    "login": {
+      "welcome_title": "Chào mừng đến với hệ thống quản lý dành cho thương gia",
+      "please_connect": "Vui lòng liên kết ví của bạn để truy cập",
+      "contact_admin": "Nếu ví của bạn chưa được đăng ký, hãy liên hệ với quản trị viên hệ thống để được hỗ trợ",
+      "interested": "Lưu ý",
+      "note_content": "Nếu ví của bạn chưa được đăng ký, hãy liên hệ với quản trị viên hệ thống để được hỗ trợ",
+      "note": "Đây là trang đăng nhập chỉ dành cho thương gia hoặc nhân viên của thương gia trong hệ thống ANOTRADE.",
+      "note_last": "Nếu bạn không thuộc các vai trò trên, vui lòng không tự ý truy cập."
+    }
+  },
+  "admin_authentication": {
+    "please_connect": "Vui lòng liên kết ví của bạn để truy cập",
+    "welcome_title": "Chào mừng đến với hệ thống vận hành",
+    "interested": "Lưu ý",
+    "note_content": "Nếu ví của bạn chưa được đăng ký, hãy liên hệ với quản trị viên hệ thống để được hỗ trợ",
+    "note": "Đây là trang đăng nhập chỉ dành cho quản trị viên của hệ thống ANOTRADE.",
+    "note_last": "Nếu bạn không phải quản trị viên, vui lòng không tự ý truy cập."
+  },
+  "report": {
+    "title": "Truy xuất báo cáo",
+    "select_report_type": "Chọn loại báo cáo",
+    "select_merchant_operator": "CHỌN GIAO DỊCH VIÊN",
+    "custom_and_select_time": "TUỲ CHỈNH VÀ CHỌN THỜI GIAN TRUY XUẤT",
+    "custom": "TUỲ CHỈNH",
+    "asset_type": "Loại tài sản",
+    "file_format": "Định dạng",
+    "csv_format": "CSV",
+    "excel_format": "XLSX (Excel)",
+    "order_type": "Loại giao dịch",
+    "ads_type": "Loại quảng cáo",
+    "asset_all": "Tất cả mạng",
+    "histories_order": "Lịch sử giao dịch",
+    "histories_ads": "Lịch sử quảng cáo",
+    "revenue_merchant": "Doanh thu theo thương gia",
+    "statistic_asset": "Tỷ lệ giao dịch các loại tài sản",
+    "merchant": "Thương gia",
+    "user_title": "Người dùng",
+    "all_merchant": "Tất cả thương gia",
+    "all_merchant_operator": "Tất cả giao dịch viên",
+    "search_user": "Nhập địa chỉ ví của người dùng",
+    "selected_merchant": "Thương gia đã chọn",
+    "selected_operator": "Giao dịch viên đã chọn",
+    "choice_date_export": "Chọn thời gian để truy xuất",
+    "datepicker_ranger_month": "Chọn phạm vi xuất dữ liệu trong vòng 6 tháng.",
+    "manager_statistic": "Thống kê theo thương gia",
+    "trade_type_difference": "Chênh lệch giao dịch mua & bán",
+    "staff_statistic": "Thống kê theo nhân viên",
+    "user_statistic": "Thống kê người dùng",
+    "staff_type": "Loại nhân viên",
+    "operator": "Giao dịch viên",
+    "supporter": "Hỗ trợ viên"
+  },
+  "chat": {
+    "chat_with_seller": "Chat với người bán",
+    "chat_with_buyer": "Chat với người mua",
+    "seller": "Người bán",
+    "buyer": "Người mua",
+    "user": "Người dùng",
+    "merchant": "Thương gia",
+    "merchant_operator": "Giao dịch viên",
+    "merchant_supporter": "Hỗ trợ viên",
+    "rate_limit": "Quá giới hạn cho phép, vui lòng thử lại sau ít phút."
+  },
+  "tx_confirm": {
+    "text_pc_operation": "Bạn đã chuyển tiền mã hóa nhưng hệ thống chưa ghi nhận?",
+    "text_pc_eu": "Bạn đã chuyển tiền mã hóa ở trên ví?",
+    "text_mb": "Trường hợp bạn đã chuyển tiền mã hóa nhưng hệ thống chưa ghi nhận.",
+    "err_invalid_hash": "Mã không hợp lệ, vui lòng kiểm tra lại trên mạng lưới"
+  },
+  "customer_care": {
+    "online": "Trực tuyến",
+    "offline": "Ngoại tuyến",
+    "step": "CSKH tiếp nhận",
+    "received": "Đã nhận",
+    "pending": "Chưa nhận",
+    "number_has_received": "Số yêu cầu có thể nhận",
+    "transfer": "Giao dịch",
+    "completed": "Hoàn tất",
+    "code_request": "Mã yêu cầu",
+    "title_faq": "Tùy chọn câu hỏi (FAQs)",
+    "state": "Tình trạng",
+    "information": "Thông tin",
+    "attachment_file": "Tệp đính kèm",
+    "attachment_image": "Hình ảnh",
+    "auto_message_first": "Cảm ơn bạn đã liên hệ! Vui lòng chờ trong giây lát nhân viên bộ phận CSKH của ANOTRADE sẽ trực tiếp hỗ trợ cho bạn. Xin cảm ơn!",
+    "auto_message_registration_manager": "Để trở thành thương gia Anotrade cần đáp ứng đầy đủ các yêu cầu như sau:\n1. Đã từng là thương gia trên 1 sàn P2P khác với thời gian hoạt động ít nhất 6 tháng. Ứng viên phải đưa ra bằng chứng cụ thể.\n2. Tỷ lệ hoàn thành lệnh từ \"1\" phải đạt 97% trở lên\n3. Có ít nhất 500 phản hồi tích cực từ \"1\"\n4. Tổng khối lượng giao dịch đã thực hiện từ 10 BTC trở lên\n5. Deposit 1,000,000,000vnd + 50,000$\n6. Cung cấp căn cước công dân bản gốc, địa chỉ trên sổ hộ khẩu và ảnh hoá đơn điện nước trong tháng gần nhất.\nLưu ý: Để đảm bảo quyền lợi cho thương gia, mỗi tháng sàn chỉ nhận verify và xét duyệt số lượng thương gia nhất định dựa trên nhu cầu thực của thị trường. Ứng viên tham gia chương trình Thương Gia của Anotrade cần nộp hồ sơ và đợi xét duyệt từ sàn theo thứ tự.",
+    "table": {
+      "user_request": "Người gửi yêu cầu",
+      "key_request": "Mã gửi yêu cầu",
+      "topic": "Chủ đề",
+      "time_request": "Thời gian gửi yêu cầu",
+      "status": "Tình trạng",
+      "action": "Hành động",
+      "time_process": "Thời gian xử lý",
+      "supporter": "Nhân viên CSKH",
+      "message": "Tin nhắn"
+    },
+    "types": {
+      "transaction": "Giao dịch",
+      "order": "Chuyển tiền",
+      "appeal": "Khiếu nại",
+      "system": "Hệ thống",
+      "manager": "Đăng ký thương gia",
+      "other": "Khác"
+    },
+    "nickname": "Bộ phận CSKH",
+    "request_type": {
+      "order": "Tôi cần trợ giúp về giao dịch",
+      "payment": "Có vấn đề khi tôi thực hiện chuyển tiền",
+      "appeal": "Tôi cần trợ giúp về quy trình khiếu nại",
+      "system": "Tôi cần trợ giúp về hệ thống",
+      "other": "Bắt đầu trò chuyện ngay bây giờ",
+      "manager_registration": "Tôi muốn đăng ký làm thương gia"
+    },
+    "title": "Bạn cần hỗ trợ?",
+    "faq": {
+      "title": {
+        "info": "Giới thiệu chung",
+        "account": "Tài khoản",
+        "transfer": "Giao dịch",
+        "appeal": "Khiếu nại",
+        "other": "Các câu hỏi khác"
+      },
+      "content": {
+        "info": "Sàn giao dịch P2P là gì?",
+        "account": "Làm thế nào để đăng ký và sử dụng tài khoản?",
+        "transfer": "Mua/bán tiền mã hóa trên {name}",
+        "appeal": "Giải đáp những khiếu nại người dùng thường gặp.",
+        "other": "Các câu hỏi trong quá trình trải nghiệm hệ thống."
+      }
+    },
+    "list_request": {
+      "label": {
+        "id": "Mã lệnh",
+        "created_at": "Thời gian gửi yêu cầu",
+        "status": "Trạng thái",
+        "new": "Mới",
+        "out_date": "Quá hạn",
+        "online": "Trực tuyến",
+        "offline": "Ngoại tuyến"
+      }
+    }
+  },
+  "referral_code": {
+    "title": "Tham gia referral để nhận airdrop",
+    "title_success": "Nhập code thành công",
+    "description_success": "Hãy chia sẻ mã ngay",
+    "placeholder_input": "Nhập mã giới thiệu",
+    "code_text": "Mã giới thiệu",
+    "number_referral": "Số người giới thiệu",
+    "validator": {
+      "invalid": "Mã không hợp lệ",
+      "required": "Vui lòng nhập mã giới thiệu",
+      "already_code": "Bạn đã nhập mã giới thiệu",
+      "invalid_your_code": "Bạn không thể nhập mã của mình"
+    }
+  },
+  "transaction_rpc": {
+    "content_title": "Cập nhật trạng thái giao dịch",
+    "title": "Không thể cập nhật trạng thái giao dịch tiền mã hóa",
+    "content": "Vì lý do an toàn, chúng tôi đã thực hiện kiểm tra giao dịch chuyển tiền mã hóa trên các RPC",
+    "status_transaction": "Trạng thái giao dịch",
+    "checkbox_text": "Bằng việc đánh dấu vào hộp kiểm và nhấn <b>\"Tiếp tục\"</b>, bạn đồng ý rằng sẽ tiếp tục giao dịch với trạng thái được xác định thành công trên RPC",
+    "status": {
+      "connect": "Đang kết nối",
+      "pending": "Đang chờ",
+      "success": "Thành công",
+      "failed": "Thất bại"
+    }
+  },
+  "shift_management": {
+    "assets": "Tài sản",
+    "balance": "Số dư hiện tại",
+    "getting_balance": "...Đang lấy số dư",
+    "balance_checkin_title": "Thông tin số dư nhận ca",
+    "balance_checkout_title": "Thông tin số dư giao ca",
+    "balance_error": "Không trùng khớp với số dư trên mạng lưới",
+    "order_error": "Không trùng khớp với số lượng giao dịch trên hệ thống",
+    "checkin": {
+      "title": "Xác nhận ca làm việc",
+      "description": "Kiểm tra thông tin số dư đầu ca trước khi nhận",
+      "time_checkin": "Thời gian nhận ca",
+      "button": "Nhận ca",
+      "success": "Nhận ca thành công",
+      "error": "Nhận ca thất bại! Vui lòng thử lại."
+    },
+    "checkout": {
+      "title": "Xác nhận giao ca",
+      "description": "Kiểm tra thông tin số dư cuối ca trước khi gửi",
+      "time_checkout": "Thời gian giao ca",
+      "time_working": "Thời gian làm việc",
+      "order_amount": "Khối lượng giao dịch",
+      "button": "Giao ca",
+      "success": "Giao ca thành công! Vui lòng chờ thương gia \n kiểm tra và xét duyệt.",
+      "error": "Giao ca thất bại! Vui lòng thử lại."
+    },
+    "title": "Quản lý ca",
+    "history_title": "Nhật ký nhận ca và giao ca",
+    "view_balance": "Xem số dư",
+    "total_amount": "Tổng tài sản và số dư",
+    "in_shift": "Đang trong ca",
+    "yet_shift": "Chưa nhận ca",
+    "table": {
+      "nick_name": "Tên hiển thị",
+      "check_in_date": "Thời gian nhận ca",
+      "check_out_date": "Thời gian giao ca",
+      "check_in_amount": "Số dư đầu ca",
+      "check_out_amount": "Số dư cuối ca",
+      "amount": "Khối lượng giao dịch",
+      "working_date": "Thời gian làm việc",
+      "status": "Trạng thái",
+      "action": "Hành động"
+    },
+    "status": {
+      "processing": "Chưa phê duyệt",
+      "approved": "Đã phê duyệt"
+    },
+    "filter": {
+      "check_in_date": "Thời gian nhận ca",
+      "check_out_date": "Thời gian giao ca"
+    },
+    "placeholder": {
+      "checkin": "Nhận ca từ ngày - đến ngày",
+      "checkout": "Giao ca từ ngày - đến ngày"
+    },
+    "approve_single": {
+      "title": "Phê duyệt ca làm việc",
+      "description": "Bạn chắc chắn muốn phê duyệt ca làm việc của",
+      "success": "Phê duyệt ca làm việc thành công",
+      "error": "Phê duyệt ca làm việc thất bại! Vui lòng thử lại"
+    },
+    "approve_all": {
+      "title": "Phê duyệt tất cả",
+      "description": "Bạn chắc chắn muốn phê duyệt tất cả ca làm việc?",
+      "success": "Phê duyệt tất cả ca làm việc thành công",
+      "error": "Phê duyệt tất cả ca làm việc thất bại! Vui lòng thử lại"
+    },
+    "title_modal": "Truy xuất nhật ký ca"
+  },
+  "blacklist": {
+    "title": "Blacklist",
+    "description": "Danh sách các địa chỉ ví bị hạn chế trên hệ thống",
+    "placeholder_type": "Loại",
+    "search_input": "Tìm kiếm địa chỉ ví",
+    "modal": {
+      "add_title": "Thêm địa chỉ ví",
+      "remove_title": "Xoá địa chỉ ví",
+      "remove_description": "Bạn có chắc muốn xóa địa chỉ ví hiện tại",
+      "description": "Thêm địa chỉ ví hạn chế trên hệ thống",
+      "message": {
+        "add_success": "Thêm địa chỉ ví vào danh sách thành công",
+        "add_failure": "Thêm địa chỉ ví vào danh sách thất bại",
+        "delete_success": "Xóa địa chỉ ví thành công",
+        "delete_failure": "Xóa địa chỉ ví thất bại"
+      },
+      "action": {
+        "remove_cancel": "Huỷ bỏ",
+        "remove_confirm": "Xác nhận"
+      }
+    },
+    "label": {
+      "wallet_address": "Địa chỉ ví"
+    },
+    "placeholder": {
+      "wallet_address": "Nhập địa chỉ ví"
+    },
+    "type": {
+      "manual": "Thêm bởi quản trị viên",
+      "crawl": "Thu thập từ nhiều nguồn",
+      "tooltip_manual": "Thêm bởi quản trị viên",
+      "tooltip_crawl": "Thu thập từ nhiều nguồn"
+    },
+    "table": {
+      "wallet_address": "Địa chỉ ví",
+      "type": "Loại",
+      "created_at": "Thời gian",
+      "action": "Hành động"
+    }
+  },
+  "2fa": {
+    "input": "Nhập mã OTP",
+    "verify": "Xác thực 2 yếu tố",
+    "download": "Tải xuống và cài đặt Google Authenticator",
+    "get_app": "Get it on",
+    "download_app": "Download on the",
+    "google_play": "Google Play",
+    "apple_store": "Apple Store",
+    "continue": "Tiếp tục",
+    "register_title": "Sử dụng ứng dụng Google Authenticator để quét mã QR",
+    "register_note": "Nếu bạn không thể quét mã QR, hãy nhập mã sau vào ứng dụng Google Authenticator",
+    "input_otp": "Nhập mã được hiển thị trong ứng dụng Google Authenticator",
+    "setup_success": "Thiết lập xác thực hai yếu tố thành công. Vui lòng đăng nhập lại!",
+    "otp_invalid": "Mã OTP không hợp lệ",
+    "setup_fail": "Thiết lập xác thực hai yếu tố thất bại",
+    "otp_expire_time": "Mã của bạn sẽ hết hạn",
+    "get_otp": "Nhập mã OTP được gửi đến ứng dụng Google Authenticator trên thiết bị của bạn",
+    "exceed_limit": "Nhập sai quá số lần cho phép, vui lòng thử lại sau ít phút.",
+    "turn_on_title": "Bật xác thực hai yếu tố",
+    "turn_on_desc": "Bạn đang thực hiện bật xác thực hai yếu tố. Hành động này sẽ giúp nâng cao bảo mật cho tài khoản của bạn.",
+    "turn_off_title": "Tắt xác thực hai yếu tố",
+    "turn_off_desc": "Bạn đang thực hiện tắt xác thực hai yếu tố. Việc này có thể ảnh hưởng tới độ an toàn của tài khoản. Bạn muốn tiếp tục?",
+    "turn_on_success": "Thiết lập xác thực hai yếu tố thành công. Vui lòng đăng nhập lại!",
+    "turn_off_success": "Tắt xác thực hai yếu tố thành công. Vui lòng đăng nhập lại!"
+  },
+  "balance_limit": {
+    "title": "Cài đặt giới hạn",
+    "desc": "Giao dịch viên cần chuyển số dư trong ví về cho thương gia theo giới hạn mà thương gia đã cài đặt",
+    "are_you_sure": "Bạn chắc chắn muốn áp dụng các giới hạn này cho toàn bộ giao dịch viên của bạn?",
+    "title_succeed": "Thiết lập giới hạn thành công",
+    "content_succeed": "Bạn đã cập nhật giới hạn số dư ví cho toàn bộ giao dịch viên thực hiện chuyển tiền"
+  },
+  "gasless": {
+    "title": "Gasless",
+    "succeed": "Cài đặt gasless thành công",
+    "failed": "Cài đặt gasless thất bại"
+  },
+  "price_statistic": {
+    "title": "Tỷ giá sàn và Binance",
+    "description": "Giá giao dịch, giá Binance (tạo) và giá Binance (chuyển)",
+    "price_order": "Tỷ giá giao dịch",
+    "benchmark_created": "Tỷ giá Binance (Mới tạo)",
+    "benchmark_sent": "Tỷ giá Binance (Chuyển crypto)"
+  },
+  "policy_conditional": {
+    "title": "Xác nhận điều khoản sử dụng"
+  },
+  "system_admin": {
+    "title": {
+      "system_setting": "Cài đặt hệ thống",
+      "ui_setting": "Cài đặt giao diện"
+    },
+    "desc": {
+      "ui_setting": "Hình ảnh biểu ngữ"
+    },
+    "action": {
+      "setting": "Thiết lập lại"
+    },
+
+    "section": {
+      "desktop": "Máy tính",
+      "mobile": "Di động",
+      "edit": "Chỉnh sửa",
+      "cancel_edit": "Huỷ chỉnh sửa",
+      "upload_background": "Hình ảnh nền",
+      "upload_animation": "Hoạt ảnh chuyển động",
+      "landing": {
+        "title": "Giao diện tại landing page",
+        "sub_title": "Thay đổi hình ảnh biểu ngữ trên landing page, bao gồm 2 thiết bị máy tính và di động",
+        "desktop_desc": "Thay đổi giao diện trên thiết bị máy tính, tải lên bao gồm 1 hình ảnh và 3 hoạt ảnh chuyển động",
+        "mobile_desc": "Thay đổi giao diện trên thiết bị di động, tải lên bao gồm 1 hình ảnh và 3 hoạt ảnh chuyển động"
+      },
+      "marketplace": {
+        "title": "Giao diện tại marketplace",
+        "sub_title": "Thay đổi hình ảnh biểu ngữ tại trang marketplace, bao gồm 2 thiết bị máy tính và di động",
+        "desktop_desc": "Thay đổi giao diện trên thiết bị máy tính, tải lên bao gồm 1 hình ảnh",
+        "mobile_desc": "Thay đổi giao diện trên thiết bị di động, tải lên bao gồm 1 hình ảnh"
+      }
+    },
+    "modal":  {
+      "background_image": "Hình ảnh nền",
+      "animation_image": "Hoạt ảnh chuyển động",
+      "upload_library": "Tải hình ảnh lên",
+      "background_file_format": "Định dạng hỗ trợ: PNG, JPG, JPEG, WEBP, dung lượng hình ảnh không quá 5MB, kích thước đề xuất tải lên trên {mode} {size}",
+      "animation_file_format": "Định dạng hỗ trợ: PNG, JPG, JPEG, WEBP",
+      "animation_1": "Hoạt ảnh 1",
+      "animation_2": "Hoạt ảnh 2",
+      "animation_3": "Hoạt ảnh 3",
+      "system_notification_title": "Thông báo từ hệ thống",
+      "upload_image_success": "Thay đổi hình ảnh thành công"
+    }
+  },
+  "transaction": {
+    "title": "Giao dịch",
+    "description": "Danh sách giao dịch gặp sự cố",
+    "unknown_transfer": "Gặp sự cố trong quá trình kiểm tra giao dịch",
+    "unknown_description": "Hệ thống đang cố gắng xử lý vấn đề này, vui lòng đợi trong vài phút",
+    "order_type": "Loại giao dịch",
+    "id_type": "Mã lệnh",
+    "amount": "Số lượng tiền mã hóa",
+    "confirm_transfer": "Xác nhận giao dịch",
+    "please_confirm": "Vui lòng xác nhận đã nhận đủ số tiền mã hóa trên giao dịch này từ người bán",
+    "note_confirm": "Bằng việc xác nhận, bạn cam đoan giao dịch này đã nhận đủ tiền mã hóa từ người bán và sẽ chịu trách nhiệm trong trường hợp có bất kỳ sai sót nào xảy ra.",
+    "are_you_cancel": "Bạn có chắc muốn hủy giao dịch?",
+    "confirmed_cancelled": "Sau khi xác nhận, giao dịch sẽ chuyển sang trạng thái hủy bởi hệ thống",
+    "confirmed_checked": "Chắc chắn rằng bạn đã kiểm tra kỹ bằng chứng các bên cung cấp trước khi xác nhận, giao dịch đã hủy không thể mở lại.",
+    "confirmed_succeed": "Xác nhận thành công",
+    "cancel_succeed": "Hủy giao dịch thành công",
+    "confirmed_failed": "Xác nhận thất bại",
+    "cancel_failed": "Hủy giao dịch thất bại",
+    "note": "Lưu ý",
+    "description_other_confirmed": "Giao dịch hiện tại đã được xử lý bởi nhân viên CSKH khác"
+  },
+  "reporter": {
+    "description": "Chào mừng đến với hệ thống dành cho BO"
+  },
+  "news": {
+    "title": "Thông báo",
+    "description": "Danh sách các thông báo",
+    "content": "Nội dung",
+    "start_date": "Thời gian bắt đầu",
+    "end_date": "Thời gian kết thúc",
+    "modal": {
+      "add_title": "Thêm thông báo",
+      "remove_title": "Xoá thông báo",
+      "remove_description": "Bạn có chắc muốn xóa thông báo hiện tại",
+      "description": "Thêm thông báo trên hệ thống",
+      "message": {
+        "add_success": "Thêm thông báo vào danh sách thành công",
+        "add_failure": "Thêm thông báo vào danh sách thất bại",
+        "delete_success": "Xóa thông báo thành công",
+        "delete_failure": "Xóa thông báo thất bại"
+      },
+      "action": {
+        "remove_cancel": "Huỷ bỏ",
+        "remove_confirm": "Xác nhận"
+      }
+    },
+    "label": {
+      "content": "Nội dung",
+      "content_required": "Vui lòng nhập nội dung"
+    },
+    "placeholder": {
+      "content": "Nhập nội dung"
+    }
+  }
+}

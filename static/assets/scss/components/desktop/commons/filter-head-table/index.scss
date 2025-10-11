@@ -1,0 +1,36 @@
+.filter-head-table {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  &__refresh {
+    min-width: 140px;
+  }
+  &__actions, &__right {
+    display: flex;
+    align-items: center;
+  }
+  &__selected {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  &__reset {
+    margin-left: 8px;
+  }
+  :deep(.link) {
+    &:disabled {
+      color: $grey-400;
+    }
+  }
+  :deep(.dropdown-filter) {
+    height: 40px;
+    @media (max-width: 1200px) {
+      .dropdown-toggle {
+        max-width: 100%;
+      }
+    }
+  }
+}

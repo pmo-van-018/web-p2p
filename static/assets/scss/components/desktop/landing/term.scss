@@ -1,0 +1,138 @@
+$policy: 'policy-and-term';
+
+.#{$policy} {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: $bg-policy-color;
+
+  .policy-and-term-body {
+    margin: 50px 0;
+
+    @media (max-width: 768px) {
+      margin: 0;
+    }
+  }
+
+  .policy-and-term-content {
+    max-width: 900px;
+    margin: auto;
+    padding: pxVwMobile(16);
+    background-color: $white;
+    border-radius: 5px;
+
+    @media (min-width: 576px) {
+      padding: pxVwTablet(16);
+    }
+
+    @media (min-width: 992px) {
+      padding: pxVw(50);
+    }
+
+    &__title {
+      @include font-t32b;
+    }
+
+    &__updated-time {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    &__main {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 25px;
+
+      &__item-list {
+        text-indent: 2em;
+        list-style-type: disc;
+        display: list-item;
+        margin-left: 2em;
+      }
+    }
+  }
+}
+
+.policy-and-term-banner {
+  width: 100%;
+  background: url("/assets/images/components/desktop/landing/policy-banner-mb.jpg") bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: pxVwMobile(250);
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: 769px) {
+    background: url("/assets/images/components/desktop/landing/policy-banner.jpg");
+    background-position: 25%;
+  }
+
+  @media (min-width: 1440px) {
+    background-position: center;
+  }
+
+  .banner-intro {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .text-title {
+      font-weight: $font-weight-bold;
+      color: $persian-green;
+      font-size: 12px;
+      line-height: 18px;
+
+      @media (min-width: 768px) {
+        font-size: 24px;
+        line-height: 36px;
+        margin: 0;
+      }
+
+      span {
+        position: relative;
+        text-transform: uppercase;
+
+        &:after {
+          content: '';
+          position: absolute;
+          right: -55px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: pxVwMobile(40);
+          height: 1px;
+          background-color: $persian-green;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: -55px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: pxVwMobile(40);
+          height: 1px;
+          background-color: $persian-green;
+        }
+      }
+    }
+
+    .text-description {
+      font-size: pxVwMobile(20);
+      line-height: 1.5;
+      font-weight: 700;
+      color: $white;
+      margin: 0;
+
+      @media (min-width: 576px) {
+        font-size: pxVwTablet(32);
+      }
+
+      @media (min-width: 992px) {
+        font-size: pxVw(48);
+      }
+    }
+  }
+}

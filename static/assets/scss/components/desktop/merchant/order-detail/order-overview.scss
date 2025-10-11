@@ -1,0 +1,134 @@
+.detail-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+  width: 100%;
+  background: white;
+  border: 1px solid $grey-300;
+  border-radius: 8px;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+
+    .detail-name {
+      @include font-t16m;
+      color: $bullish-green;
+      margin-right: 10px;
+
+      &.bearish-red {
+        color: $bearish-red;
+      }
+    }
+
+    .detail-id {
+      @include font-t16m;
+      margin-right: 16px;
+      text-decoration: underline;
+    }
+
+    .detail-status {
+      padding: 6px 6px;
+      border-radius: 30px;
+      min-width: 153px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.to-be-paid {
+        background-color: $yellow-50;
+      }
+
+      &.confirm-paid {
+        background-color: $yellow-50;
+      }
+
+      &.paid {
+        background-color: $blue-50;
+      }
+
+      &.completed {
+        background-color: $green-50;
+        color: $green-500;
+      }
+
+      &.cancelled {
+        background-color: $grey-200;
+        color: $grey-400;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .intro-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .label {
+    @include font-t14r;
+  }
+
+  .value {
+    @include font-t14r;
+    margin-left: 10px;
+  }
+  @media (max-width: $size-semi-container) {
+    flex-direction: column;
+    padding: 12px;
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    row-gap: 12px;
+
+    &__left {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      row-gap: 8px;
+
+      .detail-name {
+        @include font-t16m;
+      }
+
+      .detail-id {
+        @include font-t16m;
+      }
+
+      .detail-status {
+        padding: 4px;
+        border-radius: 30px;
+        min-width: 112px;
+        height: 28px;
+      }
+    }
+
+    &__right {
+      width: 100%;
+      align-items: flex-start;
+      row-gap: 8px;
+
+      .intro-row {
+        justify-content: flex-start;
+
+        .label {
+          @include font-t12r;
+          color: $grey-300;
+        }
+
+        .value {
+          @include font-t12r;
+          color: $grey-900;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}

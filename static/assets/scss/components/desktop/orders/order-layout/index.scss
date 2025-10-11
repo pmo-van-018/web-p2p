@@ -1,0 +1,15 @@
+.order-layout {
+  &__title {
+    padding: 16px 48px;
+    background: $grey-50;
+    color: $grey-900;
+    @include font-t20m;
+  }
+  :deep(.tab-pane) {
+    padding: 0 48px;
+  }
+  :deep(.nav-tabs) {
+    padding: 2px 48px 0;
+    background: $grey-50;
+  }
+}

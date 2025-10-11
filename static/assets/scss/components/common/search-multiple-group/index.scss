@@ -1,0 +1,107 @@
+.search-multiple-group {
+  outline: 1px solid $grey-400;
+  border-radius: 8px;
+  &__container {
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    width: 26vw;
+    max-width: 395px;
+  }
+  &__input {
+    flex: 1;
+  }
+  &__icon {
+    width: 32px;
+    height: 20px;
+    span {
+      font-size: 20px;
+    }
+    .icon-close-circle-outline {
+      cursor: pointer;
+    }
+  }
+  :deep(.base-input) {
+    input {
+      border: none;
+      box-shadow: none;
+      @include font-t14r;
+    }
+  }
+  :deep(.dropdown-menu) {
+    background: #FFFFFF;
+    box-shadow: 0 4px 12px 1px rgba(173, 106, 6, 0.15);
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    transform: translate3d(0, 40px, 0px) !important;
+  }
+  :deep(.dropdown-item) {
+    padding: 8px;
+    &:hover, &.active {
+      background: rgba(246, 132, 32, 0.05);
+      border-radius: 8px;
+      color: $main-600;
+      .dropdown-content__title {
+        color: $main-600;
+      }
+    }
+  }
+  .dropdown-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &.active {
+      color: $main-600;
+      .dropdown-content__title {
+        color: $main-600;
+      }
+    }
+    &__icon {
+      font-size: 16px;
+    }
+    &__title {
+      @include font-t14r;
+      color: $grey-700;
+    }
+  }
+  .base-input {
+    margin: 0;
+    &::placeholder {
+      @include font-t14r;
+      color: $grey-400;
+    }
+  }
+  .icon-selected {
+    background: $main-600;
+    border-radius: 6px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      color: $white;
+    }
+  }
+  :deep(.dropdown-action) {
+    .dropdown-toggle {
+      @include font-t12r;
+      color: #000000;
+      max-width: 100%;
+      width: 100%;
+      min-width: 100%;
+      padding: 0 12px;
+      border-radius: 0;
+      border-right: 1px solid $grey-400;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      justify-content: center;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+}

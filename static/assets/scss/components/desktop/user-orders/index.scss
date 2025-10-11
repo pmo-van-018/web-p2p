@@ -1,0 +1,57 @@
+$index: "user-orders";
+
+.#{$index} {
+    flex-grow: 1;
+    background: $grey-100;
+    &__header {
+        background: #FFF;
+    }
+    &__header-container {
+        padding-top: 16px;
+        max-width: 1608px;
+        margin: auto;
+    }
+    &__header-title {
+        color: $grey-900;
+        @include font-t20b;
+    }
+    &__header-tab {
+        margin-top: 18px;
+        display: flex;
+        column-gap: 32px;
+    }
+    &__header-tab-item {
+        cursor: pointer;
+        padding-bottom: 12px;
+        color: $grey-400;
+        @include font-t14b;
+        &--active {
+            color: $grey-900;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                left: 0;
+                bottom: 0;
+                background: $yellow-800;
+            }
+        }
+        .pill-number {
+            padding: 0 2px;
+            background: #F4F4F5;
+            color: #FAAC2E;
+            min-width: 20px;
+            display: inline-block;
+            border-radius: 4px;
+        }
+    }
+    &__content {
+        background: #FFF;
+        max-width: 1608px;
+        margin: 12px auto 24px;
+        border-radius: 8px;
+        padding: 24px;
+    }
+}

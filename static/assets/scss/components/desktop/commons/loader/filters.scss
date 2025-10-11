@@ -1,0 +1,16 @@
+.filter-loader {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &__skeleton {
+    width: calc(clamp(10vw, 190px, 20vw));
+    height: 40px;
+  }
+}

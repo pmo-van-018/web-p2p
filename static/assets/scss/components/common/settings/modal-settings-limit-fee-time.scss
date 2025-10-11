@@ -1,0 +1,87 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__item {
+    margin-bottom: 10px;
+  }
+
+  &__label {
+    @include font-t14m;
+    color: #090B0E;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    & > span {
+      cursor: pointer;
+      font-size: 16px;
+      margin-left: 10px;
+      &.icon-refresh {
+        font-size: 20px;
+      }
+      &::before {
+        color: $grey-400;
+      }
+    }
+  }
+
+  &__amount-limit {
+    gap: 8px;
+    .position-relative {
+      max-width: calc(50% - 4px);
+      width: 232px;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    :deep(.crypto-input) {
+      &.input-crypto--small {
+        input {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+:deep(.crypto-input) {
+  .base-input {
+    margin-bottom: 30px;
+  }
+  input {
+    background-color: #ffffff;
+    font-size: 14px !important;
+    padding-right: 40px !important;
+  }
+  .crypto-input__unit-display {
+    font-size: 14px !important;
+    top: 8px;
+  }
+  &.input-crypto--small {
+    input {
+      max-width: 232px;
+    }
+  }
+}
+
+:deep(.error) {
+  font-size: 12px !important;
+  line-height: 16px !important;
+  font-weight: 400 !important;
+  margin-bottom: 0;
+  position: absolute;
+}
+
+:deep(.tooltip-inner) {
+  max-width: 320px;
+  .text-note {
+    display: block;
+  }
+}
+
+.tooltip-mb {
+  :deep(.tooltip-inner) {
+    max-width: 320px;
+  }
+}

@@ -1,0 +1,83 @@
+@mixin timeline-icon() {
+  width: 48px;
+  height: 48px;
+  background: #F98600;
+  border-radius: 50%;
+  position: absolute;
+  left: -25px;
+  top: 0;
+  color: white;
+}
+.time-line-step {
+  &.visible {
+    background: $white;
+    &:after {
+      color: $black-900;
+    }
+  }
+}
+
+.access {
+  @include timeline-icon;
+
+  &:after {
+    content: "1";
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: absolute;
+    color: #FFFFFF;
+    left: 18px;
+    top: 5px;
+  }
+}
+.wallet-connection {
+  @include timeline-icon;
+
+  &:after {
+    content: "2";
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: absolute;
+    color: #FFFFFF;
+    left: 16px;
+    top: 5px;
+  }
+}
+
+.accept-connection {
+  @include timeline-icon;
+
+  &:after {
+    content: "3";
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: absolute;
+    color: #FFFFFF;
+    left: 16px;
+    top: 5px;
+  }
+}
+.register {
+  @include timeline-icon;
+
+  &:after {
+    content: "4";
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: absolute;
+    color: #FFFFFF;
+    left: 15px;
+    top: 5px;
+  }
+}
+
+.home-join__timeline--title {
+  color: $white;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  @media (min-width: 992px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

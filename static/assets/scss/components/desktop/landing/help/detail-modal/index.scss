@@ -1,0 +1,86 @@
+:deep(.modal) {
+  background-color: $white;
+  font-family: $font-family, sans-serif;
+
+  .modal-dialog {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .modal-content {
+    border: 0;
+    border-radius: 0;
+    width: 100vw;
+    padding: 0;
+    height: 100vh;
+    border: none;
+    background: #ECEEF8;
+  }
+
+  .modal-body {
+    padding: 0;
+    height: 100%;
+    max-width: 100%;
+  }
+}
+
+.help-detail {
+  color: #000;
+
+  :deep(.help-content__text) {
+    color: #000;
+  }
+
+  &__header {
+    height: 56px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin: 0;
+  }
+
+  &__icon-arrow {
+    display: flex;
+  }
+
+  .icon-arrow-left {
+    font-size: 24px;
+  }
+
+  &__title-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    padding: 0 0 12px;
+    margin: 0;
+  }
+
+  &__body {
+    height: calc(100vh - 56px);
+    overflow-y: scroll;
+    padding: 22px 12px;
+    @include scrollbars(2px, #E1E4EB, #F5F5F5);
+  }
+}

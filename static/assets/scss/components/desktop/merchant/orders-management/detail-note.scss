@@ -1,0 +1,17 @@
+.detail-note {
+  padding: 8px;
+  border-radius: 8px;
+  background: $yellow-100;
+  @media (min-width: 700px) {
+    padding: 16px;
+  }
+  &__list {
+    margin: 0;
+    list-style: initial;
+    padding-left: 1rem;
+  }
+  &__item {
+    color: $grey-900;
+    @include font-t14r;
+  }
+}

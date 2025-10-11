@@ -1,0 +1,48 @@
+.posting-table {
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .available-amount {
+    @include font-t20r;
+  }
+  .posting-item {
+    @include font-t14m;
+    color: $grey-600;
+    display: flex;
+    flex-direction: column;
+    .sub-text {
+      font-weight: 400;
+      color: $grey-400;
+    }
+    .total-amount {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+    }
+    .price,
+    .finished-amount {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: $grey-600;
+    }
+    .online-status {
+      font-weight: 400;
+      color: $green-400;
+    }
+    &__updated-time {
+      @include font-t14r;
+      color: $grey-600;
+    }
+  }
+  &__ref-item {
+    @include ellipsis-multiline();
+    width: 10vw;
+    max-width: 200px;
+    @media (min-width: 1281px) {
+      width: calc(11vw + 11px);
+    }
+  }
+}

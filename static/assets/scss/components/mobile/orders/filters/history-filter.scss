@@ -1,0 +1,39 @@
+.history-filter {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+    flex: 0 0 80%;
+  }
+  &__form {
+    width: 70%;
+  }
+  &__icon {
+    &:before {
+      color: var(--mode-light-dark-700);
+    }
+    &.active {
+      &:before {
+        color: $orange-600;
+      }
+    }
+  }
+  :deep(.bv-no-focus-ring) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px 13px;
+  }
+  :deep(.custom-control) {
+    padding: 0;
+  }
+  :deep(.van-dropdown-menu__bar) {
+    background: var(--mode-light-dark-100);
+  }
+  button.outline:disabled {
+    background: none;
+    color: $grey-700;
+    border: 1px solid $grey-300;
+  }
+}

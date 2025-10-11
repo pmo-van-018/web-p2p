@@ -1,0 +1,17 @@
+.order-progressing {
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__text {
+    @include font-t16m;
+    color: $grey-600;
+  }
+  :deep(.process-countdown__text) {
+    @include font-t12r;
+    @media (min-width: 1480px) {
+      @include font-t14r;
+    }
+  }
+}

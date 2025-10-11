@@ -1,0 +1,16 @@
+.cancellation {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  &__text-inner {
+    margin-top: 1rem;
+  }
+  &__text-link {
+    @include font-t16m;
+    color: $main-600;
+    &:hover {
+      opacity: 0.9;
+      text-decoration: none;
+    }
+  }
+}

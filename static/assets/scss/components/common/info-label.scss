@@ -1,0 +1,114 @@
+$info-label: "info-label";
+
+.#{$info-label} {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+
+    &__title {
+        color: var(--mode-light-dark-600);
+        @include font-t12b;
+
+        @media (max-width: 768px) {
+            @include font-t12r
+        }
+
+        &.flex-center {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__icon {
+        cursor: pointer;
+        font-size: 16px;
+        margin-left: 8px;
+
+        &::before {
+            color: var(--mode-light-dark-700);
+        }
+    }
+
+    &__value {
+        color: var(--mode-light-dark-1000);
+        display: flex;
+        @include font-t20m;
+
+        &.green {
+            color: $bullish-green;
+            @include font-t20b;
+        }
+
+
+        &.red {
+            color: $bearish-red;
+            @include font-t20b;
+        }
+
+        &.yellow {
+            color: $yellow-800;
+        }
+
+        &.font-t14m {
+            @include font-t14m;
+        }
+
+        &.uppercase {
+            text-transform: uppercase;
+        }
+    }
+
+    &__network {
+        color: var(--mode-light-dark-700);
+        font-size: 16px;
+        font-weight: $font-weight-semi-bold;
+
+        :deep(span) {
+            color: var(--mode-light-dark-1000);
+            @include font-t20m;
+            margin-left: 5px;
+        }
+    }
+
+    &.mobile {
+        row-gap: 2px;
+
+        .#{$info-label} {
+            &__title {
+                @include font-t12r;
+            }
+
+            &__value {
+                @include font-t16m;
+
+                &.green {
+                    @include font-t16b;
+                }
+
+                &.font-t14m {
+                    @include font-t14m;
+                }
+
+                &.font-t14r {
+                    @include font-t14r;
+                }
+            }
+        }
+    }
+}
+
+:deep(.arrow) {
+    &::before {
+        border-top-color: $grey-800;
+    }
+}
+
+:deep(.tooltip-inner) {
+    color: var(--mode-light-dark-0);
+    background: var(--mode-light-dark-1500);
+    border-radius: 8px;
+    padding: 8px 16px;
+    min-width: 386px;
+    text-align: left;
+    @include font-t14r
+}

@@ -1,0 +1,101 @@
+.post-item-detail-sell {
+  display: flex;
+  flex: 1;
+  padding: 24px;
+  flex-direction: column;
+  row-gap: 18px;
+  position: relative;
+  .balance {
+    position: absolute;
+    @include font-t12r;
+    color: var(--mode-light-dark-600);
+    top: 100px;
+    right: 24px;
+  }
+  .bank-select {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    &__label {
+      @include font-t14m;
+      color: $grey-900;
+      display: flex;
+      align-items: center;
+      & > span {
+        cursor: pointer;
+        font-size: 16px;
+        margin-left: 10px;
+        &.icon-refresh {
+          font-size: 20px;
+        }
+        &::before {
+          color: $grey-400;
+        }
+      }
+    }
+    .payment-label {
+      justify-content: space-between;
+    }
+    .btn-add-bank {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      isolation: isolate;
+      border: 1px dashed $yellow-800;
+      border-radius: 8px;
+      @include font-t14m;
+      color: $yellow-900;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover {
+        filter: brightness(1.2);
+      }
+    }
+  }
+  .content-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    .btn-cancel {
+      flex: 1;
+      height: 40px;
+      display: flex;
+      min-width: auto;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn-approved {
+      flex: 2.5;
+      height: 40px;
+      color: $grey-50;
+      background: $bearish-red;
+      display: flex;
+      min-width: auto;
+      align-items: center;
+      justify-content: center;
+      &.disabled {
+        background-color: $grey-300;
+      }
+    }
+  }
+}
+.input-crypto {
+  :deep(.error) {
+    position: absolute;
+    @include font-t12r;
+  }
+  :deep(input) {
+    &:focus {
+      border: 1px solid var(--function-loading-link-600);
+      outline: none;
+      background: var(--branding-blue-50);
+      box-shadow: 0 0 0 3px var(--branding-blue-100);
+    }
+  }
+}
+:deep(.dropdown-cnt) {
+  max-height: 300px;
+  overflow: auto;
+}

@@ -1,0 +1,10 @@
+export const TRANSACTION_STATUS = {
+  SUCCEED: 'SUCCEED',
+  FAILED: 'FAILED',
+  PENDING: 'PENDING',
+  UNKNOWN: 'UNKNOWN'
+}
+export const TRANSACTION_VALIDATE_REGEX = {
+  ERC_HASH: /^0x[a-fA-F0-9]{64}$/,
+  TRON_HASH: /^[a-fA-F0-9]{64}$/
+};

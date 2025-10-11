@@ -1,0 +1,20 @@
+$item-scroll: "item-scroll";
+
+.#{$item-scroll} {
+    &__container {
+        height: 40px;
+        border: red;
+    }
+    &__item {
+        padding: 6px 0;
+        color: $grey-400;
+        min-width: 80px;
+        @include font-t20r;
+        &.swiper-slide-active {
+            color: $grey-900;
+        }
+    }
+}
+:deep(.swiper-wrapper) {
+    text-align: center;
+}

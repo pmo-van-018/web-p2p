@@ -1,0 +1,44 @@
+:deep(.crypto-input) {
+  label {
+    display: none;
+  }
+  .base-input {
+    margin-bottom: 0;
+    input {
+      @include font-t14r;
+    }
+  }
+  .crypto-input__unit-display {
+    top: 50%;
+    transform: translateY(-50%);
+    color: $grey-500;
+    @include font-t14r;
+  }
+}
+.filter-amount {
+  &__suggest {
+    padding: 20px 0 0;
+  }
+}
+
+.suggest-amount {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  &__item {
+    border: 1px solid #D1D1D6;
+    border-radius: 4px;
+    padding: 4px 10px;
+    @include font-t14m;
+    color: $grey-500;
+    transition: all 0.2s ease-in-out;
+    &.active {
+      background: $yellow-50;
+      border: 1px solid $yellow-800;
+      color: $yellow-800;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.collapse-card {
+  &.visible-collapse {
+    box-shadow: 0 6px 10px rgba(60, 61, 71, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+
+    @media (max-width: 767px) {
+      &.visible-collapse {
+        &:not(:first-child):not(:last-child) {
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+.collapsing {
+  transition: none;
+  padding: 16px 24px;
+}
+
+.collapse {
+  visibility: hidden;
+  padding: 16px 24px;
+
+  &.show {
+    visibility: visible;
+    display: block;
+    background: #FFFFFF;
+    @media (max-width: 767px) {
+      background: #F0F2F9;
+    }
+  }
+}
+
+.collapse-header {
+  background: #FFFFFF;
+  box-shadow: 0 6px 10px rgba(60, 61, 71, 0.05);
+  padding: 18px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  border-bottom: 1px solid #ECEEF8;
+  border-radius: 8px;
+
+  @media (min-width: 768px) {
+    padding: 24px;
+    border-bottom: none;
+  }
+
+  &:hover {
+    background: #FAFAFA;
+  }
+
+  &.visible-collapse {
+    border-radius: 8px 8px 0 0;
+
+    .collapse-header {
+      &__right {
+        transform: rotate(90deg);
+      }
+
+      @media (max-width: 767px) {
+        background: #F0F2F9;
+
+        &__title {
+          color: #05A7A7;
+        }
+
+        &__right {
+          background: #05A7A7;
+          transform: rotate(270deg);
+        }
+
+        &__icon {
+          &:before {
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__right {
+    transition: all 0.3s linear;
+
+    @media (max-width: 767px) {
+      width: 1.5rem;
+      height: 1.5rem;
+      border: 0.3px solid #B6BBC4;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: rotate(90deg);
+    }
+  }
+
+  &__icon {
+    font-size: 16px;
+
+    &:before {
+      color: #000;
+    }
+  }
+}

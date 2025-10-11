@@ -1,0 +1,63 @@
+.pending-filter {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+    flex: 0 0 65%;
+    width: 65%;
+  }
+  &__process-text {
+    @include font-t10m;
+    color: $grey-400;
+  }
+  .icon-filter {
+    &:before {
+      color: $grey-500;
+    }
+  }
+  &__process {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &--active {
+      .pending-filter__process-text {
+        color: $orange-600;
+      }
+      .icon-filter {
+        &:before {
+          color: $orange-600;
+        }
+      }
+    }
+  }
+  :deep(.bv-no-focus-ring) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 0;
+    align-items: center;
+  }
+  .trans-code-form {
+    &__input {
+      label {
+        display: none;
+      }
+    }
+    :deep(.base-input) {
+      margin: 0;
+    }
+    :deep(.crypto-input) {
+      input {
+        color: $grey-900;
+      }
+    }
+  }
+  button.outline {
+    color: $grey-900;
+  }
+  button.outline:disabled {
+    background: $grey-300;
+    color: $white;
+  }
+}

@@ -1,0 +1,12 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon action/ Readjust">
+<path d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V20C24 22.2091 22.2091 24 20 24H4C1.79086 24 0 22.2091 0 20V4Z" fill="#49526A"/>
+<rect id="Vector" x="4" y="11" width="16" height="2" rx="1" fill="url(#paint0_linear_13384_8402)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_13384_8402" x1="19.8702" y1="11.8055" x2="3.48277" y2="11.8055" gradientUnits="userSpaceOnUse">
+<stop stop-color="#9396AE"/>
+<stop offset="1" stop-color="#C7CBD2"/>
+</linearGradient>
+</defs>
+</svg>

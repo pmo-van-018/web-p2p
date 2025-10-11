@@ -1,0 +1,31 @@
+.main-mobile {
+  padding-bottom: 0;
+  background-color: var(--mode-light-dark-0);
+  &--logged {
+    padding-bottom: 80px; // space with bottom bar
+  }
+  &--background-secondary {
+    background-color: var(--mode-light-dark-100);
+  }
+  &__chat-supporter {
+    position: fixed;
+    bottom: 6rem;
+    right: 1rem;
+  }
+}
+.main {
+  &__maintenance {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+    z-index: 1001;
+  }
+  &__header-top {
+    top: 24px;
+    @media (min-width: 768px) {
+      top: 32px;
+    }
+  }
+}

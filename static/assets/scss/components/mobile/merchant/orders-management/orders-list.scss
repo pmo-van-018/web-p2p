@@ -1,0 +1,13 @@
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  flex: 1;
+  position: relative;
+  height: 100%;
+}
+.order-content {
+  width: 100%;
+  padding-inline: 16px;
+  background-color: white;
+}

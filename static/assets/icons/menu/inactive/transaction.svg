@@ -1,0 +1,24 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Property 1=transaction, Property 2=No">
+<g id="Group 1000001983">
+<path id="Vector" d="M25.512 10.9302V25.3462C25.512 26.8795 24.2689 28.1246 22.7336 28.1246H6.52843C4.99515 28.1246 3.75 26.8815 3.75 25.3462V5.59093C3.75 4.05766 4.99314 2.8125 6.52843 2.8125H17.3943C18.1318 2.8125 18.8369 3.10465 19.3588 3.62649L24.696 8.96373C25.2179 9.48557 25.51 10.1908 25.51 10.9282L25.512 10.9302Z" fill="#E4E4E7"/>
+</g>
+<rect id="Rectangle 6023" x="7" y="12" width="15" height="2" rx="1" fill="url(#paint0_linear_7892_900945)"/>
+<rect id="Rectangle 6024" x="7" y="17" width="15" height="2" rx="1" fill="url(#paint1_linear_7892_900945)"/>
+<rect id="Rectangle 6025" x="7" y="22" width="8" height="2" rx="1" fill="url(#paint2_linear_7892_900945)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_7892_900945" x1="21.8783" y1="12.8055" x2="6.5151" y2="12.8055" gradientUnits="userSpaceOnUse">
+<stop stop-color="#9396AE"/>
+<stop offset="1" stop-color="#C7CBD2"/>
+</linearGradient>
+<linearGradient id="paint1_linear_7892_900945" x1="21.8783" y1="17.8055" x2="6.5151" y2="17.8055" gradientUnits="userSpaceOnUse">
+<stop stop-color="#9396AE"/>
+<stop offset="1" stop-color="#C7CBD2"/>
+</linearGradient>
+<linearGradient id="paint2_linear_7892_900945" x1="14.9351" y1="22.8055" x2="6.74139" y2="22.8055" gradientUnits="userSpaceOnUse">
+<stop stop-color="#9396AE"/>
+<stop offset="1" stop-color="#C7CBD2"/>
+</linearGradient>
+</defs>
+</svg>

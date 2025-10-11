@@ -1,0 +1,48 @@
+.postings {
+  background-color: #Fff;
+  .postings-table {
+    padding: 0 16px;
+  }
+  &__top {
+    padding: 10px 24px;
+    border-bottom: solid 1px $grey-100
+  }
+  &__head {
+    :deep(.van-sticky) {
+      background: #fff;
+    }
+  }
+  &__head-inner {
+    border-bottom: 1px solid $grey-100;
+    position: relative;
+    z-index: 1;
+    padding: 0 1rem;
+  }
+  &__create {
+    span {
+      margin-left: 16px;
+      font-size: 20px;
+    }
+  }
+  &__filter {
+    padding: 16px 16px 10px;
+    border-bottom: solid 1px $grey-100;
+    gap: 24px
+  }
+  &__filter-btn {
+    font-size: 10px;
+    color: $grey-400;
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 16px;
+      &::before {
+        color: $grey-500;
+      }
+    }
+  }
+  .postings-table {
+    padding: 0 16px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,18 @@
+.collapse-merchant {
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0 8px;
+  }
+  &__title {
+    @include font-t14r;
+    color: $grey-400;
+  }
+  &__icon {
+    font-size: 8px;
+    &:before {
+      color: $grey-600;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.info-user {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  &__name {
+    @include font-t14m;
+    color: #000;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+    color: #888899;
+    @include font-t12r;
+  }
+  &__copy-info {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  &__ref-content {
+    @include font-t12m;
+    color: $neutrals-600;
+  }
+  &__statistic {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  &__statistic-inner {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+  &__statistic-text {
+    @include font-t10m;
+    color: #888899;
+    &.green {
+      color: #05A7A7;
+    }
+    &.yellow {
+      color: #FF8D07;
+    }
+  }
+}

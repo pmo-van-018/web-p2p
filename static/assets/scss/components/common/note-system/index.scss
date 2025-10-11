@@ -1,0 +1,41 @@
+.note-system {
+  border: 1px solid #2FB8B8;
+  background: #E1FBFB;
+  padding: 8px 1rem;
+  border-radius: 6px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  &__title {
+    @include font-t14m;
+    color: var(--mode-light-dark-900);
+  }
+  &__icon {
+    font-size: 24px;
+    &:before {
+      color: $light-blue-100;
+    }
+  }
+  &__note {
+    list-style-type: decimal;
+    margin: 0 0 0 1rem;
+    padding: 0;
+    @include font-t12r;
+    color: var(--mode-light-dark-900);
+    @media (min-width: 768px) {
+      @include font-t14r;
+    }
+    &.single {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

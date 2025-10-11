@@ -1,0 +1,33 @@
+.attachment-section {
+  &__item {
+    padding: 24px 0 0;
+    height: calc(100vh - 80px - 64px);
+    overflow: hidden;
+    overflow-y: scroll;
+    @include scrollbars(3px, $grey-200, $white);
+    &--empty {
+      display: grid;
+      place-content: center;
+      overflow: hidden;
+    }
+  }
+}
+.attachment-tab {
+  background-color: $grey-50;
+  &__tab {
+    border-bottom: none;
+    padding: 0 24px;
+  }
+  .nav-link {
+    padding: 0 0 10px;
+    @include font-t14m;
+    color: $grey-400;
+    border-radius: 0;
+    border: none;
+    &.active {
+      color: $grey-900;
+      background-color: $grey-50;
+      border-bottom: 2px solid #05A7A7;
+    }
+  }
+}

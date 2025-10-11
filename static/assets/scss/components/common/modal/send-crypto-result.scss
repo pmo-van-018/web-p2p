@@ -1,0 +1,72 @@
+$send-crypto-result: "send-crypto-result";
+
+.#{$send-crypto-result} {
+    text-align: center;
+
+    &__icon {
+        margin-top: 20px;
+    }
+    &__icon-img {
+        width: 120px;
+        height: 120px;
+    }
+    &__desc {
+        color: $main-600;
+        margin-top: 24px;
+        @include font-t16m;
+        &--red {
+            color: $red-400;
+        }
+    }
+
+    &__note {
+        color: var(--mode-light-dark-800);
+        margin-top: 8px;
+        @include font-t14r;
+    }
+
+    &__link {
+        display: flex;
+        width: 280px;
+        height: 46px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        margin: auto;
+        padding: 13px 16px;
+        border: 1px solid #A0A0AB;
+        margin-top: 8px;
+        border-radius: 8px;
+    }
+
+    &__link-title {
+        color: $grey-400;
+        @include font-t14m;
+    }
+
+    &__link-content {
+        cursor: pointer;
+        color: $main-600;
+        @include font-t14m;
+    }
+
+    &.mobile {
+        .#{$send-crypto-result} {
+            &__desc {
+                margin-top: 16px;
+            }
+            &__link {
+                margin-bottom: 18px;
+            }
+        }
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

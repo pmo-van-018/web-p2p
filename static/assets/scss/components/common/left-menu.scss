@@ -1,0 +1,164 @@
+.left-menu {
+  background-color: transparent;
+  border-right: 1px solid $grey-100;
+  width: 250px;
+  height: calc(100vh - 80px);
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 80px;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: all 0.2s linear;
+  z-index: 999;
+  backdrop-filter: blur(16px);
+  @media (max-width: 1023px) {
+    display: none;
+  }
+  @media (min-width: 1600px) {
+    background-color: $white;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+  }
+  &__list {
+    width: 100%;
+  }
+  &__action {
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    .base-button {
+      padding: 4px 10px;
+      min-width: auto;
+    }
+  }
+  &__action-icon {
+    font-size: 2rem;
+    &:before {
+      color: $persian-green;
+    }
+  }
+  &__action-text {
+    white-space: nowrap;
+  }
+  &__icon-active {
+    display: none;
+  }
+  &__icon-inactive {
+    display: block;
+  }
+  .menu-item {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+    text-decoration: none;
+    padding: 12px 8px 12px 24px;
+    border-left: 2px solid transparent;
+    position: relative;
+    &.border-top {
+      border-top: 1px solid $grey-100;
+    }
+    &:hover:not(.nuxt-link-active) {
+      background-color: #FFFBF5;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    .icon {
+      font-size: 24px;
+
+      &::before {
+        color: $grey-400;
+        transition: 0.3s;
+      }
+    }
+    .title {
+      @include font-t14m;
+      color: $grey-900;
+      transition: 0.3s linear;
+    }
+    &.nuxt-link-active {
+      border-left: 2px solid $main-600;
+      background: $orange-50;
+      .title {
+        color: $grey-900;
+        font-weight: 700;
+      }
+      .icon {
+        &::before {
+          color: $yellow-900;
+        }
+      }
+      .left-menu {
+        &__icon-active {
+          display: block;
+        }
+        &__icon-inactive {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .circle-count-order {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: $red-500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__text {
+      color: $white;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  .right-icon {
+    .icon-info-circle1 {
+      font-size: 20px;
+      filter: drop-shadow(1px 2px 4px rgba(255, 0, 0, 0.25));
+      &:before {
+        color: $red-500;
+      }
+    }
+  }
+  &.collapse {
+    width: 80px;
+    .menu-item {
+      padding: 9px 4px;
+      display: flex;
+      flex-direction: column;
+    }
+    .title {
+      margin-top: 6px;
+      color: #000;
+      white-space: nowrap;
+      @include font-t12m;
+      @include ellipsis-multiline();
+    }
+    .left-menu {
+      &__action {
+        border-radius: 16px;
+      }
+      &__action-icon {
+        transform: rotate(0deg);
+      }
+    }
+    .circle-count-order, .right-icon {
+      position: absolute;
+      right: 8px;
+      top: 0;
+    }
+  }
+}

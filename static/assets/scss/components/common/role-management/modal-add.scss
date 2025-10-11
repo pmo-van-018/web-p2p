@@ -1,0 +1,158 @@
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+
+  :deep(.form-group) {
+    .col-form-label {
+      font-size: 14px;
+      color: $grey-400;
+    }
+    .form-input {
+      @include font-t14r;
+      &::placeholder {
+        font-size: 14px;
+        color: $grey-400;
+      }
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus {
+        -webkit-text-fill-color: initial;
+      }
+    }
+  }
+
+  .desc-action-status {
+    font-family: $font-family;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #faac2e;
+    margin-top: 4px;
+    margin: 4px 0;
+    &__text {
+      font-weight: 700;
+    }
+  }
+
+  .desc-action-type {
+    font-family: $font-family;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #faac2e;
+    margin-top: 4px;
+    margin: 4px 0;
+    &__text {
+      font-weight: 700;
+    }
+  }
+
+  .status-box {
+    &__text {
+      padding: 3px 7px;
+      background-color: $grey-100;
+      border-radius: 4px;
+      min-width: 79px;
+      text-align: center;
+      &.active-status {
+        background-color: $green-50;
+        color: $green-400;
+      }
+    }
+  }
+
+  .desc-nick-name {
+    font-style: italic;
+    color: $grey-400;
+    line-height: 20px;
+    font-size: 12px !important;
+    padding-top: 7px;
+    @include font-t14r;
+    margin-bottom: 0px !important;
+  }
+
+  .date-picker-custom {
+    width: 100%;
+    height: 40px;
+
+    :deep(.reportrange-text) {
+      font-size: 16px;
+      font-weight: 400;
+      height: 40px;
+      border: 1px solid $grey-300;
+      border-radius: 8px;
+      padding: 10px 8px;
+    }
+
+    &__date {
+      line-height: initial;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include font-t14r;
+      color: $grey-900;
+      &--grey {
+        color: $grey-400;
+      }
+    }
+
+    .picker-group {
+      width: 100%;
+      &__input {
+        border: none;
+        width: calc(100% - 20px);
+      }
+    }
+  }
+
+  :deep(.vue-daterange-picker) {
+    width: inherit;
+  }
+  :deep(.custom-control) {
+    padding-left: 0;
+  }
+
+  .picker-mobile {
+    border: 1px solid $grey-300;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    padding: 12px 8px;
+    &__text {
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      @include font-t14r;
+    }
+  }
+  .btn-group {
+    max-width: 560px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .base-button {
+    &__back {
+      flex: 1;
+      text-align: center;
+      padding: 9px;
+      border: 1px solid #D1D1D6;
+      box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+      border-radius: 8px;
+      margin-right: 24px;
+
+      @media (max-width: 768px) {
+        margin-right: 12px;
+      }
+    }
+  }
+  .staff-avatar {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+}

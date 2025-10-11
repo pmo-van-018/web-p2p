@@ -1,0 +1,191 @@
+$payment-confirmation: "payment-confirmation";
+
+.#{$payment-confirmation} {
+    &__countdown {
+        margin-left: 1rem;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+
+        img {
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    &__title {
+        margin-top: 24px;
+        color: $bullish-green;
+        @include font-t16m;
+
+        span {
+            color: var(--mode-light-dark-800);
+            @include font-t16m
+        }
+    }
+
+    &__desc {
+        color: var(--mode-light-dark-1000);
+        margin-top: 16px;
+        @include font-t16m;
+
+        @media (max-width: 768px) {
+            margin-top: 20px;
+        }
+    }
+
+    &__content-info {
+        padding: 12px;
+        border-radius: 8px;
+        background: var(--card-payment-background-color);
+    }
+
+    &__note {
+        align-items: center;
+        display: flex;
+        margin-top: 24px;
+        padding: 8px;
+        border-left: 3px solid #13C7C7;
+        background: var(--mode-light-dark-badget-pastel-green);
+
+        @media (max-width: 768px) {
+            margin-top: 16px;
+        }
+
+    }
+
+    &__note-icon {
+        font-size: 20px;
+        margin-right: 14px;
+
+        &::before {
+            color: $light-blue-100;
+        }
+    }
+
+    &__note-desc {
+        color: var(--mode-light-dark-1000);
+        text-align: justify;
+        @include font-t14r
+    }
+
+    &__checkbox {
+        margin-top: 24px;
+        padding-left: 1.25rem;
+
+        @media (max-width: 768px) {
+            margin-top: 16px;
+        }
+
+        :deep(.custom-control-input:checked~.custom-control-label:before) {
+            background-color: $yellow-900;
+            border-color: $yellow-900;
+            color: $white;
+        }
+
+        :deep(.custom-control-label) {
+            color: var(--mode-light-dark-800);
+            padding-left: 8px;
+            @include font-t14m;
+            &::before {
+                border: 1px solid var(--mode-light-dark-500);
+                background-color: var(--mode-light-dark-200);
+            }
+            &::before,
+            &::after {
+                top: 0;
+                left: -1.25rem;
+                width: 1.25rem;
+                height: 1.25rem;
+                box-shadow: none;
+                border-radius: 6px;
+            }
+        }
+    }
+
+    &__action {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 18px;
+    }
+
+    &__action-btn {
+        min-width: unset;
+        padding: 10px;
+        width: 100%;
+
+        &:nth-child(2) {
+            flex-grow: 1;
+            margin-left: 16px;
+        }
+    }
+
+    &.mobile {
+        .#{$payment-confirmation} {
+            &__countdown {
+                position: relative;
+                margin-bottom: -8px;
+                left: 0;
+                top: 0;
+            }
+
+            &__desc {
+                margin-top: 12px;
+            }
+
+            &__img {
+                margin-top: 12px;
+            }
+
+            &__content-info {
+                padding: 12px;
+                margin-top: 8px;
+                display: block;
+
+                :deep(.info-block) {
+                    border-right: none;
+                }
+
+                :deep(.bank-qr) {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 12px;
+                    gap: 12px;
+                }
+
+                :deep(.bank-info__item) {
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
+
+.loading {
+    width: 343px;
+    height: 148px;
+    margin: auto;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px;
+    justify-content: space-between;
+    border-radius: 8px;
+
+    img {
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        transform-origin: center;
+    }
+
+    &__desc {
+        @include font-t14r;
+        color: $grey-600;
+    }
+}

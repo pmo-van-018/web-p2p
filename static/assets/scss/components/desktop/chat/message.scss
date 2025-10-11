@@ -1,0 +1,37 @@
+.message {
+  display: flex;
+  justify-content: flex-end;
+  &.received {
+    justify-content: flex-start;
+  }
+  &.system {
+    justify-content: flex-start;
+    .message {
+      &__wrapper {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+  &__avatar {
+    width: 24px;
+    height: 24px;
+    background: $grey-100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include font-t12m;
+    text-transform: uppercase;
+    color: $white;
+    border-radius: 50%;
+  }
+  &__wrapper {
+    display: flex;
+    gap: 8px;
+    max-width: calc(100% - 75px);
+    align-items: flex-end;
+  }
+  &__content {
+    flex: 1;
+  }
+}

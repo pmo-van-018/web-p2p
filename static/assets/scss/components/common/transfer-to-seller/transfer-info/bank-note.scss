@@ -1,0 +1,57 @@
+$bank-note: "bank-note";
+
+.#{$bank-note} {
+    background: var(--mode-light-dark-100);
+    padding: 16px;
+    color: var(--mode-light-dark-700);
+    border-radius: 8px;
+
+    &__head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        color: var(--mode-light-dark-700);
+
+        .icon-person-star::before {
+            color: var(--mode-light-dark-700);
+        }
+    }
+
+    &__title {
+        @include font-t14b;
+        margin-left: 4px;
+    }
+
+    &__icon {
+        font-size: 1.5rem;
+    }
+
+    &__list {
+        padding-left: 16px;
+        margin-bottom: 0;
+        @include font-t14r;
+
+        li {
+            list-style-type: disc;
+        }
+    }
+
+    &__expand {
+        display: flex;
+        justify-content: center;
+
+        .icon-arrow-up {
+            font-size: 16px;
+
+            &::before {
+                color: var(--mode-light-dark-700);
+            }
+        }
+
+        &.narrow {
+            .icon-arrow-up {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

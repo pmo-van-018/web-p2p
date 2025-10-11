@@ -1,0 +1,46 @@
+$waiting-action: "waiting-action";
+
+.#{$waiting-action} {
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+    &__desc {
+        color: $grey-600;
+        margin-top: 8px;
+        @include font-t14r;
+    }
+    &__content {
+        margin-top: 20px;
+    }
+    &__submit {
+        padding: 10px 101px;
+    }
+    &.mobile {
+        margin-bottom: 64px;
+        .#{$waiting-action} {
+            &__header {
+                display: block;
+                margin-top: -24px;
+            }
+            &__title {
+                @include font-t14m;
+            }
+            &__content {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100vw;
+                padding: 12px 16px;
+                background: white;
+                box-shadow: 12px 4px 16px rgba(16, 24, 40, 0.2), 12px 4px 6px -2px rgba(16, 24, 40, 0.2);
+                margin-top: 0;
+            }
+            &__submit {
+                padding: 10px;
+                width: 100%;
+            }
+        }
+    }
+}

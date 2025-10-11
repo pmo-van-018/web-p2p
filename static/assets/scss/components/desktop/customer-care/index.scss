@@ -1,0 +1,93 @@
+.customer-care-wrapper {
+  width: 410px;
+  overflow: hidden;
+  height: calc(100% - 200px);
+  right: 85px;
+  bottom: 55px;
+  border: 3px solid var(--mode-light-dark-200);
+  border-radius: 12px;
+  background: transparent;
+  box-shadow: 0 7px 13px 2px rgba(22, 41, 78, 0.10);
+  position: fixed;
+  z-index: 101;
+  display: none;
+  background-color: var(--mode-light-dark-0);
+  opacity: 0;
+  visibility: hidden;
+
+  &.visible {
+    animation: 0.5s ease 0s 1 normal forwards running widget-show;
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__head {
+    border-bottom: 1px solid var(--mode-light-dark-300);
+    background: #13C7C7;
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 16px;
+    align-items: center;
+  }
+
+  &__body {
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+    @include scrollbars(2px, $grey-200, $white);
+  }
+
+  &__icon-back {
+    font-size: 28px;
+
+    &:before {
+      color: $white;
+    }
+  }
+
+  &__action {
+    padding: 11px 16px;
+  }
+
+  &__head-center {
+    @include font-t14b;
+    color: $white;
+  }
+
+  &__head-left {
+    cursor: pointer;
+  }
+
+  &__head-right {
+    border-radius: 6px;
+
+    &:hover {
+      cursor: pointer;
+      background: rgba($grey-50, 0.3);
+    }
+  }
+
+  &__icon-mini {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__icon-mini-line {
+    width: 14px;
+    height: 2px;
+    background-color: $white;
+  }
+}

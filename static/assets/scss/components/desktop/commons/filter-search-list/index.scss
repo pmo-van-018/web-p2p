@@ -1,0 +1,23 @@
+.filter-search {
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-top: 1px solid $grey-300;
+  }
+  &__body {
+    padding: 0 0 0 24px;
+
+  }
+  &__input {
+    padding: 8px 12px 24px;
+  }
+  :deep(.search-group) {
+    min-width: auto;
+  }
+  :deep(.search-group .base-input input) {
+    background: $grey-100;
+    border: none;
+  }
+}

@@ -1,0 +1,35 @@
+.c-primary-radio {
+    padding-left: 30px;
+    .custom-control-input {
+      width: 20px;
+      height: 20px;
+      &:checked + .custom-control-label:before {
+        background: #F68420;
+        border-color: #F68420;
+      }
+      &:checked + .custom-control-label:after {
+        background: none;
+      }
+    }
+    .custom-control-label {
+      display: flex;
+      align-items: center;
+      padding: 6px 0;
+      margin-bottom: 4px;
+      &:before {
+        top: 6px;
+        width: 20px;
+        height: 20px;
+        left: -30px
+      }
+      &:after {
+        left: -28px;
+        width: 16px;
+        height: 16px;
+        top: 8px;
+        background: none;
+        border: solid 3px #fff;
+        border-radius: 50%;
+      }
+    }
+}

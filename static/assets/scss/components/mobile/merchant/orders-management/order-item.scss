@@ -1,0 +1,17 @@
+$order-item: "order-item";
+
+.#{$order-item} {
+  border-bottom: solid 1px #f4f4f5;
+  background-color: #fff;
+  &__text {
+    max-width: 185px;
+  }
+  &__btn {
+    flex-shrink: 0;
+  }
+  :deep(.countdown) {
+    .countdown__item {
+      color: $grey-900;
+    }
+  }
+}

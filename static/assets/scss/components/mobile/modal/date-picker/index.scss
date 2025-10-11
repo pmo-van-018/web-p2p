@@ -1,0 +1,114 @@
+:deep(.modal-dialog) {
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  .modal-content {
+    border: none;
+    border-radius: unset;
+    background-color: var(--mode-light-dark-popup-dropdown-0);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}
+:deep(.modal-dialog) {
+  max-width: 100%;
+}
+:deep(.van-picker-column__item) {
+  @include font-t20r;
+  color: $grey-400;
+}
+:deep(.custom-control) {
+  padding-left: 0;
+  margin-right: 33px;
+}
+:deep(.van-picker-column__item.van-picker-column__item--selected) {
+  color: var(--mode-light-dark-1500);
+}
+.calendar-custom {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--mode-light-dark-300);
+    padding-bottom: 12px;
+  }
+  &__title {
+    @include font-t16m;
+    color: var(--mode-light-dark-1500);
+    margin: 0;
+  }
+  &__confirm, &__cancel {
+    @include font-t14m;
+  }
+  &__confirm {
+    color: $main-600;
+  }
+  &__cancel {
+    color: $grey-300;
+  }
+  &__selected {
+    padding: 30px 0 26px;
+  }
+}
+
+.date-range {
+  &__note {
+    @include font-t14r;
+    color: var(--mode-light-dark-1500);
+    margin-bottom: 24px;
+  }
+  &__active-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  &__from, &__to {
+    width: 100%;
+  }
+  &__text {
+    @include font-t14r;
+    color: var(--mode-light-dark-500);
+  }
+}
+:deep(.van-picker) {
+  background-color: var(--mode-light-dark-popup-dropdown-0);
+}
+:deep(.van-picker__columns) {
+  z-index: 1;
+}
+:deep(.van-picker__frame) {
+  z-index: -1;
+  border-radius: 6px;
+  &:after {
+    background-color: var(--mode-light-dark-200);
+    border-radius: inherit;
+    border: none;
+  }
+}
+:deep(.van-picker__mask) {
+  background: linear-gradient(180deg, rgba(var(--mode-light-dark-popup-dropdown-0), 0.88),
+          rgba(var(--mode-light-dark-popup-dropdown-0), 0)),
+  linear-gradient(0deg,rgba(var(--mode-light-dark-popup-dropdown-0), 0.88),
+                  rgb(var(--mode-light-dark-popup-dropdown-0), 0));
+}
+.date-time-active {
+  padding: 10px 5px;
+  background: var(--mode-light-dark-400);
+  border-radius: 8px;
+  &.active {
+    background: var(--mode-light-dark-badget-orange);
+    border: 1.5px solid $main-600;
+    .date-time-active {
+      &__inner {
+        color: $main-600;
+      }
+    }
+  }
+  &__inner {
+    @include font-t14m;
+    color: var(--mode-light-dark-800);
+    text-align: center;
+  }
+}

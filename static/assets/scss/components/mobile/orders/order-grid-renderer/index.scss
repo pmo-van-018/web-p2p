@@ -1,0 +1,24 @@
+.order-grid-renderer {
+  &__head {
+    background: var(--mode-light-dark-100);
+    padding: 0 1rem;
+    border-bottom: 1px solid var(--mode-light-dark-300);
+    position: relative;
+    z-index: 1;
+  }
+  &__body {
+    height: calc(100vh - 224px);
+    overflow-y: scroll;
+  }
+  &__note {
+    padding: 8px 16px;
+  }
+  &__list {
+    padding: 0 1rem;
+    height: inherit;
+  }
+  &__item {
+    padding: 12px 0;
+    border-bottom: 1px solid $grey-100;
+  }
+}

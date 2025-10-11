@@ -1,0 +1,23 @@
+.management-order {
+  &__item {
+    padding: 12px 0;
+    border-bottom: 1px solid $grey-100;
+    &.supporter-view {
+      :deep(.card-order__action) {
+        display: flex;
+        gap: 8px;
+        justify-content: flex-end;
+        align-items: center;
+        .action-btn {
+          min-width: 100px;
+        }
+        .appeal-action {
+          &::before {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+

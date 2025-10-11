@@ -1,0 +1,17 @@
+.card-order-user {
+  :deep(.process-countdown__text) {
+    @include font-t12r;
+  }
+}
+.card-order {
+  display: flex;
+  justify-content: space-between;
+  &__action {
+    flex: 0 0 45%;
+  }
+  &__progress {
+    flex: 0 0 40%;
+  }
+}
+
+

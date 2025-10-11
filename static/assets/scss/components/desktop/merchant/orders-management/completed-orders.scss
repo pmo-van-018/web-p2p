@@ -1,0 +1,46 @@
+.completed-order {
+  &__head {
+    padding: 24px 0;
+  }
+  &__table {
+    :deep(.base-table) {
+      min-height: calc(100vh - 365px);
+    }
+  }
+  .order-no {
+    @include font-t14m;
+    color: $grey-600;
+    text-decoration: underline;
+    cursor: pointer;
+    &--cursor-default {
+      cursor: default;
+    }
+  }
+
+  .order-datetime {
+    @include font-t14m;
+    color: $grey-600;
+  }
+}
+.description-text {
+  cursor: pointer;
+  &__title {
+    @include font-t14r;
+    font-weight: $font-weight-semi-bold;
+    color: $grey-600;
+    &--underline {
+      text-decoration: underline;
+      display: inline-block;
+    }
+  }
+}
+.label-type {
+  padding: 1px 8px;
+  background-color: var(--mode-light-dark-200);
+  border-radius: 4px;
+  display: inline-flex;
+  &__text {
+    @include font-t12m;
+    color: var(--mode-light-dark-800);
+  }
+}

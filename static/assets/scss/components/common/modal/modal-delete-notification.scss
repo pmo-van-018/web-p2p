@@ -1,0 +1,12 @@
+.delete-noti {
+  text-align: center;
+  &__icon {
+    width: 120px;
+    height: 120px;
+  }
+  &__des {
+    @include font-t16r;
+    color: var(--mode-light-dark-1500);
+    padding: 1rem 0;
+  }
+}

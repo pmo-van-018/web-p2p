@@ -1,0 +1,29 @@
+.appeal-content {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  &__img {
+    width: 68px;
+    height: 68px;
+    flex: 0 0 68px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__appeal-title {
+    color: $grey-600;
+    @include font-t14r;
+    margin-bottom: 4px;
+    &--strong {
+      @include font-t14m;
+    }
+  }
+  &__appeal-link {
+    @include font-t14r;
+    color: $blue-400;
+  }
+}

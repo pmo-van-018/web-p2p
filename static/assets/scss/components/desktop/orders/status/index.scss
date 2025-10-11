@@ -1,0 +1,28 @@
+.order-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  &__icon {
+    font-size: 16px;
+  }
+  &__inner {
+    @include font-t12m;
+    white-space: nowrap;
+    border-radius: 6px;
+    padding: 2px 10px;
+    color: $grey-500;
+    &.success {
+      background: $green-50;
+      color: $green-500;
+    }
+    &.danger {
+      background: $red-50;
+      color: $red-500;
+    }
+  }
+  .icon-success {
+    &:before {
+      color: $green-500;
+    }
+  }
+}

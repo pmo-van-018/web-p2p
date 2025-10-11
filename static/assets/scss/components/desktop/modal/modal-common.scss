@@ -1,0 +1,378 @@
+$modal-common: "modal-common";
+.#{$modal-common} {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-right: 30px;
+  }
+
+  &__title {
+    color: var(--mode-light-dark-1500);
+    @include font-t20m;
+    display: flex;
+    align-items: center;
+  }
+
+  &__close {
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    .icon-cancel {
+      &:before {
+        color: var(--mode-light-dark-1500);
+      }
+    }
+  }
+}
+:deep(.modal-posting) {
+  .modal-content {
+    gap: 24px;
+    .icon-moon {
+      font-size: 120px;
+    }
+    @media (max-width: 750px) {
+      gap: 12px;
+    }
+  }
+}
+:deep(.modal-small) {
+  .modal-dialog {
+    max-width: 460px;
+  }
+}
+:deep(.modal-mobile-bottom) {
+  .modal-common__title {
+    color: var(--mode-light-dark-1500);
+  }
+ @media (max-width: 750px) {
+  .modal-content {
+    margin-top: auto;
+    border-radius: 8px 8px 0 0;
+  }
+  .modal-body {
+    padding: 24px 20px
+  }
+  .modal-dialog {
+    margin: 0;
+    min-height: 100%;
+    max-width: 100%;
+  }
+ }
+}
+:deep(.modal-content) {
+  border: none;
+  border-radius: 8px;
+  background-color: var(--mode-light-dark-popup-dropdown-0);
+}
+
+:deep(.modal-body) {
+  padding: 16px;
+  border: solid 3px var(--mode-light-dark-200);
+  border-radius: 8px;
+  @media (min-width: 768px) {
+    padding: 24px;
+  }
+}
+
+:deep(.modal-dialog) {
+  max-width: 536px;
+}
+:deep(.payment-cancel-custom) {
+  .modal-body {
+    padding: 32px;
+  }
+  &.mobile {
+    .modal-body {
+      padding: 16px;
+    }
+  }
+}
+:deep(.payment-confirm-custom) {
+  .modal-body {
+    padding: 32px;
+  }
+  .modal-dialog {
+    max-width: 500px;
+  }
+  &.mobile {
+    .modal-body {
+      padding: 24px 16px;
+    }
+  }
+}
+:deep(#confirm-order) {
+  .modal-dialog {
+    max-width: 500px;
+  }
+  .modal-body {
+    padding: 30px 32px 32px;
+  }
+  &.mobile {
+    .modal-body {
+      padding: 24px 16px;
+    }
+  }
+}
+
+:deep(#modalReferralCode) {
+  .modal-dialog {
+    max-width: 400px;
+  }
+  .modal-body {
+    padding: 1.5rem;
+  }
+  &.mobile {
+    .modal-body {
+      padding: 1rem;
+    }
+  }
+}
+:deep(#modalReferralCodeSucceed) {
+  .modal-dialog {
+    max-width: 418px;
+  }
+  .modal-body {
+    padding: 1.5rem;
+  }
+  &.mobile {
+    .modal-body {
+      padding: 1rem;
+    }
+  }
+}
+
+:deep(#modalDeleteBank) {
+  @media (max-width: 768px) {
+    .modal-body {
+      padding: 16px;
+    }
+    .modal-content {
+      padding: 0
+    }
+    .modal-common__title {
+      @include font-t16m;
+    }
+  }
+}
+:deep(#modalToolbar) {
+  .modal-common__close {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+  }
+  .modal-dialog-centered {
+    height: 100%;
+  }
+  .modal-dialog{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+  }
+  .modal-common__title {
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+    @include font-t16m;
+    color: var(--mode-light-dark-1500);
+    display: flex;
+    justify-content: center;
+  }
+  .modal-item {
+    padding: 16px;
+    border-top: solid 1px $grey-100;
+    &__icon {
+      font-size: 24px;
+      &:before {
+        color: $grey-400;
+      }
+    }
+  }
+  .modal-content {
+    padding: 0;
+    margin: 0;
+    margin-top: auto;
+    border-radius: 8px 8px 0 0;
+  }
+  .modal-body {
+    padding: 0;
+  }
+}
+
+:deep(#modalTransactionRpc) {
+  .modal-dialog {
+    max-width: 536px;
+  }
+  .modal-common__title {
+    display: flex;
+    gap: 8px;
+  }
+  @media (max-width: 767px) {
+    .modal-common__title {
+      @include font-t16m;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .modal-dialog {
+      padding: 0;
+      margin: 0;
+      max-width: 100%;
+    }
+    .modal-dialog-centered {
+      height: 100%;
+    }
+    .modal-content {
+      padding: 0;
+      margin: 0;
+      margin-top: auto;
+      border-radius: 8px 8px 0 0;
+    }
+    .modal-body {
+      padding: 1rem;
+    }
+  }
+}
+:deep(#modalWarningPolicyConditionOrder) {
+  .modal-dialog {
+    max-width: 500px;
+  }
+  @media (max-width: 768px) {
+    .modal-body {
+      padding: 16px;
+    }
+    .modal-content {
+      padding: 0
+    }
+    .modal-common__title {
+      @include font-t14m;
+    }
+    .modal-common__close {
+      font-size: 20px;
+    }
+  }
+}
+
+:deep(#modalDeleteBank) {
+  color: $grey-900;
+  .modal-dialog {
+    max-width: 460px;
+  }
+}
+
+:deep(#modalAddBank) {
+  .modal-content,
+  .modal-body {
+    background-color: var(--mode-light-dark-popup-dropdown-0);
+    border-radius: 8px;
+  }
+}
+
+:deep(#modalConfirmedSendCrypto.mobile),
+:deep(#modalSendCryptoResult.mobile),
+:deep(#modalSendCryptoConfirmation.mobile),
+:deep(#modalSellPaymentConfirmation.mobile),
+:deep(#modalPaymentConfirmation.mobile),
+:deep(#confirm-order.mobile)
+{
+  .modal-common__title {
+    align-items: start;
+    flex-direction: column;
+    .countdown {
+      margin-left: 0 !important;
+    }
+  }
+}
+
+:deep(#modalWalletAddressQrcode) {
+  .modal-dialog {
+    margin: auto;
+    max-width: 345px;
+  }
+  .modal-common__header {
+    margin-bottom: 12px;
+  }
+  .modal-common__title {
+    @include font-t16r;
+    max-width: calc(100% - 30px);
+    display: block;
+    word-break: break-all;
+  }
+  .modal-body {
+    padding: 12px;
+  }
+  .modal-common__close {
+    line-height: 1;
+  }
+  @media (max-width: 500px) {
+    .modal-common__header {
+      margin-bottom: 20px;
+    }
+    .modal-common__title {
+      @include font-t10m;
+      line-height: 24px;
+    }
+    .modal-body {
+      padding: 20px;
+    }
+  }
+}
+
+:deep([id*="modalSuccessResultRoleManagement"]),
+:deep([id*="modalFailureResultRoleManagement"]) {
+  .modal-dialog {
+    margin: auto;
+    max-width: 555px;
+  }
+}
+
+:deep(#modalAddMerchantManager),
+:deep(#modalEditMerchantManager),
+:deep(#modalDeleteMerchantManager),
+:deep(#modalAddAdminSupporter),
+:deep(#modalEditAdminSupporter),
+:deep(#modalDeleteAdminSupporter),
+:deep(#modalAddStaff),
+:deep(#modalEditStaff),
+:deep(#modalSettingSetMaintenance),
+:deep(#modalAddSupperAdmin),
+:deep(#modalEditSupperAdmin),
+:deep(#modalDeleteSupperAdmin),
+:deep(#modalDeleteStaff) {
+  &.hidden {
+    visibility: hidden;
+    ~ .modal-backdrop {
+      opacity: 0.1;
+    }
+  }
+}
+
+:deep(#modalWarningLogout) {
+  .modal-dialog {
+    margin: 0 auto;
+    max-width: 463px;
+  }
+  &.mobile {
+    .modal-dialog {
+      margin: 0 16px
+    }
+  }
+  .modal-common__title {
+    height: 28px;
+  }
+  .modal-body {
+    padding: 32px;
+  }
+  @media (max-width: 500px) {
+    .modal-body {
+      padding: 32px 16px;
+    }
+  }
+}
+
+div[id^="modalWalletAppStore_"] {
+  z-index: 1500 !important;
+}
+

@@ -1,0 +1,23 @@
+.chat-support {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  &__frame, &__request-type {
+    flex: 1;
+  }
+  &__request-type {
+    padding: 0 1rem 1rem;
+  }
+  &__first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  &__first-content {
+    @include font-t12m;
+    color: var(--mode-light-dark-700);
+  }
+}

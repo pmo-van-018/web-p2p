@@ -1,0 +1,230 @@
+// Font style
+@mixin font-t48b() {
+    font-family: $font-family;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: $font-weight-bold;
+}
+
+@mixin font-t40b() {
+    font-family: $font-family;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: $font-weight-bold;
+}
+
+@mixin font-t40m() {
+    font-family: $font-family;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: $font-weight-medium;
+}
+
+
+@mixin font-t32b() {
+    font-family: $font-family;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: $font-weight-bold;
+}
+
+@mixin font-t24b() {
+    font-family: $font-family;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: $font-weight-bold;
+}
+
+@mixin font-t24m() {
+    font-family: $font-family;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: $font-weight-medium;
+}
+
+@mixin font-t24r() {
+    font-family: $font-family;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: $font-weight-regular;
+}
+
+@mixin font-t20b() {
+    font-family: $font-family;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: $font-weight-bold;
+}
+
+@mixin font-t20m() {
+    font-family: $font-family;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: $font-weight-medium;
+}
+
+@mixin font-t20r() {
+    font-family: $font-family;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: $font-weight-regular;
+}
+
+@mixin font-t18b() {
+    font-family: $font-family;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: $font-weight-bold;
+}
+
+@mixin font-t18m() {
+    font-family: $font-family;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: $font-weight-medium;
+}
+
+@mixin font-t18r() {
+    font-family: $font-family;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: $font-weight-regular;
+}
+
+@mixin font-t16b() {
+    font-family: $font-family;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: $font-weight-bold;
+}
+
+@mixin font-t16m() {
+    font-family: $font-family;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: $font-weight-medium;
+}
+
+@mixin font-t16r() {
+    font-family: $font-family;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: $font-weight-regular;
+}
+
+@mixin font-t14b() {
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: $font-weight-bold;
+}
+
+@mixin font-t14m() {
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: $font-weight-medium;
+}
+
+@mixin font-t14r() {
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: $font-weight-regular;
+}
+
+@mixin font-t12b() {
+    font-family: $font-family;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: $font-weight-bold;
+}
+
+@mixin font-t12m() {
+    font-family: $font-family;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: $font-weight-medium;
+}
+
+@mixin font-t12r() {
+    font-family: $font-family;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: $font-weight-regular;
+}
+
+@mixin font-t10b() {
+    font-family: $font-family;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: $font-weight-bold;
+}
+
+@mixin font-t10m() {
+    font-family: $font-family;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: $font-weight-medium;
+}
+
+@mixin font-t10r() {
+    font-family: $font-family;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: $font-weight-regular;
+}
+
+// Scroll
+@mixin scroll {
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        background-color: $grey-200;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 100px;
+        background-color: $grey-400;
+    }
+}
+
+@mixin scrollbars($size, $front-color, $back-color) {
+
+    // For Google Chrome
+    &::-webkit-scrollbar {
+        width: $size;
+        height: $size;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $front-color;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $back-color;
+    }
+
+    // For Internet Explorer
+    & {
+        scrollbar-face-color: $front-color;
+        scrollbar-track-color: $back-color;
+    }
+}
+
+@mixin ellipsis-multiline($lines-to-show: 1) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: $lines-to-show;
+    -webkit-box-orient: vertical;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+@mixin dark-mode {
+    @media (prefers-color-scheme: dark) {
+        @content;
+    }
+}

@@ -1,0 +1,62 @@
+.managements {
+  height: 100%;
+  &__title {
+    @include font-t20b;
+    color: $grey-600;
+  }
+  &__content {
+    @include font-t14r;
+    color: $grey-400;
+    margin: 0;
+    padding-top: 12px;
+  }
+  &__filter {
+    padding: 34px 0 16px;
+  }
+  &__table {
+    :deep(.base-table) {
+      min-height: calc(100vh - 350px);
+    }
+  }
+  [class^="icon-"],
+  :deep(.copy-button__icon),
+  :deep(.wallet-address-qrcode-button__icon) {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  &__item {
+    @include font-t12r;
+    color: $grey-600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+
+    &.order-count {
+      font-weight: 700;
+    }
+
+    &.buy-order {
+      color: $bullish-green;
+    }
+
+    &.sell-order {
+      color: $bearish-red;
+    }
+  }
+  .wallet-address {
+    display: flex;
+    align-items: center;
+    &__name {
+      display: inline-block;
+      vertical-align: middle;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+  .delay-animation {
+    animation: fadeinLoad 1s forwards;
+    opacity: 0;
+  }
+}

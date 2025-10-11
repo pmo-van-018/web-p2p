@@ -1,0 +1,31 @@
+$confirmed-send-crypto: "confirmed-send-crypto";
+
+.#{$confirmed-send-crypto} {
+  text-align: center;
+  position: relative;
+  &__icon {
+    height: 120px;
+    margin-top: 24px;
+  }
+
+  &__icon-img {
+    height: 100%;
+    width: 120px;
+    font-size: 120px;
+  }
+
+  &__desc {
+    color: var(--mode-light-dark-1000);
+    margin-top: 24px;
+    @include font-t16m;
+    &.red {
+      color: $red-400;
+    }
+  }
+
+  &__note {
+    color: var(--mode-light-dark-1000);
+    margin-top: 12px;
+    @include font-t14r;
+  }
+}

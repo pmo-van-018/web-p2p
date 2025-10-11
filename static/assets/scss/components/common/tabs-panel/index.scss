@@ -1,0 +1,95 @@
+.tab-panel {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    @include font-t16m;
+    transition: 0.3s all ease-in-out;
+  }
+
+  &__logo {
+    width: 35px;
+    height: 35px;
+
+    img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1;
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    margin-left: 6px;
+    color: var(--mode-light-dark-700);
+    font-weight: 700;
+  }
+
+  &__sub-title {
+    color: var(--mode-light-dark-500);
+    font-weight: 400;
+  }
+}
+
+:deep(.nav-tabs) {
+  border: none;
+  display: flex;
+  flex-wrap: nowrap;
+
+  .nav-link {
+    border: none;
+    padding: 6px 0;
+    margin-bottom: 0;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background: transparent;
+    }
+
+    @media (max-width: $size-medium) {
+      padding: 13px 0;
+    }
+
+    &.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    &.active {
+      &:before {
+        content: '';
+        background: $main-600;
+      }
+
+      .tab-panel {
+        &__title {
+          color: $main-600;
+        }
+
+        &__sub-title {
+          color: $main-600;
+        }
+      }
+
+      @include dark-mode {
+        background: none;
+      }
+    }
+  }
+
+  .nav-item {
+    padding: 0 0.5rem;
+    outline: none;
+    flex: 0 0 auto;
+    @media (min-width: 1280px) {
+      padding: 0 0.75rem;
+    }
+  }
+}

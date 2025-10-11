@@ -1,0 +1,59 @@
+.notification-item {
+    padding: 14px 24px 8px;
+    border-bottom: solid 1px var(--mode-light-dark-300);
+    position: relative;
+    cursor: pointer;
+    &__left {
+        span {
+            float: left;
+            font-size: 24px;
+        }
+        p {
+            margin-left: 28px;
+        }
+    }
+    &__text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        color: var(--mode-light-dark-700);
+    }
+    &__title {
+        color: var(--mode-light-dark-1000);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        word-break: break-all;
+        &.status-read {
+            color: var(--mode-light-dark-1000);
+            position: relative;
+            padding-left: 11px;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 7px;
+                left: 0;
+                width: 7px;
+                height: 7px;
+                background-color: $yellow-800;
+                border-radius: 50%;
+            }
+        }
+    }
+    &.read {
+        .notification-item__title {
+            color: var(--mode-light-dark-500);
+            padding-left: 0;
+            &:before {
+                content: none;
+            }
+        }
+        .notification-item__text {
+            color: var(--mode-light-dark-500);
+        }
+    }
+}
+

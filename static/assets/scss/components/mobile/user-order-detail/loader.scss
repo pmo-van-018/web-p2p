@@ -1,0 +1,33 @@
+.skeleton-loader {
+  &__container {
+    padding: 1rem;
+  }
+  &__head {
+    margin-bottom: 2rem;
+  }
+  &__context {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  &__inner {
+    margin-bottom: 2rem;
+  }
+  &__action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 16px;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    padding: 12px 16px;
+    background: var(--mode-light-dark-100);
+    box-shadow: 12px 4px 16px rgb(16 24 40 / 20%), 12px 4px 6px -2px rgb(16 24 40 / 20%);
+    margin-bottom: 0;
+  }
+}

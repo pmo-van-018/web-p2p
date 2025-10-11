@@ -1,0 +1,65 @@
+.order-actions {
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    flex-direction: column;
+  }
+  &__top, &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  &__item-inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__button-action {
+    min-width: auto !important;
+    padding: 0;
+    &:disabled {
+      background-color: transparent;
+    }
+  }
+  &__message-icon {
+    font-size: 38px;
+  }
+  &__appeal, &__messages {
+    cursor: pointer;
+  }
+  &__icon-transfer {
+    font-size: 20px;
+  }
+  .base-button {
+    min-width: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    :disabled {
+      cursor: not-allowed;
+    }
+    @media (max-width: 767px) {
+      @include font-t10b;
+      min-width: 80px;
+      padding: 10px 0;
+    }
+  }
+  &__icon {
+    font-size: 24px;
+    @media (min-width: 768px) {
+      font-size: 30px;
+    }
+    &.appeal-action {
+      cursor: pointer;
+    }
+    &.disable {
+      cursor: default;
+      &::before {
+        color: $grey-400;
+      }
+    }
+  }
+}

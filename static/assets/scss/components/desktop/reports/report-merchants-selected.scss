@@ -1,0 +1,32 @@
+.merchant-selected {
+  &__container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__content {
+    padding: 4px 10px;
+    border-radius: 100px;
+    background: $grey-100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__text {
+    @include ellipsis-multiline;
+    @include font-t12m;
+    color: $grey-900;
+    margin-right: 8px;
+    max-width: 150px;
+  }
+  .icon-cancel {
+    font-size: 12px;
+    &:before {
+      color: $grey-400;
+    }
+  }
+}
+:deep(.tooltip-inner) {
+  min-width: 386px;
+}

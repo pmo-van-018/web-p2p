@@ -1,0 +1,64 @@
+.transaction {
+  background: $grey-50;
+  border-radius: 8px;
+  &__container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  &__left {
+    flex: 0 0 20%;
+  }
+  &__box {
+    background: $grey-200;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+  &__hash {
+    margin-right: 4px;
+    @include font-t14m;
+    color: $grey-800;
+  }
+  &__status {
+    display: flex;
+    align-items: center;
+  }
+  &__status-text {
+    @include font-t14m;
+    margin-left: 4px;
+    &--progressing {
+      color: $yellow-900;
+    }
+    &--failed {
+      color: $red-500;
+    }
+    &--successful {
+      color: $green-500;
+    }
+  }
+  &__icon {
+    display: flex;
+    .icon-relaunch {
+      animation: spin 1s linear infinite;
+    }
+    .icon {
+      margin: 0;
+    }
+  }
+  &__wrapper {
+    padding: 3px 12px;
+    border-left: 1px solid rgba(228, 228, 231, 0.5);
+  }
+  &__box-text {
+    color: $grey-900;
+    @include font-t14r;
+  }
+}

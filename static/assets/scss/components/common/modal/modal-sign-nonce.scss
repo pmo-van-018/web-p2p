@@ -1,0 +1,23 @@
+$modal-sign-nonce: 'modal-sign-nonce';
+
+.#{$modal-sign-nonce} {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  row-gap: 24px;
+  color: var(--mode-light-dark-800);
+  &__txt{
+    @include font-t14r;
+    :deep(a) {
+      color: $main-600;
+    }
+  }
+  &__btn{
+    @include font-t14r;
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+}

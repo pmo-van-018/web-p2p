@@ -1,0 +1,176 @@
+:deep(.modal-body) {
+  @media (min-width: 768px) {
+    padding: 1.5rem;
+  }
+}
+:deep(.modal-content) {
+  background-color: var(--mode-light-dark-popup-dropdown-0);
+}
+.appeal {
+  padding: 8px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    .title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+      color: var(--mode-light-dark-1000);
+    }
+    .icon-cancel {
+      &:before {
+        color: var(--mode-light-dark-1500);
+      }
+    }
+  }
+  &__icon-top {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  &__desc {
+    color: $grey-600;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &.reverse {
+      flex-direction: column-reverse;
+    }
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    .qrcode {
+      margin-right: 12px;
+    }
+    .telegram {
+      @include font-t14r;
+    }
+    .desc {
+      margin-bottom: 10px;
+    }
+    .link {
+      font-weight: 400;
+      cursor: pointer;
+      color: #53B1FD;
+      margin-bottom: 0;
+    }
+    &.center {
+      flex-direction: column;
+      text-align: center;
+      gap: 12px;
+    }
+  }
+  &__warning {
+    display: flex;
+    border-left: 3px solid #13C7C7;
+    background: var(--mode-light-dark-badget-pastel-green);
+    padding: 12px;
+    .warning-icon {
+      margin-right: 12px;
+      align-items: center;
+      display: flex;
+      .icon-question::before {
+        font-size: 20px;
+        color: $light-blue-100;
+      }
+      .note {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--mode-light-dark-1000);
+        margin-left: 10px;
+      }
+    }
+    .warning-info {
+      .info-block {
+        display: flex;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--mode-light-dark-1500);
+        .step {
+          margin-right: 5px;
+        }
+        .text {
+          margin-bottom: 0;
+          :deep(span) {
+            line-height: 20px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .contact-support {
+      font-weight: 500;
+    }
+  }
+  &__confirm {
+    margin-top: 16px;
+  }
+  &__action {
+    margin-top: 16px;
+    button {
+      color: #fff;
+      border-radius: 8px;
+    }
+    .btn-confirm {
+      background-color: $main-600;
+      &:hover {
+        background-color: $main-600;
+      }
+    }
+    .btn-contact {
+      background-color: $blue-400;
+      border-color: $blue-400;
+      padding: 7px 16px;
+      .icon-telegram-plane {
+        font-size: 24px;
+        margin-right: 8px;
+        &:before {
+          color: $white;
+        }
+      }
+    }
+  }
+  &__icon-action {
+    font-size: 20px;
+    margin-right: 6px;
+    &:before {
+      color: $white;
+    }
+    @media (min-width: 768px) {
+      font-size: 24px;
+    }
+  }
+  &__show-option {
+    margin-top: 24px;
+    font-size: 14px;
+  }
+  &.mobile {
+    padding: 0px;
+    :deep(.appeal__warning) {
+      flex-direction: column;
+      gap: 12px;
+    }
+    :deep(.appeal__info) {
+      justify-content: space-between;
+      @media (min-width: 768px) {
+        justify-content: start;
+      }
+    }
+    :deep(.appeal__content.reverse .appeal__warning) {
+      margin-bottom: 16px;
+    }
+  }
+}
+:deep(.custom-control-input:checked~.custom-control-label:before) {
+  border-color: $main-600;
+  background-color: $main-600;
+}

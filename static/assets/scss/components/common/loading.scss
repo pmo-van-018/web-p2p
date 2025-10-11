@@ -1,0 +1,50 @@
+$loading: "loading";
+
+.#{$loading} {
+    position: fixed;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #18181b81;
+    z-index: 1049;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeinLoad 0.5s forwards;
+    animation-delay: 0.5s;
+    &__container {
+        width: 343px;
+        height: 148px;
+        margin: auto;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        padding: 32px 16px;
+        justify-content: center;
+        border-radius: 8px;
+
+        img {
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            transform-origin: center;
+        }
+    }
+
+    &__desc {
+        @include font-t14r;
+        color: $grey-600;
+    }
+
+    &.full {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+    }
+}

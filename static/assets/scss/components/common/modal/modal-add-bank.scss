@@ -1,0 +1,52 @@
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  row-gap: 42px;
+}
+.row-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  .label {
+    @include font-t14m;
+    color: var(--mode-light-dark-1000);
+  }
+}
+.verify-confirm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+:deep(.note) {
+  display: flex;
+  padding: 16px;
+  column-gap: 10px;
+  align-items: center;
+  border-left: 3px solid $light-blue-100;
+  background-color: var(--mode-light-dark-badget-pastel-green);
+  margin-bottom: 24px;
+  .icon-question {
+    font-size: 24px;
+    &:before {
+      color: $light-blue-100;
+    }
+  }
+  .note-text {
+    @include font-t14r;
+    color: var(--mode-light-dark-1500);
+  }
+}
+
+.add-bank-checkbox {
+  margin: 0px 0px 24px 0px;
+  cursor: pointer;
+  color: var(--mode-light-dark-1000);
+  :deep(.custom-control-input:checked ~ .custom-control-label:before) {
+    background-color: $main-600;
+    border-color: $main-600;
+    color: $white;
+  }
+}

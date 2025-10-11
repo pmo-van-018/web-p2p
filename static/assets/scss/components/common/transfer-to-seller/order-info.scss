@@ -1,0 +1,28 @@
+$order-info: "order-info";
+
+.#{$order-info} {
+    margin-top: 8px;
+
+    &__id {
+        color: var(--mode-light-dark-700);
+        @include font-t12r;
+
+        span {
+            color: var(--mode-light-dark-1500);
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    &__time {
+        color: var(--mode-light-dark-700);
+        margin-top: 4px;
+        @include font-t12r;
+
+        span {
+            color: var(--mode-light-dark-1500);
+            @include font-t12b;
+        }
+    }
+}

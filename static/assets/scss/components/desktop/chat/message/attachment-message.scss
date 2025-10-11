@@ -1,0 +1,46 @@
+.attachment-message {
+  &.received {
+    .attachment-message {
+      &__icon {
+        background: #05A7A7;
+      }
+      &__content {
+        color:var(--mode-light-dark-1500);
+      }
+      &__date {
+        color: $grey-300;
+      }
+    }
+  }
+  &__wrapper {
+    position: relative;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+  &__container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  &__icon {
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+  }
+  &__content {
+    @include font-t14m;
+    color: $white;
+    word-break: break-word;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

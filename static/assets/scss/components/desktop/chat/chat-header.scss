@@ -1,0 +1,62 @@
+.chat-header {
+  padding: 12px 16px;
+  background: var(--mode-light-dark-100);
+  border-bottom: 1px solid var(--mode-light-dark-200);
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+  }
+  &__icon-chat {
+    font-size: 32px;
+  }
+  &__text {
+    @include font-t14m;
+    font-weight: $font-weight-semi-bold;
+    color: var(--mode-light-dark-1500);
+    margin-left: 4px;
+  }
+  &__info, &__date {
+    @include font-t12r;
+    color: $grey-400;
+  }
+  .icon-info {
+    font-size: 24px;
+    cursor: pointer;
+    &:before {
+      color: $main-600;
+    }
+  }
+  &__info {
+    span {
+      @include font-t14b;
+    }
+    .sell {
+      color: $bearish-red;
+    }
+    .buy {
+      color: $bullish-green;
+    }
+  }
+  &__date {
+    span {
+      color: $grey-800;
+    }
+  }
+  &__hide {
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--mode-light-dark-300);
+    cursor: pointer;
+  }
+}

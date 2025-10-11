@@ -1,0 +1,37 @@
+.form-check-all {
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding-right: 24px;
+  }
+  &__select-all-inline {
+    margin-bottom: 12px;
+    padding-right: 24px;
+  }
+  &__title {
+    color: $grey-900;
+    @include font-t14m;
+  }
+  &__body {
+    height: 300px;
+    overflow-y: scroll;
+    @include scrollbars(4px, $grey-400, $grey-100);
+  }
+  &__content-text {
+    @include ellipsis-multiline;
+    width: calc(clamp(200px, 13vw, 300px));
+    display: inherit;
+  }
+  :deep(.no-data) {
+    img {
+      width: 80px;
+    }
+  }
+}
+.form-checkbox-custom {
+  &--space-bottom {
+    margin-bottom: 12px;
+  }
+}

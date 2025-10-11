@@ -1,0 +1,40 @@
+::v-deep .van-dropdown-menu {
+  &__bar {
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    height: calc(clamp(36px, 10vw, 49px));
+    background-color: transparent;
+    z-index: 10;
+  }
+  &__title {
+    @include font-t10r;
+    padding: 0 8px;
+    color: var(--mode-light-dark-700);
+    border-radius: 6px;
+    &:after {
+      content: '';
+      border-color: transparent transparent var(--mode-light-dark-700) var(--mode-light-dark-700);
+    }
+    &--active {
+      color: $main-600;
+      &:after {
+        content: '';
+        border-color: transparent transparent $main-600 $main-600;
+      }
+    }
+  }
+  &__item {
+    flex: inherit;
+    &.active {
+      .van-dropdown-menu__title {
+        color: $main-600;
+        &:after {
+          content: '';
+          border-color: transparent transparent $main-600 $main-600;
+        }
+      }
+    }
+  }
+}

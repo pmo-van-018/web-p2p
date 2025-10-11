@@ -1,0 +1,125 @@
+.role-management-item {
+  padding: 24px 0;
+  border-bottom: solid 1px $grey-100;
+  .disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    color: $grey-600;
+    max-width: 70%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    &.underline {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &__status {
+    padding: 3px 7px;
+    background-color: $grey-100;
+    border-radius: 4px;
+    min-width: 79px;
+    text-align: center;
+    &.active-status {
+      background-color: $green-50;
+      color: $green-500;
+    }
+    &.inactive-status {
+      background: $grey-100;
+      color: $grey-500;
+    }
+    &.deleted-status {
+      color: $red-400;
+      background: $red-50;
+    }
+  }
+
+  .wallet-address {
+    &__text {
+      font-weight: 500;
+      font-size: 14px;
+      color: $grey-600;
+      &.disabled {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+    }
+
+    .copy-button {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    :deep(.copy-button__icon) {
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+
+  &__action-item {
+    @include font-t14r;
+    width: 200px;
+    margin: 0 12px;
+    padding: 12px 0;
+    color: $grey-400;
+    &:not(:last-child) {
+      border-bottom: 1px solid $grey-100;
+    }
+  }
+
+  &__action-edit {
+    font-size: 24px;
+    &:before {
+      color: $grey-900;
+    }
+  }
+
+  :deep(.icon-edit-dots) {
+    font-size: 24px;
+  }
+
+  :deep(.custom-control-label) {
+    margin-top: -.25rem;
+  }
+
+  :deep(.custom-control-input) {
+    &:checked +.custom-control-label {
+      &::before {
+        background-color: $orange-600;
+        border-color: $orange-600;
+      }
+    }
+  }
+
+  :deep(.b-dropdown) {
+    display: inline-block;
+    border: none;
+    width: auto;
+    padding: 0;
+    .dropdown__item {
+      font-size: 10px;
+    }
+    button {
+      padding: 0 36px 0 0;
+      font-size: 10px;
+      &:after {
+        content: "\e946";
+        border: none;
+        font-size: 7px;
+        font-family: icomoon;
+        font-style: normal;
+        font-weight: 400;
+        font-feature-settings: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        color: $grey-500;
+      }
+    }
+  }
+}

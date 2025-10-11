@@ -1,0 +1,72 @@
+.system-note {
+  color: var(--mode-light-dark-1500);
+  padding: 0.25rem;
+  h1 {
+    color: var(--mode-light-dark-1500);
+  }
+  &__icon {
+    text-align: center;
+    margin: 24px 0;
+    svg {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  &__wrapper {
+    padding: 8px 16px;
+    border-left: 3px solid $light-blue-100;
+    background: var(--mode-light-dark-badget-pastel-green);
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  &__item {
+    display: flex;
+    .note-index {
+      position: relative;
+      margin-right: 8px;
+      display: flex;
+      align-items: center;
+      &__number {
+        font-weight: 600;
+        font-size: 9.2px;
+        line-height: 12px;
+        color: $white;
+        padding-right: 5px;
+        background: url("/assets/images/common/system-note-index-bg.svg") no-repeat;
+        width: 22px;
+        height: 20px;
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .note-content {
+      @include font-t14r;
+      .telegram {
+        color: $blue-400;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .icon-telegram {
+      &:before {
+        color: $blue-400;
+      }
+    }
+  }
+  &__skip {
+    margin: 16px 0;
+    cursor: pointer;
+    color: var(--mode-light-dark-1000);
+    :deep(.custom-control-input:checked ~ .custom-control-label:before) {
+      background-color: $main-600;
+      border-color: $main-600;
+      color: $white;
+    }
+  }
+}
