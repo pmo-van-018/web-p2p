@@ -185,7 +185,9 @@ export const actions = {
   },
   async getCurrentOperationInfo ({ commit }, $axios) {
     try {
+      console.log('getCurrentOperationInfogetCurrentOperationInfo')
       const { data } = await $axios.get(OPERATION_API.INFO)
+      console.log('datadatadatadatadata', data)
       if (data?.data) {
         commit('user/SET_USER', { ...data.data, prefixAvatarLink: '/assets/images/common/merchant-manager/avatar/' })
       }
