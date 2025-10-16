@@ -173,7 +173,7 @@ export const actions = {
     try {
       console.log('access getCurrentUserInfogetCurrentUserInfo')
       const { data } = await $axios.get(USER_API.INFO)
-      console.log('data getuserinfo datadata', data)
+      console.log('data getuserinfo datadata', data?.data)
       if (data?.data) {
         commit('user/SET_USER', { ...data.data, prefixAvatarLink: '/assets/images/common/user/avatar/' })
       }
