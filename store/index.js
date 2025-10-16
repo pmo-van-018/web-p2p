@@ -94,13 +94,11 @@ export const actions = {
     const sessionKey = getSessionKey(req.headers.host)
     console.log('eq.headers.hosteq.headers.host', req.headers.host, sessionKey)
     const sessionId = app.$cookies.get(sessionKey)
-    console.log('sessionIdsessionIdsessionId', sessionId)
     let user = null
     if (sessionId) {
       if (req.headers.host === app.$config.USER_DOMAIN) {
         user = await dispatch('getCurrentUserInfo', app.$axios);
       } else if (req.headers.host === app.$config.OPERATION_DOMAIN) {
-        console.log('getCurrentUserInfogetCurrentUserInfo')
         user = await dispatch('getCurrentOperationInfo', app.$axios);
       } else if (req.headers.host === app.$config.ADMIN_DOMAIN) {
         user = await dispatch('getCurrentAdminInfo', app.$axios);

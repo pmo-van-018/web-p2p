@@ -88,6 +88,7 @@ export default {
       loginType = loginType || LOGIN_TYPE_ROLE.USER;
       const wallets = await this.$_web3Onboard_connectWallet()
       try {
+        console.log('_authMixin_connect_authMixin_connect')
         if (wallets && wallets.length) {
           const address = wallets[0].accounts[0].address.startsWith('0x') ? ethers.utils.getAddress(wallets[0].accounts[0].address) : wallets[0].accounts[0].address;
           const challenge = await this.challenge(loginType);
@@ -119,12 +120,15 @@ export default {
             cfToken: this.cfToken
           };
           if (this.$_validOperationAccount(loginType)) {
+            console.log('vao login operation')
             result = await this.loginOperation(loginPayload);
           } else if (this.$_validAdminAccount(loginType)) {
             result = await this.loginAdmin(loginPayload);
           } else {
+            console.log('vao login user')
             result = await this.login(loginPayload);
           }
+          console.log('resultresultresult', result)
           if (result && result.success) {
             window.localStorage.setItem(
               'connectedWallets',
