@@ -179,6 +179,7 @@ export const actions = {
       }
       return data.data
     } catch (e) {
+      console.log('errorgetCurrentUserInfogetCurrentUserInfo', e)
       console.error(e)
       return null
     }
